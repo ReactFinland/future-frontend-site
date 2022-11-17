@@ -1,0 +1,10 @@
+{
+  "/": {
+    "layout": "siteIndex",
+    "meta": {
+      "title": "gustwind-template",
+      "description": "A simple starting point for Gustwind projects"
+    },
+    "dataSources": [{ "operation": "readme", "name": "readme" }]
+  }
+}
