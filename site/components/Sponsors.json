@@ -1,0 +1,16 @@
+{
+  "foreach": [{ "utility": "get", "parameters": ["props", "children"] }, {
+    "type": "a",
+    "attributes": {
+      "href": { "utility": "get", "parameters": ["props", "social.homepage"] }
+    },
+    "children": [{
+      "type": "img",
+      "class": { "utility": "get", "parameters": ["props", "imgClass"] },
+      "attributes": {
+        "alt": { "utility": "get", "parameters": ["props", "about"] },
+        "src": { "utility": "get", "parameters": ["props", "image.url"] }
+      }
+    }]
+  }]
+}

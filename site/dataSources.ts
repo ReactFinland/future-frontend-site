@@ -2,6 +2,9 @@ import { GraphQLRequest } from "https://deno.land/x/gql_request@1.0.0-beta.2/mod
 import markdown from "./transforms/markdown.ts";
 import indexQuery from "./queries/index.ts";
 
+// const CONFERENCE = "future-frontend-2023";
+const CONFERENCE = "react-finland-2022";
+
 const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
 
 function createDataFetcher(apiUrl: string) {
@@ -20,15 +23,7 @@ function createDataFetcher(apiUrl: string) {
 }
 
 function index() {
-  return fetchData(indexQuery, { conferenceId: "future-frontend-2023" });
+  return fetchData(indexQuery, { conferenceId: CONFERENCE });
 }
 
-async function readme() {
-  return markdown(
-    // Drop title from the first line
-    // This is not cleanest solution since sometimes you have something else there!
-    (await Deno.readTextFile("./README.md")).split("\n").slice(1).join("\n"),
-  );
-}
-
-export { index, readme };
+export { index };
