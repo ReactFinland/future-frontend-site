@@ -5,6 +5,9 @@
       "title": "gustwind-template",
       "description": "A simple starting point for Gustwind projects"
     },
-    "dataSources": [{ "operation": "readme", "name": "readme" }]
+    "dataSources": [
+      { "operation": "index", "name": "index" },
+      { "operation": "readme", "name": "readme" }
+    ]
   }
 }

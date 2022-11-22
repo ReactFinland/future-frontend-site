@@ -20,7 +20,10 @@
                     "children": [
                       {
                         "type": "span",
-                        "children": "Future Frontend 2023",
+                        "children": {
+                          "utility": "get",
+                          "parameters": ["context", "index.conference.name"]
+                        },
                         "class": "align-middle font-avenir-next"
                       }
                     ]
@@ -28,7 +31,10 @@
                   {
                     "type": "h2",
                     "class": "text-xl md:text-4xl font-extralight",
-                    "children": "The future of frontend reimagined"
+                    "children": {
+                      "utility": "get",
+                      "parameters": ["context", "index.conference.slogan"]
+                    }
                   },
                   {
                     "type": "div",
@@ -37,9 +43,55 @@
                       {
                         "type": "h3",
                         "class": "text-xl md:text-4xl font-extralight",
-                        "children": "xx-xx.06"
+                        "children": [
+                          {
+                            "children": {
+                              "utility": "getDate",
+                              "parameters": [
+                                {
+                                  "utility": "get",
+                                  "parameters": [
+                                    "context",
+                                    "index.conference.startDate"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          { "children": "-" },
+                          {
+                            "children": {
+                              "utility": "getDate",
+                              "parameters": [
+                                {
+                                  "utility": "get",
+                                  "parameters": [
+                                    "context",
+                                    "index.conference.endDate"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          { "children": "." },
+                          {
+                            "children": {
+                              "utility": "getYear",
+                              "parameters": [
+                                {
+                                  "utility": "get",
+                                  "parameters": [
+                                    "context",
+                                    "index.conference.endDate"
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       },
                       {
+                        "_todo": "resolve this from graphql api",
                         "type": "h3",
                         "class": "text-xl md:text-4xl font-extralight",
                         "children": "Helsinki, Finland"

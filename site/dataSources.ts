@@ -5,14 +5,17 @@ import indexQuery from "./queries/index.ts";
 const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
 
 function createDataFetcher(apiUrl: string) {
-  return function fetchData(query: string, variables: Record<string, unknown>) {
+  return async function fetchData(
+    query: string,
+    variables: Record<string, unknown>,
+  ) {
     const request = new GraphQLRequest(
       apiUrl,
       query,
       { variables },
     );
 
-    return fetch(request).then((res) => res.json());
+    return (await fetch(request).then((res) => res.json())).data;
   };
 }
 
@@ -28,6 +31,4 @@ async function readme() {
   );
 }
 
-console.log(await index());
-
-export { readme };
+export { index, readme };
