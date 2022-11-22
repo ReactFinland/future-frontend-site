@@ -3,8 +3,8 @@
   "amountOfBuildThreads": 1,
   "meta": {
     "language": "en",
-    "siteName": "gustwind-template",
-    "url": "TODO"
+    "siteName": "Future Frontend",
+    "url": "https://future-frontend.com"
   },
   "scripts": [
     {
