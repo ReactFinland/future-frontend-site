@@ -7,9 +7,18 @@ export default {
     extend: {
       colors: twindColors,
       fontFamily: {
-        "avenir-next": '"Avenir Next"',
+        "primary": '"Eau"',
       },
     },
+  },
+  preflight: {
+    "@font-face": [
+      {
+        fontFamily: "Eau",
+        fontWeight: "400",
+        src: 'url(/assets/fonts/eau_sans_book.ttf) format("ttf")',
+      },
+    ],
   },
   plugins: {
     ...twindTypography(),

@@ -24,7 +24,7 @@
                           "utility": "get",
                           "parameters": ["context", "index.conference.name"]
                         },
-                        "class": "align-middle font-avenir-next"
+                        "class": "align-middle font-primary"
                       }
                     ]
                   },
