@@ -1,5 +1,4 @@
 import { GraphQLRequest } from "https://deno.land/x/gql_request@1.0.0-beta.2/mod.ts";
-import markdown from "./transforms/markdown.ts";
 import indexQuery from "./queries/index.ts";
 
 // const CONFERENCE = "future-frontend-2023";
@@ -26,8 +25,16 @@ function index() {
   return fetchData(indexQuery, { conferenceId: CONFERENCE });
 }
 
-async function intro() {
-  return markdown(await Deno.readTextFile("./content/intro.md"));
+function intro() {
+  return Deno.readTextFile("./content/intro.md");
 }
 
-export { index, intro };
+function contact() {
+  return Deno.readTextFile("./content/contact.md");
+}
+
+function privacyPolicy() {
+  return Deno.readTextFile("./content/privacy-policy.md");
+}
+
+export { contact, index, intro, privacyPolicy };

@@ -1,6 +1,25 @@
 {
   "type": "BaseLayout",
   "props": {
-    "content": [{ "children": "privacy policy" }]
+    "content": [
+      {
+        "type": "div",
+        "children": [
+          {
+            "type": "Markdown",
+            "bindToProps": {
+              "inputText": {
+                "utility": "get",
+                "parameters": ["context", "privacyPolicy"]
+              }
+            },
+            "props": {
+              "class": "prose lg:prose-xl",
+              "type": "div"
+            }
+          }
+        ]
+      }
+    ]
   }
 }

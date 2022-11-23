@@ -15,7 +15,10 @@
     "meta": {
       "title": "Contact",
       "description": "Contact information of Future Frontend"
-    }
+    },
+    "dataSources": [
+      { "operation": "contact", "name": "contact" }
+    ]
   },
   "organizers": {
     "layout": "organizers",
@@ -29,7 +32,10 @@
     "meta": {
       "title": "Privacy policy",
       "description": "Privacy policy of Future Frontend"
-    }
+    },
+    "dataSources": [
+      { "operation": "privacyPolicy", "name": "privacyPolicy" }
+    ]
   },
   "schedule": {
     "layout": "schedule",
