@@ -21,7 +21,7 @@
           "class": "",
           "children": [
             {
-              "type": "MiniContacts",
+              "type": "MiniSponsors",
               "bindToProps": {
                 "children": {
                   "utility": "get",
@@ -50,7 +50,7 @@
           "class": "grid grid-cols-4 gap-8",
           "children": [
             {
-              "type": "MiniContacts",
+              "type": "MiniSponsors",
               "bindToProps": {
                 "children": {
                   "utility": "get",
@@ -79,7 +79,7 @@
           "class": "grid grid-cols-3 gap-8",
           "children": [
             {
-              "type": "MiniContacts",
+              "type": "MiniSponsors",
               "bindToProps": {
                 "children": {
                   "utility": "get",
@@ -109,7 +109,7 @@
           "class": "grid grid-cols-6 gap-8",
           "children": [
             {
-              "type": "MiniContacts",
+              "type": "MiniSponsors",
               "bindToProps": {
                 "children": {
                   "utility": "get",

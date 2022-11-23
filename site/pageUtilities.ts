@@ -55,6 +55,10 @@ function validateUrl(_: Context, url: string) {
 // solve this without a global? This works for build but not for dev.
 const foundIds: Record<string, number> = {};
 function getUniqueAnchorId(_: Context, anchor: string) {
+  if (!anchor) {
+    throw new Error(`Missing string`);
+  }
+
   let id = slugify(anchor);
 
   // Check for a duplicate id

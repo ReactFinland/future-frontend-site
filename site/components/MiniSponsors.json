@@ -2,7 +2,10 @@
   "foreach": [{ "utility": "get", "parameters": ["props", "children"] }, {
     "type": "a",
     "attributes": {
-      "href": { "utility": "get", "parameters": ["props", "social.homepage"] }
+      "href": {
+        "utility": "get",
+        "parameters": ["props", "social.homepage"]
+      }
     },
     "children": [{
       "type": "img",
