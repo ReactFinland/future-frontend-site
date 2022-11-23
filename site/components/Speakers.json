@@ -33,6 +33,15 @@
           {
             "type": "h2",
             "class": "text-4xl",
+            "attributes": {
+              "id": {
+                "utility": "getUniqueAnchorId",
+                "parameters": [{
+                  "utility": "get",
+                  "parameters": ["props", "name"]
+                }]
+              }
+            },
             "children": {
               "utility": "get",
               "parameters": ["props", "name"]
