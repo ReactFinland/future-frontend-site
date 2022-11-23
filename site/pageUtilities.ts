@@ -31,7 +31,8 @@ function trim(_: Context, str: string, char: string) {
 
 function validateUrl(_: Context, url: string) {
   // Note that this doesn't support nested routes. Probably Gustwind
-  // core should expose a helper for this type of check.
+  // core should expose a helper for this type of check. Even the currently
+  // exposed flattenRoutes might be just enough.
   if (Object.keys(routes).includes(url)) {
     return url === "/" ? "/" : `/${url}/`;
   }

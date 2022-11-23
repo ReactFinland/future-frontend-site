@@ -1,6 +1,7 @@
 import { GraphQLRequest } from "https://deno.land/x/gql_request@1.0.0-beta.2/mod.ts";
-import indexQ from "./queries/index.ts";
-import organizersQ from "./queries/organizers.ts";
+import { get } from "https://deno.land/x/gustwind@v0.32.0/utilities/functional.ts";
+import indexQuery from "./queries/index.ts";
+import organizersQuery from "./queries/organizers.ts";
 
 // const CONFERENCE = "future-frontend-2023";
 const CONFERENCE = "react-finland-2022";
@@ -22,30 +23,23 @@ function createDataFetcher(apiUrl: string) {
   };
 }
 
-// TODO: Abstract out as a fetcher + pass query name as a parameter
-async function indexQuery() {
-  const data = await fetchData(indexQ, { conferenceId: CONFERENCE });
+async function queryData(queryName: string, key: string) {
+  const match = {
+    index: { query: indexQuery, key: "conference" },
+    organizers: { query: organizersQuery, key: "conference.organizers" },
+  }[queryName];
 
-  return data.conference;
+  if (!match) {
+    throw new Error(`queryData - Query "${queryName}" doesn't exist`);
+  }
+
+  const data = await fetchData(match.query, { conferenceId: CONFERENCE });
+
+  return get(data, match.key);
 }
 
-async function organizersQuery() {
-  const data = await fetchData(organizersQ, { conferenceId: CONFERENCE });
-
-  return data.conference.organizers;
+function readFile(filename: string) {
+  return Deno.readTextFile(filename);
 }
 
-// TODO: Abstract out as a file reader + pass filename as a parameter
-function intro() {
-  return Deno.readTextFile("./content/intro.md");
-}
-
-function contact() {
-  return Deno.readTextFile("./content/contact.md");
-}
-
-function privacyPolicy() {
-  return Deno.readTextFile("./content/privacy-policy.md");
-}
-
-export { contact, indexQuery, intro, organizersQuery, privacyPolicy };
+export { queryData, readFile };

@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.31.0/gustwind-cli/mod.ts -b",
-    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.31.0/gustwind-cli/mod.ts -d"
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.32.0/gustwind-cli/mod.ts -b",
+    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.32.0/gustwind-cli/mod.ts -d"
   }
 }

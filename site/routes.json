@@ -6,8 +6,16 @@
       "description": "The future of frontend reimagined"
     },
     "dataSources": [
-      { "operation": "indexQuery", "name": "conference" },
-      { "operation": "intro", "name": "intro" }
+      {
+        "operation": "queryData",
+        "parameters": ["index"],
+        "name": "conference"
+      },
+      {
+        "operation": "readFile",
+        "parameters": ["./content/intro.md"],
+        "name": "intro"
+      }
     ]
   },
   "contact": {
@@ -17,7 +25,11 @@
       "description": "Contact information of Future Frontend"
     },
     "dataSources": [
-      { "operation": "contact", "name": "contact" }
+      {
+        "operation": "readFile",
+        "parameters": ["./content/intro.md"],
+        "name": "contact"
+      }
     ]
   },
   "organizers": {
@@ -27,7 +39,11 @@
       "description": "Organizers of Future Frontend"
     },
     "dataSources": [
-      { "operation": "organizersQuery", "name": "organizers" }
+      {
+        "operation": "queryData",
+        "parameters": ["organizers"],
+        "name": "organizers"
+      }
     ]
   },
   "privacy-policy": {
@@ -37,7 +53,11 @@
       "description": "Privacy policy of Future Frontend"
     },
     "dataSources": [
-      { "operation": "privacyPolicy", "name": "privacyPolicy" }
+      {
+        "operation": "readFile",
+        "parameters": ["./content/privacy-policy.md"],
+        "name": "privacyPolicy"
+      }
     ]
   },
   "schedule": {
