@@ -3,21 +3,21 @@
     "type": "Link",
     "props": {
       "children": "Schedule",
-      "href": "/schedule/"
+      "href": "schedule"
     }
   },
   {
     "type": "Link",
     "props": {
       "children": "Speakers",
-      "href": "/speakers/"
+      "href": "speakers"
     }
   },
   {
     "type": "Link",
     "props": {
       "children": "Organizers",
-      "href": "/organizers/"
+      "href": "organizers"
     }
   }
 ]

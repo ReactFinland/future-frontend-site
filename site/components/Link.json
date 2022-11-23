@@ -18,8 +18,13 @@
   },
   "attributes": {
     "href": {
-      "utility": "get",
-      "parameters": ["props", "href"]
+      "utility": "validateUrl",
+      "parameters": [
+        {
+          "utility": "get",
+          "parameters": ["props", "href"]
+        }
+      ]
     }
   }
 }
