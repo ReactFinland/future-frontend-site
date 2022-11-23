@@ -9,5 +9,26 @@
       { "operation": "index", "name": "index" },
       { "operation": "intro", "name": "intro" }
     ]
+  },
+  "organizers": {
+    "layout": "organizers",
+    "meta": {
+      "title": "Organizers",
+      "description": "Organizers of Future Frontend"
+    }
+  },
+  "schedule": {
+    "layout": "schedule",
+    "meta": {
+      "title": "Schedule",
+      "description": "Schedule of Future Frontend"
+    }
+  },
+  "speakers": {
+    "layout": "speakers",
+    "meta": {
+      "title": "Speakers",
+      "description": "Speakers of Future Frontend"
+    }
   }
 }
