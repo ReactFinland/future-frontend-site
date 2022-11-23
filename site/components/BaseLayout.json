@@ -26,7 +26,11 @@
         "type": "body",
         "children": [
           {
+            "type": "Header"
+          },
+          {
             "type": "main",
+            "class": "md:mx-auto my-8 px-4 md:px-0 w-full lg:max-w-3xl flex flex-col gap-8",
             "children": {
               "utility": "render",
               "parameters": [
@@ -38,7 +42,7 @@
             }
           },
           {
-            "type": "MainFooter"
+            "type": "Footer"
           },
           {
             "type": "Scripts"
