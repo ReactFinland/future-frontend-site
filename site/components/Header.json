@@ -20,29 +20,21 @@
           "class": "flex flex-col gap-8",
           "children": [
             {
-              "type": "Link",
-              "props": {
-                "children": [
-                  {
-                    "type": "h1",
-                    "class": "text-4xl md:text-6xl",
-                    "children": [
-                      {
-                        "type": "span",
-                        "children": {
-                          "utility": "get",
-                          "parameters": [
-                            "context",
-                            "index.conference.name"
-                          ]
-                        },
-                        "class": "align-middle font-primary"
-                      }
+              "type": "h1",
+              "class": "text-4xl md:text-6xl",
+              "children": [
+                {
+                  "type": "span",
+                  "children": {
+                    "utility": "get",
+                    "parameters": [
+                      "context",
+                      "meta.title"
                     ]
-                  }
-                ],
-                "href": "/"
-              }
+                  },
+                  "class": "align-middle font-primary"
+                }
+              ]
             },
             {
               "type": "h2",
