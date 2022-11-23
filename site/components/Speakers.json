@@ -111,6 +111,100 @@
                 "type": "h3",
                 "class": "text-2xl",
                 "children": "Talks"
+              },
+              {
+                "type": "div",
+                "class": "flex flex-col gap-4",
+                "children": [
+                  {
+                    "foreach": [
+                      { "utility": "get", "parameters": ["props", "talks"] },
+                      {
+                        "type": "div",
+                        "class": "flex flex-col gap-2",
+                        "children": [
+                          {
+                            "type": "h4",
+                            "class": "text-xl",
+                            "children": {
+                              "utility": "get",
+                              "parameters": ["props", "title"]
+                            }
+                          },
+                          {
+                            "type": "Markdown",
+                            "bindToProps": {
+                              "inputText": {
+                                "utility": "get",
+                                "parameters": ["props", "description"]
+                              }
+                            },
+                            "props": {
+                              "class": "prose lg:prose-xl",
+                              "type": "div"
+                            }
+                          },
+                          {
+                            "type": "div",
+                            "class": "flex flex-row gap-4",
+                            "children": [
+                              {
+                                "type": "Link",
+                                "bindToProps": {
+                                  "children": "Slides (web)",
+                                  "href": {
+                                    "utility": "get",
+                                    "parameters": ["props", "urls.slides"]
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Link",
+                                "bindToProps": {
+                                  "children": "Slides (pdf)",
+                                  "href": {
+                                    "utility": "get",
+                                    "parameters": ["props", "urls.web"]
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Link",
+                                "bindToProps": {
+                                  "children": "Video",
+                                  "href": {
+                                    "utility": "get",
+                                    "parameters": ["props", "urls.video"]
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Link",
+                                "bindToProps": {
+                                  "children": "Drawing",
+                                  "href": {
+                                    "utility": "get",
+                                    "parameters": ["props", "urls.drawing"]
+                                  }
+                                }
+                              },
+                              {
+                                "type": "Link",
+                                "bindToProps": {
+                                  "children": "Demo",
+                                  "href": {
+                                    "utility": "get",
+                                    "parameters": ["props", "urls.demo"]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -118,13 +212,40 @@
             "type": "div",
             "visibleIf": [{
               "utility": "get",
-              "parameters": ["props", "workshops"]
+              "parameters": ["props", "workshops_disabled"]
             }],
             "children": [
               {
                 "type": "h3",
                 "class": "text-2xl",
                 "children": "Workshops"
+              },
+              {
+                "type": "div",
+                "class": "flex flex-col gap-4",
+                "children": [
+                  {
+                    "foreach": [
+                      {
+                        "utility": "get",
+                        "parameters": ["props", "workshops"]
+                      },
+                      {
+                        "type": "div",
+                        "children": [
+                          {
+                            "type": "h4",
+                            "class": "text-xl",
+                            "children": {
+                              "utility": "get",
+                              "parameters": ["props", "title"]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }

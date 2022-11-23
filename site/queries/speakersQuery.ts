@@ -11,6 +11,7 @@ query PageQuery($conferenceId: ID!) {
         type
         description
         urls {
+          drawing
           slides
           web
           video
