@@ -1,0 +1,6 @@
+{
+  "type": "BaseLayout",
+  "props": {
+    "content": [{ "children": "contact" }]
+  }
+}

@@ -10,11 +10,25 @@
       { "operation": "intro", "name": "intro" }
     ]
   },
+  "contact": {
+    "layout": "contact",
+    "meta": {
+      "title": "Contact",
+      "description": "Contact information of Future Frontend"
+    }
+  },
   "organizers": {
     "layout": "organizers",
     "meta": {
       "title": "Organizers",
       "description": "Organizers of Future Frontend"
+    }
+  },
+  "privacy-policy": {
+    "layout": "privacyPolicy",
+    "meta": {
+      "title": "Privacy policy",
+      "description": "Privacy policy of Future Frontend"
     }
   },
   "schedule": {

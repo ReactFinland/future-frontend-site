@@ -4,8 +4,45 @@
   "children": [
     {
       "type": "div",
-      "class": "text-white sm:mx-auto px-4 py-4 sm:py-8 max-w-3xl flex flex-col gap-8",
-      "children": "footer info goes here"
+      "class": "text-white sm:mx-auto px-4 py-4 sm:py-8 max-w-3xl flex flex-row gap-16",
+      "children": [
+        {
+          "type": "div",
+          "class": "flex flex-col gap-4",
+          "children": [
+            {
+              "type": "Navigation"
+            }
+          ]
+        },
+        {
+          "type": "div",
+          "class": "flex flex-col gap-4",
+          "children": [
+            {
+              "type": "Link",
+              "props": {
+                "children": "Contact",
+                "href": "contact"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
+                "children": "Privacy policy",
+                "href": "privacy-policy"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
+                "children": "Code of conduct",
+                "href": "http://berlincodeofconduct.org/"
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
