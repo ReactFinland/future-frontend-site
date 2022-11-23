@@ -29,7 +29,8 @@
                     "props",
                     "conference.speakers"
                   ]
-                }
+                },
+                "imgClass": "rounded-full"
               }
             }
           ]
@@ -38,16 +39,16 @@
     },
     {
       "type": "div",
-      "class": "flex flex-col gap-2",
+      "class": "flex flex-col gap-4",
       "children": [
         {
           "type": "h3",
-          "class": "text-2xl",
+          "class": "text-4xl",
           "children": "Workshop instructors"
         },
         {
           "type": "div",
-          "class": "grid grid-cols-3 gap-8",
+          "class": "grid grid-cols-4 gap-8",
           "children": [
             {
               "type": "MiniContacts",
@@ -59,7 +60,7 @@
                     "conference.workshopInstructors"
                   ]
                 },
-                "imgClass": "object-contain h-24"
+                "imgClass": "rounded-full"
               }
             }
           ]
@@ -68,16 +69,16 @@
     },
     {
       "type": "div",
-      "class": "flex flex-col gap-6",
+      "class": "flex flex-col gap-4",
       "children": [
         {
           "type": "h3",
-          "class": "text-6xl",
+          "class": "text-4xl",
           "children": "MCs"
         },
         {
           "type": "div",
-          "class": "grid grid-cols-2 gap-8",
+          "class": "grid grid-cols-4 gap-8",
           "children": [
             {
               "type": "MiniContacts",
@@ -88,7 +89,8 @@
                     "props",
                     "conference.mcs"
                   ]
-                }
+                },
+                "imgClass": "rounded-full"
               }
             }
           ]
