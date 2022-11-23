@@ -16,6 +16,19 @@ function markdown(_: Context, input: string) {
   return md(input).content;
 }
 
+function trim(_: Context, str: string, char: string) {
+  // Exception for /
+  if (str === char) {
+    return str;
+  }
+
+  // Adapted from https://www.sitepoint.com/trimming-strings-in-javascript/
+  return str.replace(new RegExp("^[" + char + "]+"), "").replace(
+    new RegExp("[" + char + "]+$"),
+    "",
+  );
+}
+
 function validateUrl(_: Context, url: string) {
   // Note that this doesn't support nested routes. Probably Gustwind
   // core should expose a helper for this type of check.
@@ -33,4 +46,4 @@ function validateUrl(_: Context, url: string) {
   throw new Error(`Failed to find matching url for "${url}"`);
 }
 
-export { getDate, getYear, markdown, validateUrl };
+export { getDate, getYear, markdown, trim, validateUrl };
