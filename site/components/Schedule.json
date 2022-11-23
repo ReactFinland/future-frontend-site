@@ -1,0 +1,105 @@
+{
+  "foreach": [{ "utility": "get", "parameters": ["props", "children"] }, {
+    "type": "div",
+    "class": "flex flex-col gap-2",
+    "children": [
+      {
+        "type": "h2",
+        "class": "text-4xl flex flex-row gap-2",
+        "children": [
+          {
+            "type": "span",
+            "children": {
+              "utility": "get",
+              "parameters": ["props", "day"]
+            }
+          },
+          {
+            "type": "span",
+            "children": "-"
+          },
+          {
+            "type": "span",
+            "children": {
+              "utility": "get",
+              "parameters": ["props", "description"]
+            }
+          }
+        ]
+      },
+      {
+        "type": "div",
+        "class": "flex flex-col gap-2",
+        "children": [
+          {
+            "foreach": [
+              { "utility": "get", "parameters": ["props", "intervals"] },
+              {
+                "type": "div",
+                "class": "grid grid-cols-4",
+                "children": [
+                  {
+                    "type": "div",
+                    "children": [
+                      {
+                        "type": "span",
+                        "children": {
+                          "utility": "get",
+                          "parameters": ["props", "begin"]
+                        }
+                      },
+                      {
+                        "type": "span",
+                        "children": "-"
+                      },
+                      {
+                        "type": "span",
+                        "children": {
+                          "utility": "get",
+                          "parameters": ["props", "end"]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "div",
+                    "class": "col-span-3",
+                    "children": [
+                      {
+                        "visibleIf": [{
+                          "utility": "get",
+                          "parameters": ["props", "title"]
+                        }],
+                        "type": "h3",
+                        "class": "text-2xl",
+                        "children": {
+                          "utility": "get",
+                          "parameters": ["props", "title"]
+                        }
+                      },
+                      {
+                        "foreach": [
+                          {
+                            "utility": "get",
+                            "parameters": ["props", "sessions"]
+                          },
+                          {
+                            "type": "div",
+                            "children": {
+                              "utility": "get",
+                              "parameters": ["props", "title"]
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }]
+}
