@@ -91,17 +91,16 @@
             }
           },
           {
-            "type": "div",
-            "children": [
-              {
-                "type": "h2",
-                "class": "text-6xl",
-                "children": "Speakers"
-              },
-              {
-                "type": "Speakers"
+            "type": "AllSpeakers",
+            "bindToProps": {
+              "conference": {
+                "utility": "get",
+                "parameters": [
+                  "context",
+                  "conference"
+                ]
               }
-            ]
+            }
           },
           {
             "type": "AllSponsors",

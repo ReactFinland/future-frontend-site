@@ -4,37 +4,8 @@
   "children": [
     {
       "type": "h2",
-      "children": "Sponsors",
+      "children": "Speakers",
       "class": "sr-only"
-    },
-    {
-      "type": "div",
-      "class": "flex flex-col gap-6",
-      "children": [
-        {
-          "type": "h3",
-          "class": "text-6xl",
-          "children": "Gold sponsor"
-        },
-        {
-          "type": "div",
-          "class": "",
-          "children": [
-            {
-              "type": "MiniContacts",
-              "bindToProps": {
-                "children": {
-                  "utility": "get",
-                  "parameters": [
-                    "props",
-                    "conference.goldSponsors"
-                  ]
-                }
-              }
-            }
-          ]
-        }
-      ]
     },
     {
       "type": "div",
@@ -43,7 +14,7 @@
         {
           "type": "h3",
           "class": "text-4xl",
-          "children": "Silver sponsors"
+          "children": "Speakers"
         },
         {
           "type": "div",
@@ -56,7 +27,7 @@
                   "utility": "get",
                   "parameters": [
                     "props",
-                    "conference.silverSponsors"
+                    "conference.speakers"
                   ]
                 }
               }
@@ -72,7 +43,7 @@
         {
           "type": "h3",
           "class": "text-2xl",
-          "children": "Bronze sponsors"
+          "children": "Workshop instructors"
         },
         {
           "type": "div",
@@ -85,7 +56,7 @@
                   "utility": "get",
                   "parameters": [
                     "props",
-                    "conference.bronzeSponsors"
+                    "conference.workshopInstructors"
                   ]
                 },
                 "imgClass": "object-contain h-24"
@@ -97,16 +68,16 @@
     },
     {
       "type": "div",
-      "class": "flex flex-col gap-1",
+      "class": "flex flex-col gap-6",
       "children": [
         {
           "type": "h3",
-          "class": "text-xl",
-          "children": "Partners"
+          "class": "text-6xl",
+          "children": "MCs"
         },
         {
           "type": "div",
-          "class": "grid grid-cols-6 gap-8",
+          "class": "grid grid-cols-2 gap-8",
           "children": [
             {
               "type": "MiniContacts",
@@ -115,10 +86,9 @@
                   "utility": "get",
                   "parameters": [
                     "props",
-                    "conference.partners"
+                    "conference.mcs"
                   ]
-                },
-                "imgClass": "object-contain h-24"
+                }
               }
             }
           ]
