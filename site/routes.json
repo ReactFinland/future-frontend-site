@@ -65,7 +65,14 @@
     "meta": {
       "title": "Schedule",
       "description": "Schedule of Future Frontend"
-    }
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["schedule"],
+        "name": "schedule"
+      }
+    ]
   },
   "speakers": {
     "layout": "speakers",
