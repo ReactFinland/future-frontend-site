@@ -7,7 +7,7 @@
         "class": "text-xl md:text-4xl font-extralight",
         "children": {
           "utility": "get",
-          "parameters": ["context", "index.conference.slogan"]
+          "parameters": ["context", "conference.slogan"]
         }
       },
       {
@@ -26,7 +26,7 @@
                       "utility": "get",
                       "parameters": [
                         "context",
-                        "index.conference.startDate"
+                        "conference.startDate"
                       ]
                     }
                   ]
@@ -41,7 +41,7 @@
                       "utility": "get",
                       "parameters": [
                         "context",
-                        "index.conference.endDate"
+                        "conference.endDate"
                       ]
                     }
                   ]
@@ -56,7 +56,7 @@
                       "utility": "get",
                       "parameters": [
                         "context",
-                        "index.conference.endDate"
+                        "conference.endDate"
                       ]
                     }
                   ]
@@ -110,7 +110,7 @@
                 "utility": "get",
                 "parameters": [
                   "context",
-                  "index.conference"
+                  "conference"
                 ]
               }
             }

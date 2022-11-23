@@ -1,5 +1,6 @@
 import { GraphQLRequest } from "https://deno.land/x/gql_request@1.0.0-beta.2/mod.ts";
-import indexQuery from "./queries/index.ts";
+import indexQ from "./queries/index.ts";
+import organizersQ from "./queries/organizers.ts";
 
 // const CONFERENCE = "future-frontend-2023";
 const CONFERENCE = "react-finland-2022";
@@ -21,10 +22,20 @@ function createDataFetcher(apiUrl: string) {
   };
 }
 
-function index() {
-  return fetchData(indexQuery, { conferenceId: CONFERENCE });
+// TODO: Abstract out as a fetcher + pass query name as a parameter
+async function indexQuery() {
+  const data = await fetchData(indexQ, { conferenceId: CONFERENCE });
+
+  return data.conference;
 }
 
+async function organizersQuery() {
+  const data = await fetchData(organizersQ, { conferenceId: CONFERENCE });
+
+  return data.conference.organizers;
+}
+
+// TODO: Abstract out as a file reader + pass filename as a parameter
 function intro() {
   return Deno.readTextFile("./content/intro.md");
 }
@@ -37,4 +48,4 @@ function privacyPolicy() {
   return Deno.readTextFile("./content/privacy-policy.md");
 }
 
-export { contact, index, intro, privacyPolicy };
+export { contact, indexQuery, intro, organizersQuery, privacyPolicy };

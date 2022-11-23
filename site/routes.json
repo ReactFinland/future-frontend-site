@@ -6,7 +6,7 @@
       "description": "The future of frontend reimagined"
     },
     "dataSources": [
-      { "operation": "index", "name": "index" },
+      { "operation": "indexQuery", "name": "conference" },
       { "operation": "intro", "name": "intro" }
     ]
   },
@@ -25,7 +25,10 @@
     "meta": {
       "title": "Organizers",
       "description": "Organizers of Future Frontend"
-    }
+    },
+    "dataSources": [
+      { "operation": "organizersQuery", "name": "organizers" }
+    ]
   },
   "privacy-policy": {
     "layout": "privacyPolicy",

@@ -1,6 +1,26 @@
 {
   "type": "BaseLayout",
   "props": {
-    "content": [{ "children": "organizers" }]
+    "content": [
+      {
+        "type": "div",
+        "class": "grid grid-cols-3 gap-8",
+        "children": [
+          {
+            "type": "Organizers",
+            "bindToProps": {
+              "children": {
+                "utility": "get",
+                "parameters": [
+                  "context",
+                  "organizers"
+                ]
+              },
+              "imgClass": "object-contain h-48"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
