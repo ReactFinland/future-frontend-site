@@ -8,8 +8,13 @@
     ]
   },
   "children": {
-    "utility": "get",
-    "parameters": ["props", "children"]
+    "utility": "render",
+    "parameters": [
+      {
+        "utility": "get",
+        "parameters": ["props", "children"]
+      }
+    ]
   },
   "attributes": {
     "href": {
