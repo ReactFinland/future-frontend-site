@@ -26,7 +26,13 @@
         "type": "body",
         "children": [
           {
-            "type": "Header"
+            "type": "Header",
+            "bindToProps": {
+              "content": {
+                "utility": "get",
+                "parameters": ["props", "header"]
+              }
+            }
           },
           {
             "type": "main",
