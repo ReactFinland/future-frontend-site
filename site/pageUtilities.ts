@@ -54,20 +54,23 @@ function validateUrl(_: Context, url: string) {
 // TODO: How to empty the id store per request? Is it possible to
 // solve this without a global? This works for build but not for dev.
 const foundIds: Record<string, number> = {};
-function getUniqueAnchorId(_: Context, anchor: string) {
+function getUniqueAnchorId({ pathname }: Context, anchor: string) {
   if (!anchor) {
     throw new Error(`Missing string`);
   }
 
   let id = slugify(anchor);
 
-  // Check for a duplicate id
-  if (foundIds[id]) {
-    foundIds[id]++;
+  // Make sure ids are unique per page
+  const cacheId = `${pathname}-${id}`;
 
-    id += `-${foundIds[id]}`;
+  // Check for a duplicate id
+  if (foundIds[cacheId]) {
+    foundIds[cacheId]++;
+
+    id += `-${foundIds[cacheId]}`;
   } else {
-    foundIds[id] = 1;
+    foundIds[cacheId] = 1;
   }
 
   return id;
