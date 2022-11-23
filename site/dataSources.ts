@@ -1,8 +1,8 @@
 import { GraphQLRequest } from "https://deno.land/x/gql_request@1.0.0-beta.2/mod.ts";
 import { get } from "https://deno.land/x/gustwind@v0.32.0/utilities/functional.ts";
-import indexQuery from "./queries/index.ts";
-import organizersQuery from "./queries/organizers.ts";
-import speakersQuery from "./queries/speakers.ts";
+import indexQuery from "./queries/indexQuery.ts";
+import organizersQuery from "./queries/organizersQuery.ts";
+import speakersQuery from "./queries/speakersQuery.ts";
 
 // const CONFERENCE = "future-frontend-2023";
 const CONFERENCE = "react-finland-2022";
