@@ -1,6 +1,25 @@
 {
   "type": "BaseLayout",
   "props": {
-    "content": [{ "children": "speakers" }]
+    "content": [
+      {
+        "type": "div",
+        "class": "flex flex-col gap-8",
+        "children": [
+          {
+            "type": "Speakers",
+            "bindToProps": {
+              "children": {
+                "utility": "get",
+                "parameters": [
+                  "context",
+                  "speakers"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
   }
 }

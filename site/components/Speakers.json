@@ -1,1 +1,107 @@
-{}
+{
+  "foreach": [{ "utility": "get", "parameters": ["props", "children"] }, {
+    "type": "div",
+    "children": [
+      {
+        "type": "figure",
+        "class": "float-left mr-4",
+        "children": [
+          [{
+            "type": "img",
+            "class": "rounded-full object-contain h-32",
+            "attributes": {
+              "alt": { "utility": "get", "parameters": ["props", "about"] },
+              "src": {
+                "utility": "get",
+                "parameters": ["props", "image.url"]
+              }
+            }
+          }, {
+            "type": "figcaption",
+            "class": "sr-only",
+            "children": {
+              "utility": "get",
+              "parameters": ["props", "name"]
+            }
+          }]
+        ]
+      },
+      {
+        "type": "div",
+        "class": "flex flex-col gap-4",
+        "children": [
+          {
+            "type": "h2",
+            "class": "text-4xl",
+            "children": {
+              "utility": "get",
+              "parameters": ["props", "name"]
+            }
+          },
+          {
+            "type": "div",
+            "class": "flex flex-row gap-4",
+            "children": [
+              {
+                "type": "Link",
+                "bindToProps": {
+                  "children": {
+                    "utility": "get",
+                    "parameters": ["props", "social.homepage"]
+                  },
+                  "href": {
+                    "utility": "get",
+                    "parameters": ["props", "social.homepage"]
+                  }
+                }
+              },
+              {
+                "type": "Link",
+                "bindToProps": {
+                  "children": "GitHub",
+                  "href": {
+                    "utility": "get",
+                    "parameters": ["props", "social.github"]
+                  }
+                }
+              },
+              {
+                "type": "Link",
+                "bindToProps": {
+                  "children": "Twitter",
+                  "href": {
+                    "utility": "get",
+                    "parameters": ["props", "social.twitter"]
+                  }
+                }
+              },
+              {
+                "type": "Link",
+                "bindToProps": {
+                  "children": "LinkedIn",
+                  "href": {
+                    "utility": "get",
+                    "parameters": ["props", "social.linkedin"]
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "type": "Markdown",
+            "bindToProps": {
+              "inputText": {
+                "utility": "get",
+                "parameters": ["props", "about"]
+              }
+            },
+            "props": {
+              "class": "prose lg:prose-xl",
+              "type": "div"
+            }
+          }
+        ]
+      }
+    ]
+  }]
+}

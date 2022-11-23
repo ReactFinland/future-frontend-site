@@ -1,6 +1,7 @@
 {
   "type": "a",
   "class": "underline",
+  "visibleIf": [{ "utility": "get", "parameters": ["props", "href"] }],
   "classList": {
     "font-bold": [
       { "utility": "get", "parameters": ["props", "href"] },

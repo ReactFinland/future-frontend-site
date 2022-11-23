@@ -72,6 +72,13 @@
     "meta": {
       "title": "Speakers",
       "description": "Speakers of Future Frontend"
-    }
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["speakers"],
+        "name": "speakers"
+      }
+    ]
   }
 }
