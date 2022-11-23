@@ -26,4 +26,8 @@ function index() {
   return fetchData(indexQuery, { conferenceId: CONFERENCE });
 }
 
-export { index };
+async function intro() {
+  return markdown(await Deno.readTextFile("./content/intro.md"));
+}
+
+export { index, intro };

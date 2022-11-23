@@ -6,7 +6,8 @@
       "description": "The future of frontend reimagined"
     },
     "dataSources": [
-      { "operation": "index", "name": "index" }
+      { "operation": "index", "name": "index" },
+      { "operation": "intro", "name": "intro" }
     ]
   }
 }
