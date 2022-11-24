@@ -51,9 +51,7 @@ function validateUrl(_: Context, url: string) {
   throw new Error(`Failed to find matching url for "${url}"`);
 }
 
-// TODO: How to empty the id store per request? Is it possible to
-// solve this without a global? This works for build but not for dev.
-const foundIds: Record<string, number> = {};
+let foundIds: Record<string, number> = {};
 function getUniqueAnchorId({ pathname }: Context, anchor: string) {
   if (!anchor) {
     throw new Error(`Missing string`);
@@ -83,4 +81,17 @@ function slugify(idBase: string) {
     .replace(/[^\w]+/g, "-");
 }
 
-export { getDate, getUniqueAnchorId, getYear, markdown, trim, validateUrl };
+function _onRenderStart() {
+  // To avoid having stale id cache, erase it when page rendering begins.
+  foundIds = {};
+}
+
+export {
+  _onRenderStart,
+  getDate,
+  getUniqueAnchorId,
+  getYear,
+  markdown,
+  trim,
+  validateUrl,
+};
