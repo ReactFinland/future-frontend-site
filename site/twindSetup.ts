@@ -16,7 +16,7 @@ export default {
       {
         fontFamily: "Eau",
         fontWeight: "400",
-        src: 'url(/assets/fonts/eau_sans_book.ttf) format("ttf")',
+        src: 'url(/assets/fonts/eau_sans_book.woff2) format("woff2")',
       },
     ],
   },
