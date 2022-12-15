@@ -5,8 +5,7 @@ import organizersQuery from "./queries/organizersQuery.ts";
 import scheduleQuery from "./queries/scheduleQuery.ts";
 import speakersQuery from "./queries/speakersQuery.ts";
 
-// const CONFERENCE = "future-frontend-2023";
-const CONFERENCE = "react-finland-2022";
+const CONFERENCE = "future-frontend-2023";
 
 const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
 
