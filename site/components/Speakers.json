@@ -11,6 +11,7 @@
             "class": "rounded-full object-contain h-32",
             "attributes": {
               "alt": { "utility": "get", "parameters": ["props", "about"] },
+              "loading": "lazy",
               "src": {
                 "utility": "get",
                 "parameters": ["props", "image.url"]
