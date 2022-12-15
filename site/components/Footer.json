@@ -1,6 +1,6 @@
 {
   "type": "footer",
-  "class": "bg-black py-8",
+  "class": "bg-black py-8 bg-gradient-to-br from-secondary to-primary",
   "children": [
     {
       "type": "div",

@@ -5,7 +5,7 @@
     "children": [
       {
         "type": "h2",
-        "class": "text-4xl flex flex-row gap-2",
+        "class": "text-4xl flex flex-row gap-2 font-primary text-primary",
         "children": [
           {
             "type": "span",

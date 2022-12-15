@@ -1,6 +1,6 @@
 {
   "type": "header",
-  "class": "bg-black py-8",
+  "class": "bg-black py-8 bg-gradient-to-br from-primary to-secondary",
   "children": [
     {
       "type": "div",
@@ -21,7 +21,7 @@
           "children": [
             {
               "type": "h1",
-              "class": "text-4xl md:text-6xl",
+              "class": "text-4xl md:text-8xl",
               "children": [
                 {
                   "type": "span",

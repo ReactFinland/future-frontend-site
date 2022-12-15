@@ -5,7 +5,12 @@ import twindTypography from "https://cdn.skypack.dev/@twind/typography@0.0.2?min
 export default {
   theme: {
     extend: {
-      colors: twindColors,
+      colors: {
+        ...twindColors,
+        primary: "#0f0349", // "#4a25f5",
+        secondary: "#84ebec",
+        tertiary: "#d239f6",
+      },
       fontFamily: {
         "primary": '"Eau"',
       },
