@@ -78,7 +78,7 @@ function transformMarkdown(input: string) {
 
         return '<a href="#' + slug + '"><h' +
           level +
-          ' class="' + tw`inline` + '"' +
+          ' class="' + tw`inline font-primary` + '"' +
           ' id="' +
           slug +
           '">' +
