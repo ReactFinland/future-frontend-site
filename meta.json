@@ -6,12 +6,6 @@
     "siteName": "Future Frontend",
     "url": "https://future-frontend.com"
   },
-  "scripts": [
-    {
-      "type": "text/javascript",
-      "src": "https://unpkg.com/sidewind@7.6.0/dist/sidewind.umd.production.min.js"
-    }
-  ],
   "paths": {
     "assets": "./assets",
     "components": "./site/components",
