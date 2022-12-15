@@ -4,6 +4,7 @@
     "class": "mj-w-res-iframe",
     "attributes": {
       "frameborder": "0",
+      "loading": "lazy",
       "scrolling": "no",
       "marginheight": "0",
       "marginwidth": "0",
