@@ -1,0 +1,21 @@
+[
+  {
+    "type": "iframe",
+    "class": "mj-w-res-iframe",
+    "attributes": {
+      "frameborder": "0",
+      "scrolling": "no",
+      "marginheight": "0",
+      "marginwidth": "0",
+      "src": "https://app.mailjet.com/widget/iframe/5h9R/OZi",
+      "width": "100%"
+    }
+  },
+  {
+    "type": "script",
+    "attributes": {
+      "type": "text/javascript",
+      "src": "https://app.mailjet.com/statics/js/iframeResizer.min.js"
+    }
+  }
+]

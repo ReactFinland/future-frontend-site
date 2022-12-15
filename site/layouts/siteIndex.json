@@ -104,6 +104,9 @@
             }
           },
           {
+            "type": "Subscribe"
+          },
+          {
             "todo_type": "AllSponsors",
             "bindToProps": {
               "conference": {
