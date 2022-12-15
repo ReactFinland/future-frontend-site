@@ -2,7 +2,7 @@ Frontend is a part of an application, or an experience, that is the most visible
 
 Future Frontend is the successor of [React Finland](https://react-finland.fi/). The new concept allows us to explore areas related to frontend development that weren't feasible earlier. As React has become stable as a technology, we felt it's time for something else and that is what the conference represents.
 
-## Frontend Future in a nutshell
+## Future Frontend in a nutshell
 
 The conference follows good practices we discovered while running React Finland and we've summarized it below:
 
@@ -12,7 +12,7 @@ The conference follows good practices we discovered while running React Finland 
 
 ## Why should I come to the Future Frontend conference?
 
-Conferences like Frontend Future compress time and space. They bring people with wildly different backgrounds together in the same space for a short file. It's a time for meeting new people, getting inspired, and learning.
+Conferences like Future Frontend compress time and space. They bring people with wildly different backgrounds together in the same space for a short file. It's a time for meeting new people, getting inspired, and learning.
 
 Our full week format guarantees you'll get all this. The workshop days allow you to learn a lot while the conference days are great for networking. On top of this, traditionally our partners have organized casual program at the end of the days.
 
