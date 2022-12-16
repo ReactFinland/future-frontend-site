@@ -20,7 +20,7 @@ We are offering the perfect spot for companies to promote their knowledge and pr
 
 &nbsp; | BRONZE | SILVER | GOLD
 -|-|-|-
-Cost (VAT 0) | 3.000 € | 5000 € | 10.000 €
+Cost (VAT 0) | 3.000€ | 5.000€ | 10.000€
 Available | 6 | 4 | 2
 Conference tickets | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
 Visibility on social media and website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
