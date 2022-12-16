@@ -51,6 +51,10 @@ function validateUrl(_: Context, url: string) {
   throw new Error(`Failed to find matching url for "${url}"`);
 }
 
+function pluralize(_: Context, items: unknown[]) {
+  return items.length > 1 ? "s" : "";
+}
+
 let foundIds: Record<string, number> = {};
 function getUniqueAnchorId({ pathname }: Context, anchor: string) {
   if (!anchor) {
@@ -92,6 +96,7 @@ export {
   getUniqueAnchorId,
   getYear,
   markdown,
+  pluralize,
   trim,
   validateUrl,
 };
