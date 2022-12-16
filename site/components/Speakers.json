@@ -55,10 +55,7 @@
               {
                 "type": "Link",
                 "bindToProps": {
-                  "children": {
-                    "utility": "get",
-                    "parameters": ["props", "social.homepage"]
-                  },
+                  "children": "Homepage",
                   "href": {
                     "utility": "get",
                     "parameters": ["props", "social.homepage"]
