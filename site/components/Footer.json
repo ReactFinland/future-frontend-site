@@ -41,6 +41,19 @@
               }
             }
           ]
+        },
+        {
+          "type": "div",
+          "class": "flex flex-col gap-4",
+          "children": [
+            {
+              "type": "Link",
+              "props": {
+                "children": "For sponsors",
+                "href": "for-sponsors"
+              }
+            }
+          ]
         }
       ]
     }

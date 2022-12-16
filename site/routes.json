@@ -32,6 +32,20 @@
       }
     ]
   },
+  "for-sponsors": {
+    "layout": "for-sponsors",
+    "meta": {
+      "title": "For sponsors",
+      "description": "Want to sponsor Future Frontend? Read this."
+    },
+    "dataSources": [
+      {
+        "operation": "readFile",
+        "parameters": ["./content/for-sponsors.md"],
+        "name": "for-sponsors"
+      }
+    ]
+  },
   "organizers": {
     "layout": "organizers",
     "meta": {
