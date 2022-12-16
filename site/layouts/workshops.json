@@ -1,0 +1,25 @@
+{
+  "type": "BaseLayout",
+  "props": {
+    "content": [
+      {
+        "type": "div",
+        "class": "flex flex-col gap-8",
+        "children": [
+          {
+            "type": "Workshops",
+            "bindToProps": {
+              "children": {
+                "utility": "get",
+                "parameters": [
+                  "context",
+                  "workshops"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

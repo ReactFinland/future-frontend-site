@@ -4,6 +4,7 @@ import indexQuery from "./queries/indexQuery.ts";
 import organizersQuery from "./queries/organizersQuery.ts";
 import scheduleQuery from "./queries/scheduleQuery.ts";
 import speakersQuery from "./queries/speakersQuery.ts";
+import workshopsQuery from "./queries/workshopsQuery.ts";
 
 const CONFERENCE = "future-frontend-2023";
 
@@ -30,6 +31,7 @@ async function queryData(queryName: string) {
     organizers: { query: organizersQuery, key: "conference.organizers" },
     schedule: { query: scheduleQuery, key: "conference.schedules" },
     speakers: { query: speakersQuery, key: "conference.allSpeakers" },
+    workshops: { query: workshopsQuery, key: "conference.workshops" },
   }[queryName];
 
   if (!match) {

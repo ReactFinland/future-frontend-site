@@ -87,5 +87,19 @@
         "name": "speakers"
       }
     ]
+  },
+  "workshops": {
+    "layout": "workshops",
+    "meta": {
+      "title": "Workshops",
+      "description": "Workshops of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["workshops"],
+        "name": "workshops"
+      }
+    ]
   }
 }

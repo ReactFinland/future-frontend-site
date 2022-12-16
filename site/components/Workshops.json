@@ -1,0 +1,78 @@
+{
+  "foreach": [{ "utility": "get", "parameters": ["props", "children"] }, {
+    "type": "div",
+    "class": "flex flex-col gap-4",
+    "children": [
+      {
+        "type": "h2",
+        "class": "text-4xl",
+        "children": {
+          "utility": "concat",
+          "parameters": [
+            {
+              "utility": "getDate",
+              "parameters": [
+                {
+                  "utility": "get",
+                  "parameters": [
+                    "props",
+                    "day"
+                  ]
+                }
+              ]
+            },
+            " – ",
+            {
+              "utility": "get",
+              "parameters": ["props", "title"]
+            }
+          ]
+        }
+      },
+      {
+        "type": "h3",
+        "class": "text-3xl",
+        "children": {
+          "utility": "concat",
+          "parameters": ["Instructor", {
+            "utility": "pluralize",
+            "parameters": [{
+              "utility": "get",
+              "parameters": ["props", "speakers"]
+            }]
+          }]
+        }
+      },
+      {
+        "type": "Speakers",
+        "bindToProps": {
+          "children": {
+            "utility": "get",
+            "parameters": [
+              "props",
+              "speakers"
+            ]
+          }
+        }
+      },
+      {
+        "type": "h3",
+        "class": "text-3xl",
+        "children": "Description"
+      },
+      {
+        "type": "Markdown",
+        "bindToProps": {
+          "inputText": {
+            "utility": "get",
+            "parameters": ["props", "description"]
+          }
+        },
+        "props": {
+          "class": "prose lg:prose-xl",
+          "type": "div"
+        }
+      }
+    ]
+  }]
+}

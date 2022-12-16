@@ -23,6 +23,13 @@
   {
     "type": "Link",
     "props": {
+      "children": "Workshops",
+      "href": "workshops"
+    }
+  },
+  {
+    "type": "Link",
+    "props": {
       "children": "Organizers",
       "href": "organizers"
     }
