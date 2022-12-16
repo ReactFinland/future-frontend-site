@@ -38,4 +38,4 @@ The \* means we'll let people decide whether they want swag and what kind of swa
 
 ## How to Sponsor?
 
-If you are interested in any of our sponsorship packages, get in touch (info <at> futurefrontend.com)!
+If you are interested in any of our sponsorship packages, get in touch (info \<at> futurefrontend.com)!
