@@ -31,7 +31,7 @@ Logo on slides between the talks | &#10003; | &#10003; | &#10003;
 Job announcements | | &#10003; | &#10003;
 Area in sponsor lounge for booths / promotion | | &#10003; | &#10003;
 Item in the goodie bag* | | | &#10003;
-Attendance for the speaker events (e.g. the speakers' dinner) | | | &#9786;
+Attendance for the speaker events (e.g., the speakers' dinner) | | | &#9786;
 Special requests | | | &#10003;
 
 The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious. If attendees don't want swag, we'll use the equivalent amount of money for charity instead.
