@@ -104,6 +104,19 @@
             }
           },
           {
+            "type": "h2",
+            "class": "text-4xl font-primary text-primary",
+            "children": "Buy tickets"
+          },
+          {
+            "type": "Tito"
+          },
+          {
+            "type": "h2",
+            "class": "text-4xl font-primary text-primary",
+            "children": "Newsletter"
+          },
+          {
             "type": "Subscribe"
           },
           {

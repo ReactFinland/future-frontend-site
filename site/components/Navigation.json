@@ -26,5 +26,12 @@
       "children": "Organizers",
       "href": "organizers"
     }
+  },
+  {
+    "type": "Link",
+    "props": {
+      "children": "Buy tickets",
+      "href": "https://ti.to/future-frontend/2023"
+    }
   }
 ]

@@ -1,0 +1,15 @@
+[
+  {
+    "type": "script",
+    "attributes": {
+      "async": "",
+      "src": "https://js.tito.io/v2"
+    }
+  },
+  {
+    "type": "tito-widget",
+    "attributes": {
+      "event": "future-frontend/2023"
+    }
+  }
+]
