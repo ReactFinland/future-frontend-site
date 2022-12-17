@@ -22,7 +22,7 @@ What makes our conferences special is that they give you a perfect excuse to vis
 
 At the same time Finland is a little bit exotic as a destination due to its unique culture and weird language. We are also known for our technical prowess and in a way a conference like this is a showcase for the country itself.
 
-Make sure to have time beyond the conference to explore this weird and Nordic country with thousand of lakes and an endless amount of forest.
+Make sure to have time beyond the conference to explore this weird and Nordic country with thousands of lakes and an endless amount of forest.
 
 ## How can I convince my boss to visit Future Frontend?
 
