@@ -30,3 +30,9 @@ Make sure to have time beyond the conference to explore this weird and Nordic co
 In short, it's an investment to you and your professional development. It's not often that you get to meet so many bright minds in so short time. We've taken care to organize workshops with diverse topics and it's no uncommon for our participants to take part in a few to get most out of it. That's not to say there isn't more as there is and you'll find chances to relax in a Finnish sauna and our swimming facilities.
 
 Given the conference is held during the Summer, as a bonus you'll get to experience our long days. We won't charge extra for this.
+
+## What is included to the ticket price?
+
+The conference ticket includes a lunch and refreshments during the breaks. This means you won't have to budget much extra for eating outside of the event unless you want to. Also afterparty (09.06) is included and there will be enough to eat and drink not to mention lighter program (karaoke, board games, etc. depending on what we come up with).
+
+For workshops, we provide at least refreshments during the breaks and in the past we've also included lunch for the full-day ones and for those people participating in two half-day workshops at the same day to reduce stress.
