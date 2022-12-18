@@ -15,6 +15,11 @@
         "operation": "readFile",
         "parameters": ["./content/intro.md"],
         "name": "intro"
+      },
+      {
+        "operation": "readFile",
+        "parameters": ["./content/venue.md"],
+        "name": "venue"
       }
     ]
   },
