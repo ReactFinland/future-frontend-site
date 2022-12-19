@@ -1,6 +1,6 @@
 {
   "type": "header",
-  "class": "bg-black py-8 bg-gradient-to-br from-primary to-secondary",
+  "class": "bg-black py-8 bg-gradient-to-br from-black to-primary",
   "children": [
     {
       "type": "div",
@@ -25,14 +25,14 @@
               "children": [
                 {
                   "type": "span",
+                  "class": "align-middle font-primary text-tertiary",
                   "children": {
                     "utility": "get",
                     "parameters": [
                       "context",
                       "meta.title"
                     ]
-                  },
-                  "class": "align-middle font-primary"
+                  }
                 }
               ]
             },
