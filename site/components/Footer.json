@@ -4,7 +4,7 @@
   "children": [
     {
       "type": "div",
-      "class": "text-white sm:mx-auto px-4 py-4 sm:py-8 max-w-3xl flex flex-row gap-16",
+      "class": "text-white sm:mx-auto px-4 py-4 sm:py-8 max-w-3xl grid grid-cols-2 md:grid-cols-4 gap-16",
       "children": [
         {
           "type": "div",
