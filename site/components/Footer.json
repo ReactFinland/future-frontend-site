@@ -69,6 +69,13 @@
             {
               "type": "Link",
               "props": {
+                "children": "@future_frontend",
+                "href": "https://twitter.com/future_frontend"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
                 "children": "Site source",
                 "href": "https://github.com/ReactFinland/future-frontend-site"
               }
