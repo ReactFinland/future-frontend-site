@@ -90,12 +90,51 @@ function _onRenderStart() {
   foundIds = {};
 }
 
+function offsetByTimezone(_: Context, time: string) {
+  // Fixed to Finnish Summer time
+  // const tzOffset = new Date().getTimezoneOffset() / 60;
+  const tzOffset = -3;
+  const parts = time.split(":");
+  const hours = parseInt(parts[0], 10);
+  const minutes = parts[1];
+  const hoursWithOffset = (hours - tzOffset) % 24;
+
+  if (hours - tzOffset > 24) {
+    return addLeadingZero(hoursWithOffset) + ":" + minutes + " (+1 day)";
+  }
+
+  if (hours - tzOffset < 0) {
+    return addLeadingZero(24 + hoursWithOffset) + ":" + minutes + " (-1 day)";
+  }
+
+  return addLeadingZero(hoursWithOffset) + ":" + minutes;
+}
+
+function addLeadingZero(input: number) {
+  if (input.toString().length === 1) {
+    return "0" + input;
+  }
+
+  return input.toString();
+}
+
+// Use this to calculate time zone offset in a user friendly way
+/*
+function timezoneOffset() {
+  const tzOffset = -(new Date().getTimezoneOffset() / 60);
+  const prefix = tzOffset >= 0 ? "+" : "-";
+
+  return "GMT" + prefix + tzOffset;
+}
+*/
+
 export {
   _onRenderStart,
   getDate,
   getUniqueAnchorId,
   getYear,
   markdown,
+  offsetByTimezone,
   pluralize,
   trim,
   validateUrl,

@@ -44,8 +44,13 @@
                       {
                         "type": "span",
                         "children": {
-                          "utility": "get",
-                          "parameters": ["props", "begin"]
+                          "utility": "offsetByTimezone",
+                          "parameters": [
+                            {
+                              "utility": "get",
+                              "parameters": ["props", "begin"]
+                            }
+                          ]
                         }
                       },
                       {
@@ -55,8 +60,13 @@
                       {
                         "type": "span",
                         "children": {
-                          "utility": "get",
-                          "parameters": ["props", "end"]
+                          "utility": "offsetByTimezone",
+                          "parameters": [
+                            {
+                              "utility": "get",
+                              "parameters": ["props", "end"]
+                            }
+                          ]
                         }
                       }
                     ]

@@ -7,7 +7,7 @@
     }
   },
   {
-    "todo_type": "Link",
+    "type": "Link",
     "props": {
       "children": "Schedule",
       "href": "schedule"
