@@ -45,7 +45,10 @@
             },
             {
               "type": "figcaption",
-              "class": "flex justify-center",
+              "class": {
+                "utility": "get",
+                "parameters": ["props", "captionClass"]
+              },
               "children": {
                 "utility": "get",
                 "parameters": ["props", "name"]

@@ -13,6 +13,10 @@ function getYear(_: Context, d: string) {
 }
 
 function markdown(_: Context, input: string) {
+  if (!input) {
+    return "";
+  }
+
   return md(input).content;
 }
 

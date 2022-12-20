@@ -7,7 +7,6 @@ query PageQuery($conferenceId: ID!) {
       end
       speakers {
         name
-        about
         image {
           url
         }

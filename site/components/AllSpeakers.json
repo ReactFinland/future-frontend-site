@@ -30,6 +30,7 @@
                     "conference.speakers"
                   ]
                 },
+                "captionClass": "flex justify-center",
                 "imgClass": "rounded-full"
               }
             }
@@ -60,6 +61,7 @@
                     "conference.workshopInstructors"
                   ]
                 },
+                "captionClass": "flex justify-center",
                 "imgClass": "rounded-full"
               }
             }
