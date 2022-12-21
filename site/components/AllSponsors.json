@@ -9,6 +9,10 @@
     },
     {
       "type": "div",
+      "visibleIf": [{
+        "utility": "get",
+        "parameters": ["props", "conference.goldSponsors"]
+      }],
       "class": "flex flex-col gap-6",
       "children": [
         {
@@ -38,6 +42,10 @@
     },
     {
       "type": "div",
+      "visibleIf": [{
+        "utility": "get",
+        "parameters": ["props", "conference.silverSponsors"]
+      }],
       "class": "flex flex-col gap-4",
       "children": [
         {
@@ -67,6 +75,10 @@
     },
     {
       "type": "div",
+      "visibleIf": [{
+        "utility": "get",
+        "parameters": ["props", "conference.bronzeSponsors"]
+      }],
       "class": "flex flex-col gap-2",
       "children": [
         {
@@ -97,11 +109,15 @@
     },
     {
       "type": "div",
+      "visibleIf": [{
+        "utility": "get",
+        "parameters": ["props", "conference.partners"]
+      }],
       "class": "flex flex-col gap-1",
       "children": [
         {
           "type": "h3",
-          "class": "text-xl",
+          "class": "text-2xl",
           "children": "Partners"
         },
         {
