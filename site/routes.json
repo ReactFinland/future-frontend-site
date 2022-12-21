@@ -32,7 +32,7 @@
     "dataSources": [
       {
         "operation": "readFile",
-        "parameters": ["./content/intro.md"],
+        "parameters": ["./content/contact.md"],
         "name": "contact"
       }
     ]
