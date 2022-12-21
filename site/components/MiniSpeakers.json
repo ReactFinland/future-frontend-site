@@ -25,7 +25,13 @@
     "children": [
       {
         "type": "figure",
-        "class": "flex flex-col gap-2",
+        "class": {
+          "utility": "concat",
+          "parameters": ["flex flex-col gap-2", " ", {
+            "utility": "get",
+            "parameters": ["props", "imgContainerClass"]
+          }]
+        },
         "children": [
           [
             {
