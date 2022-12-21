@@ -5,5 +5,5 @@ Työpajankatu 17 A 258
 00580 Helsinki
 ```
 
-* info <at> react-finland.fi
+* info \<at> futurefrontend.com
 * VAT: FI30883078

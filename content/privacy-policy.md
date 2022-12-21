@@ -9,7 +9,7 @@ Lauttasaarentie 16 A 17
 00200 Helsinki
 ```
 
-**info <at> react-finland.fi**
+**info \<at> futurefrontend.com**
 
 The responsible party is the natural or legal person who jointly with others decides on the purposes and means of processing personal data (names, email addresses, etc.).
 
@@ -37,19 +37,19 @@ As permitted by law, you have the right to be provided at any time with informat
 
 Depending on what features and services you use we store different data.
 
-### Netlify
+### Cloudflare
 
-The website is hosted via the service Netlify. By visiting the website Netlify stores access logs including the IP addresses, stored for less than 30 days. Learn more in [Netlify Privacy Statement](https://www.netlify.com/privacy/).
+The website is hosted via the service Cloudflare. By visiting the website Cloudflare stores access logs including the IP addresses, stored for less than 30 days. Learn more in [Netlify Privacy Statement](https://www.cloudflare.com/privacypolicy/).
 
-### Fienta
+### Tito
 
-We use Fienta to manage and process the tickets of the conference. An up to date compilation of the personal data they collect and for how long they retain it can be found in their [Fienta Privacy Statement](https://fienta.com/privacy).
+We use Tito to manage and process the tickets of the conference. An up to date compilation of the personal data they collect and for how long they retain it can be found in their [Fienta Privacy Statement](https://ti.to/privacy).
 
 ### Stripe
 
 If you purchase a ticket the payment is handled by Stripe. They store the cardholder name, email address, unique customer identifier, order ID, bank account details, payment card details, card expiration date, CVC code, date/time/amount of transaction, merchant name/ID and location. For further details please see the [Stripe Privacy Statement](https://stripe.com/at/privacy/).
 
-### Mailchimp
+### Mailjet
 
 If you would like to receive our newsletter, we require a valid email address as well as information that allows us to verify that you are the owner of the specified email address and that you agree to receive this newsletter. No additional data is collected or is only collected on a voluntary basis. We only use this data to send the requested information and do not pass it on to third parties.
 
@@ -57,7 +57,7 @@ We will, therefore, process any data you enter onto the contact form only with y
 
 The data provided when registering for the newsletter will be used to distribute the newsletter until you cancel your subscription when said data will be deleted. Data we have stored for other purposes (e.g. email addresses for tickets) remain unaffected.
 
-For further details please see the [Mailchimp Privacy Statement](https://mailchimp.com/legal/privacy/).
+For further details please see the [Mailjet Privacy Statement](https://www.mailjet.com/legal/privacy-policy/).
 
 ### Google Drive
 
@@ -69,7 +69,7 @@ Amazon Web Services are used to manage the domains (DNS) and emails. Some of the
 
 ## Questions and Feedback
 
-We try to keep our privacy policy transparent and easy to understand. In case you have any questions or do not understand parts of it, please let us know if we can improve it further or if you have any other questions: **info <at> react-finland.fi**.
+We try to keep our privacy policy transparent and easy to understand. In case you have any questions or do not understand parts of it, please let us know if we can improve it further or if you have any other questions: **info \<at> futurefrontend.com**.
 
 ## Changes
 
