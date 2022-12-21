@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         "primary": '"Eau"',
+        "monospace": "monospace",
       },
     },
   },

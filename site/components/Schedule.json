@@ -5,7 +5,7 @@
     "children": [
       {
         "type": "h2",
-        "class": "text-4xl flex flex-row gap-2 font-primary text-primary",
+        "class": "text-2xl flex flex-row gap-2 font-primary text-primary",
         "children": [
           {
             "type": "span",
@@ -29,17 +29,18 @@
       },
       {
         "type": "div",
-        "class": "flex flex-col gap-2",
+        "class": "flex flex-col gap-4",
         "children": [
           {
             "foreach": [
               { "utility": "get", "parameters": ["props", "intervals"] },
               {
                 "type": "div",
-                "class": "grid grid-cols-4",
+                "class": "flex flex-row gap-8",
                 "children": [
                   {
                     "type": "div",
+                    "class": "font-monospace text-lg",
                     "children": [
                       {
                         "type": "span",
@@ -81,7 +82,7 @@
                           "parameters": ["props", "title"]
                         }],
                         "type": "h3",
-                        "class": "text-xl",
+                        "class": "text-lg",
                         "children": {
                           "utility": "get",
                           "parameters": ["props", "title"]
