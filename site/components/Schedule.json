@@ -126,7 +126,7 @@
                                   },
                                   "imgContainerClass": "flex-row gap-1",
                                   "captionClass": "text-center",
-                                  "imgClass": "mx-auto rounded-full w-6"
+                                  "imgClass": "hidden md:inline mx-auto rounded-full w-6 h-6"
                                 }
                               }
                             ]
