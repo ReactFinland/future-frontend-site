@@ -8,7 +8,7 @@
       {
         "utility": "trim",
         "parameters": [
-          { "utility": "get", "parameters": ["context", "pathname"] },
+          { "utility": "get", "parameters": ["context", "pagePath"] },
           "/"
         ]
       }

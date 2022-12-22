@@ -1,5 +1,5 @@
+import { tw } from "https://esm.sh/@twind/core@1.1.1";
 import { marked } from "https://unpkg.com/marked@4.0.0/lib/marked.esm.js";
-import { tw } from "https://cdn.skypack.dev/twind@0.16.16?min";
 import highlight from "https://unpkg.com/@highlightjs/cdn-assets@11.3.1/es/core.min.js";
 import highlightBash from "https://unpkg.com/highlight.js@11.3.1/es/languages/bash";
 import highlightJS from "https://unpkg.com/highlight.js@11.3.1/es/languages/javascript";
@@ -57,7 +57,7 @@ function transformMarkdown(input: string) {
         }
 
         return '<pre class="' +
-          tw`overflow-auto -mx-4 md:mx-0 bg-gray-100` +
+          tw("overflow-auto -mx-4 md:mx-0 bg-gray-100") +
           '"><code class="' +
           // @ts-ignore How to type this?
           this.options.langPrefix +
@@ -76,17 +76,20 @@ function transformMarkdown(input: string) {
 
         tableOfContents.push({ slug, level, text });
 
-        return '<a href="#' + slug + '"><h' +
+        return "<h" +
           level +
-          ' class="' + tw`inline font-primary text-primary` + '"' +
           ' id="' +
           slug +
           '">' +
           text +
+          '<a class="' +
+          tw("ml-2 no-underline text-sm align-middle mask-text") +
+          '" href="#' +
+          slug +
+          '">🔗</a>\n' +
           "</h" +
           level +
-          ">" +
-          "</a>\n";
+          ">\n";
       },
       image(href: string, title: string, text: string) {
         const textParts = text ? text.split("|") : [];
@@ -110,6 +113,7 @@ function transformMarkdown(input: string) {
 
         const parts = text.split("|");
 
+        // @ts-expect-error This is fine
         let out = '<a class="' + tw(["underline"].concat(parts[1])) +
           '" href="' + href + '"';
         if (title) {

@@ -21,6 +21,10 @@ function markdown(_: Context, input: string) {
 }
 
 function trim(_: Context, str: string, char: string) {
+  if (!str) {
+    throw new Error("No string to trim!");
+  }
+
   // Exception for /
   if (str === char) {
     return str;
