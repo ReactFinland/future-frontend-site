@@ -1,13 +1,13 @@
 [
   {
-    "path": "https://deno.land/x/gustwind@v0.33.2/plugins/breezewind-router/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.34.0/plugins/breezewind-router/mod.ts",
     "options": {
       "dataSourcesPath": "./site/dataSources.ts",
       "routesPath": "./site/routes.json"
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.33.2/plugins/breezewind-renderer/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.34.0/plugins/breezewind-renderer/mod.ts",
     "options": {
       "componentsPath": "./site/components",
       "metaPath": "./site/meta.json",
@@ -16,14 +16,14 @@
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.33.2/plugins/copy/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.34.0/plugins/copy/mod.ts",
     "options": {
       "inputPath": "./assets",
       "outputPath": "./assets"
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.33.2/plugins/script/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.34.0/plugins/script/mod.ts",
     "options": {
       "scripts": [
         {
@@ -35,7 +35,7 @@
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.33.2/plugins/twind/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.34.0/plugins/twind/mod.ts",
     "options": { "setupPath": "./site/twindSetup.ts" }
   }
 ]

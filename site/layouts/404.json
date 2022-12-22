@@ -1,0 +1,11 @@
+{
+  "type": "BaseLayout",
+  "props": {
+    "content": [
+      {
+        "type": "div",
+        "children": "This is not the page you were looking for."
+      }
+    ]
+  }
+}
