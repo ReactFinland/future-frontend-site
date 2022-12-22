@@ -36,7 +36,7 @@
           },
           {
             "type": "main",
-            "class": "mx-auto my-8 px-4 xl:px-0 w-full max-w-3xl flex flex-col gap-8",
+            "class": "mx-auto my-8 px-4 xl:px-0 w-full max-w-2xl flex flex-col gap-8",
             "children": {
               "utility": "render",
               "parameters": [
