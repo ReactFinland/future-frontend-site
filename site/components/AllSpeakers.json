@@ -61,7 +61,7 @@
                     "conference.workshopInstructors"
                   ]
                 },
-                "captionClass": "flex justify-center",
+                "captionClass": "flex justify-center text-center",
                 "imgClass": "rounded-full"
               }
             }
@@ -92,7 +92,7 @@
                     "conference.mcs"
                   ]
                 },
-                "captionClass": "flex justify-center",
+                "captionClass": "flex justify-center text-center",
                 "imgClass": "rounded-full"
               }
             }
