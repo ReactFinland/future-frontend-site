@@ -76,7 +76,7 @@
     "content": [
       {
         "type": "div",
-        "class": "flex flex-col gap-16",
+        "class": "flex flex-col gap-8",
         "children": [
           {
             "type": "Markdown",
@@ -131,20 +131,30 @@
             }
           },
           {
-            "type": "h2",
-            "class": "text-4xl font-primary text-primary",
-            "children": "Buy tickets"
+            "type": "div",
+            "children": [
+              {
+                "type": "h2",
+                "class": "text-4xl font-primary text-primary",
+                "children": "Buy tickets"
+              },
+              {
+                "type": "Tito"
+              }
+            ]
           },
           {
-            "type": "Tito"
-          },
-          {
-            "type": "h2",
-            "class": "text-4xl font-primary text-primary",
-            "children": "Newsletter"
-          },
-          {
-            "type": "Subscribe"
+            "type": "div",
+            "children": [
+              {
+                "type": "h2",
+                "class": "text-4xl font-primary text-primary",
+                "children": "Newsletter"
+              },
+              {
+                "type": "Subscribe"
+              }
+            ]
           },
           {
             "type": "AllSponsors",
