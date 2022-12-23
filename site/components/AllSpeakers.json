@@ -30,7 +30,7 @@
                     "conference.speakers"
                   ]
                 },
-                "captionClass": "flex justify-center",
+                "captionClass": "flex justify-center text-center",
                 "imgClass": "rounded-full"
               }
             }
