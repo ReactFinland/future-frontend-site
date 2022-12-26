@@ -83,7 +83,9 @@ function transformMarkdown(input: string) {
           '">' +
           text +
           '<a class="' +
-          tw("ml-2 no-underline text-sm align-middle mask-text") +
+          tw(
+            "ml-2 no-underline text-sm align-middle mask-text-gray hover:mask-text-black",
+          ) +
           '" href="#' +
           slug +
           '">🔗</a>\n' +

@@ -11,7 +11,8 @@ export default {
   },
   rules: [
     // https://twind.style/rules#static-rules
-    ["mask-text", { color: "transparent", textShadow: "0 0 black" }],
+    ["mask-text-black", { color: "transparent", textShadow: "0 0 black" }],
+    ["mask-text-gray", { color: "transparent", textShadow: "0 0 gray" }],
   ],
   theme: {
     extend: {
