@@ -9,6 +9,7 @@
           {
             "type": "Speakers",
             "bindToProps": {
+              "class": "flex flex-col gap-8",
               "children": {
                 "utility": "get",
                 "parameters": [

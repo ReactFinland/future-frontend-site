@@ -2,7 +2,7 @@
   "type": "div",
   "class": {
     "utility": "get",
-    "parameters": ["props", "class"]
+    "parameters": ["props", "class", ""]
   },
   "children": [
     {
