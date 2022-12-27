@@ -1,5 +1,8 @@
 {
   "foreach": [{ "utility": "get", "parameters": ["context", "scripts"] }, {
+    "visibleIf": [
+      { "utility": "get", "parameters": ["props", "loadInitially", true] }
+    ],
     "type": "script",
     "attributes": {
       "type": {

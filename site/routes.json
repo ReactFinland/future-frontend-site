@@ -21,7 +21,8 @@
         "parameters": ["./content/venue.md"],
         "name": "venue"
       }
-    ]
+    ],
+    "scripts": [{ "name": "venue", "loadInitially": false }]
   },
   "contact": {
     "layout": "contact",

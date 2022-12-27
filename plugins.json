@@ -1,13 +1,13 @@
 [
   {
-    "path": "https://deno.land/x/gustwind@v0.34.5/plugins/breezewind-router/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.35.2/plugins/breezewind-router/mod.ts",
     "options": {
       "dataSourcesPath": "./site/dataSources.ts",
       "routesPath": "./site/routes.json"
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.34.5/plugins/breezewind-renderer/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.35.2/plugins/breezewind-renderer/mod.ts",
     "options": {
       "componentsPath": "./site/components",
       "metaPath": "./site/meta.json",
@@ -16,14 +16,14 @@
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.34.5/plugins/copy/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.35.2/plugins/copy/mod.ts",
     "options": {
       "inputPath": "./assets",
       "outputPath": "./"
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.34.5/plugins/script/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.35.2/plugins/script/mod.ts",
     "options": {
       "scripts": [
         {
@@ -31,11 +31,11 @@
           "src": "https://unpkg.com/sidewind@7.6.0/dist/sidewind.umd.production.min.js"
         }
       ],
-      "scriptsPath": []
+      "scriptsPath": ["./site/scripts"]
     }
   },
   {
-    "path": "https://deno.land/x/gustwind@v0.34.5/plugins/twind/mod.ts",
+    "path": "https://deno.land/x/gustwind@v0.35.2/plugins/twind/mod.ts",
     "options": { "setupPath": "./site/twindSetup.ts" }
   }
 ]

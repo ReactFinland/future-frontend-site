@@ -26,6 +26,19 @@
     }
   },
   {
+    "_todo": "load this only where the venue map is used",
+    "_reference": "https://web.dev/defer-non-critical-css/",
+    "type": "link",
+    "attributes": {
+      "rel": "preload",
+      "href": "https://unpkg.com/leaflet@1.9.3/dist/leaflet.css",
+      "integrity": "sha384-o/2yZuJZWGJ4s/adjxVW71R+EO/LyCwdQfP5UWSgX/w87iiTXuvDZaejd3TsN7mf",
+      "crossorigin": "anonymous",
+      "as": "style",
+      "onload": "this.onload=null;this.rel='stylesheet'"
+    }
+  },
+  {
     "type": "meta",
     "attributes": {
       "charset": "UTF-8",
