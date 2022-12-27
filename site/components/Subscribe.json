@@ -1,22 +1,34 @@
 [
   {
-    "type": "iframe",
-    "class": "mj-w-res-iframe",
+    "type": "data",
     "attributes": {
-      "frameborder": "0",
-      "loading": "lazy",
-      "scrolling": "no",
-      "marginheight": "0",
-      "marginwidth": "0",
-      "src": "https://app.mailjet.com/widget/iframe/5h9R/OZi",
-      "width": "100%"
+      "id": "mj-w-res-data",
+      "data-token": "16538623741c376c09569d02a0421670",
+      "class": "mj-w-data",
+      "data-apikey": "5h9R",
+      "data-w-id": "P42",
+      "data-lang": "en_US",
+      "data-base": "https://app.mailjet.com",
+      "data-width": "640",
+      "data-height": "434",
+      "data-statics": "statics"
+    }
+  },
+  {
+    "type": "a",
+    "class": "p-4 bg-primary text-white font-primary rounded-lg",
+    "children": "Subscribe to our newsletter to get Future Frontend related news to your email",
+    "attributes": {
+      "data-token": "16538623741c376c09569d02a0421670",
+      "href": "#",
+      "onclick": "mjOpenPopin(event, this)"
     }
   },
   {
     "type": "script",
     "attributes": {
       "type": "text/javascript",
-      "src": "https://app.mailjet.com/statics/js/iframeResizer.min.js"
+      "src": "https://app.mailjet.com/statics/js/widget.modal.js"
     }
   }
 ]

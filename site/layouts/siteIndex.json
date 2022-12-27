@@ -173,17 +173,7 @@
             ]
           },
           {
-            "type": "div",
-            "children": [
-              {
-                "type": "h2",
-                "class": "text-4xl font-primary text-primary",
-                "children": "Newsletter"
-              },
-              {
-                "type": "Subscribe"
-              }
-            ]
+            "type": "Subscribe"
           },
           {
             "type": "AllSponsors",
