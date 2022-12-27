@@ -139,7 +139,26 @@
                 "children": "Buy tickets"
               },
               {
-                "type": "Tito"
+                "type": "LazyLoad",
+                "props": {
+                  "src": "https://js.tito.io/v2",
+                  "children": [
+                    {
+                      "type": "script",
+                      "attributes": {
+                        "x-attr": "",
+                        "async": "",
+                        "@src": "state.src"
+                      }
+                    },
+                    {
+                      "type": "tito-widget",
+                      "attributes": {
+                        "event": "future-frontend/2023"
+                      }
+                    }
+                  ]
+                }
               }
             ]
           },

@@ -1,0 +1,20 @@
+{
+  "type": "div",
+  "attributes": {
+    "x-state": "{ src: '' }",
+    "x-intersect": {
+      "utility": "concat",
+      "parameters": [
+        "{ options: { once: true }, state: { src: '",
+        { "utility": "get", "parameters": ["props", "src"] },
+        "' }}"
+      ]
+    }
+  },
+  "children": {
+    "utility": "render",
+    "parameters": [
+      { "utility": "get", "parameters": ["props", "children"] }
+    ]
+  }
+}
