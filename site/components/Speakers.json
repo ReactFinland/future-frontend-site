@@ -22,7 +22,9 @@
                   "src": {
                     "utility": "get",
                     "parameters": ["props", "image.url"]
-                  }
+                  },
+                  "width": "128",
+                  "height": "128"
                 }
               }, {
                 "type": "figcaption",

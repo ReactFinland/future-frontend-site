@@ -14,7 +14,9 @@
             "attributes": {
               "alt": { "utility": "get", "parameters": ["props", "about"] },
               "loading": "lazy",
-              "src": { "utility": "get", "parameters": ["props", "image.url"] }
+              "src": { "utility": "get", "parameters": ["props", "image.url"] },
+              "width": "192",
+              "height": "192"
             }
           }, {
             "type": "figcaption",

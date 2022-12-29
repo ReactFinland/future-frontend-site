@@ -46,7 +46,9 @@
                 "src": {
                   "utility": "get",
                   "parameters": ["props", "image.url"]
-                }
+                },
+                "width": "102.4",
+                "height": "102.4"
               }
             },
             {
