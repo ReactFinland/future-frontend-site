@@ -16,8 +16,8 @@
   },
   {
     "type": "a",
-    "class": "p-4 bg-primary text-white font-primary rounded-lg",
-    "children": "Subscribe to our newsletter to get Future Frontend related news to your email",
+    "class": "p-4 bg-primary text-white text-center font-primary rounded-lg drop-shadow",
+    "children": "Subscribe to our newsletter to receive Future Frontend related news to your email",
     "attributes": {
       "data-token": "16538623741c376c09569d02a0421670",
       "href": "#",
