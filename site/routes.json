@@ -128,5 +128,8 @@
       "title": "Page not found",
       "description": "This page does not exist"
     }
+  },
+  "og.svg": {
+    "layout": "og"
   }
 }
