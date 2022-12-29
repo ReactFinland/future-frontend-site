@@ -39,7 +39,7 @@
                 "children": [
                   {
                     "type": "div",
-                    "class": "font-monospace text-lg",
+                    "class": "font-monospace text-lg whitespace-nowrap",
                     "children": [
                       {
                         "type": "span",
