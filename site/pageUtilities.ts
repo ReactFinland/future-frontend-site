@@ -65,8 +65,8 @@ function pluralize(_: Context, items: unknown[]) {
 
 let foundIds: Record<string, number> = {};
 function getUniqueAnchorId({ pathname }: Context, anchor: string) {
-  if (!anchor) {
-    throw new Error(`Missing string`);
+  if (!anchor || Array.isArray(anchor) || isObject(anchor)) {
+    return;
   }
 
   let id = slugify(anchor);
@@ -85,6 +85,10 @@ function getUniqueAnchorId({ pathname }: Context, anchor: string) {
 
   return id;
 }
+
+// deno-lint-ignore no-explicit-any
+const isObject = (a: any) =>
+  a !== null && !Array.isArray(a) && typeof a === "object";
 
 function slugify(idBase: string) {
   return idBase

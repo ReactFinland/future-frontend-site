@@ -18,8 +18,11 @@
   },
   "attributes": {
     "id": {
-      "utility": "get",
-      "parameters": ["props", "id"]
+      "utility": "getUniqueAnchorId",
+      "parameters": [{
+        "utility": "get",
+        "parameters": ["props", "children"]
+      }]
     }
   }
 }

@@ -48,13 +48,6 @@
                   "children": {
                     "utility": "get",
                     "parameters": ["props", "name"]
-                  },
-                  "id": {
-                    "utility": "getUniqueAnchorId",
-                    "parameters": [{
-                      "utility": "get",
-                      "parameters": ["props", "name"]
-                    }]
                   }
                 }
               },
