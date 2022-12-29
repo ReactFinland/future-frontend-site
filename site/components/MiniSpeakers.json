@@ -41,7 +41,7 @@
                 "parameters": ["props", "imgClass"]
               },
               "attributes": {
-                "alt": { "utility": "get", "parameters": ["props", "about"] },
+                "alt": { "utility": "get", "parameters": ["props", "name"] },
                 "loading": "lazy",
                 "src": {
                   "utility": "get",
