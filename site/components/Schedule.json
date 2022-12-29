@@ -93,45 +93,51 @@
                         }
                       },
                       {
-                        "foreach": [
+                        "type": "div",
+                        "class": "flex flex-col gap-2",
+                        "children": [
                           {
-                            "utility": "get",
-                            "parameters": ["props", "sessions"]
-                          },
-                          {
-                            "type": "div",
-                            "class": "flex flex-row gap-2",
-                            "children": [
+                            "foreach": [
+                              {
+                                "utility": "get",
+                                "parameters": ["props", "sessions"]
+                              },
                               {
                                 "type": "div",
-                                "children": {
-                                  "utility": "get",
-                                  "parameters": ["props", "title"]
-                                }
-                              },
-                              {
-                                "visibleIf": [
+                                "class": "flex flex-row gap-2",
+                                "children": [
                                   {
-                                    "utility": "get",
-                                    "parameters": ["props", "speakers"]
-                                  }
-                                ],
-                                "children": " – "
-                              },
-                              {
-                                "type": "MiniSpeakers",
-                                "bindToProps": {
-                                  "children": {
-                                    "utility": "get",
-                                    "parameters": [
-                                      "props",
-                                      "speakers"
-                                    ]
+                                    "type": "div",
+                                    "children": {
+                                      "utility": "get",
+                                      "parameters": ["props", "title"]
+                                    }
                                   },
-                                  "imgContainerClass": "flex-row gap-1",
-                                  "captionClass": "text-center",
-                                  "imgClass": "hidden md:inline mx-auto rounded-full w-6 h-6"
-                                }
+                                  {
+                                    "visibleIf": [
+                                      {
+                                        "utility": "get",
+                                        "parameters": ["props", "speakers"]
+                                      }
+                                    ],
+                                    "children": " – "
+                                  },
+                                  {
+                                    "type": "MiniSpeakers",
+                                    "bindToProps": {
+                                      "children": {
+                                        "utility": "get",
+                                        "parameters": [
+                                          "props",
+                                          "speakers"
+                                        ]
+                                      },
+                                      "imgContainerClass": "flex-row gap-1",
+                                      "captionClass": "text-center",
+                                      "imgClass": "hidden md:inline mx-auto rounded-full w-6 h-6"
+                                    }
+                                  }
+                                ]
                               }
                             ]
                           }
