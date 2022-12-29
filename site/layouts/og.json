@@ -43,6 +43,104 @@
         "height": "100%",
         "fill": "url(#backgroundGradient)"
       }
+    },
+    {
+      "type": "text",
+      "attributes": {
+        "text-anchor": "start",
+        "font-family": "Eau",
+        "font-size": "140",
+        "fill": "#d239f6"
+      },
+      "children": [
+        {
+          "type": "tspan",
+          "attributes": {
+            "x": "80",
+            "y": "200"
+          },
+          "children": "Future"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "attributes": {
+        "text-anchor": "start",
+        "font-family": "Eau",
+        "font-size": "140",
+        "fill": "#d239f6"
+      },
+      "children": [
+        {
+          "type": "tspan",
+          "attributes": {
+            "x": "80",
+            "y": "340"
+          },
+          "children": "Frontend"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "attributes": {
+        "text-anchor": "start",
+        "font-family": "ui-sans-serif, system-ui",
+        "font-size": "40",
+        "font-weight": "200",
+        "fill": "white"
+      },
+      "children": [
+        {
+          "type": "tspan",
+          "attributes": {
+            "x": "80",
+            "y": "440"
+          },
+          "children": "The future of frontend reimagined"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "attributes": {
+        "text-anchor": "start",
+        "font-family": "ui-sans-serif, system-ui",
+        "font-size": "40",
+        "font-weight": "200",
+        "fill": "white"
+      },
+      "children": [
+        {
+          "type": "tspan",
+          "attributes": {
+            "x": "80",
+            "y": "520"
+          },
+          "children": "5.6-9.6.2023"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "attributes": {
+        "text-anchor": "start",
+        "font-family": "ui-sans-serif, system-ui",
+        "font-size": "40",
+        "font-weight": "200",
+        "fill": "white"
+      },
+      "children": [
+        {
+          "type": "tspan",
+          "attributes": {
+            "x": "380",
+            "y": "520"
+          },
+          "children": "Pörssitalo, Helsinki, Finland"
+        }
+      ]
     }
   ]
 }
