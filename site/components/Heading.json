@@ -1,0 +1,25 @@
+{
+  "type": {
+    "utility": "concat",
+    "parameters": ["h", { "utility": "get", "parameters": ["props", "level"] }]
+  },
+  "class": {
+    "utility": "get",
+    "parameters": ["props", "class"]
+  },
+  "children": {
+    "utility": "render",
+    "parameters": [
+      {
+        "utility": "get",
+        "parameters": ["props", "children"]
+      }
+    ]
+  },
+  "attributes": {
+    "id": {
+      "utility": "get",
+      "parameters": ["props", "id"]
+    }
+  }
+}

@@ -4,16 +4,21 @@
     "class": "flex flex-col gap-4",
     "children": [
       {
-        "type": "h2",
-        "class": "text-4xl",
-        "children": {
-          "utility": "concat",
-          "parameters": [
-            {
-              "utility": "get",
-              "parameters": ["props", "title"]
-            }
-          ]
+        "type": "Heading",
+        "props": {
+          "level": 2,
+          "class": "text-4xl"
+        },
+        "bindToProps": {
+          "children": {
+            "utility": "concat",
+            "parameters": [
+              {
+                "utility": "get",
+                "parameters": ["props", "title"]
+              }
+            ]
+          }
         }
       },
       {
@@ -73,17 +78,22 @@
                 }
               },
               {
-                "type": "h3",
-                "class": "text-2xl sr-only",
-                "children": {
-                  "utility": "concat",
-                  "parameters": ["Instructor", {
-                    "utility": "pluralize",
-                    "parameters": [{
-                      "utility": "get",
-                      "parameters": ["props", "speakers"]
+                "type": "Heading",
+                "props": {
+                  "level": 3,
+                  "class": "sr-only"
+                },
+                "bindToProps": {
+                  "children": {
+                    "utility": "concat",
+                    "parameters": ["Instructor", {
+                      "utility": "pluralize",
+                      "parameters": [{
+                        "utility": "get",
+                        "parameters": ["props", "speakers"]
+                      }]
                     }]
-                  }]
+                  }
                 }
               },
               {
@@ -106,9 +116,12 @@
             "type": "div",
             "children": [
               {
-                "type": "h3",
-                "class": "text-3xl sr-only",
-                "children": "Description"
+                "type": "Heading",
+                "props": {
+                  "level": 3,
+                  "class": "text-3xl sr-only",
+                  "children": "Description"
+                }
               },
               {
                 "type": "Markdown",

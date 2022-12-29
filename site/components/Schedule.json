@@ -4,28 +4,27 @@
     "class": "flex flex-col gap-2",
     "children": [
       {
-        "type": "h2",
-        "class": "text-2xl flex flex-row gap-2 font-primary text-primary",
-        "children": [
-          {
-            "type": "span",
-            "children": {
-              "utility": "get",
-              "parameters": ["props", "day"]
-            }
-          },
-          {
-            "type": "span",
-            "children": "-"
-          },
-          {
-            "type": "span",
-            "children": {
-              "utility": "get",
-              "parameters": ["props", "description"]
-            }
+        "type": "Heading",
+        "props": {
+          "level": 2,
+          "class": "text-2xl flex flex-row gap-2 font-primary text-primary"
+        },
+        "bindToProps": {
+          "children": {
+            "utility": "concat",
+            "parameters": [
+              {
+                "utility": "get",
+                "parameters": ["props", "day"]
+              },
+              " - ",
+              {
+                "utility": "get",
+                "parameters": ["props", "description"]
+              }
+            ]
           }
-        ]
+        }
       },
       {
         "type": "div",
@@ -81,11 +80,16 @@
                           "utility": "get",
                           "parameters": ["props", "title"]
                         }],
-                        "type": "h3",
-                        "class": "text-lg",
-                        "children": {
-                          "utility": "get",
-                          "parameters": ["props", "title"]
+                        "type": "Heading",
+                        "props": {
+                          "level": 3,
+                          "class": "text-lg"
+                        },
+                        "bindToProps": {
+                          "children": {
+                            "utility": "get",
+                            "parameters": ["props", "title"]
+                          }
                         }
                       },
                       {

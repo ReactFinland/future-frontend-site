@@ -3,18 +3,24 @@
   "class": "flex flex-col gap-8",
   "children": [
     {
-      "type": "h2",
-      "children": "Speakers",
-      "class": "sr-only"
+      "type": "Heading",
+      "props": {
+        "level": 2,
+        "children": "Speakers",
+        "class": "sr-only"
+      }
     },
     {
       "type": "div",
       "class": "flex flex-col gap-4",
       "children": [
         {
-          "type": "h3",
-          "class": "text-4xl",
-          "children": "Speakers"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "Speakers",
+            "class": "text-4xl"
+          }
         },
         {
           "type": "div",
@@ -43,9 +49,12 @@
       "class": "flex flex-col gap-4",
       "children": [
         {
-          "type": "h3",
-          "class": "text-4xl",
-          "children": "Workshop instructors"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "Workshop instructors",
+            "class": "text-4xl"
+          }
         },
         {
           "type": "div",
@@ -74,9 +83,12 @@
       "class": "flex flex-col gap-4",
       "children": [
         {
-          "type": "h3",
-          "class": "text-4xl",
-          "children": "MCs"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "MCs",
+            "class": "text-4xl"
+          }
         },
         {
           "type": "div",

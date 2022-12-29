@@ -20,21 +20,24 @@
           "class": "flex flex-col gap-8",
           "children": [
             {
-              "type": "h1",
-              "class": "text-4xl md:text-8xl",
-              "children": [
-                {
-                  "type": "span",
-                  "class": "align-middle font-primary text-tertiary",
-                  "children": {
-                    "utility": "get",
-                    "parameters": [
-                      "context",
-                      "meta.title"
-                    ]
+              "type": "Heading",
+              "props": {
+                "level": 1,
+                "class": "text-4xl md:text-8xl",
+                "children": [
+                  {
+                    "type": "span",
+                    "class": "align-middle font-primary text-tertiary",
+                    "children": {
+                      "utility": "get",
+                      "parameters": [
+                        "context",
+                        "meta.title"
+                      ]
+                    }
                   }
-                }
-              ]
+                ]
+              }
             },
             {
               "children": {

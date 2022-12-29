@@ -3,9 +3,12 @@
   "class": "flex flex-col gap-8",
   "children": [
     {
-      "type": "h2",
-      "children": "Sponsors",
-      "class": "sr-only"
+      "type": "Heading",
+      "props": {
+        "level": 2,
+        "children": "Sponsors",
+        "class": "sr-only"
+      }
     },
     {
       "type": "div",
@@ -16,9 +19,12 @@
       "class": "flex flex-col gap-6",
       "children": [
         {
-          "type": "h3",
-          "class": "text-6xl",
-          "children": "Gold sponsor"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "Gold sponsors",
+            "class": "text-6xl"
+          }
         },
         {
           "type": "div",
@@ -49,9 +55,12 @@
       "class": "flex flex-col gap-4",
       "children": [
         {
-          "type": "h3",
-          "class": "text-4xl",
-          "children": "Silver sponsors"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "Silver sponsors",
+            "class": "text-4xl"
+          }
         },
         {
           "type": "div",
@@ -82,9 +91,12 @@
       "class": "flex flex-col gap-2",
       "children": [
         {
-          "type": "h3",
-          "class": "text-2xl",
-          "children": "Bronze sponsors"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "Bronze sponsors",
+            "class": "text-2xl"
+          }
         },
         {
           "type": "div",
@@ -116,9 +128,12 @@
       "class": "flex flex-col gap-1",
       "children": [
         {
-          "type": "h3",
-          "class": "text-2xl",
-          "children": "Partners"
+          "type": "Heading",
+          "props": {
+            "level": 3,
+            "children": "Partners",
+            "class": "text-2xl"
+          }
         },
         {
           "type": "div",
