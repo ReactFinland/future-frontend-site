@@ -23,6 +23,7 @@
               "type": "Heading",
               "props": {
                 "level": 1,
+                "hideAnchor": true,
                 "class": "text-4xl md:text-8xl",
                 "children": [
                   {

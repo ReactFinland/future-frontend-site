@@ -76,6 +76,8 @@ function transformMarkdown(input: string) {
 
         tableOfContents.push({ slug, level, text });
 
+        // TODO: Render this through the Heading component as that's easier to maintain. It can
+        // also calculate the slugs.
         return "<h" +
           level +
           ' id="' +

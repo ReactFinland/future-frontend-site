@@ -2,6 +2,10 @@ import md from "./transforms/markdown.ts";
 import routes from "./routes.json" assert { type: "json" };
 import type { Context } from "https://deno.land/x/gustwind@v0.30.1/breezewind/types.ts ";
 
+function invert(_: Context, b: boolean) {
+  return !b;
+}
+
 function getDate(_: Context, d: string) {
   const date = new Date(d);
 
@@ -145,6 +149,7 @@ export {
   getDate,
   getUniqueAnchorId,
   getYear,
+  invert,
   markdown,
   offsetByTimezone,
   pluralize,

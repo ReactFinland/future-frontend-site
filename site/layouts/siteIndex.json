@@ -5,6 +5,7 @@
       {
         "type": "Heading",
         "props": {
+          "hideAnchor": true,
           "level": 2,
           "class": "text-xl md:text-4xl font-extralight"
         },
@@ -22,13 +23,15 @@
           {
             "type": "Heading",
             "props": {
+              "hideAnchor": true,
               "level": 3,
               "class": "text-xl md:text-4xl font-extralight"
             },
             "bindToProps": {
-              "children": [
-                {
-                  "children": {
+              "children": {
+                "utility": "concat",
+                "parameters": [
+                  {
                     "utility": "getDate",
                     "parameters": [
                       {
@@ -39,11 +42,9 @@
                         ]
                       }
                     ]
-                  }
-                },
-                { "children": "-" },
-                {
-                  "children": {
+                  },
+                  "-",
+                  {
                     "utility": "getDate",
                     "parameters": [
                       {
@@ -54,11 +55,9 @@
                         ]
                       }
                     ]
-                  }
-                },
-                { "children": "." },
-                {
-                  "children": {
+                  },
+                  ".",
+                  {
                     "utility": "getYear",
                     "parameters": [
                       {
@@ -70,14 +69,15 @@
                       }
                     ]
                   }
-                }
-              ]
+                ]
+              }
             }
           },
           {
             "_todo": "resolve this from graphql api",
             "type": "Heading",
             "props": {
+              "hideAnchor": true,
               "level": 3,
               "class": "text-xl md:text-4xl font-extralight",
               "children": "Pörssitalo, Helsinki, Finland"
