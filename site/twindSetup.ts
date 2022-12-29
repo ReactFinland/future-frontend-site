@@ -1,6 +1,7 @@
 import presetAutoprefix from "https://esm.sh/@twind/preset-autoprefix@1.0.5";
 import presetTailwind from "https://esm.sh/@twind/preset-tailwind@1.1.1";
 import presetTypography from "https://esm.sh/@twind/preset-typography@1.0.5";
+import meta from "./meta.json" assert { type: "json" };
 
 export default {
   presets: [presetAutoprefix(), presetTailwind(), presetTypography()],
@@ -16,11 +17,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: "#3a2fa6",
-        secondary: "#84ebec",
-        tertiary: "#d239f6",
-      },
+      colors: meta.colors,
       fontFamily: {
         "primary": 'system-ui, "Eau"',
         "monospace": "monospace",

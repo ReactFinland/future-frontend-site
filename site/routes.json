@@ -130,6 +130,10 @@
     }
   },
   "og.svg": {
-    "layout": "og"
+    "layout": "og",
+    "meta": {
+      "firstLine": "Future",
+      "secondLine": "Frontend"
+    }
   }
 }

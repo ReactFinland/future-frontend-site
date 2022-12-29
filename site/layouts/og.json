@@ -30,7 +30,10 @@
           "type": "stop",
           "attributes": {
             "offset": "100%",
-            "stop-color": "#3a2fa6"
+            "stop-color": {
+              "utility": "get",
+              "parameters": ["context", "colors.primary"]
+            }
           }
         }
       ]
@@ -50,7 +53,10 @@
         "text-anchor": "start",
         "font-family": "Eau",
         "font-size": "140",
-        "fill": "#d239f6"
+        "fill": {
+          "utility": "get",
+          "parameters": ["context", "colors.tertiary"]
+        }
       },
       "children": [
         {
@@ -59,7 +65,10 @@
             "x": "80",
             "y": "200"
           },
-          "children": "Future"
+          "children": {
+            "utility": "get",
+            "parameters": ["context", "meta.firstLine"]
+          }
         }
       ]
     },
@@ -69,7 +78,10 @@
         "text-anchor": "start",
         "font-family": "Eau",
         "font-size": "140",
-        "fill": "#d239f6"
+        "fill": {
+          "utility": "get",
+          "parameters": ["context", "colors.tertiary"]
+        }
       },
       "children": [
         {
@@ -78,7 +90,10 @@
             "x": "80",
             "y": "340"
           },
-          "children": "Frontend"
+          "children": {
+            "utility": "get",
+            "parameters": ["context", "meta.secondLine"]
+          }
         }
       ]
     },
