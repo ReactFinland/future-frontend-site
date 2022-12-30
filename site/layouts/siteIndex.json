@@ -157,11 +157,19 @@
             "type": "div",
             "children": [
               {
-                "type": "Heading",
+                "type": "Link",
                 "props": {
-                  "level": 2,
-                  "children": "Buy tickets",
-                  "class": "text-4xl font-primary text-primary"
+                  "children": [
+                    {
+                      "type": "Heading",
+                      "props": {
+                        "level": 2,
+                        "children": "Buy tickets",
+                        "class": "text-4xl font-primary text-primary"
+                      }
+                    }
+                  ],
+                  "href": "https://ti.to/future-frontend/2023"
                 }
               },
               {
