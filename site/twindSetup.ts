@@ -30,10 +30,10 @@ export default {
   preflight: {
     "@font-face": [
       {
-        fontFamily: "Eau",
+        fontFamily: "system-ui, Eau",
         fontDisplay: "swap",
         fontWeight: "400",
-        src: 'system-ui, url(/fonts/eau_sans_book.woff2) format("woff2")',
+        src: 'url(/fonts/eau_sans_book.woff2) format("woff2")',
       },
     ],
   },
