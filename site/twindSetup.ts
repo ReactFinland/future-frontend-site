@@ -22,7 +22,7 @@ export default {
         tertiary: "#d239f6",
       },
       fontFamily: {
-        "primary": '"Eau"',
+        "primary": 'system-ui, "Eau"',
         "monospace": "monospace",
       },
     },
@@ -30,7 +30,7 @@ export default {
   preflight: {
     "@font-face": [
       {
-        fontFamily: "system-ui, Eau",
+        fontFamily: "Eau",
         fontDisplay: "swap",
         fontWeight: "400",
         src: 'url(/fonts/eau_sans_book.woff2) format("woff2")',
