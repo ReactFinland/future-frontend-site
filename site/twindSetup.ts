@@ -25,6 +25,9 @@ export default {
         "primary": 'system-ui, "Eau"',
         "monospace": "monospace",
       },
+      backgroundImage: {
+        "map": "url(/images/map.png)",
+      },
     },
   },
   preflight: {
