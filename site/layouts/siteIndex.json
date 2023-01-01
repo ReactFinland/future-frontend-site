@@ -119,7 +119,7 @@
           },
           {
             "type": "div",
-            "class": "w-full h-96 bg-map",
+            "class": "w-full h-96 bg-map bg-center",
             "attributes": {
               "id": "venue-map"
             }
