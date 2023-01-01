@@ -67,7 +67,7 @@
           },
           "children": {
             "utility": "get",
-            "parameters": ["context", "meta.firstLine"]
+            "parameters": ["context", "meta.title"]
           }
         }
       ]
@@ -77,7 +77,7 @@
       "attributes": {
         "text-anchor": "start",
         "font-family": "Eau",
-        "font-size": "140",
+        "font-size": "80",
         "fill": {
           "utility": "get",
           "parameters": ["context", "colors.tertiary"]
@@ -92,7 +92,7 @@
           },
           "children": {
             "utility": "get",
-            "parameters": ["context", "meta.secondLine"]
+            "parameters": ["context", "meta.subtitle"]
           }
         }
       ]
