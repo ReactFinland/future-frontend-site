@@ -1,5 +1,8 @@
 {
   "type": "BaseLayout",
+  "bindToProps": {
+    "selectedTab": "animals"
+  },
   "props": {
     "content": [
       {
@@ -8,8 +11,13 @@
         "children": [
           {
             "type": "Tabs",
+            "bindToProps": {
+              "selectedTab": {
+                "utility": "get",
+                "parameters": ["props", "selectedTab"]
+              }
+            },
             "props": {
-              "selectedTab": "animals",
               "tabs": [{
                 "id": "animals",
                 "label": "Animals",
