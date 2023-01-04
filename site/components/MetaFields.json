@@ -109,6 +109,20 @@
   {
     "type": "meta",
     "attributes": {
+      "name": "og:image",
+      "content": "/og.png"
+    }
+  },
+  {
+    "type": "meta",
+    "attributes": {
+      "name": "twitter:image",
+      "content": "/og.png"
+    }
+  },
+  {
+    "type": "meta",
+    "attributes": {
       "name": "twitter:description",
       "content": {
         "utility": "get",
