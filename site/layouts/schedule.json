@@ -7,7 +7,23 @@
         "class": "flex flex-col gap-8",
         "children": [
           {
-            "type": "Tabs"
+            "type": "Tabs",
+            "props": {
+              "selectedTab": "animals",
+              "tabs": [{
+                "id": "animals",
+                "label": "Animals",
+                "content": "Animals tab"
+              }, {
+                "id": "languages",
+                "label": "Languages",
+                "content": "Languages tab"
+              }, {
+                "id": "colors",
+                "label": "Colors",
+                "content": "Colors tab"
+              }]
+            }
           },
           {
             "type": "Schedule",

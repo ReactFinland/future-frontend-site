@@ -1,7 +1,17 @@
 {
   "type": "div",
   "attributes": {
-    "x-state": "'animals'",
+    "x-state": {
+      "utility": "concat",
+      "parameters": [
+        "'",
+        {
+          "utility": "get",
+          "parameters": ["props", "selectedTab"]
+        },
+        "'"
+      ]
+    },
     "hidden": "",
     "x-cloak": ""
   },
@@ -9,92 +19,68 @@
     {
       "type": "nav",
       "class": "flex flex-row justify-between cursor-pointer text-white",
-      "children": [
-        {
-          "type": "div",
-          "attributes": {
-            "x-attr": "",
-            "class": "w-full p-2",
-            "@class": {
-              "utility": "concat",
-              "parameters": [
-                "state === 'animals' ? '",
-                { "utility": "tw", "parameters": ["bg-tertiary"] },
-                "' : '",
-                { "utility": "tw", "parameters": ["bg-primary"] },
-                "'"
-              ]
-            },
-            "onclick": "setState('animals')"
+      "foreach": [{ "utility": "get", "parameters": ["props", "tabs"] }, {
+        "type": "div",
+        "attributes": {
+          "x-attr": "",
+          "class": "w-full p-2",
+          "@class": {
+            "utility": "concat",
+            "parameters": [
+              "state === '",
+              { "utility": "get", "parameters": ["props", "id"] },
+              "' ? '",
+              { "utility": "tw", "parameters": ["bg-tertiary"] },
+              "' : '",
+              { "utility": "tw", "parameters": ["bg-primary"] },
+              "'"
+            ]
           },
-          "children": "Animals"
+          "onclick": {
+            "utility": "concat",
+            "parameters": [
+              "setState('",
+              { "utility": "get", "parameters": ["props", "id"] },
+              "')"
+            ]
+          }
         },
-        {
-          "type": "div",
-          "attributes": {
-            "x-attr": "",
-            "class": "w-full p-2",
-            "@class": {
-              "utility": "concat",
-              "parameters": [
-                "state === 'languages' ? '",
-                { "utility": "tw", "parameters": ["bg-tertiary"] },
-                "' : '",
-                { "utility": "tw", "parameters": ["bg-primary"] },
-                "'"
-              ]
-            },
-            "onclick": "setState('languages')"
-          },
-          "children": "Languages"
-        },
-        {
-          "type": "div",
-          "attributes": {
-            "x-attr": "",
-            "class": "w-full p-2",
-            "@class": {
-              "utility": "concat",
-              "parameters": [
-                "state === 'colors' ? '",
-                { "utility": "tw", "parameters": ["bg-tertiary"] },
-                "' : '",
-                { "utility": "tw", "parameters": ["bg-primary"] },
-                "'"
-              ]
-            },
-            "onclick": "setState('colors')"
-          },
-          "children": "Colors"
+        "children": {
+          "utility": "render",
+          "parameters": [
+            {
+              "utility": "get",
+              "parameters": ["props", "label"]
+            }
+          ]
         }
-      ]
+      }]
     },
     {
       "type": "div",
       "class": "m-2",
-      "children": [
-        {
-          "type": "div",
-          "attributes": {
-            "x-if": "state === 'animals'"
-          },
-          "children": "Animals tab"
+      "foreach": [{ "utility": "get", "parameters": ["props", "tabs"] }, {
+        "type": "div",
+        "attributes": {
+          "x-if": {
+            "utility": "concat",
+            "parameters": [
+              "state === '",
+              { "utility": "get", "parameters": ["props", "id"] },
+              "'"
+            ]
+          }
         },
-        {
-          "type": "div",
-          "attributes": {
-            "x-if": "state === 'languages'"
-          },
-          "children": "Languages tab"
-        },
-        {
-          "type": "div",
-          "attributes": {
-            "x-if": "state === 'colors'"
-          },
-          "children": "Colors tab"
+        "children": {
+          "utility": "render",
+          "parameters": [
+            {
+              "utility": "get",
+              "parameters": ["props", "content"]
+            }
+          ]
         }
-      ]
+      }]
     }
   ]
 }
