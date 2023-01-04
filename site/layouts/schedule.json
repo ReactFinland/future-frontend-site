@@ -7,6 +7,9 @@
         "class": "flex flex-col gap-8",
         "children": [
           {
+            "type": "Tabs"
+          },
+          {
             "type": "Schedule",
             "bindToProps": {
               "children": {

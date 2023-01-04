@@ -1,0 +1,100 @@
+{
+  "type": "div",
+  "attributes": {
+    "x-state": "'animals'",
+    "hidden": "",
+    "x-cloak": ""
+  },
+  "children": [
+    {
+      "type": "nav",
+      "class": "flex flex-row justify-between cursor-pointer text-white",
+      "children": [
+        {
+          "type": "div",
+          "attributes": {
+            "x-attr": "",
+            "class": "w-full p-2",
+            "@class": {
+              "utility": "concat",
+              "parameters": [
+                "state === 'animals' ? '",
+                { "utility": "tw", "parameters": ["bg-tertiary"] },
+                "' : '",
+                { "utility": "tw", "parameters": ["bg-primary"] },
+                "'"
+              ]
+            },
+            "onclick": "setState('animals')"
+          },
+          "children": "Animals"
+        },
+        {
+          "type": "div",
+          "attributes": {
+            "x-attr": "",
+            "class": "w-full p-2",
+            "@class": {
+              "utility": "concat",
+              "parameters": [
+                "state === 'languages' ? '",
+                { "utility": "tw", "parameters": ["bg-tertiary"] },
+                "' : '",
+                { "utility": "tw", "parameters": ["bg-primary"] },
+                "'"
+              ]
+            },
+            "onclick": "setState('languages')"
+          },
+          "children": "Languages"
+        },
+        {
+          "type": "div",
+          "attributes": {
+            "x-attr": "",
+            "class": "w-full p-2",
+            "@class": {
+              "utility": "concat",
+              "parameters": [
+                "state === 'colors' ? '",
+                { "utility": "tw", "parameters": ["bg-tertiary"] },
+                "' : '",
+                { "utility": "tw", "parameters": ["bg-primary"] },
+                "'"
+              ]
+            },
+            "onclick": "setState('colors')"
+          },
+          "children": "Colors"
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "class": "m-2",
+      "children": [
+        {
+          "type": "div",
+          "attributes": {
+            "x-if": "state === 'animals'"
+          },
+          "children": "Animals tab"
+        },
+        {
+          "type": "div",
+          "attributes": {
+            "x-if": "state === 'languages'"
+          },
+          "children": "Languages tab"
+        },
+        {
+          "type": "div",
+          "attributes": {
+            "x-if": "state === 'colors'"
+          },
+          "children": "Colors tab"
+        }
+      ]
+    }
+  ]
+}

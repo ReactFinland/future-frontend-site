@@ -1,4 +1,5 @@
 import md from "./transforms/markdown.ts";
+import { tw as twind } from "https://esm.sh/@twind/core@1.1.1";
 import type { Context } from "https://deno.land/x/gustwind@v0.36.0/breezewind/types.ts ";
 import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts ";
 
@@ -23,6 +24,10 @@ function init({ routes }: { routes: Routes }) {
     }
 
     return md(input).content;
+  }
+
+  function tw(_: Context, input: string) {
+    return twind(input);
   }
 
   function trim(_: Context, str: string, char: string) {
@@ -152,6 +157,7 @@ function timezoneOffset() {
     offsetByTimezone,
     pluralize,
     trim,
+    tw,
     validateUrl,
   };
 }
