@@ -5,7 +5,13 @@ const routes = require('./build/routes.json')
 const ogTemplate = require('./site/layouts/og.json')
 const meta = require('./site/meta.json')
 
+// TODO: Figure out why custom fonts don't get loaded on Cloudflare Pages
+// At least FONTCONFIG_PATH is set but that doesn't seem to be enough and
+// it's unclear how to debug that the font was loaded.
+//
+// Docs: https://sharp.pixelplumbing.com/install#fonts
 async function generateOpengraphImages() {
+  // TODO: This could be parallelized
   for await (const [name, route] of Object.entries(routes)) {
     if (!name.endsWith('.html') && !name.endsWith('.xml')) {
       const svg = await breeze({
