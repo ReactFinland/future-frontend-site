@@ -6,7 +6,7 @@
       "type": "Heading",
       "props": {
         "level": 2,
-        "children": "Speakers",
+        "children": "All speakers",
         "class": "sr-only"
       }
     },
