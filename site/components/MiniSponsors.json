@@ -8,15 +8,39 @@
       }
     },
     "children": [{
-      "type": "img",
-      "class": { "utility": "get", "parameters": ["props", "imgClass"] },
-      "attributes": {
-        "alt": { "utility": "get", "parameters": ["props", "about"] },
-        "loading": "lazy",
-        "src": { "utility": "get", "parameters": ["props", "image.url"] },
-        "width": "100",
-        "height": "100"
-      }
+      "switch": [
+        {
+          "utility": "getExtension",
+          "parameters": [
+            {
+              "utility": "get",
+              "parameters": ["props", "image.url"]
+            }
+          ]
+        },
+        [".svg", {
+          "children": {
+            "utility": "fetch",
+            "parameters": [
+              {
+                "utility": "get",
+                "parameters": ["props", "image.url"]
+              }
+            ]
+          }
+        }],
+        [{
+          "type": "img",
+          "class": { "utility": "get", "parameters": ["props", "imgClass"] },
+          "attributes": {
+            "alt": { "utility": "get", "parameters": ["props", "about"] },
+            "loading": "lazy",
+            "src": { "utility": "get", "parameters": ["props", "image.url"] },
+            "width": "100",
+            "height": "100"
+          }
+        }]
+      ]
     }]
   }]
 }
