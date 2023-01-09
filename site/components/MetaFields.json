@@ -16,6 +16,19 @@
     }
   },
   {
+    "type": "link",
+    "attributes": {
+      "rel": "canonical",
+      "href": {
+        "utility": "concat",
+        "parameters": [
+          { "utility": "get", "parameters": ["context", "meta.url"] },
+          { "utility": "get", "parameters": ["context", "meta.pagePath"] }
+        ]
+      }
+    }
+  },
+  {
     "type": "meta",
     "attributes": {
       "name": "pagepath",
