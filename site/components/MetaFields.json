@@ -23,7 +23,7 @@
         "utility": "concat",
         "parameters": [
           { "utility": "get", "parameters": ["context", "meta.url"] },
-          { "utility": "get", "parameters": ["context", "meta.pagePath"] }
+          { "utility": "get", "parameters": ["context", "pagePath"] }
         ]
       }
     }
@@ -34,7 +34,7 @@
       "name": "pagepath",
       "content": {
         "utility": "get",
-        "parameters": ["context", "meta.pagePath"]
+        "parameters": ["context", "pagePath"]
       }
     }
   },
@@ -123,14 +123,28 @@
     "type": "meta",
     "attributes": {
       "name": "og:image",
-      "content": "./og.png"
+      "content": {
+        "utility": "concat",
+        "parameters": [
+          { "utility": "get", "parameters": ["context", "meta.url"] },
+          { "utility": "get", "parameters": ["context", "pagePath"] },
+          "/og.png"
+        ]
+      }
     }
   },
   {
     "type": "meta",
     "attributes": {
       "name": "twitter:image",
-      "content": "./og.png"
+      "content": {
+        "utility": "concat",
+        "parameters": [
+          { "utility": "get", "parameters": ["context", "meta.url"] },
+          { "utility": "get", "parameters": ["context", "pagePath"] },
+          "/og.png"
+        ]
+      }
     }
   },
   {
