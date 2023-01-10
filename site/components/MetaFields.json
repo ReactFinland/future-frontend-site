@@ -123,14 +123,14 @@
     "type": "meta",
     "attributes": {
       "name": "og:image",
-      "content": "/og.png"
+      "content": "./og.png"
     }
   },
   {
     "type": "meta",
     "attributes": {
       "name": "twitter:image",
-      "content": "/og.png"
+      "content": "./og.png"
     }
   },
   {
