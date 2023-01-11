@@ -1,4 +1,4 @@
-Future Frontend is the successor of [React Finland](https://react-finland.fi/) by the same organizers held 05-09.2023 (05-07 for workshops, 08-09 for conference). As React can be considered stable technology by now, we felt a brand refresh would be in place as it would allow us to do a more interesting conference than sticking to something tried and true. In the new conference, we've taken what we've learned from organizing React Finland and pushed it to the next level.
+Future Frontend is the successor of [React Finland](https://react-finland.fi/) by the same organizers held 06-09.2023 (06-07 for workshops, 08-09 for conference). As React can be considered stable technology by now, we felt a brand refresh would be in place as it would allow us to do a more interesting conference than sticking to something tried and true. In the new conference, we've taken what we've learned from organizing React Finland and pushed it to the next level.
 
 ## International Speakers
 

@@ -6,7 +6,7 @@ Future Frontend is the successor of [React Finland](https://react-finland.fi/). 
 
 The conference follows good practices we discovered while running React Finland and we've summarized it below:
 
-* 05-07.06.2023 - Workshops (sold separately from the conference)
+* 06-07.06.2023 - Workshops (sold separately from the conference)
 * 08-09.06.2023 - Single track conference, 8 themed sessions, 2 speakers per session, 15 speakers in total
 * Location: Helsinki, Finland. The conference itself takes place at [Pörssitalo](http://porssitalo.fi/) while workshops will be held somewhere near (to be decided).
 * Attendees: We can fit 250 people and our target is 200-250 for the first edition. It won't be a big conference.
