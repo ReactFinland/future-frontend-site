@@ -38,8 +38,22 @@
       }
     ]
   },
+  "for-attendees": {
+    "layout": "informationPage",
+    "meta": {
+      "title": "For attendees",
+      "description": "Want to attend Future Frontend? Read this."
+    },
+    "dataSources": [
+      {
+        "operation": "readFile",
+        "parameters": ["./content/for-attendees.md"],
+        "name": "content"
+      }
+    ]
+  },
   "for-sponsors": {
-    "layout": "for-sponsors",
+    "layout": "informationPage",
     "meta": {
       "title": "For sponsors",
       "description": "Want to sponsor Future Frontend? Read this."
@@ -48,7 +62,7 @@
       {
         "operation": "readFile",
         "parameters": ["./content/for-sponsors.md"],
-        "name": "for-sponsors"
+        "name": "content"
       }
     ]
   },

@@ -63,6 +63,13 @@
             {
               "type": "Link",
               "props": {
+                "children": "For attendees",
+                "href": "for-attendees"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
                 "children": "For sponsors",
                 "href": "for-sponsors"
               }

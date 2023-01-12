@@ -10,7 +10,7 @@
             "bindToProps": {
               "inputText": {
                 "utility": "get",
-                "parameters": ["context", "for-sponsors"]
+                "parameters": ["context", "content"]
               }
             },
             "props": {
