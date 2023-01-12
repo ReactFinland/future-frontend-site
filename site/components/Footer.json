@@ -70,6 +70,13 @@
             {
               "type": "Link",
               "props": {
+                "children": "For speakers",
+                "href": "for-speakers"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
                 "children": "For sponsors",
                 "href": "for-sponsors"
               }

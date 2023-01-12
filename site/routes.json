@@ -52,6 +52,20 @@
       }
     ]
   },
+  "for-speakers": {
+    "layout": "informationPage",
+    "meta": {
+      "title": "For speakers",
+      "description": "Are you speaking at Future Frontend? Read this."
+    },
+    "dataSources": [
+      {
+        "operation": "readFile",
+        "parameters": ["./content/for-speakers.md"],
+        "name": "content"
+      }
+    ]
+  },
   "for-sponsors": {
     "layout": "informationPage",
     "meta": {
