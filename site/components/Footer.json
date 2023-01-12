@@ -46,6 +46,13 @@
                 "children": "Code of conduct",
                 "href": "http://berlincodeofconduct.org/"
               }
+            },
+            {
+              "type": "Link",
+              "props": {
+                "children": "Pandemic information",
+                "href": "https://thl.fi/en/web/infectious-diseases-and-vaccinations/what-s-new/coronavirus-covid-19-latest-updates"
+              }
             }
           ]
         },
