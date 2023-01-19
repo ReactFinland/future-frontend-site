@@ -2,6 +2,10 @@
 
 We follow the [government guidance](https://new.visitfinland.com/en/practical-tips/covid-19/).
 
+## How can I get in touch with other attendees?
+
+The best way to do that is to [join the conference Slack](https://join.slack.com/t/toskaosk/shared_invite/zt-4e8c84ow-JybtzFPZWXpZ8cZBpMy1wQ).
+
 ## How to get to Helsinki, Finland?
 
 Geographically Finland is a bit like an island and it's separated from most of the Europe by a sea. That said, there are a few ways to reach Helsinki, Finland:

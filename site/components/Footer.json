@@ -97,6 +97,13 @@
             {
               "type": "Link",
               "props": {
+                "children": "Slack",
+                "href": "https://join.slack.com/t/toskaosk/shared_invite/zt-4e8c84ow-JybtzFPZWXpZ8cZBpMy1wQ"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
                 "children": "Site source",
                 "href": "https://github.com/ReactFinland/future-frontend-site"
               }
