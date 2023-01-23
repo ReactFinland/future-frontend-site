@@ -24,6 +24,41 @@
     ],
     "scripts": [{ "name": "venue", "loadInitially": false }]
   },
+  "blog": {
+    "layout": "blogIndex",
+    "meta": {
+      "title": "Blog",
+      "description": "Future Frontend blog"
+    },
+    "dataSources": [
+      {
+        "operation": "indexMarkdown",
+        "parameters": ["./blogPosts"],
+        "name": "blogPosts"
+      }
+    ],
+    "expand": {
+      "matchBy": {
+        "dataSource": {
+          "operation": "indexMarkdown",
+          "parameters": ["./blogPosts"],
+          "name": "document"
+        },
+        "slug": "data.slug"
+      },
+      "layout": "blogPage",
+      "meta": {
+        "title": {
+          "utility": "get",
+          "parameters": ["context", "document.data.title"]
+        },
+        "description": {
+          "utility": "get",
+          "parameters": ["context", "document.data.description"]
+        }
+      }
+    }
+  },
   "contact": {
     "layout": "contact",
     "meta": {

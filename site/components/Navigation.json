@@ -9,6 +9,13 @@
   {
     "type": "Link",
     "props": {
+      "children": "Blog",
+      "href": "blog"
+    }
+  },
+  {
+    "type": "Link",
+    "props": {
       "children": "Schedule",
       "href": "schedule"
     }
