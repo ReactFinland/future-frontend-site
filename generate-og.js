@@ -17,7 +17,8 @@ async function generateOpengraphImages() {
       const svg = await breeze({
         component: ogTemplate,
         components: {},
-        context: { ...meta, meta: { title: 'Future Frontend', subtitle: name !== '/' ? route.meta.title : '' }}
+        // TODO: Clean this up by applying utility (object case) with the function from breezewind
+        context: { ...meta, meta: { title: 'Future Frontend', subtitle: name !== '/' ? typeof route.meta.title === 'object' ? route.context.document.data.title : route.meta.title : '' }}
       })
       const outputPath = path.join(process.cwd(), 'build', name, 'og.png')
 
