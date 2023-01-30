@@ -88,7 +88,7 @@
     ]
   },
   "for-speakers": {
-    "layout": "informationPage",
+    "layout": "forSpeakersPage",
     "meta": {
       "title": "For speakers",
       "description": "Are you speaking at Future Frontend? Read this."
@@ -99,7 +99,8 @@
         "parameters": ["./content/for-speakers.md"],
         "name": "content"
       }
-    ]
+    ],
+    "scripts": [{ "name": "speaker-map", "loadInitially": false }]
   },
   "for-sponsors": {
     "layout": "informationPage",

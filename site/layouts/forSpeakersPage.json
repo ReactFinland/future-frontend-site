@@ -1,0 +1,57 @@
+{
+  "type": "BaseLayout",
+  "props": {
+    "content": [
+      {
+        "type": "div",
+        "children": [
+          {
+            "type": "Markdown",
+            "bindToProps": {
+              "inputText": {
+                "utility": "get",
+                "parameters": ["context", "content"]
+              }
+            },
+            "props": {
+              "class": "prose lg:prose-xl",
+              "type": "div"
+            }
+          }
+        ]
+      },
+      {
+        "type": "Heading",
+        "props": {
+          "level": 2,
+          "children": "Map",
+          "class": "text-4xl"
+        }
+      },
+      {
+        "type": "div",
+        "class": "w-full h-96 bg-map bg-center",
+        "attributes": {
+          "id": "speaker-map"
+        }
+      },
+      {
+        "type": "LazyLoad",
+        "props": {
+          "src": "/speaker-map.js",
+          "children": [
+            {
+              "type": "script",
+              "attributes": {
+                "x-attr": "",
+                "async": "",
+                "@src": "state.src",
+                "type": "module"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

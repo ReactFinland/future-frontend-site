@@ -1,10 +1,8 @@
-## Hotel
+## Hotel - Glo Kluuvi
 
-We'll book four nights (plus extra night per workshop) at a hotel based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights.
+We've chosen [Glo Kluuvi](https://www.glohotels.fi/hotellit/glo-kluuvi) as our conference hotel. It's around the block from the venue at Kluuvikatu 4, 00100 Helsinki.
 
-We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
-
-The hotel hasn't been specified yet but we'll make sure it's close to the venue and it will have an adequate level so you can sleep well and have access to good services.
+We'll book four nights (plus extra night per workshop) at the hotel based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
 ### How to get to the hotel?
 
