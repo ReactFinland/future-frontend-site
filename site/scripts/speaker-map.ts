@@ -22,7 +22,7 @@ function renderMap(id: string) {
     .openPopup();
 
   L.marker([60.1686671, 24.9451258]).addTo(map)
-    .bindPopup("Glo Kluuvi");
+    .bindPopup("GLO Hotel Kluuvi");
 }
 
 renderMap("speaker-map");
