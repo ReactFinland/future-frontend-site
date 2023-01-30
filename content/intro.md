@@ -35,6 +35,6 @@ Given the conference is held during the Summer, as a bonus you'll get to experie
 
 The conference ticket includes a lunch and refreshments during the breaks. This means you won't have to budget much extra for eating outside of the event unless you want to. Also afterparty (09.06) is included and there will be enough to eat and drink not to mention lighter program (karaoke, board games, etc. depending on what we come up with).
 
-For workshops, we provide at least refreshments during the breaks and in the past we've also included lunch for the full-day ones and for those people participating in two half-day workshops at the same day to reduce stress.
+For workshops, we provide at least refreshments during the breaks and in the past we've also included lunch for the full-day ones to reduce stress.
 
 > To learn more about the event, [read the conference announcement](/blog/ff23/)!
