@@ -1,6 +1,6 @@
 import md from "./transforms/markdown.ts";
-import type { Context } from "https://deno.land/x/gustwind@v0.36.0/breezewind/types.ts ";
-import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts ";
+import type { Context } from "https://deno.land/x/gustwind@v0.36.0/breezewind/types.ts";
+import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts";
 
 function init({ routes }: { routes: Routes }) {
   function invert(_: Context, b: boolean) {
