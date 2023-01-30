@@ -132,6 +132,29 @@ function init({ routes }: { routes: Routes }) {
     return input.toString();
   }
 
+  function getProperty(
+    _: Context,
+    o: Record<string, unknown>,
+    property: string,
+    defaultValue: unknown,
+  ) {
+    return o[property] || defaultValue;
+  }
+
+  function equals(_: Context, a: unknown, b: unknown) {
+    return a === b;
+  }
+
+  function greaterThan(_: Context, a: number, b: number) {
+    return a > b;
+  }
+
+  function lessThan(_: Context, a: number, b: number) {
+    console.log("less than", a, b, a < b);
+
+    return a < b;
+  }
+
   // Use this to calculate time zone offset in a user friendly way
   /*
 function timezoneOffset() {
@@ -144,6 +167,10 @@ function timezoneOffset() {
 
   return {
     _onRenderStart,
+    equals,
+    greaterThan,
+    lessThan,
+    getProperty,
     getDate,
     getUniqueAnchorId,
     getYear,

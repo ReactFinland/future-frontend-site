@@ -12,10 +12,6 @@
     },
     {
       "type": "div",
-      "visibleIf": [{
-        "utility": "get",
-        "parameters": ["props", "conference.goldSponsors"]
-      }],
       "class": "flex flex-col gap-6",
       "children": [
         {
@@ -43,15 +39,38 @@
               }
             }
           ]
+        },
+        {
+          "visibleIf": [
+            {
+              "utility": "lessThan",
+              "parameters": [
+                {
+                  "utility": "getProperty",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": ["props", "conference.goldSponsors"]
+                    },
+                    "length",
+                    0
+                  ]
+                },
+                2
+              ]
+            }
+          ],
+          "todo": "demo",
+          "type": "Link",
+          "props": {
+            "children": "Become a gold sponsor",
+            "href": "for-sponsors"
+          }
         }
       ]
     },
     {
       "type": "div",
-      "visibleIf": [{
-        "utility": "get",
-        "parameters": ["props", "conference.silverSponsors"]
-      }],
       "class": "flex flex-col gap-4",
       "children": [
         {
@@ -79,15 +98,38 @@
               }
             }
           ]
+        },
+        {
+          "visibleIf": [
+            {
+              "utility": "lessThan",
+              "parameters": [
+                {
+                  "utility": "getProperty",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": ["props", "conference.silverSponsors"]
+                    },
+                    "length",
+                    0
+                  ]
+                },
+                4
+              ]
+            }
+          ],
+          "todo": "demo",
+          "type": "Link",
+          "props": {
+            "children": "Become a silver sponsor",
+            "href": "for-sponsors"
+          }
         }
       ]
     },
     {
       "type": "div",
-      "visibleIf": [{
-        "utility": "get",
-        "parameters": ["props", "conference.bronzeSponsors"]
-      }],
       "class": "flex flex-col gap-2",
       "children": [
         {
@@ -116,6 +158,33 @@
               }
             }
           ]
+        },
+        {
+          "visibleIf": [
+            {
+              "utility": "lessThan",
+              "parameters": [
+                {
+                  "utility": "getProperty",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": ["props", "conference.bronzeSponsors"]
+                    },
+                    "length",
+                    0
+                  ]
+                },
+                6
+              ]
+            }
+          ],
+          "todo": "demo",
+          "type": "Link",
+          "props": {
+            "children": "Become a bronze sponsor",
+            "href": "for-sponsors"
+          }
         }
       ]
     },
