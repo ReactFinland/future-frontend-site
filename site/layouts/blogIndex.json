@@ -12,7 +12,7 @@
             "parameters": ["context", "blogPosts"]
           }, {
             "type": "li",
-            "class": "inline",
+            "class": "flex flex-col gap-2 border-primary border-2 rounded p-2 hover:bg-gray-100",
             "children": [
               {
                 "type": "Link",
@@ -30,6 +30,25 @@
                         "parameters": ["props", "data.slug"]
                       }
                     ]
+                  }
+                }
+              },
+              {
+                "type": "time",
+                "class": "font-extralight",
+                "children": {
+                  "utility": "getFullDate",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": ["props", "data.date"]
+                    }
+                  ]
+                },
+                "attributes": {
+                  "datetime": {
+                    "utility": "get",
+                    "parameters": ["props", "data.date"]
                   }
                 }
               }
