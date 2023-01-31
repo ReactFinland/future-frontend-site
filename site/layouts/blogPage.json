@@ -1,6 +1,16 @@
 {
   "type": "BaseLayout",
   "props": {
+    "header": {
+      "type": "Time",
+      "class": "font-extralight",
+      "bindToProps": {
+        "date": {
+          "utility": "get",
+          "parameters": ["context", "document.data.date"]
+        }
+      }
+    },
     "content": {
       "type": "div",
       "class": "md:mx-auto px-4 md:px-0 w-full lg:max-w-3xl prose lg:prose-xl",
