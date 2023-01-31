@@ -25,26 +25,12 @@
                     }
                   },
                   {
-                    "type": "time",
+                    "type": "Time",
                     "class": "font-extralight",
-                    "children": {
-                      "utility": "getFullDate",
-                      "parameters": [
-                        {
-                          "utility": "get",
-                          "parameters": ["props", "data.date"]
-                        }
-                      ]
-                    },
-                    "attributes": {
-                      "datetime": {
-                        "utility": "getDatetime",
-                        "parameters": [
-                          {
-                            "utility": "get",
-                            "parameters": ["props", "data.date"]
-                          }
-                        ]
+                    "bindToProps": {
+                      "date": {
+                        "utility": "get",
+                        "parameters": ["props", "data.date"]
                       }
                     }
                   }

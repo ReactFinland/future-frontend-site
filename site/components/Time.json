@@ -1,0 +1,23 @@
+{
+  "type": "time",
+  "children": {
+    "utility": "getFullDate",
+    "parameters": [
+      {
+        "utility": "get",
+        "parameters": ["props", "date"]
+      }
+    ]
+  },
+  "attributes": {
+    "datetime": {
+      "utility": "getDatetime",
+      "parameters": [
+        {
+          "utility": "get",
+          "parameters": ["props", "date"]
+        }
+      ]
+    }
+  }
+}
