@@ -3,7 +3,7 @@
   "props": {
     "content": {
       "type": "div",
-      "class": "md:mx-auto px-4 md:px-0 w-full lg:max-w-3xl prose lg:prose-xl",
+      "class": "md:mx-auto px-4 md:px-0 w-full lg:max-w-3xl",
       "children": [
         {
           "type": "ul",
@@ -12,15 +12,44 @@
             "parameters": ["context", "blogPosts"]
           }, {
             "type": "li",
-            "class": "flex flex-col gap-2 border-primary border-2 rounded p-2 hover:bg-gray-100",
             "children": [
               {
-                "type": "Link",
-                "bindToProps": {
-                  "children": {
-                    "utility": "get",
-                    "parameters": ["props", "data.title"]
+                "type": "a",
+                "class": "flex flex-col gap-2 border-primary border-2 rounded p-2 hover:bg-gray-100",
+                "children": [
+                  {
+                    "type": "div",
+                    "children": {
+                      "utility": "get",
+                      "parameters": ["props", "data.title"]
+                    }
                   },
+                  {
+                    "type": "time",
+                    "class": "font-extralight",
+                    "children": {
+                      "utility": "getFullDate",
+                      "parameters": [
+                        {
+                          "utility": "get",
+                          "parameters": ["props", "data.date"]
+                        }
+                      ]
+                    },
+                    "attributes": {
+                      "datetime": {
+                        "utility": "getDatetime",
+                        "parameters": [
+                          {
+                            "utility": "get",
+                            "parameters": ["props", "data.date"]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "attributes": {
                   "href": {
                     "utility": "concat",
                     "parameters": [
@@ -30,25 +59,6 @@
                         "parameters": ["props", "data.slug"]
                       }
                     ]
-                  }
-                }
-              },
-              {
-                "type": "time",
-                "class": "font-extralight",
-                "children": {
-                  "utility": "getFullDate",
-                  "parameters": [
-                    {
-                      "utility": "get",
-                      "parameters": ["props", "data.date"]
-                    }
-                  ]
-                },
-                "attributes": {
-                  "datetime": {
-                    "utility": "get",
-                    "parameters": ["props", "data.date"]
                   }
                 }
               }

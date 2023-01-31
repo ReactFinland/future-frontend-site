@@ -17,6 +17,12 @@ function init({ routes }: { routes: Routes }) {
     return new Date(d).getFullYear();
   }
 
+  function getDatetime(_: Context, d: string) {
+    const date = new Date(d);
+
+    return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+  }
+
   function getFullDate(_: Context, d: string) {
     const date = new Date(d);
 
@@ -178,6 +184,7 @@ function timezoneOffset() {
     lessThan,
     getProperty,
     getDate,
+    getDatetime,
     getFullDate,
     getUniqueAnchorId,
     getYear,
