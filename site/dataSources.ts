@@ -60,12 +60,15 @@ function readFile(filename: string) {
 
 async function indexMarkdown(directory: string) {
   const files = await dir({ path: directory, extension: ".md" });
-
-  return Promise.all(
+  const ret = await Promise.all(
     files.map(({ path }) =>
       Deno.readTextFile(path).then((d) => parse(d) as MarkdownWithFrontmatter)
     ),
   );
+
+  ret.sort((a, b) => a.data.date < b.data.date ? 1 : -1);
+
+  return ret;
 }
 
 export { indexMarkdown, queryData, readFile };
