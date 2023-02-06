@@ -44,6 +44,8 @@ Item in the goodie bag* | | | &#10003;
 Attendance for the speaker events (e.g., the speakers' dinner) | | | &#9786;
 Special requests | | | &#10003;
 
+Note that on top of all this, we provide a 20% discount of our sponsors regardless of the sponsorship level. This applies for any ticket type and if you are planning to buy a lot of tickets anyway, it may be cheaper to become a sponsor.
+
 The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious. If attendees don't want swag, we'll use the equivalent amount of money for charity instead.
 
 ## How to Sponsor?
