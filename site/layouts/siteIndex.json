@@ -197,8 +197,23 @@
             ]
           },
           {
-            "type": "Subscribe"
+            "type": "div",
+            "class": "flex flex-col gap-4",
+            "children": [
+              {
+                "type": "Heading",
+                "props": {
+                  "level": 2,
+                  "children": "Subscribe to the mailing list",
+                  "class": "text-4xl font-primary"
+                }
+              },
+              {
+                "type": "Subscribe"
+              }
+            ]
           },
+
           {
             "type": "AllSponsors",
             "bindToProps": {
