@@ -8,7 +8,7 @@ The conference follows good practices we discovered while running React Finland 
 
 * 06-07.06.2023 - Workshops (sold separately from the conference)
 * 08-09.06.2023 - Single track conference, 8 themed sessions, 2 speakers per session, 15 speakers in total
-* Location: Helsinki, Finland. The conference itself takes place at [Pörssitalo](http://porssitalo.fi/) while workshops will be held somewhere near (to be decided).
+* Location: Helsinki, Finland. The conference itself takes place at [Pörssitalo](http://porssitalo.fi/) while workshops will be held somewhere near (to be decided). [Check venuu.fi photos](https://venuu.fi/tilat/porssitalo) to understand better what a great space it is for our conference.
 * Attendees: We can fit 250 people and our target is 200-250 for the first edition. It won't be a big conference.
 
 ## Why should I come to the Future Frontend conference?
