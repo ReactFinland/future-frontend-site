@@ -34,7 +34,7 @@ Cost (VAT 0) | 3.000€ | 5.000€ | 10.000€
 Available | 6 | 4 | 2
 Conference tickets | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
 Visibility on social media and website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Logo size on website and app | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
+Logo size on website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
 Banner in conference | &#10003; | &#10003; | &#10003;
 Banner on stage | | | &#10003;
 Logo on slides between the talks | &#10003; | &#10003; | &#10003;
