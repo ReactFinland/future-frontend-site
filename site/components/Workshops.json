@@ -109,6 +109,43 @@
                   "captionClass": "text-center",
                   "imgClass": "mx-auto rounded-full w-16"
                 }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "class": "sr-only",
+                  "children": "Location",
+                  "level": 3
+                }
+              },
+              {
+                "type": "Link",
+                "bindToProps": {
+                  "children": {
+                    "utility": "concat",
+                    "parameters": [
+                      "Location: ",
+                      {
+                        "utility": "get",
+                        "parameters": ["props", "location.name"]
+                      },
+                      ", ",
+                      {
+                        "utility": "get",
+                        "parameters": ["props", "location.address"]
+                      },
+                      ", ",
+                      {
+                        "utility": "get",
+                        "parameters": ["props", "location.city"]
+                      }
+                    ]
+                  },
+                  "href": {
+                    "utility": "get",
+                    "parameters": ["props", "location.social.googleMaps"]
+                  }
+                }
               }
             ]
           },

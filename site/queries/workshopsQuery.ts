@@ -17,6 +17,9 @@ query PageQuery($conferenceId: ID!) {
         name
         address
         city
+        social {
+          googleMaps
+        }
       }
     }
   }
