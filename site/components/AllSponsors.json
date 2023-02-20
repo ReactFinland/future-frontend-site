@@ -35,7 +35,8 @@
                     "props",
                     "conference.goldSponsors"
                   ]
-                }
+                },
+                "aClass": "my-auto"
               }
             }
           ]
@@ -94,7 +95,8 @@
                     "props",
                     "conference.silverSponsors"
                   ]
-                }
+                },
+                "aClass": "my-auto"
               }
             }
           ]
@@ -154,6 +156,7 @@
                     "conference.bronzeSponsors"
                   ]
                 },
+                "aClass": "my-auto",
                 "imgClass": "object-contain h-24"
               }
             }
@@ -218,6 +221,7 @@
                     "conference.partners"
                   ]
                 },
+                "aClass": "my-auto",
                 "imgClass": "object-contain h-24"
               }
             }
