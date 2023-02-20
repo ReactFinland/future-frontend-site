@@ -26,11 +26,8 @@
       {
         "type": "figure",
         "class": {
-          "utility": "concat",
-          "parameters": ["flex flex-col gap-2", " ", {
-            "utility": "get",
-            "parameters": ["props", "imgContainerClass"]
-          }]
+          "utility": "get",
+          "parameters": ["props", "imgContainerClass", "flex flex-col gap-2"]
         },
         "children": [
           [
@@ -38,7 +35,7 @@
               "type": "img",
               "class": {
                 "utility": "get",
-                "parameters": ["props", "imgClass"]
+                "parameters": ["props", "imgClass", ""]
               },
               "attributes": {
                 "alt": { "utility": "get", "parameters": ["props", "name"] },
@@ -55,7 +52,7 @@
               "type": "figcaption",
               "class": {
                 "utility": "get",
-                "parameters": ["props", "captionClass"]
+                "parameters": ["props", "captionClass", ""]
               },
               "children": {
                 "utility": "get",

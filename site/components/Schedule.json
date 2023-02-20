@@ -94,7 +94,7 @@
                       },
                       {
                         "type": "div",
-                        "class": "flex flex-col gap-2",
+                        "class": "flex flex-col gap-6",
                         "children": [
                           {
                             "foreach": [
@@ -104,7 +104,7 @@
                               },
                               {
                                 "type": "div",
-                                "class": "flex flex-row gap-2",
+                                "class": "flex flex-col gap-1",
                                 "children": [
                                   {
                                     "type": "div",
@@ -112,15 +112,6 @@
                                       "utility": "get",
                                       "parameters": ["props", "title"]
                                     }
-                                  },
-                                  {
-                                    "visibleIf": [
-                                      {
-                                        "utility": "get",
-                                        "parameters": ["props", "speakers"]
-                                      }
-                                    ],
-                                    "children": " – "
                                   },
                                   {
                                     "type": "MiniSpeakers",
@@ -132,9 +123,8 @@
                                           "speakers"
                                         ]
                                       },
-                                      "imgContainerClass": "flex-row gap-1",
-                                      "captionClass": "text-center",
-                                      "imgClass": "hidden md:inline mx-auto rounded-full w-6 h-6"
+                                      "imgContainerClass": "flex flex-row gap-1 text-sm",
+                                      "imgClass": "rounded-full w-6 h-6"
                                     }
                                   }
                                 ]
