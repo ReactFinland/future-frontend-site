@@ -46,6 +46,7 @@ query PageQuery($conferenceId: ID!) {
             description
             speakers {
               name
+              tagline
               image {
                 url
               }

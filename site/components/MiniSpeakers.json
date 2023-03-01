@@ -44,6 +44,10 @@
                   "utility": "get",
                   "parameters": ["props", "image.url"]
                 },
+                "title": {
+                  "utility": "get",
+                  "parameters": ["props", "tagline"]
+                },
                 "width": "102.4",
                 "height": "102.4"
               }

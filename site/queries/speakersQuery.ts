@@ -23,6 +23,7 @@ query PageQuery($conferenceId: ID!) {
         type
         description
       }
+      tagline
       about
       social {
         homepage

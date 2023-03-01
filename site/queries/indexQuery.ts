@@ -2,6 +2,7 @@ export default `
 fragment SpeakerFragment on Contact {
   name
   about
+  tagline
   social {
     homepage
     github

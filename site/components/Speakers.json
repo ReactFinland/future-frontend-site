@@ -17,11 +17,15 @@
                 "type": "img",
                 "class": "rounded-full object-contain h-32",
                 "attributes": {
-                  "alt": { "utility": "get", "parameters": ["props", "about"] },
+                  "alt": { "utility": "get", "parameters": ["props", "name"] },
                   "loading": "lazy",
                   "src": {
                     "utility": "get",
                     "parameters": ["props", "image.url"]
+                  },
+                  "title": {
+                    "utility": "get",
+                    "parameters": ["props", "tagline"]
                   },
                   "width": "128",
                   "height": "128"
@@ -41,17 +45,30 @@
             "class": "flex flex-col gap-4",
             "children": [
               {
-                "type": "Heading",
-                "props": {
-                  "level": 2,
-                  "class": "text-4xl"
-                },
-                "bindToProps": {
-                  "children": {
-                    "utility": "get",
-                    "parameters": ["props", "name"]
+                "type": "div",
+                "children": [
+                  {
+                    "type": "Heading",
+                    "props": {
+                      "level": 2,
+                      "class": "text-4xl"
+                    },
+                    "bindToProps": {
+                      "children": {
+                        "utility": "get",
+                        "parameters": ["props", "name"]
+                      }
+                    }
+                  },
+                  {
+                    "type": "p",
+                    "class": "text-2xl text-gray-500 font-light",
+                    "children": {
+                      "utility": "get",
+                      "parameters": ["props", "tagline"]
+                    }
                   }
-                }
+                ]
               },
               {
                 "type": "div",
