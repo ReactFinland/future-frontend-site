@@ -1,3 +1,4 @@
+import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
 import md from "./transforms/markdown.ts";
 import type { Context } from "https://deno.land/x/gustwind@v0.36.0/breezewind/types.ts";
 import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts";
@@ -177,6 +178,26 @@ function timezoneOffset() {
 }
   */
 
+  // The idea of this helper is to copy images from a remote api to
+  // the assets directory so that they can be served directly through
+  // Cloudflare
+  async function rewriteImageSource(_: Context, source: string) {
+    const assetPath = "assets/img";
+    const imageName = path.basename(source);
+    const outputPath = path.join(Deno.cwd(), assetPath, imageName);
+
+    try {
+      await Deno.stat(outputPath);
+    } catch (_error) {
+      // https://stackoverflow.com/a/62019831/228885
+      const res = await fetch(source);
+      const imageBytes = new Uint8Array(await res.arrayBuffer());
+      await Deno.writeFile(outputPath, imageBytes);
+    }
+
+    return `/img/${imageName}`;
+  }
+
   return {
     _onRenderStart,
     equals,
@@ -192,6 +213,7 @@ function timezoneOffset() {
     markdown,
     offsetByTimezone,
     pluralize,
+    rewriteImageSource,
     trim,
     validateUrl,
   };

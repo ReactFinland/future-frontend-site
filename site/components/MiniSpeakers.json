@@ -41,8 +41,13 @@
                 "alt": { "utility": "get", "parameters": ["props", "name"] },
                 "loading": "lazy",
                 "src": {
-                  "utility": "get",
-                  "parameters": ["props", "image.url"]
+                  "utility": "rewriteImageSource",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": ["props", "image.url"]
+                    }
+                  ]
                 },
                 "title": {
                   "utility": "get",
