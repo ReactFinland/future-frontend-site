@@ -9,4 +9,4 @@ curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.31.1
 npm run generate:og
 
 # Enable when this is stable again
-# npm run optimize:site
+npm run optimize:site
