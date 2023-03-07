@@ -209,7 +209,7 @@
         },
         {
           "type": "div",
-          "class": "grid grid-cols-6 gap-8",
+          "class": "grid grid-cols-4 md:grid-cols-8 gap-x-8 gap-y-4",
           "children": [
             {
               "type": "MiniSponsors",
