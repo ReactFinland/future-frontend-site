@@ -53,8 +53,8 @@
                   "utility": "get",
                   "parameters": ["props", "tagline"]
                 },
-                "width": "102.4",
-                "height": "102.4"
+                "width": "102",
+                "height": "102"
               }
             },
             {
