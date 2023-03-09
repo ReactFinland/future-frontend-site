@@ -20,7 +20,6 @@ Geographically Finland is a bit like an island and it's separated from most of t
 Due to the central location of the venue (Pörssitalo), compact size of Helsinki center, and good connectivity, you have many options. We've listed some potential options below:
 
 * [Omena Hotels](https://www.omenahotels.com/en/) - Roughly 60-80€ per night. Minimal service. Two separate hotels.
-* [GLO Hotel Kluuvi](https://www.glohotels.fi/hotellit/glo-kluuvi) - Roughly 100€ per night.
 * [Hotel Marski by Scandic](https://www.scandichotels.com/hotels/finland/helsinki/marski-by-scandic) - Roughly €150 per night.
 * [Kongressikoti Hotel](http://kongressikoti.fi/) - Roughly 60€ per night.
 * [Hostel Diana Park](http://www.dianapark.fi/) - Roughly 30€ per night.

@@ -1,6 +1,6 @@
-## Hotel - GLO Hotel Kluuvi
+## Hotel - Lilla Roberts
 
-We've chosen [GLO Hotel Kluuvi](https://www.glohotels.fi/hotellit/glo-kluuvi) as our conference hotel. It's around the block from the venue at Kluuvikatu 4, 00100 Helsinki.
+We've chosen [Lilla Roberts](https://www.lillaroberts.com/) as our conference hotel. It's close to the venue at Pieni Roobertinkatu 1-3, 00130 Helsinki.
 
 We'll book four nights (plus extra night per workshop) at the hotel based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 

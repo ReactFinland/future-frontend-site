@@ -21,8 +21,8 @@ function renderMap(id: string) {
     .bindPopup("Pörssitalo, Helsinki Stock Exchange Building")
     .openPopup();
 
-  L.marker([60.1686671, 24.9451258]).addTo(map)
-    .bindPopup("GLO Hotel Kluuvi");
+  L.marker([60.1643642, 24.945336]).addTo(map)
+    .bindPopup("Hotel Lilla Roberts");
 }
 
 renderMap("speaker-map");
