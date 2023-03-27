@@ -1,4 +1,4 @@
-Frontend is a part of an application, or an experience, that is the most visible. For a frontend developer, it's a challenge how to craft that portion. At the **Future Frontend** conference, we'll imagine the future together. In this event, you'll have a chance to meet the leading minds of the space and return back to work filled with visions of the future.
+The frontend is the part of an application, or an experience, that is the most visible. For a frontend developer, it's a challenge how to craft that portion. At the **Future Frontend** conference, we'll imagine the future together. In this event, you'll have a chance to meet the leading minds of the space and return back to work filled with visions of the future.
 
 Future Frontend is the successor of [React Finland](https://react-finland.fi/). We felt React is getting stable, and perhaps less exciting, as a topic and therefore we designed to adjust our sights. Future Frontend is exactly that, a way to look at the current trends and learn from them.
 
