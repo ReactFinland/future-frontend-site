@@ -1,34 +1,35 @@
 [
   {
-    "type": "data",
+    "type": "iframe",
     "attributes": {
-      "id": "mj-w-res-data",
-      "data-token": "16538623741c376c09569d02a0421670",
-      "class": "mj-w-data",
-      "data-apikey": "5h9R",
-      "data-w-id": "P42",
-      "data-lang": "en_US",
-      "data-base": "https://app.mailjet.com",
-      "data-width": "640",
-      "data-height": "434",
-      "data-statics": "statics"
+      "data-w-token": "2d9963ee9233a6b0e0a6",
+      "data-w-type": "pop-in",
+      "frameborder": "0",
+      "scrolling": "yes",
+      "marginheight": "0",
+      "marginwidth": "0",
+      "src": "https://xvg39.mjt.lu/wgt/xvg39/3xh/form?c=851b8c27",
+      "width": "100%"
     }
   },
   {
-    "type": "a",
-    "class": "p-4 bg-primary text-white text-center font-primary rounded-lg drop-shadow",
-    "children": "Subscribe to our newsletter to receive Future Frontend related news to your email",
+    "type": "iframe",
     "attributes": {
-      "data-token": "16538623741c376c09569d02a0421670",
-      "href": "#",
-      "onclick": "mjOpenPopin(event, this)"
+      "data-w-token": "2d9963ee9233a6b0e0a6",
+      "data-w-type": "trigger",
+      "frameborder": "0",
+      "scrolling": "no",
+      "marginheight": "0",
+      "marginwidth": "0",
+      "src": "https://xvg39.mjt.lu/wgt/xvg39/3xh/trigger?c=e4e12f4b",
+      "width": "100%"
     }
   },
   {
     "type": "script",
     "attributes": {
       "type": "text/javascript",
-      "src": "https://app.mailjet.com/statics/js/widget.modal.js"
+      "src": "https://app.mailjet.com/pas-nc-pop-in-v1.js"
     }
   }
 ]
