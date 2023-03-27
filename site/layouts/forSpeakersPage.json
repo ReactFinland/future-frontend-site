@@ -36,20 +36,11 @@
         }
       },
       {
-        "type": "LazyLoad",
-        "props": {
+        "type": "script",
+        "attributes": {
           "src": "/speaker-map.js",
-          "children": [
-            {
-              "type": "script",
-              "attributes": {
-                "x-attr": "",
-                "async": "",
-                "@src": "state.src",
-                "type": "module"
-              }
-            }
-          ]
+          "async": "",
+          "type": "module"
         }
       }
     ]
