@@ -37,7 +37,7 @@
                   ]
                 },
                 "captionClass": "flex justify-center text-center",
-                "imgClass": "rounded-full"
+                "imgClass": "rounded-full mx-auto"
               }
             }
           ]
@@ -71,7 +71,7 @@
                   ]
                 },
                 "captionClass": "flex justify-center text-center",
-                "imgClass": "rounded-full"
+                "imgClass": "rounded-full mx-auto"
               }
             }
           ]
@@ -105,7 +105,7 @@
                   ]
                 },
                 "captionClass": "flex justify-center text-center",
-                "imgClass": "rounded-full"
+                "imgClass": "rounded-full mx-auto"
               }
             }
           ]
