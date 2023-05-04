@@ -16,7 +16,7 @@ The conference follows good practices we discovered while running React Finland 
 
 Conferences like Future Frontend compress time and space. They bring people with wildly different backgrounds together in the same space for a short file. It's a time for meeting new people, getting inspired, and learning. You'll meet developers like Miško Hevery (Angular.js, [Qwik](https://qwik.builder.io/)), Ryan Carniato ([Solid.js](https://www.solidjs.com/)), Matthew Phillips ([Astro](https://astro.build/)), and many more.
 
-Besides the conference, you'll have a chance to learn through workshops and we've included five topics to choose from. On top of the conference program, traditionally our partners have organized their casual program at the end of the days and we end the week with an afterparty.
+Besides the conference, you'll have a chance to learn through workshops and we've included four topics to choose from. On top of the conference program, traditionally our partners have organized their casual program at the end of the days and we end the week with an afterparty.
 
 ## What makes Future Frontend special?
 
