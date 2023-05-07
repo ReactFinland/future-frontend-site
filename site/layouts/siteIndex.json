@@ -7,7 +7,7 @@
         "props": {
           "hideAnchor": true,
           "level": 2,
-          "class": "text-xl md:text-4xl font-extralight"
+          "class": "text-xl md:text-4xl font-light"
         },
         "bindToProps": {
           "children": {
@@ -18,96 +18,102 @@
       },
       {
         "type": "div",
-        "class": "flex flex-row justify-between",
+        "class": "flex flex-col gap-4",
         "children": [
           {
-            "type": "Heading",
-            "props": {
-              "hideAnchor": true,
-              "level": 3,
-              "class": "text-xl md:text-4xl font-extralight"
-            },
-            "bindToProps": {
-              "children": {
-                "utility": "concat",
-                "parameters": [
-                  {
-                    "utility": "getDate",
+            "type": "div",
+            "class": "flex flex-row justify-between",
+            "children": [
+              {
+                "type": "Heading",
+                "props": {
+                  "hideAnchor": true,
+                  "level": 3,
+                  "class": "text-xl md:text-4xl font-extralight"
+                },
+                "bindToProps": {
+                  "children": {
+                    "utility": "concat",
                     "parameters": [
                       {
-                        "utility": "get",
+                        "utility": "getDate",
                         "parameters": [
-                          "context",
-                          "conference.startDate"
+                          {
+                            "utility": "get",
+                            "parameters": [
+                              "context",
+                              "conference.startDate"
+                            ]
+                          }
                         ]
-                      }
-                    ]
-                  },
-                  "-",
-                  {
-                    "utility": "getDate",
-                    "parameters": [
+                      },
+                      "-",
                       {
-                        "utility": "get",
+                        "utility": "getDate",
                         "parameters": [
-                          "context",
-                          "conference.endDate"
+                          {
+                            "utility": "get",
+                            "parameters": [
+                              "context",
+                              "conference.endDate"
+                            ]
+                          }
                         ]
-                      }
-                    ]
-                  },
-                  ".",
-                  {
-                    "utility": "getYear",
-                    "parameters": [
+                      },
+                      ".",
                       {
-                        "utility": "get",
+                        "utility": "getYear",
                         "parameters": [
-                          "context",
-                          "conference.endDate"
+                          {
+                            "utility": "get",
+                            "parameters": [
+                              "context",
+                              "conference.endDate"
+                            ]
+                          }
                         ]
                       }
                     ]
                   }
-                ]
+                }
+              },
+              {
+                "_todo": "resolve this from graphql api",
+                "type": "Heading",
+                "props": {
+                  "hideAnchor": true,
+                  "level": 3,
+                  "class": "text-xl md:text-4xl font-extralight",
+                  "children": "Conference at Pörssitalo"
+                }
               }
-            }
+            ]
           },
           {
-            "_todo": "resolve this from graphql api",
-            "type": "Heading",
-            "props": {
-              "hideAnchor": true,
-              "level": 3,
-              "class": "text-xl md:text-4xl font-extralight",
-              "children": "Conference at Pörssitalo"
-            }
-          }
-        ]
-      },
-      {
-        "type": "div",
-        "class": "flex flex-row justify-between",
-        "children": [
-          {
-            "type": "Heading",
-            "props": {
-              "hideAnchor": true,
-              "level": 3,
-              "class": "text-xl md:text-4xl font-extralight"
-            },
-            "bindToProps": {
-              "children": "6.6-7.6.2023"
-            }
-          },
-          {
-            "type": "Heading",
-            "props": {
-              "hideAnchor": true,
-              "level": 3,
-              "class": "text-xl md:text-4xl font-extralight",
-              "children": "Workshops"
-            }
+            "type": "div",
+            "class": "flex flex-row justify-between",
+            "children": [
+              {
+                "type": "Heading",
+                "props": {
+                  "hideAnchor": true,
+                  "level": 3,
+                  "class": "text-xl md:text-4xl font-extralight"
+                },
+                "bindToProps": {
+                  "children": "6.6-7.6.2023"
+                }
+              },
+              {
+                "type": "Heading",
+                "props": {
+                  "hideAnchor": true,
+                  "level": 3,
+                  "class": "text-xl md:text-4xl font-extralight",
+                  "children": "Workshops"
+                }
+              }
+            ]
           }
         ]
       }
