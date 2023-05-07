@@ -80,7 +80,33 @@
               "hideAnchor": true,
               "level": 3,
               "class": "text-xl md:text-4xl font-extralight",
-              "children": "Pörssitalo, Helsinki, Finland"
+              "children": "Conference at Pörssitalo"
+            }
+          }
+        ]
+      },
+      {
+        "type": "div",
+        "class": "flex flex-row justify-between",
+        "children": [
+          {
+            "type": "Heading",
+            "props": {
+              "hideAnchor": true,
+              "level": 3,
+              "class": "text-xl md:text-4xl font-extralight"
+            },
+            "bindToProps": {
+              "children": "6.6-7.6.2023"
+            }
+          },
+          {
+            "type": "Heading",
+            "props": {
+              "hideAnchor": true,
+              "level": 3,
+              "class": "text-xl md:text-4xl font-extralight",
+              "children": "Workshops"
             }
           }
         ]
