@@ -27,6 +27,4 @@ We've prepared a simple yet effective process for the talks. It works as follows
 
 ## Speakers' dinner
 
-The speakers' dinner will be held after the workshops on Wednesday and we'll go from the front of the hotel at 18:00.
-
-If you want to get to the restaurant on your own, please let us know so we don't wait for you. :)
+The speakers' dinner will be held after the workshops on Wednesday at the venue (Pörssitalo, Fabianinkatu 14). You should be there around 18:00.
