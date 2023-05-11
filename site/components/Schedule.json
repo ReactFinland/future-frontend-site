@@ -126,6 +126,39 @@
                                       "imgContainerClass": "flex flex-row gap-1 text-sm",
                                       "imgClass": "rounded-full w-6 h-6"
                                     }
+                                  },
+                                  {
+                                    "type": "div",
+                                    "visibleIf": [
+                                      {
+                                        "utility": "equals",
+                                        "parameters": [
+                                          {
+                                            "utility": "get",
+                                            "parameters": ["props", "type"]
+                                          },
+                                          "PARTY"
+                                        ]
+                                      }
+                                    ],
+                                    "children": [
+                                      {
+                                        "type": "Markdown",
+                                        "bindToProps": {
+                                          "inputText": {
+                                            "utility": "get",
+                                            "parameters": [
+                                              "props",
+                                              "description"
+                                            ]
+                                          }
+                                        },
+                                        "props": {
+                                          "class": "prose lg:prose-xl text-sm",
+                                          "type": "div"
+                                        }
+                                      }
+                                    ]
                                   }
                                 ]
                               }
