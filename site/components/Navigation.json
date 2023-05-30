@@ -40,5 +40,12 @@
       "children": "Buy tickets",
       "href": "https://ti.to/future-frontend/2023"
     }
+  },
+  {
+    "type": "Link",
+    "props": {
+      "children": "Join Slack",
+      "href": "https://join.slack.com/t/toskaosk/shared_invite/zt-4e8c84ow-JybtzFPZWXpZ8cZBpMy1wQ"
+    }
   }
 ]
