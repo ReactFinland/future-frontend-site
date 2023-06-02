@@ -63,7 +63,7 @@ Assuming you want to sauna and swim, bring a swimming suit and optionally a towe
 To start your workshop as quick and as smooth as possible, it's a good idea to spend some time beforehand. Make sure to install at least the following software to your laptop:
 
 * [Git](https://git-scm.com/) 2.0, or newer
-* [Node.js](https://nodejs.org/) 10.0, or newer
+* [Node.js](https://nodejs.org/) 18.0, or newer
 * [npm](https://www.npmjs.com/) 6.0, or newer. Consider using either [n](https://github.com/tj/n) or [nvm](https://github.com/creationix/nvm) for managing the version.
 
 > Run \`git --version\`, \`node --version\`, and \`npm --version\` to check versions you have installed.
