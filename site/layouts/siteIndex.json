@@ -177,52 +177,6 @@
             }
           },
           {
-            "type": "div",
-            "children": [
-              {
-                "type": "Link",
-                "props": {
-                  "children": [
-                    {
-                      "type": "Heading",
-                      "props": {
-                        "level": 2,
-                        "children": "Buy tickets",
-                        "class": "text-4xl font-primary text-primary"
-                      }
-                    }
-                  ],
-                  "href": "https://ti.to/future-frontend/2023"
-                }
-              },
-              {
-                "type": "script",
-                "attributes": {
-                  "src": "https://js.tito.io/v2",
-                  "async": ""
-                }
-              },
-              {
-                "type": "tito-widget",
-                "attributes": {
-                  "event": "future-frontend/2023"
-                }
-              },
-              {
-                "type": "div",
-                "class": "prose lg:prose-xl text-sm",
-                "children": [
-                  {
-                    "type": "Markdown",
-                    "props": {
-                      "inputText": "Note that you can assign/move tickets freely after purchasing although you cannot cancel them. If you are planning to buy a large amount, [consider becoming a sponsor](/for-sponsors) as then you will receive 20% discount for your ticket purchases. For groups (at least six **conference** tickets), [there is a group discount (10%)](https://ti.to/future-frontend/2023/discount/GROUP_DISCOUNT) available."
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "type": "AllSponsors",
             "bindToProps": {
               "conference": {
