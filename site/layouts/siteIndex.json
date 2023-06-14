@@ -165,6 +165,22 @@
             }
           },
           {
+            "type": "div",
+            "children": [
+              {
+                "type": "Heading",
+                "props": {
+                  "level": 2,
+                  "children": "Subscribe to our mailing list for the latest news",
+                  "class": "text-2xl"
+                }
+              },
+              {
+                "type": "Subscribe"
+              }
+            ]
+          },
+          {
             "type": "AllSpeakers",
             "bindToProps": {
               "conference": {
