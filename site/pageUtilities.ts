@@ -60,6 +60,7 @@ function init({ routes }: { routes: Routes }) {
       return;
     }
 
+    // TODO: Validate that url is a string
     if (Object.keys(routes).includes(url)) {
       return url === "/" ? "/" : `/${url}/`;
     }
