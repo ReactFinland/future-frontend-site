@@ -7,7 +7,7 @@
         "parameters": [
           {
             "utility": "validateUrl",
-            "parameters": ["speakers"]
+            "parameters": ["2023/speakers"]
           },
           "#",
           {

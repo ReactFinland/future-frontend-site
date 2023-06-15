@@ -144,47 +144,63 @@
       }
     ]
   },
-  "schedule": {
-    "layout": "schedule",
+  "2023": {
+    "layout": "informationPage",
     "meta": {
-      "title": "Schedule",
-      "description": "Schedule of Future Frontend"
+      "title": "Future Frontend 2023",
+      "description": "Future Frontend 2023 was held 6-9.6.2023"
     },
     "dataSources": [
       {
-        "operation": "queryData",
-        "parameters": ["schedule"],
-        "name": "schedule"
+        "operation": "readFile",
+        "parameters": ["./content/ff23.md"],
+        "name": "content"
       }
-    ]
-  },
-  "speakers": {
-    "layout": "speakers",
-    "meta": {
-      "title": "Speakers",
-      "description": "Speakers of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["speakers"],
-        "name": "speakers"
+    ],
+    "routes": {
+      "schedule": {
+        "layout": "schedule",
+        "meta": {
+          "title": "Schedule",
+          "description": "Schedule of Future Frontend"
+        },
+        "dataSources": [
+          {
+            "operation": "queryData",
+            "parameters": ["schedule"],
+            "name": "schedule"
+          }
+        ]
+      },
+      "speakers": {
+        "layout": "speakers",
+        "meta": {
+          "title": "Speakers",
+          "description": "Speakers of Future Frontend"
+        },
+        "dataSources": [
+          {
+            "operation": "queryData",
+            "parameters": ["speakers"],
+            "name": "speakers"
+          }
+        ]
+      },
+      "workshops": {
+        "layout": "workshops",
+        "meta": {
+          "title": "Workshops",
+          "description": "Workshops of Future Frontend"
+        },
+        "dataSources": [
+          {
+            "operation": "queryData",
+            "parameters": ["workshops"],
+            "name": "workshops"
+          }
+        ]
       }
-    ]
-  },
-  "workshops": {
-    "layout": "workshops",
-    "meta": {
-      "title": "Workshops",
-      "description": "Workshops of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["workshops"],
-        "name": "workshops"
-      }
-    ]
+    }
   },
   "404.html": {
     "layout": "404",
