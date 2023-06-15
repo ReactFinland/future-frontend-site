@@ -1,0 +1,101 @@
+{
+  "type": "div",
+  "class": "flex flex-col gap-4",
+  "children": [
+    {
+      "type": "div",
+      "class": "flex flex-row justify-between",
+      "children": [
+        {
+          "type": "Heading",
+          "props": {
+            "hideAnchor": true,
+            "level": 3,
+            "class": "text-xl md:text-4xl font-extralight"
+          },
+          "bindToProps": {
+            "children": {
+              "utility": "concat",
+              "parameters": [
+                {
+                  "utility": "getDate",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": [
+                        "context",
+                        "conference.startDate"
+                      ]
+                    }
+                  ]
+                },
+                "-",
+                {
+                  "utility": "getDate",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": [
+                        "context",
+                        "conference.endDate"
+                      ]
+                    }
+                  ]
+                },
+                ".",
+                {
+                  "utility": "getYear",
+                  "parameters": [
+                    {
+                      "utility": "get",
+                      "parameters": [
+                        "context",
+                        "conference.endDate"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "_todo": "resolve this from graphql api",
+          "type": "Heading",
+          "props": {
+            "hideAnchor": true,
+            "level": 3,
+            "class": "text-xl md:text-4xl font-extralight",
+            "children": "Conference at Pörssitalo"
+          }
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "class": "flex flex-row justify-between",
+      "children": [
+        {
+          "type": "Heading",
+          "props": {
+            "hideAnchor": true,
+            "level": 3,
+            "class": "text-xl md:text-4xl font-extralight"
+          },
+          "bindToProps": {
+            "children": "6.6-7.6.2023"
+          }
+        },
+        {
+          "type": "Heading",
+          "props": {
+            "hideAnchor": true,
+            "level": 3,
+            "class": "text-xl md:text-4xl font-extralight",
+            "children": "Workshops"
+          }
+        }
+      ]
+    }
+  ]
+}

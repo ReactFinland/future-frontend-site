@@ -1,0 +1,30 @@
+[
+  {
+    "type": "Markdown",
+    "bindToProps": {
+      "inputText": {
+        "utility": "get",
+        "parameters": ["context", "venue"]
+      }
+    },
+    "props": {
+      "class": "prose lg:prose-xl",
+      "type": "div"
+    }
+  },
+  {
+    "type": "div",
+    "class": "w-full h-96 bg-map bg-center",
+    "attributes": {
+      "id": "venue-map"
+    }
+  },
+  {
+    "type": "script",
+    "attributes": {
+      "async": "",
+      "src": "./venue.js",
+      "type": "module"
+    }
+  }
+]

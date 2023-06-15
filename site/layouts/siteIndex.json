@@ -17,105 +17,13 @@
         }
       },
       {
-        "type": "div",
-        "class": "flex flex-col gap-4",
-        "children": [
-          {
-            "type": "div",
-            "class": "flex flex-row justify-between",
-            "children": [
-              {
-                "type": "Heading",
-                "props": {
-                  "hideAnchor": true,
-                  "level": 3,
-                  "class": "text-xl md:text-4xl font-extralight"
-                },
-                "bindToProps": {
-                  "children": {
-                    "utility": "concat",
-                    "parameters": [
-                      {
-                        "utility": "getDate",
-                        "parameters": [
-                          {
-                            "utility": "get",
-                            "parameters": [
-                              "context",
-                              "conference.startDate"
-                            ]
-                          }
-                        ]
-                      },
-                      "-",
-                      {
-                        "utility": "getDate",
-                        "parameters": [
-                          {
-                            "utility": "get",
-                            "parameters": [
-                              "context",
-                              "conference.endDate"
-                            ]
-                          }
-                        ]
-                      },
-                      ".",
-                      {
-                        "utility": "getYear",
-                        "parameters": [
-                          {
-                            "utility": "get",
-                            "parameters": [
-                              "context",
-                              "conference.endDate"
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                }
-              },
-              {
-                "_todo": "resolve this from graphql api",
-                "type": "Heading",
-                "props": {
-                  "hideAnchor": true,
-                  "level": 3,
-                  "class": "text-xl md:text-4xl font-extralight",
-                  "children": "Conference at Pörssitalo"
-                }
-              }
-            ]
-          },
-          {
-            "type": "div",
-            "class": "flex flex-row justify-between",
-            "children": [
-              {
-                "type": "Heading",
-                "props": {
-                  "hideAnchor": true,
-                  "level": 3,
-                  "class": "text-xl md:text-4xl font-extralight"
-                },
-                "bindToProps": {
-                  "children": "6.6-7.6.2023"
-                }
-              },
-              {
-                "type": "Heading",
-                "props": {
-                  "hideAnchor": true,
-                  "level": 3,
-                  "class": "text-xl md:text-4xl font-extralight",
-                  "children": "Workshops"
-                }
-              }
-            ]
-          }
-        ]
+        "type": "Heading",
+        "props": {
+          "children": "We will return in June, 2024",
+          "hideAnchor": true,
+          "level": 2,
+          "class": "text-xl md:text-2xl font-extralight"
+        }
       }
     ],
     "content": [
@@ -137,34 +45,6 @@
             }
           },
           {
-            "type": "Markdown",
-            "bindToProps": {
-              "inputText": {
-                "utility": "get",
-                "parameters": ["context", "venue"]
-              }
-            },
-            "props": {
-              "class": "prose lg:prose-xl",
-              "type": "div"
-            }
-          },
-          {
-            "type": "div",
-            "class": "w-full h-96 bg-map bg-center",
-            "attributes": {
-              "id": "venue-map"
-            }
-          },
-          {
-            "type": "script",
-            "attributes": {
-              "async": "",
-              "src": "./venue.js",
-              "type": "module"
-            }
-          },
-          {
             "type": "div",
             "children": [
               {
@@ -181,7 +61,7 @@
             ]
           },
           {
-            "type": "AllSpeakers",
+            "__type": "AllSpeakers",
             "bindToProps": {
               "conference": {
                 "utility": "get",
@@ -193,7 +73,7 @@
             }
           },
           {
-            "type": "AllSponsors",
+            "__type": "AllSponsors",
             "bindToProps": {
               "conference": {
                 "utility": "get",
