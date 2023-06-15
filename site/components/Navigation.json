@@ -16,22 +16,8 @@
   {
     "type": "Link",
     "props": {
-      "children": "Schedule",
-      "href": "schedule"
-    }
-  },
-  {
-    "type": "Link",
-    "props": {
-      "children": "Speakers",
-      "href": "speakers"
-    }
-  },
-  {
-    "type": "Link",
-    "props": {
-      "children": "Workshops",
-      "href": "workshops"
+      "children": "2023",
+      "href": "2023"
     }
   },
   {
