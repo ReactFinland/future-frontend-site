@@ -206,20 +206,10 @@
                                   {
                                     "type": "Link",
                                     "bindToProps": {
-                                      "children": "Slides (web)",
+                                      "children": "Slides",
                                       "href": {
                                         "utility": "get",
                                         "parameters": ["props", "urls.slides"]
-                                      }
-                                    }
-                                  },
-                                  {
-                                    "type": "Link",
-                                    "bindToProps": {
-                                      "children": "Slides (pdf)",
-                                      "href": {
-                                        "utility": "get",
-                                        "parameters": ["props", "urls.web"]
                                       }
                                     }
                                   },
