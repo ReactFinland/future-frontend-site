@@ -145,12 +145,17 @@
     ]
   },
   "2023": {
-    "layout": "informationPage",
+    "layout": "archivePage",
     "meta": {
       "title": "Future Frontend 2023",
       "description": "Future Frontend 2023 was held 6-9.6.2023"
     },
     "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["index"],
+        "name": "conference"
+      },
       {
         "operation": "readFile",
         "parameters": ["./content/ff23.md"],
