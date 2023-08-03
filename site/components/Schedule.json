@@ -128,25 +128,58 @@
                                     }
                                   },
                                   {
-                                    "type": "Link",
-                                    "visibleIf": [
+                                    "type": "div",
+                                    "class": "flex flex-row gap-4",
+                                    "children": [
                                       {
-                                        "utility": "get",
-                                        "parameters": ["props", "urls.slides"]
+                                        "type": "Link",
+                                        "visibleIf": [
+                                          {
+                                            "utility": "get",
+                                            "parameters": [
+                                              "props",
+                                              "urls.slides"
+                                            ]
+                                          }
+                                        ],
+                                        "bindToProps": {
+                                          "href": {
+                                            "utility": "get",
+                                            "parameters": [
+                                              "props",
+                                              "urls.slides"
+                                            ]
+                                          }
+                                        },
+                                        "props": {
+                                          "children": "Slides"
+                                        }
+                                      },
+                                      {
+                                        "type": "Link",
+                                        "visibleIf": [
+                                          {
+                                            "utility": "get",
+                                            "parameters": [
+                                              "props",
+                                              "urls.video"
+                                            ]
+                                          }
+                                        ],
+                                        "bindToProps": {
+                                          "href": {
+                                            "utility": "get",
+                                            "parameters": [
+                                              "props",
+                                              "urls.video"
+                                            ]
+                                          }
+                                        },
+                                        "props": {
+                                          "children": "Video"
+                                        }
                                       }
-                                    ],
-                                    "bindToProps": {
-                                      "href": {
-                                        "utility": "get",
-                                        "parameters": [
-                                          "props",
-                                          "urls.slides"
-                                        ]
-                                      }
-                                    },
-                                    "props": {
-                                      "children": "Slides"
-                                    }
+                                    ]
                                   },
                                   {
                                     "type": "div",
