@@ -18,7 +18,6 @@ type MarkdownWithFrontmatter = {
   content: string;
 };
 
-const CONFERENCE = "future-frontend-2023";
 const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
 
 function createDataFetcher(apiUrl: string) {
@@ -36,7 +35,7 @@ function createDataFetcher(apiUrl: string) {
   };
 }
 
-async function queryData(queryName: string) {
+async function queryData(conferenceId: string, queryName: string) {
   const match = {
     index: { query: indexQuery, key: "conference" },
     organizers: { query: organizersQuery, key: "conference.organizers" },
@@ -49,7 +48,7 @@ async function queryData(queryName: string) {
     throw new Error(`queryData - Query "${queryName}" doesn't exist`);
   }
 
-  const data = await fetchData(match.query, { conferenceId: CONFERENCE });
+  const data = await fetchData(match.query, { conferenceId });
 
   return get(data, match.key);
 }

@@ -47,6 +47,10 @@
     {
       "type": "div",
       "class": "flex flex-col gap-4",
+      "visibleIf": [{
+        "utility": "get",
+        "parameters": ["props", "conference.workshopInstructors"]
+      }],
       "children": [
         {
           "type": "Heading",

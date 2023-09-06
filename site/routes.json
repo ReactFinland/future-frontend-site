@@ -8,7 +8,7 @@
     "dataSources": [
       {
         "operation": "queryData",
-        "parameters": ["index"],
+        "parameters": ["future-frontend-2024", "index"],
         "name": "conference"
       },
       {
@@ -125,7 +125,7 @@
     "dataSources": [
       {
         "operation": "queryData",
-        "parameters": ["organizers"],
+        "parameters": ["future-frontend-2024", "organizers"],
         "name": "organizers"
       }
     ]
@@ -153,7 +153,7 @@
     "dataSources": [
       {
         "operation": "queryData",
-        "parameters": ["index"],
+        "parameters": ["future-frontend-2023", "index"],
         "name": "conference"
       },
       {
@@ -172,7 +172,7 @@
         "dataSources": [
           {
             "operation": "queryData",
-            "parameters": ["schedule"],
+            "parameters": ["future-frontend-2023", "schedule"],
             "name": "schedule"
           }
         ]
@@ -186,7 +186,7 @@
         "dataSources": [
           {
             "operation": "queryData",
-            "parameters": ["speakers"],
+            "parameters": ["future-frontend-2023", "speakers"],
             "name": "speakers"
           }
         ]
@@ -200,7 +200,7 @@
         "dataSources": [
           {
             "operation": "queryData",
-            "parameters": ["workshops"],
+            "parameters": ["future-frontend-2023", "workshops"],
             "name": "workshops"
           }
         ]

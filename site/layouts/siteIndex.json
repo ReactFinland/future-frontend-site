@@ -61,7 +61,7 @@
             ]
           },
           {
-            "__type": "AllSpeakers",
+            "type": "AllSpeakers",
             "bindToProps": {
               "conference": {
                 "utility": "get",
@@ -73,7 +73,7 @@
             }
           },
           {
-            "__type": "AllSponsors",
+            "type": "AllSponsors",
             "bindToProps": {
               "conference": {
                 "utility": "get",
