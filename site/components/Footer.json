@@ -97,6 +97,20 @@
             {
               "type": "Link",
               "props": {
+                "children": "Youtube",
+                "href": "https://www.youtube.com/channel/UCaRI1HtkJiOvCgkIddioVcw"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
+                "children": "Photo gallery",
+                "href": "https://www.flickr.com/photos/react-finland/"
+              }
+            },
+            {
+              "type": "Link",
+              "props": {
                 "children": "Join Slack",
                 "href": "https://join.slack.com/t/toskaosk/shared_invite/zt-4e8c84ow-JybtzFPZWXpZ8cZBpMy1wQ"
               }
