@@ -18,6 +18,39 @@
           "type": "Heading",
           "props": {
             "level": 3,
+            "children": "Gold sponsors",
+            "class": "text-6xl"
+          }
+        },
+        {
+          "type": "div",
+          "class": "grid grid-cols-2 gap-8",
+          "children": [
+            {
+              "type": "MiniSponsors",
+              "bindToProps": {
+                "children": {
+                  "utility": "get",
+                  "parameters": [
+                    "props",
+                    "conference.goldSponsors"
+                  ]
+                },
+                "aClass": "my-auto"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "class": "flex flex-col gap-4",
+      "children": [
+        {
+          "type": "Heading",
+          "props": {
+            "level": 3,
             "children": "Silver sponsors",
             "class": "text-4xl"
           }
@@ -51,7 +84,7 @@
           "type": "Heading",
           "props": {
             "level": 3,
-            "children": "Bronze sponsor",
+            "children": "Bronze sponsors",
             "class": "text-2xl"
           }
         },
