@@ -144,6 +144,48 @@
       }
     ]
   },
+  "schedule": {
+    "layout": "schedule",
+    "meta": {
+      "title": "Schedule",
+      "description": "Schedule of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2024", "schedule"],
+        "name": "schedule"
+      }
+    ]
+  },
+  "speakers": {
+    "layout": "speakers",
+    "meta": {
+      "title": "Speakers",
+      "description": "Speakers of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2024", "speakers"],
+        "name": "speakers"
+      }
+    ]
+  },
+  "workshops": {
+    "layout": "workshops",
+    "meta": {
+      "title": "Workshops",
+      "description": "Workshops of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2024", "workshops"],
+        "name": "workshops"
+      }
+    ]
+  },
   "2023": {
     "layout": "archivePage",
     "meta": {

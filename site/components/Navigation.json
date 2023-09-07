@@ -9,6 +9,20 @@
   {
     "type": "Link",
     "props": {
+      "children": "Speakers",
+      "href": "speakers"
+    }
+  },
+  {
+    "type": "Link",
+    "props": {
+      "children": "Schedule",
+      "href": "schedule"
+    }
+  },
+  {
+    "type": "Link",
+    "props": {
       "children": "Blog",
       "href": "blog"
     }
