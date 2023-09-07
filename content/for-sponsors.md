@@ -1,53 +1,63 @@
-Future Frontend is the successor of [React Finland](https://react-finland.fi/) by the same organizers held 06-09.2023 (06-07 for workshops, 08-09 for conference). As React can be considered stable technology by now, we felt a brand refresh would be in place as it would allow us to do a more interesting conference than sticking to something tried and true. In the new conference, we've taken what we've learned from organizing React Finland and pushed it to the next level.
+We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first edition held at Pörssitalo was a success and as a sponsor you can support us to make the second edition even greater.
 
 ## International speakers with local flavor included
 
-The fifteen speakers of the conference have varying backgrounds and our roster includes many of the leading names from the community including Miško Hevery, Ryan Carniato, and many others. We've managed to invite the authors of the leading bleeding edge frameworks to the conference making it unique even on a global scale. We've also taken care to include local speakers to the program as it's our duty to show what's happening in Finland.
+For Future Frontend, we use a single track format with eight sessions. Each themed session has two speakers. We include leading names from the community while not forgetting local talent. The choice aligns well with our target of connecting Finland with the global frontend space.
 
-The single track format allows our visitors to get most out of the experience. In particular, we want to connect the speakers with the local community as well as possible. That is partially possible due to scoping in terms of topics and the amount of audience.
+The single track format gives each of our visitors a shared experience while removing the burden of choice. That is not to say there are no benefits to running multiple tracks but in our experience single track works the best for us while allowing to manage costs as we cover accommodation and trips of our speakers.
 
-We don't offer speaker slots to our sponsors. Occasionally there may have been a speaker or two from a sponsoring company but that is due to the merits of the speakers, not due to a specific arrangement. We know some conferences do it the other way but this has been our policy so far and it feels like it has been a good one.
+We do not offer speaker slots to our sponsors. Occasionally there may have been a speaker or two from a sponsoring company but that is due to the merits of the speakers, not due to a specific arrangement. We know some conferences do it the other way but this has been our policy so far and it feels like it has been a good one.
 
 ## Focused audience
 
-We expect the audience to contain plenty of international flavor. Our target is to reach between 150 and 250 attendees for the first edition as that would enable us to run again next year. This time, we are aiming at a good mix of domestic and international visitors. Due to the changed focus, our hope is to attract more of the senior crowd. That is not to say juniors are not welcome but the content will be quite advanced by definition.
+Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the second edition majority of the participants might come from abroad. For the second edition, our official target is to reach between 300 and 400 attendees.
+
+This is not to say juniors are not welcome but it seems that due to our speaker selection and positioning the conference is well suited for seniors wanting to understand what is the next thing. In our schedule, we try to include both advanced and inspirational content to keep it varied. Occasionally we also bring speakers outside of technology to keep things interesting for our attendees.
 
 ## National and international visibility
 
-The conference will have visibility both in national and international level. It has been positioned as a developers to developers conference but we are willing to provide visibility to limited amount of companies in order to produce the highest quality conference we can. We see sponsorships as value add and believe good collaborations can improve the experience for everyone involved.
+By supporting our conference, you will be visible both on a national and international level. Most importantly you help us push the conference to the next level as extras, such as the afterparty, are funded through our sponsorships.
 
-## Amazing venue
+## Paasitorni, our amazing venue
 
-Over the years we've learned to appreciate the importance of a good conference venue. We started from Valkoinen Sali, ran a couple of times at Paasitorni, and now we are headed to [Pörssitalo](http://porssitalo.fi/) ([see better photos at Venuu](https://venuu.fi/tilat/porssitalo)). Compared to Paasitorni it has its pros and cons. The main limitation is that it cannot take more than ~250 people at the main hall so it scopes the conference by definition. On the plus side, the venue allows us to integrate sponsors as a part of the event better than ever before.
+After a brief visit to Pörssitalo, we are returning back to [Paasitorni](https://www.paasitorni.fi/) as it suits our targets for the second edition better in terms of space. Based on our experience with Paasitorni, it is a flexible venue that comes with a historic flavor and often it does not fail to impress our visitors.
 
 ## Your spot to shine
 
-We are offering the perfect spot for companies to promote their knowledge and presence in the frontend ecosystem through sponsorships. In addition, there will be also side activities with speakers and organizers to connect and communicate with top-level professionals. We encourage companies to run their own events and we are happy to promote them as long as they are from our sponsors. That is to say companies outside of official sponsors may run their own but they will have to handle promotion on their own.
+Sponsorships are a part of corporate branding. Even if you are not recruiting, by supporting Future Frontend you are in a good company. We try to offer sponsorships at different levels with different amounts of commitment and I hope you find a plan that makes sense for you.
+
+Often sponsors end up doing their own activities outside of a conference and we are more than happy to support you with these sort of efforts in terms of marketing for example.
+
+## Only frontend focused conference in Finland
+
+Future Frontend is the only frontend focused conference in Finland and one of the few in the Nordics. The scope allows us to include speakers with diverse backgrounds and we do our best to find sixteen speakers that give our visitors something to take back home.
 
 ## Packages
 
-Considering the reduced scope of the conference, we've adjusted sponsorship pricing as a result so it's roughly one third cheaper than before. When considering the pricing, it's good to keep in mind that by supporting our conference, you also support the local ecosystem and enable this type of events as we don't have too many in the local market. We're the only frontend focused conference in Finland and one of the few in the Nordics.
+For the second edition, we have decided on the following packages and pricing:
 
-&nbsp; | BRONZE | SILVER | GOLD
--|-|-|-
-Cost (VAT 0) | 3.000€ | 5.000€ | 10.000€
-Available | 6 | 4 | 2
-Conference tickets | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
-Visibility on social media and website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Logo size on website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Banner in conference | &#10003; | &#10003; | &#10003;
-Banner on stage | | | &#10003;
-Logo on slides between the talks | &#10003; | &#10003; | &#10003;
-Job announcements | | &#10003; | &#10003;
-Area in sponsor lounge for booths / promotion | | &#10003; | &#10003;
-Item in the goodie bag* | | | &#10003;
-Attendance for the speaker events (e.g., the speakers' dinner) | | | &#9786;
-Special requests | | | &#10003;
+&nbsp; | DIGITAL | BRONZE | SILVER | GOLD
+-|-|-|-|-
+Cost (VAT 0) | 1.000€ | 2.000€ | 5.000€ | 10.000€
+Available | 12 | 6 | 4 | 2
+Conference tickets | 1 x &#9786; | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
+Visibility on social media and website | &#9786; | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
+Logo size on website | &#9786; | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
+Banner in conference | | &#10003; | &#10003; | &#10003;
+Banner on stage | | | | &#10003;
+Logo on slides between the talks | | &#10003; | &#10003; | &#10003;
+Job announcements | | | &#10003; | &#10003;
+Area in sponsor lounge for booths / promotion | | | &#10003; | &#10003;
+Item in the goodie bag* | | | | &#10003;
+Attendance for the speaker events (e.g., the speakers' dinner) | | | | &#9786;
+Special requests | | | | &#10003;
 
-Note that on top of all this, we provide a 20% discount of our sponsors regardless of the sponsorship level. This applies for any ticket type and if you are planning to buy a lot of tickets anyway, it may be cheaper to become a sponsor.
+Note that on top of all this, we provide a 20% ticket discount for bronze and above. This applies for any ticket type so if you are planning to buy a lot of tickets anyway, it may be cheaper to become a sponsor.
 
-The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious. If attendees don't want swag, we'll use the equivalent amount of money for charity instead.
+The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious.
 
 ## How to Sponsor?
 
-If you are interested in any of our sponsorship packages, get in touch (info \<at> futurefrontend.com)!
+To keep the process simple, it is possible to purchase digital sponsorship directly through Tito. Remember to send your logo to us, though!
+
+If you are interested in any of the other sponsorship packages, get in touch (info \<at> futurefrontend.com)!
