@@ -1,4 +1,4 @@
-We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first edition held at Pörssitalo was a success and as a sponsor you can support us to make the second edition even greater.
+We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first edition held at Pörssitalo was a success and as a sponsor you can support us to make the second edition even greater. The second edition will take place 13-14.6 at Paasitorni. Before the conference, we have two days of workshops distributed to our partner companies.
 
 ## International speakers with local flavor included
 
