@@ -40,6 +40,25 @@
               }
             }
           ]
+        },
+        {
+          "type": "Link",
+          "visibleIf": [
+            {
+              "utility": "lessThan",
+              "parameters": [
+                {
+                  "utility": "get",
+                  "parameters": ["props", "conference.goldSponsors"]
+                },
+                2
+              ]
+            }
+          ],
+          "props": {
+            "children": "Become a gold sponsor",
+            "href": "for-sponsors"
+          }
         }
       ]
     },
@@ -73,6 +92,25 @@
               }
             }
           ]
+        },
+        {
+          "type": "Link",
+          "visibleIf": [
+            {
+              "utility": "lessThan",
+              "parameters": [
+                {
+                  "utility": "get",
+                  "parameters": ["props", "conference.silverSponsors"]
+                },
+                4
+              ]
+            }
+          ],
+          "props": {
+            "children": "Become a silver sponsor",
+            "href": "for-sponsors"
+          }
         }
       ]
     },
@@ -107,6 +145,25 @@
               }
             }
           ]
+        },
+        {
+          "type": "Link",
+          "visibleIf": [
+            {
+              "utility": "lessThan",
+              "parameters": [
+                {
+                  "utility": "get",
+                  "parameters": ["props", "conference.bronzeSponsors"]
+                },
+                6
+              ]
+            }
+          ],
+          "props": {
+            "children": "Become a bronze sponsor",
+            "href": "for-sponsors"
+          }
         }
       ]
     },

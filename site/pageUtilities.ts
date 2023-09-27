@@ -164,8 +164,6 @@ function init({ routes }: { routes: Routes }) {
   }
 
   function lessThan(_: Context, a: number, b: number) {
-    console.log("less than", a, b, a < b);
-
     return a < b;
   }
 
