@@ -1,0 +1,31 @@
+<BaseLayout>
+  <slot name="header">
+    <Heading
+      level="2"
+      hideAnchor="true"
+      class="text-xl md:text-4xl font-light"
+      &children="(get context conference.slogan)"
+    />
+    <Heading
+      level="2"
+      hideAnchor="true"
+      class="text-xl md:text-2xl font-extralight"
+      >13-14 June, 2024 at Paasitorni, Helsinki</Heading
+    >
+  </slot>
+  <slot name="content">
+    <div class="flex flex-col gap-8">
+      <Markdown
+        class="prose lg:prose-xl"
+        type="div"
+        &children="(get context intro)"
+      />
+      <Heading level="2" class="text-2xl"
+        >Subscribe to our mailing list for the latest news</Heading
+      >
+      <Subscribe />
+      <AllSpeakers &conference="(get context conference)" />
+      <AllSponsors &conference="(get context conference)" />
+    </div>
+  </slot>
+</BaseLayout>
