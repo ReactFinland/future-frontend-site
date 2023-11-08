@@ -1,0 +1,10 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="flex flex-col gap-8">
+      <Speakers
+        class="flex flex-col gap-8"
+        &children="(get context speakers)"
+      />
+    </div>
+  </slot>
+</BaseLayout>
