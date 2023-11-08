@@ -1,0 +1,13 @@
+<noop &foreach="(get props children)">
+  <a &class="(get props aClass '')" &href="(get props social.homepage)">
+    <img
+      &class="(get props imgClass '')"
+      &alt="(get props about)"
+      loading="lazy"
+      &src="(rewriteImageSource (get props image.url))"
+      title="(get props tagline)"
+      width="100"
+      height="100"
+    />
+  </a>
+</noop>
