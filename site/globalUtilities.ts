@@ -1,36 +1,35 @@
 import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
 import md from "./transforms/markdown.ts";
-import type { Context } from "https://deno.land/x/gustwind@v0.36.0/breezewind/types.ts";
 import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts";
 
 function init({ routes }: { routes: Routes }) {
-  function invert(_: Context, b: boolean) {
+  function invert(b: boolean) {
     return !b;
   }
 
-  function getDate(_: Context, d: string) {
+  function getDate(d: string) {
     const date = new Date(d);
 
     return `${date.getDate()}.${date.getMonth() + 1}`;
   }
 
-  function getYear(_: Context, d: string) {
+  function getYear(d: string) {
     return new Date(d).getFullYear();
   }
 
-  function getDatetime(_: Context, d: string) {
+  function getDatetime(d: string) {
     const date = new Date(d);
 
     return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
   }
 
-  function getFullDate(_: Context, d: string) {
+  function getFullDate(d: string) {
     const date = new Date(d);
 
     return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
   }
 
-  function markdown(_: Context, input: string) {
+  function markdown(input: string) {
     if (!input) {
       return "";
     }
@@ -38,24 +37,7 @@ function init({ routes }: { routes: Routes }) {
     return md(input).content;
   }
 
-  function trim(_: Context, str: string, char: string) {
-    if (!str) {
-      throw new Error("No string to trim!");
-    }
-
-    // Exception for /
-    if (str === char) {
-      return str;
-    }
-
-    // Adapted from https://www.sitepoint.com/trimming-strings-in-javascript/
-    return str.replace(new RegExp("^[" + char + "]+"), "").replace(
-      new RegExp("[" + char + "]+$"),
-      "",
-    );
-  }
-
-  function validateUrl(_: Context, url: string) {
+  function validateUrl(url: string) {
     if (!url) {
       return;
     }
@@ -75,12 +57,15 @@ function init({ routes }: { routes: Routes }) {
     throw new Error(`Failed to find matching url for "${url}"`);
   }
 
-  function pluralize(_: Context, items: unknown[]) {
+  function pluralize(items: unknown[]) {
     return items.length > 1 ? "s" : "";
   }
 
   let foundIds: Record<string, number> = {};
-  function getUniqueAnchorId({ pathname }: Context, anchor: string) {
+  function getUniqueAnchorId(anchor: string) {
+    // @ts-expect-error This is fine.
+    const { pathname } = this.context;
+
     if (!anchor || Array.isArray(anchor) || isObject(anchor)) {
       return;
     }
@@ -118,7 +103,7 @@ function init({ routes }: { routes: Routes }) {
     foundIds = {};
   }
 
-  function offsetByTimezone(_: Context, time: string) {
+  function offsetByTimezone(time: string) {
     // Fixed to Finnish Summer time
     // const tzOffset = new Date().getTimezoneOffset() / 60;
     const tzOffset = -3;
@@ -147,7 +132,6 @@ function init({ routes }: { routes: Routes }) {
   }
 
   function getProperty(
-    _: Context,
     o: Record<string, unknown>,
     property: string,
     defaultValue: unknown,
@@ -155,15 +139,15 @@ function init({ routes }: { routes: Routes }) {
     return o[property] || defaultValue;
   }
 
-  function equals(_: Context, a: unknown, b: unknown) {
+  function equals(a: unknown, b: unknown) {
     return a === b;
   }
 
-  function greaterThan(_: Context, a: number, b: number) {
+  function greaterThan(a: number, b: number) {
     return a > b;
   }
 
-  function lessThan(_: Context, a: number, b: number) {
+  function lessThan(a: number, b: number) {
     return a < b;
   }
 
@@ -180,7 +164,7 @@ function timezoneOffset() {
   // The idea of this helper is to copy images from a remote api to
   // the assets directory so that they can be served directly through
   // Cloudflare
-  async function rewriteImageSource(_: Context, source: string) {
+  async function rewriteImageSource(source: string) {
     const assetPath = "assets/img";
     const imageName = path.basename(source);
     const outputPath = path.join(Deno.cwd(), assetPath, imageName);
@@ -213,7 +197,6 @@ function timezoneOffset() {
     offsetByTimezone,
     pluralize,
     rewriteImageSource,
-    trim,
     validateUrl,
   };
 }

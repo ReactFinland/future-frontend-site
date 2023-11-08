@@ -18,56 +18,60 @@ type MarkdownWithFrontmatter = {
   content: string;
 };
 
-const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
+function init() {
+  const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
 
-function createDataFetcher(apiUrl: string) {
-  return async function fetchData(
-    query: string,
-    variables: Record<string, unknown>,
-  ) {
-    const request = new GraphQLRequest(
-      apiUrl,
-      query,
-      { variables },
-    );
+  function createDataFetcher(apiUrl: string) {
+    return async function fetchData(
+      query: string,
+      variables: Record<string, unknown>,
+    ) {
+      const request = new GraphQLRequest(
+        apiUrl,
+        query,
+        { variables },
+      );
 
-    return (await fetch(request).then((res) => res.json())).data;
-  };
-}
-
-async function queryData(conferenceId: string, queryName: string) {
-  const match = {
-    index: { query: indexQuery, key: "conference" },
-    organizers: { query: organizersQuery, key: "conference.organizers" },
-    schedule: { query: scheduleQuery, key: "conference.schedules" },
-    speakers: { query: speakersQuery, key: "conference.allSpeakers" },
-    workshops: { query: workshopsQuery, key: "conference.workshops" },
-  }[queryName];
-
-  if (!match) {
-    throw new Error(`queryData - Query "${queryName}" doesn't exist`);
+      return (await fetch(request).then((res) => res.json())).data;
+    };
   }
 
-  const data = await fetchData(match.query, { conferenceId });
+  async function queryData(conferenceId: string, queryName: string) {
+    const match = {
+      index: { query: indexQuery, key: "conference" },
+      organizers: { query: organizersQuery, key: "conference.organizers" },
+      schedule: { query: scheduleQuery, key: "conference.schedules" },
+      speakers: { query: speakersQuery, key: "conference.allSpeakers" },
+      workshops: { query: workshopsQuery, key: "conference.workshops" },
+    }[queryName];
 
-  return get(data, match.key);
+    if (!match) {
+      throw new Error(`queryData - Query "${queryName}" doesn't exist`);
+    }
+
+    const data = await fetchData(match.query, { conferenceId });
+
+    return get(data, match.key);
+  }
+
+  function readFile(filename: string) {
+    return Deno.readTextFile(filename);
+  }
+
+  async function indexMarkdown(directory: string) {
+    const files = await dir({ path: directory, extension: ".md" });
+    const ret = await Promise.all(
+      files.map(({ path }) =>
+        Deno.readTextFile(path).then((d) => parse(d) as MarkdownWithFrontmatter)
+      ),
+    );
+
+    ret.sort((a, b) => a.data.date < b.data.date ? 1 : -1);
+
+    return ret;
+  }
+
+  return { indexMarkdown, queryData, readFile };
 }
 
-function readFile(filename: string) {
-  return Deno.readTextFile(filename);
-}
-
-async function indexMarkdown(directory: string) {
-  const files = await dir({ path: directory, extension: ".md" });
-  const ret = await Promise.all(
-    files.map(({ path }) =>
-      Deno.readTextFile(path).then((d) => parse(d) as MarkdownWithFrontmatter)
-    ),
-  );
-
-  ret.sort((a, b) => a.data.date < b.data.date ? 1 : -1);
-
-  return ret;
-}
-
-export { indexMarkdown, queryData, readFile };
+export { init };
