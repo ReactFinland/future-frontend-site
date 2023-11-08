@@ -21,9 +21,9 @@
   "homepage": "https://github.com/ReactFinland/future-frontend-site#readme",
   "dependencies": {
     "breezewind": "^1.1.0",
-    "sharp": "^0.32.1"
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "@divriots/jampack": "^0.9.4"
+    "@divriots/jampack": "^0.22.0"
   }
 }
