@@ -1,0 +1,11 @@
+<BaseLayout>
+  <slot name="content">
+    <Markdown
+      &children="(get context content)"
+      class="prose lg:prose-xl"
+      type="div"
+    />
+    <AllSpeakers &conference="(get context conference)" />
+    <AllSponsors &conference="(get context conference)" />
+  </slot>
+</BaseLayout>
