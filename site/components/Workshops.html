@@ -26,6 +26,7 @@
         />
         <Heading level="3" class="sr-only">Location</Heading>
         <SiteLink
+          &visibleIf="(get props location.social.googleMaps)"
           &href="(get props location.social.googleMaps)"
           &children="(concat
             'Location: '
