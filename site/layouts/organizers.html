@@ -1,0 +1,10 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="grid grid-cols-3 gap-8">
+      <Organizers
+        &children="(get context organizers)"
+        imgClass="object-contain h-48"
+      />
+    </div>
+  </slot>
+</BaseLayout>
