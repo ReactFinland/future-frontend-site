@@ -1,3 +1,4 @@
+import { urlJoin } from "https://bundle.deno.dev/https://deno.land/x/url_join@1.0.0/mod.ts";
 import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
 import md from "./transforms/markdown.ts";
 import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts";
@@ -196,6 +197,7 @@ function timezoneOffset() {
     markdown,
     offsetByTimezone,
     pluralize,
+    urlJoin,
     rewriteImageSource,
     validateUrl,
   };

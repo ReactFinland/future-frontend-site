@@ -22,7 +22,7 @@
         "name": "venue"
       }
     ],
-    "scripts": [{ "name": "venue", "loadInitially": false }]
+    "scripts": [{ "name": "venue" }]
   },
   "blog": {
     "layout": "blogIndex",
@@ -100,7 +100,7 @@
         "name": "content"
       }
     ],
-    "scripts": [{ "name": "speaker-map", "loadInitially": false }]
+    "scripts": [{ "name": "speaker-map" }]
   },
   "for-sponsors": {
     "layout": "informationPage",
