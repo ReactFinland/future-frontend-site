@@ -131,7 +131,7 @@
     ]
   },
   "privacy-policy": {
-    "layout": "privacyPolicy",
+    "layout": "informationPage",
     "meta": {
       "title": "Privacy policy",
       "description": "Privacy policy of Future Frontend"
@@ -140,7 +140,7 @@
       {
         "operation": "readFile",
         "parameters": ["./content/privacy-policy.md"],
-        "name": "privacyPolicy"
+        "name": "content"
       }
     ]
   },
