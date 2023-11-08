@@ -1,7 +1,7 @@
 {
   "tasks": {
-    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.52.5/gustwind-cli/mod.ts -b -t cpuFull -o ./build",
-    "build:linked": "gustwind -b -t cpuFull -o ./build",
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.52.5/gustwind-cli/mod.ts -b -t cpuMax -o ./build",
+    "build:linked": "gustwind -b -t cpuMax -o ./build",
     "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.52.5/gustwind-cli/mod.ts -d -p 3000",
     "start:linked": "gustwind -d -p 3000",
     "serve": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.52.5/gustwind-cli/mod.ts -s -p 3000 -i ./build",
