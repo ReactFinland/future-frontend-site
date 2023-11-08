@@ -1,0 +1,20 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="md:mx-auto px-4 md:px-0 w-full lg:max-w-3xl">
+      <ul class="flex flex-col gap-4" &foreach="(get context blogPosts)">
+        <li>
+          <a
+            class="flex flex-col gap-2 border-primary border-2 rounded p-2 hover:bg-gray-100"
+            &href="(get props data.slug)"
+          >
+            <div &children="(get props data.title)"></div>
+            <FormattedTime
+              class="font-extralight"
+              &date="(get props data.date)"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </slot>
+</BaseLayout>
