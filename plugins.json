@@ -16,9 +16,7 @@
           "selection": ["Markdown", "MetaFields", "SiteLink", "Scripts"]
         },
         { "loader": "html", "path": "./site/components" },
-        { "loader": "html", "path": "./site/layouts" },
-        { "loader": "json", "path": "./site/components" },
-        { "loader": "json", "path": "./site/layouts" }
+        { "loader": "html", "path": "./site/layouts" }
       ],
       "metaPath": "./site/meta.json",
       "globalUtilitiesPath": "./site/globalUtilities.ts"
