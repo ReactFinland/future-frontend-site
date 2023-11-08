@@ -34,7 +34,7 @@
           {
             "type": "Markdown",
             "bindToProps": {
-              "inputText": {
+              "children": {
                 "utility": "get",
                 "parameters": ["context", "intro"]
               }

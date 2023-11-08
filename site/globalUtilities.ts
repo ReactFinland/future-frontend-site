@@ -1,6 +1,5 @@
 import { urlJoin } from "https://bundle.deno.dev/https://deno.land/x/url_join@1.0.0/mod.ts";
 import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
-import md from "./transforms/markdown.ts";
 import type { Routes } from "https://deno.land/x/gustwind@v0.36.0/types.ts";
 
 function init({ routes }: { routes: Routes }) {
@@ -28,14 +27,6 @@ function init({ routes }: { routes: Routes }) {
     const date = new Date(d);
 
     return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
-  }
-
-  function markdown(input: string) {
-    if (!input) {
-      return "";
-    }
-
-    return md(input).content;
   }
 
   function validateUrl(url: string) {
@@ -194,7 +185,6 @@ function timezoneOffset() {
     getUniqueAnchorId,
     getYear,
     invert,
-    markdown,
     offsetByTimezone,
     pluralize,
     urlJoin,
