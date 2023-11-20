@@ -1,0 +1,36 @@
+<div class="flex flex-col gap-8">
+  <Heading level="2" class="sr-only">All speakers</Heading>
+  <div class="flex flex-col gap-4">
+    <Heading level="3" class="text-4xl">Speakers</Heading>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <MiniSpeakers
+        captionClass="flex justify-center text-center"
+        imgClass="rounded-full mx-auto"
+        &children="(get props conference.speakers)"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col gap-4"
+    &visibleIf="(get props conference.workshopInstructors)"
+  >
+    <Heading level="3" class="text-4xl">Workshop instructors</Heading>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <MiniSpeakers
+        captionClass="flex justify-center text-center"
+        imgClass="rounded-full mx-auto"
+        &children="(get props conference.workshopInstructors)"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col gap-4" &visibleIf="(get props conference.mcs)">
+    <Heading level="3" class="text-4xl">MCs</Heading>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <MiniSpeakers
+        captionClass="flex justify-center text-center"
+        imgClass="rounded-full mx-auto"
+        &children="(get props conference.mcs)"
+      />
+    </div>
+  </div>
+</div>
