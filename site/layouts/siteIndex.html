@@ -1,0 +1,39 @@
+<BaseLayout>
+  <slot name="header">
+    <Heading
+      level="2"
+      hideAnchor="true"
+      class="text-xl md:text-4xl font-light"
+      &children="(get context conference.slogan)"
+    />
+    <Heading
+      level="2"
+      hideAnchor="true"
+      class="text-xl md:text-2xl font-extralight"
+      >13-14 June, 2024 at Paasitorni, Helsinki</Heading
+    >
+  </slot>
+  <slot name="content">
+    <div class="flex flex-col gap-8">
+      <Markdown class="prose lg:prose-xl" type="div"
+        >To quote William Gibson, the future is already here – it's just not
+        evenly distributed. The purpose of Future Frontend conference is to give
+        you a glimpse of future. We focus on frontend, mainly web development,
+        related topics in this single track conference held in Helsinki, Finland
+        at the historic venue of Paasitorni. The next edition is planned for
+        13-14 June, 2024 while the workshops take place 10-12 June, 2024.
+      </Markdown>
+      <Heading level="2" class="text-2xl"
+        >Subscribe to our mailing list for the latest news</Heading
+      >
+      <Subscribe />
+      <div>
+        <Heading level="2" class="text-4xl">Venue</Heading>
+        <p>Paasitorni - Paasivuorenkatu 5 A, 00530 Helsinki, Finland</p>
+        <div class="w-full h-96 bg-map bg-center" id="venue-map"></div>
+      </div>
+      <AllSpeakers &conference="(get context conference)" />
+      <AllSponsors &conference="(get context conference)" />
+    </div>
+  </slot>
+</BaseLayout>

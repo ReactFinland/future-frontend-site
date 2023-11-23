@@ -2,7 +2,7 @@
   "/": {
     "layout": "siteIndex",
     "meta": {
-      "title": "Future Frontend",
+      "title": "Future Frontend 2024",
       "description": "Future Frontend is a conference series bringing together developers in Helsinki, Finland to reimagine the future of frontend development."
     },
     "dataSources": [
@@ -10,19 +10,9 @@
         "operation": "queryData",
         "parameters": ["future-frontend-2024", "index"],
         "name": "conference"
-      },
-      {
-        "operation": "readFile",
-        "parameters": ["./content/intro.md"],
-        "name": "intro"
-      },
-      {
-        "operation": "readFile",
-        "parameters": ["./content/venue.md"],
-        "name": "venue"
       }
     ],
-    "scripts": [{ "name": "venue", "loadInitially": false }]
+    "scripts": [{ "name": "venue" }]
   },
   "blog": {
     "layout": "blogIndex",
@@ -39,11 +29,18 @@
     ],
     "expand": {
       "matchBy": {
-        "dataSource": {
+        "indexer": {
           "operation": "indexMarkdown",
-          "parameters": ["./blogPosts"],
-          "name": "document"
+          "parameters": ["./blogPosts"]
         },
+        "dataSources": [{
+          "operation": "processMarkdown",
+          "firstParameter": "path",
+          "parameters": [
+            { "parseHeadmatter": true }
+          ],
+          "name": "document"
+        }],
         "slug": "data.slug"
       },
       "layout": "blogPage",
@@ -60,16 +57,16 @@
     }
   },
   "contact": {
-    "layout": "contact",
+    "layout": "informationPage",
     "meta": {
       "title": "Contact",
       "description": "Contact information of Future Frontend"
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/contact.md"],
-        "name": "contact"
+        "name": "document"
       }
     ]
   },
@@ -81,9 +78,9 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/for-attendees.md"],
-        "name": "content"
+        "name": "document"
       }
     ]
   },
@@ -95,12 +92,12 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/for-speakers.md"],
-        "name": "content"
+        "name": "document"
       }
     ],
-    "scripts": [{ "name": "speaker-map", "loadInitially": false }]
+    "scripts": [{ "name": "speaker-map" }]
   },
   "for-sponsors": {
     "layout": "informationPage",
@@ -110,9 +107,9 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/for-sponsors.md"],
-        "name": "content"
+        "name": "document"
       }
     ]
   },
@@ -131,16 +128,16 @@
     ]
   },
   "privacy-policy": {
-    "layout": "privacyPolicy",
+    "layout": "informationPage",
     "meta": {
       "title": "Privacy policy",
       "description": "Privacy policy of Future Frontend"
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/privacy-policy.md"],
-        "name": "privacyPolicy"
+        "name": "document"
       }
     ]
   },
@@ -199,9 +196,9 @@
         "name": "conference"
       },
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/ff23.md"],
-        "name": "content"
+        "name": "document"
       }
     ],
     "routes": {

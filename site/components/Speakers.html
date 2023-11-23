@@ -1,0 +1,61 @@
+<div &class="(get props class '')" &foreach="(get props children)">
+  <div>
+    <figure class="float-left mr-4">
+      <img
+        class="rounded-full object-contain h-32"
+        &alt="(get props name)"
+        loading="lazy"
+        &src="(rewriteImageSource (get props image.url))"
+        &title="(get props tagline)"
+        width="128"
+        height="128"
+      />
+      <figcaption class="sr-only" &children="(get props name)" />
+    </figure>
+    <div class="flex flex-col gap-4">
+      <div>
+        <Heading level="2" class="text-4xl" &children="(get props name)" />
+        <p
+          class="text-2xl text-gray-500 font-light"
+          &children="(get props tagline)"
+        ></p>
+      </div>
+      <div class="flex flex-row flex-wrap gap-4">
+        <SiteLink &href="(get props social.homepage)">Homepage</SiteLink>
+        <SiteLink &href="(get props social.github)">GitHub</SiteLink>
+        <SiteLink &href="(get props social.twitter)">Twitter</SiteLink>
+        <SiteLink &href="(get props social.linkedin)">LinkedIn</SiteLink>
+      </div>
+      <Markdown
+        &visibleIf="(get props about)"
+        class="prose lg:prose-xl"
+        type="div"
+        &children="(get props about)"
+      />
+      <div &visibleif="(get props talks)">
+        <Heading
+          level="3"
+          class="text-2xl"
+          &children="(concat Talk (pluralize (get props talks)))"
+        />
+        <div class="flex flex-col gap-4" &foreach="(get props talks)">
+          <div class="flex flex-col gap-2">
+            <h4 class="text-xl" &children="(get props title)"></h4>
+            <Markdown
+              &visibleIf="(get props description)"
+              class="prose lg:prose-xl"
+              type="div"
+              &children="(get props description)"
+            />
+            <div class="flex flex-row gap-4">
+              <SiteLink &href="(get props urls.slides)">Slides</SiteLink>
+              <SiteLink &href="(get props urls.video)">Video</SiteLink>
+              <SiteLink &href="(get props urls.drawing)">Drawing</SiteLink>
+              <SiteLink &href="(get props urls.demo)">Demo</SiteLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

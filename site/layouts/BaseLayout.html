@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html &lang="(get context language)">
+  <head>
+    <link rel="icon" href="/images/icon.ico" sizes="any" />
+    <link rel="icon" href="/images/icon.svg" type="image/svg+xml" />
+    <link
+      rel="canonical"
+      &href="(urlJoin (get context meta.url) (get context url))"
+    />
+    <link
+      rel="preload"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha384-o/2yZuJZWGJ4s/adjxVW71R+EO/LyCwdQfP5UWSgX/w87iiTXuvDZaejd3TsN7mf"
+      crossorigin="anonymous"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <MetaFields />
+  </head>
+  <body>
+    <MainHeader &content="(get props header)" />
+    <main
+      class="mx-auto my-8 px-4 xl:px-0 w-full max-w-2xl flex flex-col gap-8"
+      &children="(render (get props content))"
+    ></main>
+    <MainFooter />
+    <Scripts />
+  </body>
+</html>

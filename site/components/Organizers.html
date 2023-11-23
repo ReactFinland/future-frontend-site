@@ -1,0 +1,15 @@
+<noop &foreach="(get props children)">
+  <a &href="(get props social.homepage)">
+    <figure>
+      <img
+        &class="(get props imgClass)"
+        &alt="(get props about)"
+        loading="lazy"
+        &src="(rewriteImageSource (get props image.url))"
+        width="192"
+        height="192"
+      />
+      <figcaption &children="(get props name)" />
+    </figure>
+  </a>
+</noop>

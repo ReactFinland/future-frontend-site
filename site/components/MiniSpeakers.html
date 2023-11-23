@@ -1,0 +1,22 @@
+<noop &foreach="(get props children)">
+  <a
+    &href="(concat (validateUrl speakers) # (getUniqueAnchorId (get props
+  name)))"
+  >
+    <figure &class="(get props imgContainerClass 'flex flex-col gap-2')">
+      <img
+        &class="(get props imgClass '')"
+        &alt="(get props name)"
+        loading="lazy"
+        &src="(rewriteImageSource (get props image.url))"
+        title="(get props tagline)"
+        width="102"
+        height="102"
+      />
+      <figcaption
+        &class="(get props captionClass '')"
+        &children="(get props name)"
+      />
+    </figure>
+  </a>
+</noop>

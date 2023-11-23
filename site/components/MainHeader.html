@@ -1,0 +1,16 @@
+<header class="bg-black py-8 bg-header">
+  <div
+    class="text-white sm:mx-auto px-4 py-4 sm:py-8 max-w-2xl flex flex-col gap-8"
+  >
+    <div class="flex flex-row flex-wrap gap-8"><Navigation /></div>
+    <div class="flex flex-col gap-8">
+      <Heading level="1" hideAnchor="true" class="text-4xl md:text-8xl">
+        <span
+          class="align-middle font-primary text-tertiary"
+          &children="(get context meta.title)"
+        ></span>
+      </Heading>
+      <div &children="(render (get props content))" />
+    </div>
+  </div>
+</header>

@@ -1,0 +1,56 @@
+<div class="flex flex-col gap-8">
+  <Heading level="2" class="sr-only">All sponsors</Heading>
+  <div class="flex flex-col gap-4">
+    <Heading level="3" class="text-6xl">Gold sponsors</Heading>
+    <div class="grid grid-cols-2 gap-8">
+      <MiniSponsors
+        aClass="my-auto"
+        &children="(get props conference.goldSponsors)"
+      />
+    </div>
+    <SiteLink
+      &visibleIf="(lessThan (get props conference.goldSponsors) 2)"
+      href="for-sponsors"
+      >Become a gold sponsor</SiteLink
+    >
+  </div>
+  <div class="flex flex-col gap-4">
+    <Heading level="3" class="text-4xl">Silver sponsors</Heading>
+    <div class="grid grid-cols-4 gap-8">
+      <MiniSponsors
+        aClass="my-auto"
+        &children="(get props conference.silverSponsors)"
+      />
+    </div>
+    <SiteLink
+      &visibleIf="(lessThan (get props conference.silverSponsors) 4)"
+      href="for-sponsors"
+      >Become a silver sponsor</SiteLink
+    >
+  </div>
+  <div class="flex flex-col gap-2">
+    <Heading level="3" class="text-2xl">Bronze sponsors</Heading>
+    <div class="grid grid-cols-3 gap-8">
+      <MiniSponsors
+        aClass="my-auto"
+        imgClass="object-contain h-12"
+        &children="(get props conference.bronzeSponsors)"
+      />
+    </div>
+    <SiteLink
+      &visibleIf="(lessThan (get props conference.bronzeSponsors) 6)"
+      href="for-sponsors"
+      >Become a bronze sponsor</SiteLink
+    >
+  </div>
+  <div &visibleIf="(get props conference.partners)" class="flex flex-col gap-1">
+    <Heading level="3" class="text-2xl">Partners</Heading>
+    <div class="grid grid-cols-4 gap-x-8 gap-y-4">
+      <MiniSponsors
+        aClass="my-auto"
+        imgClass="object-contain h-24"
+        &children="(get props conference.partners)"
+      />
+    </div>
+  </div>
+</div>

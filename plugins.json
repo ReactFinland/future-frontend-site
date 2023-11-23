@@ -1,19 +1,28 @@
 [
   {
-    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/breezewind-router/mod.ts",
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/meta/mod.ts",
+    "options": { "inputPath": "./site/meta.json" }
+  },
+  {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/config-router/mod.ts",
     "options": {
       "dataSourcesPath": "./site/dataSources.ts",
-      "routesPath": "./site/routes.json",
-      "emitAllRoutes": true
+      "routesPath": "./site/routes.json"
     }
   },
   {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/breezewind-renderer/mod.ts",
     "options": {
-      "componentsPath": "./site/components",
-      "metaPath": "./site/meta.json",
-      "layoutsPath": "./site/layouts",
-      "pageUtilitiesPath": "./site/pageUtilities.ts"
+      "componentLoaders": [
+        {
+          "loader": "html",
+          "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/site/components",
+          "selection": ["MetaFields", "SiteLink", "Scripts"]
+        },
+        { "loader": "html", "path": "./site/components" },
+        { "loader": "html", "path": "./site/layouts" }
+      ],
+      "globalUtilitiesPath": "./site/globalUtilities.ts"
     }
   },
   {
@@ -38,5 +47,17 @@
   {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/twind/mod.ts",
     "options": { "setupPath": "./site/twindSetup.ts" }
+  },
+  {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/sitemap/mod.ts"
+  },
+  {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/og/mod.ts",
+    "options": {
+      "layout": "./site/layouts/og.html"
+    }
+  },
+  {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/stats/mod.ts"
   }
 ]

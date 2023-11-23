@@ -1,0 +1,51 @@
+<noop &foreach="(get props children)">
+  <div class="flex flex-col gap-4">
+    <Heading level="2" class="text-4xl" &children="(get props title)" />
+    <div class="flex flex-row gap-4">
+      <div class="flex flex-col gap-4">
+        <div
+          class="text-md whitespace-nowrap"
+          &children="(concat
+            (getDate (get props day))
+            ' ('
+            (offsetByTimezone (get props begin))
+            '-'
+            (offsetByTimezone (get props end))
+            ')'
+          )"
+        ></div>
+        <Heading
+          level="3"
+          class="sr-only"
+          &children="(concat Instructor (pluralize (get props speakers)))"
+        />
+        <MiniSpeakers
+          &children="(get props speakers)"
+          captionClass="text-center"
+          imgClass="mx-auto rounded-full w-16"
+        />
+        <Heading level="3" class="sr-only">Location</Heading>
+        <SiteLink
+          &visibleIf="(get props location.social.googleMaps)"
+          &href="(get props location.social.googleMaps)"
+          &children="(concat
+            'Location: '
+            (get props location.name)
+            ', '
+            (get props location.address)
+            ', '
+            (get props location.city)
+          )"
+        />
+      </div>
+      <div>
+        <Heading level="3" class="text-3xl sr-only">Description</Heading>
+        <Markdown
+          class="prose lg:prose-xl"
+          type="div"
+          &children="(get props description)"
+        />
+      </div>
+    </div>
+  </div>
+</noop>
