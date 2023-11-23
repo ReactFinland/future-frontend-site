@@ -52,6 +52,12 @@
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/sitemap/mod.ts"
   },
   {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/og/mod.ts",
+    "options": {
+      "layout": "./site/layouts/og.html"
+    }
+  },
+  {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/stats/mod.ts"
   }
 ]

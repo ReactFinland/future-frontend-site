@@ -4,7 +4,6 @@
   "description": "This is the website of Future Frontend conference.",
   "main": "index.js",
   "scripts": {
-    "generate:og": "node ./generate-og.js",
     "optimize:site": "npx @divriots/jampack ./build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,10 +18,6 @@
     "url": "https://github.com/ReactFinland/future-frontend-site/issues"
   },
   "homepage": "https://github.com/ReactFinland/future-frontend-site#readme",
-  "dependencies": {
-    "breezewind": "^1.1.0",
-    "sharp": "^0.32.6"
-  },
   "devDependencies": {
     "@divriots/jampack": "^0.22.0"
   }
