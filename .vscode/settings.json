@@ -2,17 +2,20 @@
   "deno.enable": true,
   "deno.unstable": true,
   "deno.lint": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
-    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "[md]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "denoland.vscode-deno",
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "deno.suggest.imports.hosts": {
     "https://unpkg.com": false,
