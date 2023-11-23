@@ -206,9 +206,9 @@
         "name": "conference"
       },
       {
-        "operation": "readFile",
-        "parameters": ["./content/ff23.md"],
-        "name": "content"
+        "operation": "processMarkdown",
+        "parameters": ["./content/ff23.md", { "parseHeadmatter": false }],
+        "name": "document"
       }
     ],
     "routes": {
