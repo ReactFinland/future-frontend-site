@@ -3,7 +3,7 @@ import "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet-src.min.js";
 function renderMap(id: string) {
   // @ts-expect-error How to type Leaflet?
   const L = window.L;
-  const venueLatLon = [60.1785398, 24.9447309];
+  const venueLatLon = [60.178750, 24.947590];
   const map = L.map(id).setView(venueLatLon, 14);
 
   // Different options at https://leaflet-extras.github.io/leaflet-providers/preview/

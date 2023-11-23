@@ -1,6 +1,6 @@
-## Hotel - Lilla Roberts
+## Hotel - Not decided yet
 
-We've chosen [Lilla Roberts](https://www.lillaroberts.com/) as our conference hotel. It's close to the venue at Pieni Roobertinkatu 1-3, 00130 Helsinki.
+We'll book a hotel for you near the venue and update this information after we know the hotel exactly.
 
 We'll book four nights (plus extra night per workshop) at the hotel based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
