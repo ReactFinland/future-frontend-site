@@ -72,9 +72,13 @@ function init({ load }: { load: LoadApi }) {
       type: "",
     });
 
-    return Promise.all(
+    const ret = await Promise.all(
       files.map(async ({ path }) => ({ ...await parseHeadmatter(path), path })),
     );
+
+    ret.sort((a, b) => a.data.date < b.data.date ? 1 : -1);
+
+    return ret;
   }
 
   async function processMarkdown(
