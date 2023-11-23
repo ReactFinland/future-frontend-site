@@ -1,8 +1,9 @@
 <BaseLayout>
   <slot name="content">
-    <div class="prose lg:prose-xl">
-      <div &children="(get context document.content)"></div>
-    </div>
+    <div
+      class="prose lg:prose-xl"
+      &children="(get context document.content)"
+    ></div>
     <AllSpeakers &conference="(get context conference)" />
     <AllSponsors &conference="(get context conference)" />
   </slot>

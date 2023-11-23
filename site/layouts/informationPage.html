@@ -1,9 +1,8 @@
 <BaseLayout>
   <slot name="content">
-    <Markdown
+    <div
       class="prose lg:prose-xl"
-      type="div"
-      &children="(get context content)"
-    />
+      &children="(get context document.content)"
+    ></div>
   </slot>
 </BaseLayout>

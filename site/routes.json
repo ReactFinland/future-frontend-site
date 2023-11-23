@@ -10,16 +10,6 @@
         "operation": "queryData",
         "parameters": ["future-frontend-2024", "index"],
         "name": "conference"
-      },
-      {
-        "operation": "readFile",
-        "parameters": ["./content/intro.md"],
-        "name": "intro"
-      },
-      {
-        "operation": "readFile",
-        "parameters": ["./content/venue.md"],
-        "name": "venue"
       }
     ],
     "scripts": [{ "name": "venue" }]
@@ -67,16 +57,16 @@
     }
   },
   "contact": {
-    "layout": "contact",
+    "layout": "informationPage",
     "meta": {
       "title": "Contact",
       "description": "Contact information of Future Frontend"
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/contact.md"],
-        "name": "contact"
+        "name": "document"
       }
     ]
   },
@@ -88,9 +78,9 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/for-attendees.md"],
-        "name": "content"
+        "name": "document"
       }
     ]
   },
@@ -102,9 +92,9 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/for-speakers.md"],
-        "name": "content"
+        "name": "document"
       }
     ],
     "scripts": [{ "name": "speaker-map" }]
@@ -117,9 +107,9 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/for-sponsors.md"],
-        "name": "content"
+        "name": "document"
       }
     ]
   },
@@ -145,9 +135,9 @@
     },
     "dataSources": [
       {
-        "operation": "readFile",
+        "operation": "processMarkdown",
         "parameters": ["./content/privacy-policy.md"],
-        "name": "content"
+        "name": "document"
       }
     ]
   },
@@ -207,7 +197,7 @@
       },
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/ff23.md", { "parseHeadmatter": false }],
+        "parameters": ["./content/ff23.md"],
         "name": "document"
       }
     ],

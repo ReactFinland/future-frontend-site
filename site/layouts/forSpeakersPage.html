@@ -1,10 +1,9 @@
 <BaseLayout>
   <slot name="content">
-    <Markdown
+    <div
       class="prose lg:prose-xl"
-      type="div"
-      &children="(get context content)"
-    />
+      &children="(get context document.content)"
+    ></div>
     <Heading level="2" class="text-4xl">Map</Heading>
     <div class="w-full h-96 bg-map bg-center" id="speaker-map"></div>
     <script src="/speaker-map.js" async type="module"></script>

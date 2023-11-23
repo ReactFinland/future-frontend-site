@@ -59,10 +59,6 @@ function init({ load }: { load: LoadApi }) {
     return get(data, match.key);
   }
 
-  function readFile(filename: string) {
-    return Deno.readTextFile(filename);
-  }
-
   async function indexMarkdown(
     directory: string,
   ) {
@@ -120,7 +116,7 @@ function init({ load }: { load: LoadApi }) {
     );
   }
 
-  return { indexMarkdown, processMarkdown, queryData, readFile };
+  return { indexMarkdown, processMarkdown, queryData };
 }
 
 export { init };
