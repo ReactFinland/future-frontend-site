@@ -1,5 +1,9 @@
 [
   {
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/meta/mod.ts",
+    "options": { "inputPath": "./site/meta.json" }
+  },
+  {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/config-router/mod.ts",
     "options": {
       "dataSourcesPath": "./site/dataSources.ts",
@@ -18,7 +22,6 @@
         { "loader": "html", "path": "./site/components" },
         { "loader": "html", "path": "./site/layouts" }
       ],
-      "metaPath": "./site/meta.json",
       "globalUtilitiesPath": "./site/globalUtilities.ts"
     }
   },
@@ -46,8 +49,7 @@
     "options": { "setupPath": "./site/twindSetup.ts" }
   },
   {
-    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/sitemap/mod.ts",
-    "options": { "metaPath": "./site/meta.json" }
+    "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/sitemap/mod.ts"
   },
   {
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/stats/mod.ts"

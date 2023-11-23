@@ -1,11 +1,12 @@
-import { tw } from "https://esm.sh/@twind/core@1.1.1";
-import { marked } from "https://unpkg.com/marked@4.0.0/lib/marked.esm.js";
+import { install, tw } from "https://esm.sh/@twind/core@1.1.1";
+import { marked } from "https://unpkg.com/marked@9.1.5/lib/marked.esm.js";
 import highlight from "https://unpkg.com/@highlightjs/cdn-assets@11.3.1/es/core.min.js";
 import highlightBash from "https://unpkg.com/highlight.js@11.3.1/es/languages/bash";
 import highlightJS from "https://unpkg.com/highlight.js@11.3.1/es/languages/javascript";
 import highlightJSON from "https://unpkg.com/highlight.js@11.3.1/es/languages/json";
 import highlightTS from "https://unpkg.com/highlight.js@11.3.1/es/languages/typescript";
 import highlightYAML from "https://unpkg.com/highlight.js@11.3.1/es/languages/yaml";
+import twindSetup from "../twindSetup.ts";
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);
@@ -26,6 +27,9 @@ marked.setOptions({
     return language ? highlight.highlight(code, { language }).value : code;
   },
 });
+
+// @ts-expect-error This is fine
+install(twindSetup);
 
 function transformMarkdown(input: string) {
   // https://github.com/markedjs/marked/issues/545
@@ -70,9 +74,8 @@ function transformMarkdown(input: string) {
         text: string,
         level: number,
         raw: string,
-        slugger: { slug: (s: string) => string },
       ) {
-        const slug = slugger.slug(raw);
+        const slug = slugify(raw);
 
         tableOfContents.push({ slug, level, text });
 
@@ -141,6 +144,13 @@ function transformMarkdown(input: string) {
   });
 
   return { content: marked(input), tableOfContents };
+}
+
+function slugify(idBase: string) {
+  return idBase
+    .toLowerCase()
+    .replace(/`/g, "")
+    .replace(/[^\w]+/g, "-");
 }
 
 export default transformMarkdown;

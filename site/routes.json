@@ -39,11 +39,18 @@
     ],
     "expand": {
       "matchBy": {
-        "dataSource": {
+        "indexer": {
           "operation": "indexMarkdown",
-          "parameters": ["./blogPosts"],
-          "name": "document"
+          "parameters": ["./blogPosts"]
         },
+        "dataSources": [{
+          "operation": "processMarkdown",
+          "firstParameter": "path",
+          "parameters": [
+            { "parseHeadmatter": true }
+          ],
+          "name": "document"
+        }],
         "slug": "data.slug"
       },
       "layout": "blogPage",
