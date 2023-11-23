@@ -27,4 +27,4 @@ We've prepared a simple yet effective process for the talks. It works as follows
 
 ## Speakers' dinner
 
-The speakers' dinner will be held after the workshops on Wednesday at the venue (Pörssitalo, Fabianinkatu 14). You should be there around 18:00.
+The speakers' dinner location will be announced closer to the conference.
