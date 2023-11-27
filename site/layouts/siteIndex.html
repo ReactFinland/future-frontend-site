@@ -117,13 +117,22 @@
         <div class="w-full h-96 bg-map bg-center" id="venue-map"></div>
       </div>
       <AllSpeakers &conference="(get context conference)" />
-      <AllSponsors &conference="(get context conference)" />
+      <div class="prose lg:prose-xl">
+        <Heading level="2">Buy Tickets</Heading>
+        <Markdown
+          >**Note:** You can get a 10% team discount with the coupon
+          `TEAM_DISCOUNT`. This discount applies only to conference tickets
+          (three or more).</Markdown
+        >
+        <tito-widget event="future-frontend/2024"></tito-widget>
+      </div>
       <div class="prose lg:prose-xl">
         <Heading level="2" class="text-2xl"
           >Subscribe to our mailing list for the latest news</Heading
         >
         <Subscribe />
       </div>
+      <AllSponsors &conference="(get context conference)" />
     </div>
   </slot>
 </BaseLayout>

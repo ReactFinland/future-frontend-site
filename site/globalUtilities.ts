@@ -34,9 +34,12 @@ function init({ routes }: { routes: Routes }) {
       return;
     }
 
-    // TODO: Validate that url is a string
-    if (Object.keys(routes).includes(url)) {
-      return url === "/" ? "/" : `/${url}/`;
+    const [urlRoot, anchor] = url.split("#");
+
+    if (Object.keys(routes).includes(urlRoot)) {
+      return urlRoot === "/"
+        ? url
+        : `/${urlRoot}${anchor ? "#" + anchor : "/"}`;
     }
 
     // TODO: This would be a good spot to check the url doesn't 404
