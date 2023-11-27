@@ -10,8 +10,8 @@ import organizersQuery from "./queries/organizersQuery.ts";
 import scheduleQuery from "./queries/scheduleQuery.ts";
 import speakersQuery from "./queries/speakersQuery.ts";
 import workshopsQuery from "./queries/workshopsQuery.ts";
-import markdown from "./transforms/markdown.ts";
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.56.1/types.ts";
+import getTransformMarkdown from "./transforms/markdown.ts";
+import type { LoadApi } from "https://deno.land/x/gustwind@v0.57.0/types.ts";
 
 type MarkdownWithFrontmatter = {
   data: {
@@ -24,6 +24,7 @@ type MarkdownWithFrontmatter = {
 };
 
 function init({ load }: { load: LoadApi }) {
+  const markdown = getTransformMarkdown(load);
   const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
 
   function createDataFetcher(apiUrl: string) {
