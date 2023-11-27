@@ -14,6 +14,11 @@ export default {
     // https://twind.style/rules#static-rules
     ["mask-text-black", { color: "transparent", textShadow: "0 0 black" }],
     ["mask-text-gray", { color: "transparent", textShadow: "0 0 gray" }],
+    // https://stackoverflow.com/a/4919231/228885
+    ["text-outline", {
+      textShadow:
+        "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
+    }],
   ],
   theme: {
     extend: {
