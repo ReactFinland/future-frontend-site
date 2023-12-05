@@ -8,7 +8,6 @@ import highlightTS from "https://unpkg.com/highlight.js@11.3.1/es/languages/type
 import highlightYAML from "https://unpkg.com/highlight.js@11.3.1/es/languages/yaml";
 import twindSetup from "../twindSetup.ts";
 import type { LoadApi } from "../../types.ts";
-import type { Routes } from "https://deno.land/x/gustwind@v0.57.0/types.ts";
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);
