@@ -39,31 +39,44 @@
           trip to a cottage.
         </Markdown>
 
-        <Heading level="2">Atmosphere of Future Frontend</Heading>
-        <Markdown
-          >To get some idea of the atmosphere of our conference, consider the
-          videos below. The first one is from Future Frontend 2023 while the
-          second one is from React Finland 2022. The next Future Frontend will
-          take place at the same venue as the latter event.</Markdown
+        <div
+          x-state="{ ffSrc: '', rfSrc: '' }"
+          x-intersect="{
+            options: { once: true },
+            state: {
+              ffSrc: 'https://www.youtube.com/embed/evVmkKNlr0U?si=YmHXOHNEPaWT-VRJ',
+              rfSrc: 'https://www.youtube.com/embed/6_hKJUdps68?si=C7mcHmkaBDa2rb2P'
+            }
+          }"
         >
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/evVmkKNlr0U?si=YmHXOHNEPaWT-VRJ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/6_hKJUdps68?si=C7mcHmkaBDa2rb2P"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+          <Heading level="2">Atmosphere of Future Frontend</Heading>
+          <Markdown
+            >To get some idea of the atmosphere of our conference, consider the
+            videos below. The first one is from Future Frontend 2023 while the
+            second one is from React Finland 2022. The next Future Frontend will
+            take place at the same venue as the latter event.</Markdown
+          >
+          <iframe
+            width="100%"
+            height="315"
+            title="Future Frontend 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            x-attr
+            @src="state.ffSrc"
+          ></iframe>
+          <iframe
+            width="100%"
+            height="315"
+            title="React Finland 2022"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            x-attr
+            @src="state.rfSrc"
+          ></iframe>
+        </div>
 
         <Heading level="2">Conference format</Heading>
         <Markdown
@@ -117,7 +130,14 @@
         <div class="w-full h-96 bg-map bg-center" id="venue-map"></div>
       </div>
       <AllSpeakers &conference="(get context conference)" />
-      <div class="prose lg:prose-xl">
+      <div
+        class="prose lg:prose-xl"
+        x-state="{ src: '' }"
+        x-intersect="{
+          options: { once: true },
+          state: { src: 'https://js.tito.io/v2' }
+        }"
+      >
         <Heading level="2">Buy Tickets</Heading>
         <Markdown
           >**Note:** You can get a 10% team discount with the coupon
@@ -130,6 +150,8 @@
           > [Read the announcement post to learn more about Future Frontend
           2024](/blog/ff24).
         </Markdown>
+
+        <script x-attr @src="state.src" async></script>
       </div>
       <div class="prose lg:prose-xl">
         <Heading level="2" class="text-2xl"
@@ -139,6 +161,5 @@
       </div>
       <AllSponsors &conference="(get context conference)" />
     </div>
-    <script src="https://js.tito.io/v2" async></script>
   </slot>
 </BaseLayout>
