@@ -28,7 +28,8 @@ export default {
         "monospace": "monospace",
       },
       backgroundImage: {
-        "map": "url(/images/map.png)",
+        // bg-map - Define this if you want a static fallback for the venue map
+        // "map": "url(/images/map.png)",
         "header": `
         linear-gradient(135deg, black, #3a2fa6 50%, rgba(132,235,236,0.79)),
         url('/images/freezing-edge-bg.jpg')

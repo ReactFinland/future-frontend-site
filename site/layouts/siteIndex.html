@@ -117,7 +117,14 @@
           Web Audio, Qwik, TypeScript, Astro, and KV databases.
         </Markdown>
       </div>
-      <div class="prose lg:prose-xl">
+      <div
+        class="prose lg:prose-xl"
+        x-state="{ src: '' }"
+        x-intersect="{
+          options: { once: true },
+          state: { src: '/venue.js' }
+        }"
+      >
         <Heading level="2">Venue</Heading>
         <Markdown
           >The conference is held at the historic venue of Paasitorni near
@@ -127,7 +134,8 @@
         <p>
           Address: Paasitorni - Paasivuorenkatu 5 A, 00530 Helsinki, Finland
         </p>
-        <div class="w-full h-96 bg-map bg-center" id="venue-map"></div>
+        <div class="w-full h-96 bg-center" id="venue-map"></div>
+        <script x-attr @src="state.src" async type="module"></script>
       </div>
       <AllSpeakers &conference="(get context conference)" />
       <div

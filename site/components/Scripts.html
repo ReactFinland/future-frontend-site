@@ -1,3 +1,7 @@
 <noop &foreach="(get context scripts)">
-  <script &type="(get props type)" &src="(get props src)"></script>
+  <script
+    &visibleIf="(invert (get props loadedLater))"
+    &type="(get props type)"
+    &src="(get props src)"
+  ></script>
 </noop>

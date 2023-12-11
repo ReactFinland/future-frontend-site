@@ -12,7 +12,7 @@
         "name": "conference"
       }
     ],
-    "scripts": [{ "name": "venue" }]
+    "scripts": [{ "name": "venue", "loadedLater": true }]
   },
   "blog": {
     "layout": "blogIndex",
