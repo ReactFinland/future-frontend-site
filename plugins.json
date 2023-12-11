@@ -14,11 +14,6 @@
     "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/plugins/breezewind-renderer/mod.ts",
     "options": {
       "componentLoaders": [
-        {
-          "loader": "html",
-          "path": "https://deno.land/x/gustwind@v${GUSTWIND_VERSION}/site/components",
-          "selection": ["MetaFields", "Scripts"]
-        },
         { "loader": "html", "path": "./site/components" },
         { "loader": "html", "path": "./site/layouts" }
       ],
