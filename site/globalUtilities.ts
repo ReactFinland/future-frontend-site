@@ -189,6 +189,7 @@ function timezoneOffset() {
     getYear,
     invert,
     offsetByTimezone,
+    slugify,
     pluralize,
     urlJoin,
     rewriteImageSource,

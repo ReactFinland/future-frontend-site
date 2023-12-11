@@ -1,6 +1,6 @@
 <noop &foreach="(get props children)">
   <a
-    &href="(concat (validateUrl speakers) # (getUniqueAnchorId (get props
+    &href="(concat /speakers # (slugify (get props
   name)))"
   >
     <figure &class="(get props imgContainerClass 'flex flex-col gap-2')">
