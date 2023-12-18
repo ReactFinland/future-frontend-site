@@ -39,16 +39,7 @@
           trip to a cottage.
         </Markdown>
 
-        <div
-          x-state="{ ffSrc: '', rfSrc: '' }"
-          x-intersect="{
-            options: { once: true },
-            state: {
-              ffSrc: 'https://www.youtube.com/embed/evVmkKNlr0U?si=YmHXOHNEPaWT-VRJ',
-              rfSrc: 'https://www.youtube.com/embed/6_hKJUdps68?si=C7mcHmkaBDa2rb2P'
-            }
-          }"
-        >
+        <div>
           <Heading level="2">Atmosphere of Future Frontend</Heading>
           <Markdown
             >To get some idea of the atmosphere of our conference, consider the
@@ -63,8 +54,13 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            x-state="{ src: '' }"
+            x-intersect="{
+              options: { once: true },
+              state: { src: 'https://www.youtube.com/embed/evVmkKNlr0U?si=YmHXOHNEPaWT-VRJ' }
+            }"
             x-attr
-            @src="state.ffSrc"
+            @src="state.src"
           ></iframe>
           <iframe
             width="100%"
@@ -73,8 +69,13 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
+            x-state="{ src: '' }"
+            x-intersect="{
+              options: { once: true },
+              state: { src: 'https://www.youtube.com/embed/6_hKJUdps68?si=C7mcHmkaBDa2rb2P' }
+            }"
             x-attr
-            @src="state.rfSrc"
+            @src="state.src"
           ></iframe>
         </div>
 
