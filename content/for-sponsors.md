@@ -43,8 +43,8 @@ Available | 8 | 6 | 4 | 2
 Conference tickets | 1 x &#9786; | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
 Visibility on social media and website | &#9786; | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
 Logo size on website | &#9786; | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Banner in conference | | &#10003; | &#10003; | &#10003;
-Banner on stage | | | | &#10003;
+Roll up in conference space | | &#10003; | &#10003; | &#10003;
+Roll up or a similar element on conference stage | | | | &#10003;
 Logo on slides between the talks | | &#10003; | &#10003; | &#10003;
 Job announcements | | | &#10003; | &#10003;
 Area in sponsor lounge for booths / promotion | | | &#10003; | &#10003;
