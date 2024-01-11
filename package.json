@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/ReactFinland/future-frontend-site#readme",
   "devDependencies": {
-    "@divriots/jampack": "^0.22.0"
+    "@divriots/jampack": "^0.23.2"
   }
 }
