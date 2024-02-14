@@ -183,6 +183,13 @@
       }
     ]
   },
+  "subscribe": {
+    "layout": "subscribePage",
+    "meta": {
+      "title": "Subscribe to the mailing list",
+      "description": "Subscribe to Future Frontend mailing list"
+    }
+  },
   "2023": {
     "layout": "archivePage",
     "meta": {
