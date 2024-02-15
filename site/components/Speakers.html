@@ -40,7 +40,19 @@
         />
         <div class="flex flex-col gap-4" &foreach="(get props talks)">
           <div class="flex flex-col gap-2">
-            <h4 class="text-xl" &children="(get props title)"></h4>
+            <div class="flex justify-between">
+              <h4 class="text-xl" &children="(get props title)"></h4>
+              <div
+                class="font-monospace whitespace-nowrap"
+                &children="(concat
+                (get props day)
+                ', '
+                (offsetByTimezone (get props begin))
+                '-'
+                (offsetByTimezone (get props end))
+              )"
+              ></div>
+            </div>
             <Markdown
               &visibleIf="(get props description)"
               class="prose lg:prose-xl"
