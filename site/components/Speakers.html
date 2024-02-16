@@ -32,7 +32,7 @@
         as="div"
         &children="(get props about)"
       />
-      <div &visibleif="(get props talks)">
+      <div &visibleIf="(get props talks)">
         <Heading
           level="3"
           class="text-2xl"
@@ -65,6 +65,36 @@
               <SiteLink &href="(get props urls.drawing)">Drawing</SiteLink>
               <SiteLink &href="(get props urls.demo)">Demo</SiteLink>
             </div>
+          </div>
+        </div>
+      </div>
+      <div &visibleIf="(get props workshops)">
+        <Heading
+          level="3"
+          class="text-2xl"
+          &children="(concat Workshop (pluralize (get props workshops)))"
+        />
+        <div class="flex flex-col gap-4" &foreach="(get props workshops)">
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between">
+              <h4 class="text-xl" &children="(get props title)"></h4>
+              <div
+                class="font-monospace whitespace-nowrap"
+                &children="(concat
+                (get props day)
+                ', '
+                (offsetByTimezone (get props begin))
+                '-'
+                (offsetByTimezone (get props end))
+              )"
+              ></div>
+            </div>
+            <Markdown
+              &visibleIf="(get props description)"
+              class="prose lg:prose-xl"
+              as="div"
+              &children="(get props description)"
+            />
           </div>
         </div>
       </div>

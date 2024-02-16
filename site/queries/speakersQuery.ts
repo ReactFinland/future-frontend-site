@@ -19,6 +19,9 @@ query PageQuery($conferenceId: ID!) {
         }
       }
       workshops {
+        day
+        begin
+        end
         title
         type
         description
