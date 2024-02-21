@@ -5,6 +5,7 @@
   "colors": {
     "primary": "#3a2fa6",
     "secondary": "#84ebec",
-    "tertiary": "#ED3193"
+    "tertiary": "#ED3193",
+    "navigation": "#000077"
   }
 }

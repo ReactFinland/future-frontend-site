@@ -19,6 +19,10 @@ export default {
       textShadow:
         "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
     }],
+    ["bg-header", {
+      backgroundImage: "url('/images/quantum-gradient.svg')",
+      backgroundSize: "cover",
+    }],
   ],
   theme: {
     extend: {
@@ -30,10 +34,6 @@ export default {
       backgroundImage: {
         // bg-map - Define this if you want a static fallback for the venue map
         // "map": "url(/images/map.png)",
-        "header": `
-        linear-gradient(135deg, black, #3a2fa6 50%, rgba(132,235,236,0.79)),
-        url('/images/freezing-edge-bg.jpg')
-      `,
       },
     },
   },
