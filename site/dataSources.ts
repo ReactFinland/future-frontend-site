@@ -69,27 +69,22 @@ function init({ load }: { load: LoadApi }) {
       type: "",
     });
 
-    const ret = await Promise.all(
+    return (await Promise.all(
       files.map(async ({ path }) => ({ ...await parseHeadmatter(path), path })),
-    );
-
-    ret.sort((a, b) => a.data.date < b.data.date ? 1 : -1);
-
-    return ret;
+    )).toSorted((a, b) => a.data.date < b.data.date ? 1 : -1);
   }
 
   async function processMarkdown(
-    filename: string,
+    { path }: { path: string },
     o?: { parseHeadmatter: boolean; skipFirstLine: boolean },
   ) {
     if (o?.parseHeadmatter) {
-      const headmatter = await parseHeadmatter(filename);
+      const headmatter = await parseHeadmatter(path);
 
       return { ...headmatter, ...(await parseMarkdown(headmatter.content)) };
     }
 
-    // Markdown also parses toc but it's not needed for now
-    return parseMarkdown(await load.textFile(filename), o);
+    return parseMarkdown(await load.textFile(path), o);
   }
 
   async function parseHeadmatter(

@@ -35,7 +35,6 @@
         },
         "dataSources": [{
           "operation": "processMarkdown",
-          "firstParameter": "path",
           "parameters": [
             { "parseHeadmatter": true }
           ],
@@ -65,7 +64,7 @@
     "dataSources": [
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/contact.md"],
+        "parameters": [{ "path": "./content/contact.md" }],
         "name": "document"
       }
     ]
@@ -79,7 +78,7 @@
     "dataSources": [
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/for-attendees.md"],
+        "parameters": [{ "path": "./content/for-attendees.md" }],
         "name": "document"
       }
     ]
@@ -93,7 +92,7 @@
     "dataSources": [
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/for-speakers.md"],
+        "parameters": [{ "path": "./content/for-speakers.md" }],
         "name": "document"
       }
     ],
@@ -108,7 +107,7 @@
     "dataSources": [
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/for-sponsors.md"],
+        "parameters": [{ "path": "./content/for-sponsors.md" }],
         "name": "document"
       }
     ]
@@ -143,7 +142,7 @@
     "dataSources": [
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/privacy-policy.md"],
+        "parameters": [{ "path": "./content/privacy-policy.md" }],
         "name": "document"
       }
     ]
@@ -211,7 +210,7 @@
       },
       {
         "operation": "processMarkdown",
-        "parameters": ["./content/ff23.md"],
+        "parameters": [{ "path": "./content/ff23.md" }],
         "name": "document"
       }
     ],

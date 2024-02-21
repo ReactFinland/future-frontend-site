@@ -1,10 +1,10 @@
 {
   "tasks": {
-    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.59.3/gustwind-cli/mod.ts -b -t cpuMax -o ./build",
+    "build": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.62.0/gustwind-cli/mod.ts -b -t cpuMax -o ./build",
     "build:linked": "gustwind -b -t cpuMax -o ./build",
-    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.59.3/gustwind-cli/mod.ts -d -p 3000",
+    "start": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.62.0/gustwind-cli/mod.ts -d -p 3000",
     "start:linked": "gustwind -d -p 3000",
-    "serve": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.59.3/gustwind-cli/mod.ts -s -p 3000 -i ./build",
+    "serve": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.62.0/gustwind-cli/mod.ts -s -p 3000 -i ./build",
     "serve:linked": "gustwind -s -p 3000 -i ./build",
     "optimize:build": "deno run -A --unstable npm:@divriots/jampack@0.23.2 ./build"
   }
