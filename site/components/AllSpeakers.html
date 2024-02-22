@@ -2,7 +2,7 @@
   <Heading level="2" class="sr-only">All speakers</Heading>
   <div class="flex flex-col gap-4">
     <Heading level="3" class="text-4xl">Speakers</Heading>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
       <MiniSpeakers
         captionClass="flex justify-center text-center"
         imgClass="rounded-full mx-auto"
@@ -15,7 +15,7 @@
     &visibleIf="(get props conference.workshopInstructors)"
   >
     <Heading level="3" class="text-4xl">Workshop instructors</Heading>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
       <MiniSpeakers
         captionClass="flex justify-center text-center"
         imgClass="rounded-full mx-auto"
@@ -25,7 +25,7 @@
   </div>
   <div class="flex flex-col gap-4" &visibleIf="(get props conference.mcs)">
     <Heading level="3" class="text-4xl">MCs</Heading>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 gap-8">
       <MiniSpeakers
         captionClass="flex justify-center text-center"
         imgClass="rounded-full mx-auto"
