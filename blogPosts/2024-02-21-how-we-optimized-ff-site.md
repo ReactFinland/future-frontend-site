@@ -37,7 +37,7 @@ During development, I was aware of the project dependencies and tried to keep th
 
 ## Leveraging lighter graphics
 
-Initially, I used quite a heavy JPEG asset as a background for the site header. To optimize site speed further, I went with an SVG from [SVG Backgrounds](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/) site, which allows you to generate a good-looking background quickly. In general, SVG patterns are a cheap way to add a visual touch to your website, and the technique can be combined with CSS effectively in many ways (masking, etc.).
+Initially, I used quite a heavy JPEG asset as a background for the site header. To optimize site speed further, I went initially with an SVG from [SVG Backgrounds](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/) site, which allows you to generate a good-looking background quickly. To optimize further, I converted the gradient I found to pure CSS. In general, SVG patterns are a cheap way to add a visual touch to your website, and the technique can be combined with CSS effectively in many ways (masking, etc.).
 
 ## What could be done better
 
