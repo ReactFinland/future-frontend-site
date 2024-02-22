@@ -1,45 +1,90 @@
 <div &class="(get props class '')" &foreach="(get props children)">
-  <div>
-    <figure class="float-left mr-4 hidden md:inline">
-      <img
-        class="rounded-full object-contain h-32"
-        &alt="(get props name)"
-        loading="lazy"
-        &src="(rewriteImageSource (get props image.url))"
-        &title="(get props tagline)"
-        width="128"
-        height="128"
-      />
-      <figcaption class="sr-only" &children="(get props name)" />
-    </figure>
-    <div class="flex flex-col gap-4">
-      <div>
-        <Heading level="2" class="text-4xl" &children="(get props name)" />
-        <p
-          class="text-2xl text-gray-500 font-light"
-          &children="(get props tagline)"
-        ></p>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-row justify-between">
+      <div class="flex flex-col justify-center">
+        <div>
+          <Heading level="2" class="text-4xl" &children="(get props name)" />
+          <p
+            &visibleIf="(get props tagline)"
+            class="text-2xl text-gray-500 font-light"
+            &children="(get props tagline)"
+          ></p>
+        </div>
+        <div class="flex flex-row flex-wrap gap-4">
+          <SiteLink &href="(get props social.homepage)">Homepage</SiteLink>
+          <SiteLink &href="(get props social.github)">GitHub</SiteLink>
+          <SiteLink &href="(get props social.twitter)">Twitter</SiteLink>
+          <SiteLink &href="(get props social.linkedin)">LinkedIn</SiteLink>
+        </div>
       </div>
-      <div class="flex flex-row flex-wrap gap-4">
-        <SiteLink &href="(get props social.homepage)">Homepage</SiteLink>
-        <SiteLink &href="(get props social.github)">GitHub</SiteLink>
-        <SiteLink &href="(get props social.twitter)">Twitter</SiteLink>
-        <SiteLink &href="(get props social.linkedin)">LinkedIn</SiteLink>
-      </div>
-      <Markdown
-        &visibleIf="(get props about)"
-        class="prose lg:prose-xl"
-        as="div"
-        &children="(get props about)"
-      />
-      <div &visibleIf="(get props talks)">
-        <Heading
-          level="3"
-          class="text-2xl"
-          &children="(concat Talk (pluralize (get props talks)))"
+      <figure class="">
+        <img
+          class="rounded-full object-contain h-32"
+          &alt="(get props name)"
+          loading="lazy"
+          &src="(rewriteImageSource (get props image.url))"
+          &title="(get props tagline)"
+          width="128"
+          height="128"
         />
-        <div class="flex flex-col gap-4">
-          <div class="flex flex-col gap-4" &foreach="(get props talks)">
+        <figcaption class="sr-only" &children="(get props name)" />
+      </figure>
+    </div>
+    <Markdown
+      &visibleIf="(get props about)"
+      class="prose lg:prose-xl"
+      as="div"
+      &children="(get props about)"
+    />
+    <div &visibleIf="(get props talks)">
+      <Heading
+        level="3"
+        class="text-2xl"
+        &children="(concat Talk (pluralize (get props talks)))"
+      />
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4" &foreach="(get props talks)">
+          <div class="flex flex-col gap-2">
+            <div class="flex justify-between gap-2">
+              <h4 class="text-xl" &children="(get props title)"></h4>
+              <div class="font-monospace flex flex-col gap-2">
+                <span
+                  class="whitespace-nowrap"
+                  &children="(get props day)"
+                ></span>
+                <span
+                  class="whitespace-nowrap"
+                  &children="(concat
+                    (offsetByTimezone (get props begin))
+                    '-'
+                    (offsetByTimezone (get props end))
+                  )"
+                ></span>
+              </div>
+            </div>
+            <div>
+              <Markdown
+                &visibleIf="(get props description)"
+                class="prose lg:prose-xl"
+                as="div"
+                &children="(get props description)"
+              />
+              <div class="flex flex-row gap-4">
+                <SiteLink &href="(get props urls.slides)">Slides</SiteLink>
+                <SiteLink &href="(get props urls.video)">Video</SiteLink>
+                <SiteLink &href="(get props urls.drawing)">Drawing</SiteLink>
+                <SiteLink &href="(get props urls.demo)">Demo</SiteLink>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div &visibleIf="(get props workshops)">
+          <Heading
+            level="3"
+            class="text-2xl"
+            &children="(concat Workshop (pluralize (get props workshops)))"
+          />
+          <div class="flex flex-col gap-4" &foreach="(get props workshops)">
             <div class="flex flex-col gap-2">
               <div class="flex justify-between gap-2">
                 <h4 class="text-xl" &children="(get props title)"></h4>
@@ -51,65 +96,24 @@
                   <span
                     class="whitespace-nowrap"
                     &children="(concat
-                    (offsetByTimezone (get props begin))
-                    '-'
-                    (offsetByTimezone (get props end))
-                  )"
-                  ></span>
-                </div>
-              </div>
-              <div>
-                <Markdown
-                  &visibleIf="(get props description)"
-                  class="prose lg:prose-xl"
-                  as="div"
-                  &children="(get props description)"
-                />
-                <div class="flex flex-row gap-4">
-                  <SiteLink &href="(get props urls.slides)">Slides</SiteLink>
-                  <SiteLink &href="(get props urls.video)">Video</SiteLink>
-                  <SiteLink &href="(get props urls.drawing)">Drawing</SiteLink>
-                  <SiteLink &href="(get props urls.demo)">Demo</SiteLink>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div &visibleIf="(get props workshops)">
-            <Heading
-              level="3"
-              class="text-2xl"
-              &children="(concat Workshop (pluralize (get props workshops)))"
-            />
-            <div class="flex flex-col gap-4" &foreach="(get props workshops)">
-              <div class="flex flex-col gap-2">
-                <div class="flex justify-between gap-2">
-                  <h4 class="text-xl" &children="(get props title)"></h4>
-                  <div class="font-monospace flex flex-col gap-2">
-                    <span
-                      class="whitespace-nowrap"
-                      &children="(get props day)"
-                    ></span>
-                    <span
-                      class="whitespace-nowrap"
-                      &children="(concat
                       (offsetByTimezone (get props begin))
                       '-'
                       (offsetByTimezone (get props end))
                     )"
-                    ></span>
-                  </div>
+                  ></span>
                 </div>
-                <Markdown
-                  &visibleIf="(get props description)"
-                  class="prose lg:prose-xl"
-                  as="div"
-                  &children="(get props description)"
-                />
               </div>
+              <Markdown
+                &visibleIf="(get props description)"
+                class="prose lg:prose-xl"
+                as="div"
+                &children="(get props description)"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <hr />
 </div>
