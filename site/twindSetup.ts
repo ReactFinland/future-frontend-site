@@ -23,6 +23,10 @@ export default {
       backgroundImage: "url('/images/quantum-gradient.svg')",
       backgroundSize: "cover",
     }],
+    ["bg-white-gradient", {
+      backgroundImage:
+        "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 35%, rgba(0,0,0,0.2) 65%, rgba(255,255,255,1) 100%)",
+    }],
   ],
   theme: {
     extend: {
