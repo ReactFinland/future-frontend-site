@@ -20,7 +20,7 @@ export default {
         "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
     }],
     ["bg-header", {
-      // TODO: Calculate this instead
+      // TODO: Calculate this instead. Likely a pure DOM (even Shadow DOM) solution would be far better.
       backgroundImage: `linear-gradient(to right,
           rgba(6,0,0,1) 0%,
           rgba(6,0,0,1) 9.9%,
