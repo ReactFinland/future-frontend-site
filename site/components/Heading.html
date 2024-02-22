@@ -2,7 +2,11 @@
   &visibleIf="(get props children)"
   &type="(concat h (get props level))"
   &id="(getUniqueAnchorId (get props children))"
-  &class="(get props class)"
+  &class="(concat
+    (get props class)
+    ' '
+    '-mt-16 pt-16'
+  )"
 >
   <span &children="(render (get props children))" />
   <a
