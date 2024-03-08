@@ -2,21 +2,29 @@
   <Heading level="2" class="sr-only">All sponsors</Heading>
   <div class="flex flex-col gap-4">
     <Heading level="3" class="text-6xl">Gold sponsors</Heading>
-    <div class="grid grid-cols-2 gap-8">
+    <div
+      class="grid grid-cols-2 gap-8"
+      &visibleIf="(get props conference.goldSponsors)"
+    >
       <MiniSponsors
         aClass="my-auto"
         &children="(get props conference.goldSponsors)"
       />
     </div>
-    <SiteLink
-      &visibleIf="(lessThan (get props conference.goldSponsors) 2)"
-      href="for-sponsors"
-      >Become a gold sponsor</SiteLink
-    >
+    <div>
+      <SiteLink
+        &visibleIf="(lessThan (get props conference.goldSponsors) 2)"
+        href="for-sponsors"
+        >Become a gold sponsor</SiteLink
+      >
+    </div>
   </div>
   <div class="flex flex-col gap-4">
     <Heading level="3" class="text-4xl">Silver sponsors</Heading>
-    <div class="grid grid-cols-4 gap-8">
+    <div
+      class="grid grid-cols-4 gap-8"
+      &visibleIf="(get props conference.silverSponsors)"
+    >
       <MiniSponsors
         aClass="my-auto"
         &children="(get props conference.silverSponsors)"
@@ -30,7 +38,10 @@
   </div>
   <div class="flex flex-col gap-2">
     <Heading level="3" class="text-2xl">Bronze sponsors</Heading>
-    <div class="grid grid-cols-3 gap-8">
+    <div
+      class="grid grid-cols-3 gap-8"
+      &visibleIf="(get props conference.bronzeSponsors)"
+    >
       <MiniSponsors
         aClass="my-auto"
         imgClass="object-contain h-12"
@@ -45,7 +56,10 @@
   </div>
   <div &visibleIf="(get props conference.partners)" class="flex flex-col gap-1">
     <Heading level="3" class="text-2xl">Partners</Heading>
-    <div class="grid grid-cols-4 gap-x-8 gap-y-4">
+    <div
+      class="grid grid-cols-4 gap-x-8 gap-y-4"
+      &visibleIf="(get props conference.partners)"
+    >
       <MiniSponsors
         aClass="my-auto"
         imgClass="object-contain h-24"
