@@ -20,8 +20,8 @@ Geographically Finland is a bit like an island and it's separated from most of t
 Due to the central location of the venue (Paasitorni), compact size of Helsinki center, and good connectivity, you have many options. We've listed some potential options below:
 
 * [Omena Hotels](https://www.omenahotels.com/en/) - Roughly 60-80€ per night. Minimal service. Two separate hotels.
-* [Scandic Paasi](https://www.scandichotels.com/hotelreservation/select-rate?hotel=634) - Roughly €140 per night.
-* [Scandic Hakaniemi](https://www.scandichotels.com/hotelreservation/select-rate?hotel=660) - Roughly €120 per night.
+* [Scandic Paasi](https://www.scandichotels.com/hotelreservation/select-rate?hotel=634) - Roughly €140 per night. Note that you can get a discount using the code `CGRO` if you book through the hotel site.
+* [Scandic Hakaniemi](https://www.scandichotels.com/hotelreservation/select-rate?hotel=660) - Roughly €120 per night. Note that you can get a discount using the code `CGRO` if you book through the hotel site.
 * [Hotel Marski by Scandic](https://www.scandichotels.com/hotels/finland/helsinki/marski-by-scandic) - Roughly €150 per night.
 * [Kongressikoti Hotel](http://kongressikoti.fi/) - Roughly 60€ per night.
 * [Hostel Diana Park](http://www.dianapark.fi/) - Roughly 30€ per night.
