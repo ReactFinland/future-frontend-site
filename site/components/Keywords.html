@@ -1,0 +1,17 @@
+<div &foreach="(get props keywords)" class="flex flex-row gap-4">
+  <span
+    &visibleIf="(equals (get props value) AI)"
+    class="px-2 py-1 rounded bg-primary text-sm text-white"
+    &children="(get props value)"
+  />
+  <span
+    &visibleIf="(equals (get props value) Design)"
+    class="px-2 py-1 rounded bg-secondary text-sm"
+    &children="(get props value)"
+  />
+  <span
+    &visibleIf="(equals (get props value) Development)"
+    class="px-2 py-1 rounded bg-tertiary text-sm"
+    &children="(get props value)"
+  />
+</div>

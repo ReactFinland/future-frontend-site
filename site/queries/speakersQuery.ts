@@ -10,6 +10,7 @@ query PageQuery($conferenceId: ID!) {
         title
         type
         description
+        keywords
         urls {
           drawing
           slides
@@ -24,6 +25,7 @@ query PageQuery($conferenceId: ID!) {
         end
         title
         type
+        keywords
         description
       }
       tagline

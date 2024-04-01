@@ -22,6 +22,7 @@ query PageQuery($conferenceId: ID!) {
           googleMaps
         }
       }
+      keywords
     }
   }
 }
