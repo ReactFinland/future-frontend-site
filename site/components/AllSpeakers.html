@@ -12,6 +12,19 @@
   </div>
   <div
     class="flex flex-col gap-4"
+    &visibleIf="(get props conference.panelOnlySpeakers)"
+  >
+    <Heading level="3" class="text-4xl">Panelists</Heading>
+    <div class="grid grid-cols-3 gap-8">
+      <MiniSpeakers
+        captionClass="flex justify-center text-center"
+        imgClass="rounded-full mx-auto"
+        &children="(get props conference.panelOnlySpeakers)"
+      />
+    </div>
+  </div>
+  <div
+    class="flex flex-col gap-4"
     &visibleIf="(get props conference.workshopInstructors)"
   >
     <Heading level="3" class="text-4xl">Workshop instructors</Heading>

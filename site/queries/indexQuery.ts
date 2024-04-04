@@ -41,6 +41,9 @@ query PageQuery($conferenceId: ID!) {
     speakers {
       ...SpeakerFragment
     }
+    panelOnlySpeakers {
+      ...SpeakerFragment
+    }
     lightningTalkSpeakers {
       ...SpeakerFragment
     }
