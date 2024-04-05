@@ -25,6 +25,10 @@ We've prepared a simple yet effective process for the talks. It works as follows
 3. During the session, you'll give your performance. I expect you to pair with your session partner to ensure the talks flow well to each other.
 4. After the session, there will be an option for you to get a photo done. We offer this as a service to our speakers as often people have poor social media photos and it's nice to have one that's not bad.
 
+Note that we'll capture audience questions for you using Slido. Using the service allows moderation and ranking while being fun to the audience.
+
+We can also do physical setup for you in case you need chairs etc. on the stage.
+
 ## Speakers' dinner
 
 The speakers' dinner location will be announced closer to the conference.
