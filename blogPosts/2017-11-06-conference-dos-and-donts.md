@@ -5,6 +5,7 @@ date: 2017-11-06T07:15:05.695Z
 categories: []
 keywords: []
 slug: "conference-dos-and-donts"
+author: 'Juho Vepsäläinen'
 ---
 
 As an occasional conference speaker, attendee, and conference organizer, I’ve had my fair chance to observe what makes a good conference. It’s not an easy task to arrange one, and it’s surprisingly easy to prevent a conference from being excellent.

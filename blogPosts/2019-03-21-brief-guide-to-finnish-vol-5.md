@@ -7,6 +7,7 @@ date: 2019-03-21T09:30:33.359Z
 categories: []
 keywords: []
 slug: "brief-guide-to-finnish-vol-5"
+author: 'Juho Vepsäläinen'
 ---
 
 [In the previous edition of our brief guide go Finnish](/blog/brief-guide-to-finnish-vol-4/), you learned about “saapas”. This time it’s time to learn something about trees, numbers, the moon, and tools.

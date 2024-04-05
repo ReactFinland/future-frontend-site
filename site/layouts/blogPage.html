@@ -1,9 +1,12 @@
 <BaseLayout>
   <slot name="header">
-    <FormattedTime
-      class="font-extralight"
-      &date="(get context document.data.date)"
-    />
+    <div class="flex flex-row justify-between">
+      <FormattedTime
+        class="font-extralight"
+        &date="(get context document.data.date)"
+      />
+      <span &children="(get context document.data.author)"></span>
+    </div>
   </slot>
   <slot name="content">
     <div

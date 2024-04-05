@@ -7,6 +7,7 @@ date: 2019-02-04T10:18:30.273Z
 categories: []
 keywords: []
 slug: "brief-guide-to-finnish-vol-2"
+author: 'Juho Vepsäläinen'
 ---
 
 While preparing for the upcoming conference, you may have spent some time learning the [basics of the Finnish language](/blog/brief-guide-to-finnish-vol-1/). This time we’ll leap to advanced level — all done by using only a single phrase.

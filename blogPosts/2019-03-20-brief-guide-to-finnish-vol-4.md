@@ -7,6 +7,7 @@ date: 2019-03-20T12:10:32.895Z
 categories: []
 keywords: []
 slug: "brief-guide-to-finnish-vol-4"
+author: 'Juho Vepsäläinen'
 ---
 
 [In the previous edition of our language guide](/blog/brief-guide-to-finnish-vol-3/), we learned how to say “hi” in Finnish. Now we are going to learn something about boots, arguing, and Italy, one of my favorite countries.

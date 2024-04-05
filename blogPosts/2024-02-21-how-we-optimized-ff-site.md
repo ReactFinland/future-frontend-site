@@ -4,6 +4,7 @@ title: 'How we optimized Future Frontend website'
 description: 'Future Frontend website is fairly fast. Learn how we did it.'
 date: 2024-02-21T12:00:00Z
 keywords: ['future-frontend', 'performance']
+author: 'Juho Vepsäläinen'
 ---
 
 Given that the Future Frontend conference is oriented around future frontend technologies, it would be embarrassing to run the conference on a website that was not fast. The performance issue is relevant as the size of websites grew by close to 600\% over a decade, as shown by the study by [Web Almanac](https://almanac.httparchive.org/en/2022/page-weight). To make things worse, mobile usage of the web has grown, and these days, it amounts to over half of overall traffic, according to [Exploding Topics](https://explodingtopics.com/blog/mobile-internet-traffic). That means there are many good reasons to optimize the size and performance of your site.

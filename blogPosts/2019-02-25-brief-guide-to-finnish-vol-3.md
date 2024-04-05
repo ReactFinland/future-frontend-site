@@ -6,6 +6,7 @@ date: 2019-02-25T13:26:31.064Z
 categories: []
 keywords: []
 slug: "brief-guide-to-finnish-vol-3"
+author: 'Juho Vepsäläinen'
 ---
 
 If you thought Finnish is an easy language to learn, think again. I’ll prove it in this part of our brief guides to the language. [In the previous one we learned about “kuuluu](/blog/brief-guide-to-finnish-vol-2/)”, now we are going to learn about “terve” and its variants.

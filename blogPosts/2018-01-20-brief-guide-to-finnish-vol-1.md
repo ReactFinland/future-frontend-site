@@ -5,6 +5,7 @@ date: 2018-01-20T12:21:01.230Z
 categories: []
 keywords: []
 slug: "brief-guide-to-finnish-vol-1"
+author: 'Juho Vepsäläinen'
 ---
 
 They say Finnish is one of the most difficult languages in the world. It’s obviously the easiest one for me since I was grown into it but I sort of see the point. It’s like the Perl of spoken languages given it’s amazingly flexible and powerful while being mostly logical at the same time.
