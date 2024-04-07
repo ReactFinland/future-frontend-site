@@ -1,8 +1,8 @@
-## Hotel - Not decided yet
+## Hotel - Scandic Paasi
 
-We'll book a hotel for you near the venue and update this information after we know the hotel exactly.
+We'll book four nights (plus extra night per workshop) at the Scandic Paasi based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
-We'll book four nights (plus extra night per workshop) at the hotel based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
+The hotel is located at Paasivuorenkatu 5 B, 00530 Helsinki. It is located right next to the venue and there's a physical access between the spaces through the basement (useful info in case it's raining).
 
 ### How to get to the hotel?
 
@@ -12,9 +12,9 @@ Another option is to use public transport as you can reach the center easily usi
 
 ## Workshops
 
-The location for the workshops hasn't been specified yet but we'll go with one that offers multiple small rooms and some level of catering. As we know more, this answer will be updated.
+The workshops are distributed around Helsinki to office spaces and you can [find your exact address from the workshops page](/workshops/).
 
-Workshop hosts, if you want to send specific information to workshop attendees, let me (Juho) know and I'll do it through the ticket platform.
+If you want to send specific information to workshop attendees, let me (Juho) know through conference email or Slack and I'll do it through the ticket platform.
 
 ## Giving the talk
 
@@ -31,4 +31,4 @@ We can also do physical setup for you in case you need chairs etc. on the stage.
 
 ## Speakers' dinner
 
-The speakers' dinner location will be announced closer to the conference.
+The speakers' dinner location will be announced closer to the conference. We leave 18:00, 12.6 from the front of Paasitorni.
