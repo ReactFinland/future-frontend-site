@@ -1,13 +1,13 @@
 import { install, tw } from "https://esm.sh/@twind/core@1.1.1";
-import { marked } from "https://unpkg.com/marked@9.1.5/lib/marked.esm.js";
-import highlight from "https://unpkg.com/@highlightjs/cdn-assets@11.3.1/es/core.min.js";
-import highlightBash from "https://unpkg.com/highlight.js@11.3.1/es/languages/bash";
-import highlightJS from "https://unpkg.com/highlight.js@11.3.1/es/languages/javascript";
-import highlightJSON from "https://unpkg.com/highlight.js@11.3.1/es/languages/json";
-import highlightTS from "https://unpkg.com/highlight.js@11.3.1/es/languages/typescript";
-import highlightYAML from "https://unpkg.com/highlight.js@11.3.1/es/languages/yaml";
+import { marked } from "https://cdn.jsdelivr.net/npm/marked@9.1.5/lib/marked.esm.js";
+import highlight from "https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.3.1/es/core.min.js";
+import highlightBash from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/bash.js";
+import highlightJS from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/javascript.js";
+import highlightJSON from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/json.js";
+import highlightTS from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/typescript.js";
+import highlightYAML from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/yaml.js";
 import twindSetup from "../twindSetup.ts";
-import type { LoadApi } from "../../types.ts";
+import type { LoadApi } from "https://deno.land/x/gustwind@v0.66.3/types.ts";
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);
