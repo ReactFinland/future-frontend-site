@@ -38,8 +38,11 @@ In order for us to procure this document for you, please send us email (info \<a
 * Passport number
 * Arrival date
 * Leaving date
+* Company and position
 
 In response, we'll send you a signed pdf you can then present to your authorities and to ours at the border. You should apply for **visitor visa**.
+
+Note that we can reserve the ticket(s) you want until you receive your visa so that in case denial we don't have to worry about refunds.
 
 ## How to get to the venue? What kind of transport options exist?
 
