@@ -12,7 +12,7 @@ Geographically Finland is a bit like an island and it's separated from most of t
 
 * If you come from within the country, public transport (bus, train) is a good and affordable option. Expect to spend tens of euros on a trip.
 * If you come from Estonia or Sweden, consider using a ferry (about 2h).
-* If you come from Germany, there's a [Finnlines ferry](https://www.finnlines.com) from Travemünde to Helsinki (about 29h). It's possible to get an affordable flight especially from Berlin to Helsinki.
+* If you come from Germany, there's a [Finnlines ferry](https://www.finnlines.com) from Travemünde to Helsinki (about 29h). It's possible to get an affordable flight especially from Berlin to Helsinki. Another interesting option might be to take a train to Stockholm, then ferry to Turku, and use a train from Turku to Helsinki. It's more involved trip but quite cost effective and it allows you to see more sights on the way.
 * If you come from any other location, a detour from any of the places above or direct options (usually a flight) are available. Helsinki is easy to reach by flying as it's the capital city of Finland and the best connected part of the country.
 
 ## Where to stay?
