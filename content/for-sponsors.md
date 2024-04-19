@@ -36,28 +36,26 @@ Future Frontend is the only frontend focused conference in Finland and one of th
 
 For the second edition, we have decided on the following packages and pricing:
 
-&nbsp; | DIGITAL | BRONZE | SILVER | GOLD
--|-|-|-|-
-Cost (VAT 0) | 1.000€ | 2.000€ | 5.000€ | 10.000€
-Available | 8 | 6 | 4 | 2
-Conference tickets | 1 x &#9786; | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
-Visibility on social media and website | &#9786; | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Logo size on website | &#9786; | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Roll up in conference space | | &#10003; | &#10003; | &#10003;
-Roll up or a similar element on conference stage | | | | &#10003;
-Logo on slides between the talks | | &#10003; | &#10003; | &#10003;
-Job announcements | | | &#10003; | &#10003;
-Area in sponsor lounge for booths / promotion | | | &#10003; | &#10003;
-Item in the goodie bag* | | | | &#10003;
-Attendance for the speaker events (e.g., the speakers' dinner) | | | | &#9786;
-Special requests | | | | &#10003;
+&nbsp; | BRONZE | SILVER | GOLD
+-|-|-|-
+Cost (VAT 0) | 2.000€ | 5.000€ | 10.000€
+Available | 6 | 4 | 2
+Conference tickets | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
+Visibility on social media and website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
+Logo size on website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
+Roll up in conference space | &#10003; | &#10003; | &#10003;
+Roll up or a similar element on conference stage | | | &#10003;
+Logo on slides between the talks | &#10003; | &#10003; | &#10003;
+Job announcements | | &#10003; | &#10003;
+Area in sponsor lounge for booths / promotion | | &#10003; | &#10003;
+Item in the goodie bag* | | | &#10003;
+Attendance for the speaker events (e.g., the speakers' dinner) | | | &#9786;
+Special requests | | | &#10003;
 
-Note that on top of all this, we provide a 20% ticket discount for bronze and above. This applies for any ticket type so if you are planning to buy a lot of tickets anyway, it may be cheaper to become a sponsor.
+Note that on top of all this, we provide a 20% ticket discount on any ticket type. If you are planning to buy a lot of tickets anyway, it may be cheaper to become a sponsor and use the discount.
 
 The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious.
 
 ## How to Sponsor?
 
-To keep the process simple, it is possible to purchase digital sponsorship directly through Tito. Remember to send your logo to us, though!
-
-If you are interested in any of the other sponsorship packages, get in touch (info \<at> futurefrontend.com)!
+Get in touch (info \<at> futurefrontend.com) and we'll get the needed details for a contract and send it your way.
