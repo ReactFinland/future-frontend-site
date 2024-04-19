@@ -28,9 +28,11 @@ Sponsorships are a part of corporate branding. Even if you are not recruiting, b
 
 Often sponsors end up doing their own activities outside of a conference and we are more than happy to support you with these sort of efforts in terms of marketing for example.
 
+Although it might be an obvious thing to say, your sponsorship helps us to keep on organizing these events. It takes a considerable amount of time each year and through sponsoring you allow this tradition to continue. Although there might not be immediate benefits from the sponsorship, we believe there is value in the fact that we have a top class conference within its niche in Finland.
+
 ## Only frontend focused conference in Finland
 
-Future Frontend is the only frontend focused conference in Finland and one of the few in the Nordics. The scope allows us to include speakers with diverse backgrounds and we do our best to find sixteen speakers that give our visitors something to take back home.
+Future Frontend is the only frontend focused conference in Finland and one of the few in the Nordics. The scope allows us to include speakers with diverse backgrounds and we do our best to find sixteen speakers that give our visitors something to take back home. It is not only the conference experience they take back, but also a piece of Finland. For some, our conference is the only reason why they might visit our little country and most go back home with fond memories in mind.
 
 ## Packages
 
