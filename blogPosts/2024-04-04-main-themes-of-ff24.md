@@ -43,8 +43,6 @@ We have a special treat for developers: a hands-on session that starts on the se
 
 Last year, the green computing-focused block had the most questions, and it will return this year as [Ben Holmes](/speakers#ben-holmes) and [Jari Porras](/speakers#jari-porras) collaborate on the session. Ben's talk will concern hammers, hurricanes, and HTML. The rest is a mystery.
 
-Speaking of efficient websites, participate in Ben's [Astro workshop](/workshops#fast-efficient-full-stack-with-astro) to pick up this relatively new web framework directly from one of its authors.
-
 ## Bonus - Standardization
 
 One thing we try to do with our conferences is to bring up topics that are not often discussed but deserve attention. Standardization is one of those topics, and this time, we are fortunate to collaborate with [TC39](https://tc39.es/) in the form of a session built around the topic.
