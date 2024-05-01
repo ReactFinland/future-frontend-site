@@ -44,6 +44,10 @@ In response, we'll send you a signed pdf you can then present to your authoritie
 
 Note that we can reserve the ticket(s) you want until you receive your visa so that in case denial we don't have to worry about refunds.
 
+## What to do in Helsinki?
+
+There is a lot to see and do. See for example [myhelsinki.fi](https://www.myhelsinki.fi/) for some ideas. If you happen to have a sunny day, a visit to a nearby castle island called [Suomenlinna](https://www.suomenlinna.fi/) is completely worth it and you can catch a ship going there from the city center.
+
 ## How to get to the venue? What kind of transport options exist?
 
 There's a direct train from the airport to Helsinki center. HSL operates the local public transport system. You can find a city bike system as well.
