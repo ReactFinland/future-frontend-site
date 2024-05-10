@@ -49,7 +49,7 @@ Roll up in conference space | &#10003; | &#10003; | &#10003;
 Roll up or a similar element on conference stage | | | &#10003;
 Logo on slides between the talks | &#10003; | &#10003; | &#10003;
 Job announcements | | &#10003; | &#10003;
-Area in sponsor lounge for booths / promotion | Standing desk + your flier | More space and furniture | Even more space for your plans
+Area in sponsor lounge for booths / promotion | Optional standing desk + your flier | More space and furniture | Even more space for your plans
 Item in the goodie bag* | | | &#10003;
 Attendance for the speaker events (e.g., the speakers' dinner) | | | &#9786;
 Special requests | | | &#10003;
