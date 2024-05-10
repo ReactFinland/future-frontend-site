@@ -93,6 +93,21 @@
             x-attr
             @src="state.src"
           ></iframe>
+          <iframe
+            width="100%"
+            height="315"
+            title="React Finland 2019"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            x-state="{ src: '' }"
+            x-intersect="{
+            options: { once: true },
+            state: { src: 'https://www.youtube.com/embed/BO_osndeLII?si=9QtzsIE2HTt98OlL' }
+          }"
+            x-attr
+            @src="state.src"
+          ></iframe>
         </div>
 
         <Heading level="2">Conference format</Heading>
