@@ -107,7 +107,7 @@ function getTransformMarkdown(load: LoadApi) {
           const height = textParts[2] || "";
           const className = textParts[3] || "";
 
-          return `<img src="${href}" alt="${alt}" class="${
+          return `<img src="${href}" alt="${alt}" title="${title}" class="${
             tw(className)
           }" width="${width}" height="${height}" />`;
         },
