@@ -10,7 +10,7 @@ We do not offer speaker slots to our sponsors. Occasionally there may have been 
 
 ## Focused audience
 
-Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the second edition majority of the participants might come from abroad. For the second edition, our official target is to reach between 300 and 400 attendees, but based on early sales around 200 seems realistic.
+Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the second edition majority of the participants might come from abroad. Based on our current projection, the conference will have between 150 and 200 attendees, including speakers and organizers.
 
 This is not to say juniors are not welcome but it seems that due to our speaker selection and positioning the conference is well suited for seniors wanting to understand what is the next thing. In our schedule, we try to include both advanced and inspirational content to keep it varied. Occasionally we also bring speakers outside of technology to keep things interesting for our attendees.
 
