@@ -29,6 +29,6 @@ Note that we'll capture audience questions for you using Slido. Using the servic
 
 We can also do physical setup for you in case you need chairs etc. on the stage.
 
-## Speakers' dinner
+## Speakers' dinner - 12.6 18:30-21:00
 
-The speakers' dinner location will be announced closer to the conference. We leave 18:00, 12.6 from the front of Paasitorni.
+The speakers' dinner location will be held at [Graniittilinna](https://www.graniittilinna.com/) (Säästöpankinranta 6, 00530 Helsinki) and it is right around the corner of the venue. The dinner starts officially 18:30 but we'll get together at 18:00 in the front of Paasitorni and do the short walk.
