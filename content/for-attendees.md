@@ -1,3 +1,5 @@
+> IMPORTANT! Due to [Helsinki underground renovations](https://www.hsl.fi/en/hsl/news/news/2024/01/renovation-and-construction-work-to-affect-rail-services-in-2024--central-railway-station-metro-station-to-close-for-the-summer), the Central Railway Station metro is out of use during the conference and trains cannot go through it. Please take this into account in your planning.
+
 ## What Corona measures do you take?
 
 We follow the [government guidance](https://new.visitfinland.com/en/practical-tips/covid-19/).
