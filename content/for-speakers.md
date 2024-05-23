@@ -4,6 +4,8 @@ We'll book four nights (plus extra night per workshop) at the Scandic Paasi base
 
 The hotel is located at Paasivuorenkatu 5 B, 00530 Helsinki. It is located right next to the venue and there's a physical access between the spaces through the basement (useful info in case it's raining).
 
+Note that we do not cover extras, like minibar, and it is up to you to take care of charges like this as you leave the hotel.
+
 ### How to get to the hotel?
 
 If you take a taxi, save the receipt so we can reimburse you. There are several taxis in the airport, take reputable one like Taksi Helsinki. Note that it's not cheap, expect 50 euros.
