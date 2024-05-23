@@ -8,9 +8,12 @@ Note that we do not cover extras, like minibar, and it is up to you to take care
 
 ### How to get to the hotel?
 
-If you take a taxi, save the receipt so we can reimburse you. There are several taxis in the airport, take reputable one like Taksi Helsinki. Note that it's not cheap, expect 50 euros.
+There are two good ways to reach the hotel from the airport:
 
-Another option is to use public transport as you can reach the center easily using it. It is also considerably cheaper.
+1. Take the bus 600 from the airport and sit until reaches Hakaniemi. The trip takes roughly 51 minutes. After you arrive to Hakaniemi, it is a short walk to the hotel. You should head West from the bus stop to reach it. The walk is roughly 200 meters. For the trip, you need the ABC ticket and it costs 4.10 € per person. I recommend installing the [HSL app](https://www.hsl.fi/en/tickets-and-fares/hsl-app) beforehand and making sure payments are set up with it. In case you plan to use the public transport often, they have discounted options available for this.
+2. Take a taxi to Scandic Paasi. The taxi trip takes around 25 minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others and it may make sense to negotiate the price beforehand. Expect the taxi to cost roughly 50 €.
+
+In either case, keep the receipts so we can refund you after the conference.
 
 ## Workshops
 
@@ -25,12 +28,16 @@ We've prepared a simple yet effective process for the talks. It works as follows
 1. Show up at the speakers' room about half an hour before the session of your talk. The speakers' room is close to the main hall and it's impossible to miss. It also doubles as our technical room.
 2. We'll guide you shortly before the session from the speakers' room to the main hall and do a quick tech check. If you want, you can also do this on some break before your talk and it's a good idea especially if you have audio or video elements in your presentation.
 3. During the session, you'll give your performance. I expect you to pair with your session partner to ensure the talks flow well to each other.
-4. After the session, there will be an option for you to get a photo done. We offer this as a service to our speakers as often people have poor social media photos and it's nice to have one that's not bad.
+4. After the session, there will be an option for you to get a photo done. We offer this as a service to our speakers as often people have poor social media photos and it's nice to have one that's not bad. We will also produce video interviews (3-5 minutes) to give you additional coverage.
 
-Note that we'll capture audience questions for you using Slido. Using the service allows moderation and ranking while being fun to the audience.
+Note that we'll capture audience questions for you using [Slido](https://www.slido.com/). Using the service allows moderation and ranking while being fun to the audience.
 
-We can also do physical setup for you in case you need chairs etc. on the stage.
+We can also do physical setup for you in case you need chairs etc. on the stage. For any physical setup, let us know beforehand.
 
-## Speakers' dinner - 12.6 18:30-21:00
+## Speakers' dinner - 12.6 18:30-21:00 at Graniittilinna
 
 The speakers' dinner location will be held at [Graniittilinna](https://www.graniittilinna.com/) (Säästöpankinranta 6, 00530 Helsinki) and it is right around the corner of the venue. The dinner starts officially 18:30 but we'll get together at 18:00 in the front of Paasitorni and do the short walk.
+
+## Afterparty - 14.6 18:00-21:00 at UpCloud
+
+The afterparty will be held after the conference at UpCloud offices (Aleksanterinkatu 15b 7th floor). A separate registration is required and we will provide access to the registration to you separately.

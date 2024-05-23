@@ -4,7 +4,9 @@ function renderMap(id: string) {
   // @ts-expect-error How to type Leaflet?
   const L = window.L;
   const venueLatLon = [60.178510, 24.947590];
-  const map = L.map(id).setView(venueLatLon, 14);
+  const restaurantLatLon = [60.17919, 24.9481];
+  const afterpartyLatLon = [60.1690, 24.9428];
+  const map = L.map(id).setView(venueLatLon, 13);
 
   // Different options at https://leaflet-extras.github.io/leaflet-providers/preview/
   L.tileLayer(
@@ -21,10 +23,11 @@ function renderMap(id: string) {
     .bindPopup("Paasitorni")
     .openPopup();
 
-  /*
-  L.marker([60.1643642, 24.945336]).addTo(map)
-    .bindPopup("Hotel Lilla Roberts");
-  */
+  L.marker(restaurantLatLon).addTo(map)
+    .bindPopup("Restaurant");
+
+  L.marker(afterpartyLatLon).addTo(map)
+    .bindPopup("Afterparty");
 }
 
 renderMap("speaker-map");
