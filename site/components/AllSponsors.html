@@ -14,13 +14,6 @@
         />
       </div>
     </div>
-    <div>
-      <SiteLink
-        &visibleIf="(lessThan (get props conference.goldSponsors) 2)"
-        href="for-sponsors"
-        >Become a gold sponsor</SiteLink
-      >
-    </div>
   </div>
   <div class="flex flex-col gap-4">
     <Heading level="3" class="text-4xl">Silver sponsors</Heading>
@@ -35,11 +28,6 @@
           &children="(get props conference.silverSponsors)"
         />
       </div>
-      <SiteLink
-        &visibleIf="(lessThan (get props conference.silverSponsors) 4)"
-        href="for-sponsors"
-        >Become a silver sponsor</SiteLink
-      >
     </div>
   </div>
   <div class="flex flex-col gap-2">
