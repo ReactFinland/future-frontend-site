@@ -259,6 +259,20 @@
       }
     }
   },
+  "jobs": {
+    "layout": "jobsPage",
+    "meta": {
+      "title": "Jobs",
+      "description": "Are you looking for a job in industry? Read on."
+    },
+    "dataSources": [
+      {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/digia.md" }],
+        "name": "digia"
+      }
+    ]
+  },
   "404.html": {
     "layout": "404",
     "meta": {

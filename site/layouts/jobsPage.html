@@ -1,0 +1,14 @@
+<BaseLayout>
+  <slot name="content">
+    <div class="prose lg:prose-xl">
+      In case you are looking for a job in the industry, we have gathered
+      selected positions from our sponsors to this page.
+    </div>
+    <div>
+      <div
+        class="prose lg:prose-xl"
+        &children="(get context digia.content)"
+      ></div>
+    </div>
+  </slot>
+</BaseLayout>
