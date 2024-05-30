@@ -1,4 +1,4 @@
-## Digia - Smoother digital world
+## Digia - Unlock your intelligence
 
 Digia is a company designed for people – a workplace where it’s good to be and everything work.
 
