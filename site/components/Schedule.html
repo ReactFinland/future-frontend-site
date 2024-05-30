@@ -55,6 +55,13 @@
                   >Video</SiteLink
                 >
               </div>
+              <div &visibleIf="(equals (get props type) MEETUP)">
+                <Markdown
+                  class="prose lg:prose-xl text-sm"
+                  as="div"
+                  &children="(get props description)"
+                />
+              </div>
               <div &visibleIf="(equals (get props type) PARTY)">
                 <Markdown
                   class="prose lg:prose-xl text-sm"
