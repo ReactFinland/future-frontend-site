@@ -4,12 +4,12 @@
     <Heading level="3" class="text-6xl">Gold sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
-        class="grid grid-cols-2 gap-8"
+        class="grid grid-cols-1 gap-8"
         &visibleIf="(get props conference.goldSponsors)"
       >
         <MiniSponsors
           aClass="my-auto"
-          width="300"
+          width="400"
           &children="(get props conference.goldSponsors)"
         />
       </div>
@@ -19,7 +19,7 @@
     <Heading level="3" class="text-4xl">Silver sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
-        class="grid grid-cols-4 gap-16"
+        class="grid grid-cols-2 gap-16"
         &visibleIf="(get props conference.silverSponsors)"
       >
         <MiniSponsors
