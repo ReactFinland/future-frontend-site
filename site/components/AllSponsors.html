@@ -34,7 +34,7 @@
     <Heading level="3" class="text-2xl">Bronze sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
-        class="grid grid-cols-4 gap-8"
+        class="grid grid-cols-2 md:grid-cols-4 gap-8"
         &visibleIf="(get props conference.bronzeSponsors)"
       >
         <MiniSponsors
@@ -43,11 +43,6 @@
           &children="(get props conference.bronzeSponsors)"
         />
       </div>
-      <SiteLink
-        &visibleIf="(lessThan (get props conference.bronzeSponsors) 6)"
-        href="for-sponsors"
-        >Become a bronze sponsor</SiteLink
-      >
     </div>
   </div>
   <div &visibleIf="(get props conference.partners)" class="flex flex-col gap-1">
