@@ -11,7 +11,7 @@ Note that we do not cover extras, like minibar, and it is up to you to take care
 There are two good ways to reach the hotel from the airport:
 
 1. Take the bus 600 from the airport and sit until reaches Hakaniemi. The trip takes roughly 51 minutes. After you arrive to Hakaniemi, it is a short walk to the hotel. You should head West from the bus stop to reach it. The walk is roughly 200 meters. For the trip, you need the ABC ticket and it costs 4.10 € per person. I recommend installing the [HSL app](https://www.hsl.fi/en/tickets-and-fares/hsl-app) beforehand and making sure payments are set up with it. In case you plan to use the public transport often, they have discounted options available for this.
-2. Take a taxi to Scandic Paasi. The taxi trip takes around 25 minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others and it may make sense to negotiate the price beforehand. Good companies to choose from are Taksi Helsinki (**not** Taksi Heslinki), Kovanen, and Lähin Taksi. Expect the taxi to cost roughly 50 €.
+2. Take a taxi to Scandic Paasi. The taxi trip takes around 25 minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others and it may make sense to negotiate the price beforehand. Good companies to choose from are Taksi Helsinki (**not** Taksi Heslinki), Kovanen, and Lähitaksi. Expect the taxi to cost roughly 50 €.
 
 In either case, keep the receipts so we can refund you after the conference.
 
