@@ -270,6 +270,16 @@
         "operation": "processMarkdown",
         "parameters": [{ "path": "./content/digia.md" }],
         "name": "digia"
+      },
+      {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/evitec.md" }],
+        "name": "evitec"
+      },
+      {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/upcloud.md" }],
+        "name": "upcloud"
       }
     ]
   },
