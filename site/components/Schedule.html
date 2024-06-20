@@ -28,8 +28,12 @@
           />
           <div class="flex flex-col gap-6" &foreach="(get props sessions)">
             <div class="flex flex-col gap-1">
-              <div &visibleIf="(equals (get props type) WORKSHOP)">
+              <div
+                &visibleIf="(equals (get props type) WORKSHOP)"
+                &children="(get props title)"
+              >
                 <SiteLink
+                  &visibleIf="(get context hide)"
                   &href="(concat workshops # (getUniqueAnchorId (get props title) ) )"
                   &children="(get props title)"
                 />
