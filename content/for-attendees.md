@@ -79,8 +79,6 @@ To start your workshop as quick and as smooth as possible, it's a good idea to s
 
 > Run \`git --version\`, \`node --version\`, and \`npm --version\` to check versions you have installed.
 
-You should check your workshop requirements for any further requirements. Usually a workshop has a Git repository related to it. [Check the workshop description](/workshops/) for a link. If there's one, make sure you set it up while you perform the work above.
-
 ## When and how can I register?
 
 Registration is possible in any of the conference days. The desk will be close to the entrance of the venue.

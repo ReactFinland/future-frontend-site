@@ -19,35 +19,35 @@ I believe the shift is good for the conference as it allows us to capture the ma
 
 ## Artificial intelligence
 
-Artificial intelligence is visible in our program in several ways. To address the fact that many of us are still getting started with it or have not jumped into the boat yet, we included [an introduction-level workshop](/workshops#introduction-to-augmenting-your-applications-with-ai) held at 11.6 (13:00-17:00) at Yle, Helsinki. [Zak Allal](/speakers#zak-allal) will run the four-hour workshop, and you can get a spot for 149€ (inc. VAT).
+Artificial intelligence is visible in our program in several ways. To address the fact that many of us are still getting started with it or have not jumped into the boat yet, we included [an introduction-level workshop](/2024/workshops#introduction-to-augmenting-your-applications-with-ai) held at 11.6 (13:00-17:00) at Yle, Helsinki. [Zak Allal](/2024/speakers#zak-allal) will run the four-hour workshop, and you can get a spot for 149€ (inc. VAT).
 
-AI will be visible across the conference schedule. We have an AI-focused session during the first day of the conference as [Maggie Appleton](/speakers#maggie-appleton) and [Matt Webb](/speakers#matt-webb) delve into the topic. Maggie will help us get into Large Language Models (LLMs) while Matt has focus on his recently successful Kickstarter for [Poem/1: AI rhyming clock](https://www.kickstarter.com/projects/genmon/poem-1-the-ai-poetry-clock).
+AI will be visible across the conference schedule. We have an AI-focused session during the first day of the conference as [Maggie Appleton](/2024/speakers#maggie-appleton) and [Matt Webb](/2024/speakers#matt-webb) delve into the topic. Maggie will help us get into Large Language Models (LLMs) while Matt has focus on his recently successful Kickstarter for [Poem/1: AI rhyming clock](https://www.kickstarter.com/projects/genmon/poem-1-the-ai-poetry-clock).
 
 AI exists in Zak Allal's talk, initially titled "Learning Finnish using technology - Mission Impossible?". As a recent immigrant and a medical doctor, Zak had the challenge of learning Finnish fast. To tackle the problem, Zak applied AI to speed up his learning. I find this fascinating, as Finnish is a complex language to learn, unlike mainstream languages, and it has its own weird rules.
 
-In [Steve Ruiz](/speakers#steve-ruiz)'s talk titled "Make Real: tldraw's accidental AI play", we learn how [tldraw](https://www.tldraw.com/) went accidentally in the direction of AI and what happened then. It's one of those talks where you see what business AI can enable.
+In [Steve Ruiz](/2024/speakers#steve-ruiz)'s talk titled "Make Real: tldraw's accidental AI play", we learn how [tldraw](https://www.tldraw.com/) went accidentally in the direction of AI and what happened then. It's one of those talks where you see what business AI can enable.
 
 ## Design
 
-Design has been a recurring theme in our conferences and makes a return this time. We have dedicated an entire block to it. Incidentally, Zak's AI talk will touch on design as well, and he will approach the topic from a design perspective and show how AI and design go together. Zak's talk will be complemented by a talk by [Thaís Santos](/speakers#tha-s-santos) where she discusses the synergies between design and development and how collaboration between these two functions has transformed how we develop software these days.
+Design has been a recurring theme in our conferences and makes a return this time. We have dedicated an entire block to it. Incidentally, Zak's AI talk will touch on design as well, and he will approach the topic from a design perspective and show how AI and design go together. Zak's talk will be complemented by a talk by [Thaís Santos](/2024/speakers#tha-s-santos) where she discusses the synergies between design and development and how collaboration between these two functions has transformed how we develop software these days.
 
-Design is also visible in the "UI, Design, and Edge" session as [Mohammad Khazali](/speakers#mohammad-khazali) and [Samuel Macleod](/speakers#samuel-macleod) delve into the topic in their joint talk. It will be a talk that mixes multiple topics and helps us to understand how to get the most out of edge computing.
+Design is also visible in the "UI, Design, and Edge" session as [Mohammad Khazali](/2024/speakers#mohammad-khazali) and [Samuel Macleod](/2024/speakers#samuel-macleod) delve into the topic in their joint talk. It will be a talk that mixes multiple topics and helps us to understand how to get the most out of edge computing.
 
-Animation is an aspect of web design that often goes unnoticed or is not implemented. [Rachel Nabors](/speakers#rachel-nabors) will show us the current state of the art and revisit an old project using modern techniques to understand what changed.
+Animation is an aspect of web design that often goes unnoticed or is not implemented. [Rachel Nabors](/2024/speakers#rachel-nabors) will show us the current state of the art and revisit an old project using modern techniques to understand what changed.
 
 ## Development
 
-From a development perspective, we have several focused blocks available. The first day of the conference starts with the world of compilers as [Yoav Ganbar](/speakers#yoav-ganbar) from the [Qwik](https://qwik.dev/) team discusses Qwik 2.0 and how it's yet again changing the rules of web development. Jason Rametta, a TypeScript compiler-oriented speaker, will complement Yoav's talk. Jason will also run beginner and advanced-level [TypeScript workshops](/workshops/), so participate to hone your skills.
+From a development perspective, we have several focused blocks available. The first day of the conference starts with the world of compilers as [Yoav Ganbar](/2024/speakers#yoav-ganbar) from the [Qwik](https://qwik.dev/) team discusses Qwik 2.0 and how it's yet again changing the rules of web development. Jason Rametta, a TypeScript compiler-oriented speaker, will complement Yoav's talk. Jason will also run beginner and advanced-level [TypeScript workshops](/2024/workshops/), so participate to hone your skills.
 
-We have a special treat for developers: a hands-on session that starts on the second day of the conference with [Jo Franchetti](/speakers#jo-franchetti) and [Luca Casonato](/speakers#luca-casonato). The idea is to get exposed to new technologies, such as [jsr](https://jsr.io/) and [Deno](https://deno.com/), in a fun way.
+We have a special treat for developers: a hands-on session that starts on the second day of the conference with [Jo Franchetti](/2024/speakers#jo-franchetti) and [Luca Casonato](/2024/speakers#luca-casonato). The idea is to get exposed to new technologies, such as [jsr](https://jsr.io/) and [Deno](https://deno.com/), in a fun way.
 
-Last year, the green computing-focused block had the most questions, and it will return this year as [Ben Holmes](/speakers#ben-holmes) and [Jari Porras](/speakers#jari-porras) collaborate on the session. Ben's talk will concern hammers, hurricanes, and HTML. The rest is a mystery.
+Last year, the green computing-focused block had the most questions, and it will return this year as [Ben Holmes](/2024/speakers#ben-holmes) and [Jari Porras](/2024/speakers#jari-porras) collaborate on the session. Ben's talk will concern hammers, hurricanes, and HTML. The rest is a mystery.
 
 ## Bonus - Standardization
 
 One thing we try to do with our conferences is to bring up topics that are not often discussed but deserve attention. Standardization is one of those topics, and this time, we are fortunate to collaborate with [TC39](https://tc39.es/) in the form of a session built around the topic.
 
-By fortunate chance, TC39 will meet at Espoo during the conference week, and several members will be around during the second day of the conference. The [standardization session](/schedule#standardization) will help you to understand what standardization is about, how TC39 works, and how you can contribute. In addition, we look at several proposals, including polyfilling with WebAssembly, typing, and standardizing signals.
+By fortunate chance, TC39 will meet at Espoo during the conference week, and several members will be around during the second day of the conference. The [standardization session](/2024/schedule#standardization) will help you to understand what standardization is about, how TC39 works, and how you can contribute. In addition, we look at several proposals, including polyfilling with WebAssembly, typing, and standardizing signals.
 
 ## Conclusion
 

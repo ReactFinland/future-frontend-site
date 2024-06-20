@@ -17,7 +17,7 @@ In either case, keep the receipts so we can refund you after the conference.
 
 ## Workshops
 
-The workshops are distributed around Helsinki to office spaces and you can [find your exact address from the workshops page](/workshops/).
+The workshops are distributed around Helsinki to office spaces and you can find the exact addresses on the workshop page.
 
 If you want to send specific information to workshop attendees, let me (Juho) know through conference email or Slack and I'll do it through the ticket platform.
 
