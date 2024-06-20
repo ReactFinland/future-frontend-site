@@ -10,7 +10,7 @@
       level="2"
       hideAnchor="true"
       class="text-xl md:text-2xl font-extralight"
-      >13-14 June, 2024 at Paasitorni, Helsinki</Heading
+      >Early June, 2025</Heading
     >
   </slot>
   <slot name="content">
@@ -24,7 +24,17 @@
         SQLite on edge 31.01 (17:30-20:30) at Helsinki!</Markdown
       >
       <div class="prose lg:prose-xl">
-        <Markdown as="div"
+        <Markdown as="p"
+          >Future Frontend is a conference series focused on examining the
+          current trends in the space of frontend web development. The
+          conference connects Finnish developers with international ones in a
+          yearly event held typically early June. To get a better idea of our
+          events, see the archives for [2023](/2023/) and
+          [2024](/2024/).</Markdown
+        >
+      </div>
+      <div &visibleIf="(get context hide)" class="prose lg:prose-xl">
+        <Markdown as="p"
           >To quote William Gibson, the future is already here – it's just not
           evenly distributed. The purpose of Future Frontend conference is to
           give you a glimpse of future. The second edition takes place 13-14
@@ -33,7 +43,7 @@
         </Markdown>
 
         <Heading level="2">First edition in 2023 was a success</Heading>
-        <Markdown as="div"
+        <Markdown as="p"
           >[The first edition](/2023) was a success and helped to establish the
           event. Our target for the second edition is to grow further (up to 300
           attendees) and yet again bring both international and local developers
@@ -184,6 +194,7 @@
         </Markdown>
       </div>
       <div
+        &visibleIf="(get context hide)"
         class="prose lg:prose-xl"
         x-state="{ src: '' }"
         x-intersect="{
@@ -203,10 +214,14 @@
         <div class="z-0 w-full h-96 bg-center" id="venue-map"></div>
         <script x-attr @src="state.src" async type="module"></script>
       </div>
-      <AllSpeakers &conference="(get context conference)" />
+      <AllSpeakers
+        &visibleIf="(get context hide)"
+        &conference="(get context conference)"
+      />
       <hr />
       <div class="flex flex-row justify-around">
         <a
+          &visibleIf="(get context hide)"
           class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
           href="/buy-tickets/"
           >Buy tickets</a
@@ -217,12 +232,16 @@
           >Subscribe to the mailing list</a
         >
         <a
+          &visibleIf="(get context hide)"
           class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
           href="/for-sponsors/"
           >Become a sponsor</a
         >
       </div>
-      <AllSponsors &conference="(get context conference)" />
+      <AllSponsors
+        &visibleIf="(get context hide)"
+        &conference="(get context conference)"
+      />
     </div>
   </slot>
 </BaseLayout>

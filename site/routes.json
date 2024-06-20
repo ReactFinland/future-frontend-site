@@ -2,7 +2,7 @@
   "/": {
     "layout": "siteIndex",
     "meta": {
-      "title": "Future Frontend 2024",
+      "title": "Future Frontend",
       "description": "Future Frontend is a conference series bringing together developers in Helsinki, Finland to reimagine the future of frontend development."
     },
     "dataSources": [
@@ -112,13 +112,6 @@
       }
     ]
   },
-  "buy-tickets": {
-    "layout": "buyTickets",
-    "meta": {
-      "title": "Buy tickets",
-      "description": "Buy tickets to Future Frontend from this page"
-    }
-  },
   "organizers": {
     "layout": "organizers",
     "meta": {
@@ -144,48 +137,6 @@
         "operation": "processMarkdown",
         "parameters": [{ "path": "./content/privacy-policy.md" }],
         "name": "document"
-      }
-    ]
-  },
-  "schedule": {
-    "layout": "schedule",
-    "meta": {
-      "title": "Schedule",
-      "description": "Schedule of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2024", "schedule"],
-        "name": "schedule"
-      }
-    ]
-  },
-  "speakers": {
-    "layout": "speakers",
-    "meta": {
-      "title": "Speakers",
-      "description": "Speakers of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2024", "speakers"],
-        "name": "speakers"
-      }
-    ]
-  },
-  "workshops": {
-    "layout": "workshops",
-    "meta": {
-      "title": "Workshops",
-      "description": "Workshops of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2024", "workshops"],
-        "name": "workshops"
       }
     ]
   },
@@ -253,6 +204,69 @@
           {
             "operation": "queryData",
             "parameters": ["future-frontend-2023", "workshops"],
+            "name": "workshops"
+          }
+        ]
+      }
+    }
+  },
+  "2024": {
+    "layout": "archivePage",
+    "meta": {
+      "title": "Future Frontend 2024",
+      "description": "Future Frontend 2024 was held 11-14.6.2024"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2024", "index"],
+        "name": "conference"
+      },
+      {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/ff24.md" }],
+        "name": "document"
+      }
+    ],
+    "routes": {
+      "schedule": {
+        "layout": "schedule",
+        "meta": {
+          "title": "Schedule",
+          "description": "Schedule of Future Frontend"
+        },
+        "dataSources": [
+          {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2024", "schedule"],
+            "name": "schedule"
+          }
+        ]
+      },
+      "speakers": {
+        "layout": "speakers",
+        "meta": {
+          "title": "Speakers",
+          "description": "Speakers of Future Frontend"
+        },
+        "dataSources": [
+          {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2024", "speakers"],
+            "name": "speakers"
+          }
+        ]
+      },
+      "workshops": {
+        "layout": "workshops",
+        "meta": {
+          "title": "Workshops",
+          "description": "Workshops of Future Frontend"
+        },
+        "dataSources": [
+          {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2024", "workshops"],
             "name": "workshops"
           }
         ]
