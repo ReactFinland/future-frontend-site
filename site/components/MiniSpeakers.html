@@ -1,7 +1,7 @@
 <noop &foreach="(get props children)">
   <a
     class="underline"
-    &href="(concat /speakers # (slugify (get props
+    &href="(concat (get props parent) /speakers # (slugify (get props
   name)))"
   >
     <figure &class="(get props imgContainerClass 'flex flex-col gap-2')">

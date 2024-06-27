@@ -45,6 +45,7 @@
               <MiniSpeakers
                 imgContainerClass="flex flex-row gap-1 text-sm"
                 imgClass="rounded-full w-6 h-6"
+                &parent="(get context meta.parent '')"
                 &children="(get props speakers)"
               />
               <div class="flex flex-row gap-4 text-sm">

@@ -170,7 +170,8 @@
         "layout": "schedule",
         "meta": {
           "title": "Schedule",
-          "description": "Schedule of Future Frontend"
+          "description": "Schedule of Future Frontend",
+          "parent": "/2023"
         },
         "dataSources": [
           {
@@ -233,7 +234,8 @@
         "layout": "schedule",
         "meta": {
           "title": "Schedule",
-          "description": "Schedule of Future Frontend"
+          "description": "Schedule of Future Frontend",
+          "parent": "/2024"
         },
         "dataSources": [
           {
