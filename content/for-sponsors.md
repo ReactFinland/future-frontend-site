@@ -1,4 +1,4 @@
-We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first edition held at Pörssitalo was a success and as a sponsor you can support us to make the second edition even greater. The second edition will take place 13-14.6 at Paasitorni. Before the conference, we have two days of workshops distributed to our partner companies.
+We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first two events were moderate successes and as a sponsor you can help us deliver the event beyond the exceptations of our attendees while supporting your business targets (brand visibility, recruitment, making sure we have a world-class event in Finland, etc.). The third edition will take place 27-28.5 at Dipoli. Before the conference, we have one day of workshops distributed to our partner companies.
 
 ## International speakers with local flavor included
 
@@ -10,7 +10,7 @@ We do not offer speaker slots to our sponsors. Occasionally there may have been 
 
 ## Focused audience
 
-Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the second edition majority of the participants might come from abroad. Based on our current projection, the conference will have between 150 and 200 attendees, including speakers and organizers.
+Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the third edition majority of the participants might come from abroad. Our target is to reach between 200 and 300 attendees although it is difficult to promise given attendance depends on multiple factors beyond our control.
 
 This is not to say juniors are not welcome but it seems that due to our speaker selection and positioning the conference is well suited for seniors wanting to understand what is the next thing. In our schedule, we try to include both advanced and inspirational content to keep it varied. Occasionally we also bring speakers outside of technology to keep things interesting for our attendees.
 
@@ -18,9 +18,11 @@ This is not to say juniors are not welcome but it seems that due to our speaker 
 
 By supporting our conference, you will be visible both on a national and international level. Most importantly you help us push the conference to the next level as extras, such as the afterparty, are funded through our sponsorships.
 
-## Paasitorni, our amazing venue
+## Dipoli, our amazing venue
 
-After a brief visit to Pörssitalo, we are returning back to [Paasitorni](https://www.paasitorni.fi/) as it suits our targets for the second edition better in terms of space. Based on our experience with Paasitorni, it is a flexible venue that comes with a historic flavor and often it does not fail to impress our visitors.
+For the third edition, we will use [Dipoli](https://www.aalto.fi/en/locations/dipoli) as our venue. Dipoli is the main building of Aalto University and it is reknown for its architecture. What makes the building interesting from a sponsor point of view is the amount of lounge space allowing us to offer an ample amount of space for you to set up your booth.
+
+Besides loung space, Dipoli hall is great for our purposes as it can be split in half to allow easy catering during the breaks. The hall itself is spacious and can fit more people than we can imagine to attract.
 
 ## Your spot to shine
 

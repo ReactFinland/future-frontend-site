@@ -3,8 +3,8 @@ import "https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet-src.min.js";
 function renderMap(id: string) {
   // @ts-expect-error How to type Leaflet?
   const L = window.L;
-  const venueLatLon = [60.178510, 24.947590];
-  const map = L.map(id).setView(venueLatLon, 14);
+  const venueLatLon = [60.1851476, 24.8297228];
+  const map = L.map(id).setView(venueLatLon, 12);
 
   // Different options at https://leaflet-extras.github.io/leaflet-providers/preview/
   L.tileLayer(
@@ -19,7 +19,7 @@ function renderMap(id: string) {
 
   L.marker(venueLatLon).addTo(map)
     // .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
-    .bindPopup("Paasitorni")
+    .bindPopup("Dipoli")
     .openPopup();
 }
 

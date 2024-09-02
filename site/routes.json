@@ -8,7 +8,7 @@
     "dataSources": [
       {
         "operation": "queryData",
-        "parameters": ["future-frontend-2024", "index"],
+        "parameters": ["future-frontend-2025", "index"],
         "name": "conference"
       }
     ],
@@ -146,6 +146,34 @@
       "title": "Subscribe to the mailing list",
       "description": "Subscribe to Future Frontend mailing list"
     }
+  },
+  "schedule": {
+    "layout": "schedule",
+    "meta": {
+      "title": "Schedule",
+      "description": "Schedule of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "schedule"],
+        "name": "schedule"
+      }
+    ]
+  },
+  "speakers": {
+    "layout": "speakers",
+    "meta": {
+      "title": "Speakers",
+      "description": "Speakers of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "speakers"],
+        "name": "speakers"
+      }
+    ]
   },
   "2023": {
     "layout": "archivePage",
