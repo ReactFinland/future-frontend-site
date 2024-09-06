@@ -1,12 +1,12 @@
 <BaseLayout>
   <slot name="content">
     <div class="flex flex-col gap-8">
-      <p>
+      <Markdown>
         Note that the schedule times are given in GMT+3. [The schedule is
         available as an ICS
         file](https://api.react-finland.fi/calendar-2025.ics) in case you want
         to add it to your calendar.
-      </p>
+      </Markdown>
       <Schedule &children="(get context schedule)" />
     </div>
   </slot>
