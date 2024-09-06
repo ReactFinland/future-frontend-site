@@ -19,11 +19,11 @@ Geographically Finland is a bit like an island and it's separated from most of t
 
 ## Where to stay?
 
-Due to the central location of the venue (Paasitorni), compact size of Helsinki center, and good connectivity, you have many options. We've listed some potential options below:
+There are several options depending on your budget. Due to the location, there are a couple of decently priced hotels and hostels nearby. In addition the venue is easy to reach by public transport giving you more options. We've listed some potential options below:
 
-* [Omena Hotels](https://www.omenahotels.com/en/) - Roughly 60-80€ per night. Minimal service. Two separate hotels.
-* [Scandic Paasi](https://www.scandichotels.com/hotelreservation/select-rate?hotel=634) - Roughly €140 per night. Note that you can get a discount using the code `CGRO` if you book through the hotel site.
-* [Scandic Hakaniemi](https://www.scandichotels.com/hotelreservation/select-rate?hotel=660) - Roughly €120 per night. Note that you can get a discount using the code `CGRO` if you book through the hotel site.
+* [Radisson Blu Espoo](http://www.radissonhotels.com/) - Roughly 130€ per night. Four stars. Close to the venue. Use the coupon `WORKER` when booking through the hotel site for a 5% discount.
+* [Heymo 1](https://www.sokoshotels.fi/en/hotels/espoo/heymo-1) - Roughly 90€ per night. About one kilometer walk to the venue.
+* [Omena Hotels](https://www.omenahotels.com/en/) - Roughly 60-80€ per night. Minimal service. Two separate hotels at the center of Helsinki.
 * [Hotel Marski by Scandic](https://www.scandichotels.com/hotels/finland/helsinki/marski-by-scandic) - Roughly €150 per night.
 * [Kongressikoti Hotel](http://kongressikoti.fi/) - Roughly 60€ per night.
 * [Hostel Diana Park](http://www.dianapark.fi/) - Roughly 30€ per night.
@@ -52,13 +52,15 @@ There is a lot to see and do. See for example [myhelsinki.fi](https://www.myhels
 
 ## How to get to the venue? What kind of transport options exist?
 
-There's a direct train from the airport to Helsinki center. HSL operates the local public transport system. You can find a city bike system as well.
+Assuming you are coming from the direction of Helsinki center, likely using the subway (M1/M2, Aalto University stop) is an easy option. It is roughly one kilometer walk from the subway station.
 
-To get to airport from the center, you can use train, Finnair buses or taxi. It seems that nowadays there might be some fake taxis, so use reliable taxi services like TaksiHelsinki, Lahitaksi, Kovanen or FixuTaxi. Note that taxis are very expensive in Helsinki so you can expect a 50€ ride per direction.
+There are also trams and bus lines that go even closer and you should use [HSL service](https://www.hsl.fi/) to figure out the best connections.
+
+To get to airport from the center, you can use train, Finnair buses or taxi. It seems that nowadays there might be some fake taxis, so use reliable taxi services like TaksiHelsinki, Lahitaksi, Kovanen or FixuTaxi. Note that taxis are very expensive in the region so you can expect a 50€ ride per direction.
 
 ## What kind of food is available?
 
-We'll provide coffee and snacks during the longer breaks. During the lunch break we use the two restaurants available within the venue. You'll have buffet style food awaiting you and we accommodate to your special needs (vegetarian, vegan, glucose free, etc.) based on your preferences. All the food is included to the price of the conference ticket. The same is true for all of our workshops.
+We'll provide coffee and snacks during the longer breaks. The lunch will be served buffet style meaning you can choose what is suitable to you. We will take your food restrictions into account based on what you indicated during registration. All the food is included to the price of the conference ticket. The same is true for all of our workshops.
 
 ## What to take with you?
 
@@ -67,7 +69,7 @@ Assuming you want to sauna and swim, bring a swimming suit and optionally a towe
 ## How to follow the conference program?
 
 1. Use the site [schedule](/schedule/).
-2. [Subscribe to the conference calendar](https://api.react-finland.fi/calendar-2023.ics). You can import it to your Google Calendar for example.
+2. [Subscribe to the conference calendar](https://api.react-finland.fi/calendar-2025.ics). You can import it to your Google Calendar for example.
 
 ## How to prepare for the workshops?
 
@@ -79,7 +81,7 @@ To start your workshop as quick and as smooth as possible, it's a good idea to s
 
 > Run \`git --version\`, \`node --version\`, and \`npm --version\` to check versions you have installed.
 
-## When and how can I register?
+## When and how can I register to the conference?
 
 Registration is possible in any of the conference days. The desk will be close to the entrance of the venue.
 

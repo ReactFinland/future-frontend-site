@@ -55,6 +55,13 @@
       }
     }
   },
+  "buy-tickets": {
+    "layout": "buyTickets",
+    "meta": {
+      "title": "Buy tickets",
+      "description": "Buy tickets for Future Frontend 2025"
+    }
+  },
   "contact": {
     "layout": "informationPage",
     "meta": {
