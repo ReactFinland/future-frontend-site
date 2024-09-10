@@ -22,7 +22,7 @@ Geographically Finland is a bit like an island and it's separated from most of t
 There are several options depending on your budget. Due to the location, there are a couple of decently priced hotels and hostels nearby. In addition the venue is easy to reach by public transport giving you more options. We've listed some potential options below:
 
 * [Radisson Blu Espoo](http://www.radissonhotels.com/) - Roughly 130€ per night. Four stars. Close to the venue. Use the coupon `WORKER` when booking through the hotel site for a 5% discount.
-* [Heymo 1](https://www.sokoshotels.fi/en/hotels/espoo/heymo-1) - Roughly 90€ per night. About one kilometer walk to the venue.
+* [Heymo 1](https://www.sokoshotels.fi/en/hotels/espoo/heymo-1) - Roughly 90€ per night. About one kilometer walk to the venue. Use the coupon `WORKERY` when booking through the hotel site for a 5% discount.
 * [Omena Hotels](https://www.omenahotels.com/en/) - Roughly 60-80€ per night. Minimal service. Two separate hotels at the center of Helsinki.
 * [Hotel Marski by Scandic](https://www.scandichotels.com/hotels/finland/helsinki/marski-by-scandic) - Roughly €150 per night.
 * [Kongressikoti Hotel](http://kongressikoti.fi/) - Roughly 60€ per night.
