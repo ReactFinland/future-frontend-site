@@ -34,10 +34,10 @@ Note that we'll capture audience questions for you using [Slido](https://www.sli
 
 We can also do physical setup for you in case you need chairs etc. on the stage. For any physical setup, let us know beforehand.
 
-## Speakers' dinner - 12.6 18:30-21:00 at Graniittilinna
+## Speakers' dinner - 26.5 18:30-21:00 at mystery location
 
-The speakers' dinner location will be held at [Graniittilinna](https://www.graniittilinna.com/) (Säästöpankinranta 6, 00530 Helsinki) and it is right around the corner of the venue. The dinner starts officially 18:30 but we'll get together at 18:00 in the front of Paasitorni and do the short walk.
+The speakers' dinner location will be held at a location to be decided later.
 
-## Afterparty - 14.6 18:00-21:00 at UpCloud
+## Afterparty - 28.5 18:00-21:00 at Poliisien kesäkoti
 
-The afterparty will be held after the conference at UpCloud offices (Aleksanterinkatu 15b 7th floor). A separate registration is required and we will provide access to the registration to you separately.
+The afterparty will be held after the conference at Poliisien kesäkoti (Länsiulapanpolku 27, 00200 Helsinki). There will be sauna, good company, drinks and food.
