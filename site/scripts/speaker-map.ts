@@ -37,4 +37,4 @@ function renderMap(id: string) {
     .bindPopup("Radisson Blu Hotel (****)");
 }
 
-renderMap("venue-map");
+renderMap("speaker-map");
