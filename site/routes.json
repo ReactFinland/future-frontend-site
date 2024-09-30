@@ -168,6 +168,20 @@
       }
     ]
   },
+  "workshops": {
+    "layout": "workshops",
+    "meta": {
+      "title": "Workshops",
+      "description": "Workshops of Future Frontend"
+    },
+    "dataSources": [
+      {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "workshops"],
+        "name": "workshops"
+      }
+    ]
+  },
   "speakers": {
     "layout": "speakers",
     "meta": {
