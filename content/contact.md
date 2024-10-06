@@ -1,8 +1,8 @@
 ```
 TOSKA Osuuskunta
-c/o Aleksi Pousar
-Työpajankatu 17 A 258
-00580 Helsinki
+c/o Toska Osuuskunta
+Suonotkontie 1 B 22
+00630 HELSINKI
 ```
 
 * info \<at> futurefrontend.com
