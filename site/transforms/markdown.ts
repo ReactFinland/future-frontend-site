@@ -91,7 +91,7 @@ function getTransformMarkdown(load: LoadApi) {
             text +
             '<a class="' +
             tw(
-              "ml-2 no-underline text-sm align-middle text-gray-500 hover:text-black",
+              "ml-2 no-underline text-sm align-middle text-gray-500 hover:text-black print:hidden",
             ) +
             '" href="#' +
             slug +
