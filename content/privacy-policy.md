@@ -4,9 +4,10 @@ Toska Osuuskunta is committed to protecting your privacy. This privacy policy re
 
 ```
 Toni Ristola
-c/o Aleksi Pousar
-Lauttasaarentie 16 A 17
-00200 Helsinki
+TOSKA Osuuskunta
+c/o Toska Osuuskunta
+Suonotkontie 1 B 22
+00630 HELSINKI
 ```
 
 **info \<at> futurefrontend.com**
