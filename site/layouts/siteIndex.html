@@ -194,6 +194,76 @@
         <p>Address: Dipoli - Otakaari 24, 02150 Espoo, Finland</p>
         <div class="z-0 w-full h-96 bg-center" id="venue-map"></div>
         <script x-attr @src="state.src" async type="module"></script>
+        <Heading level="3">Venue photos</Heading>
+        <div>
+          <nav class="flex justify-between gap-4">
+            <label
+              ><input
+                class="hidden peer/hall"
+                type="radio"
+                name="photos"
+                value="hall"
+                checked
+              /><span class="peer-checked/hall:font-bold">Hall</span>
+            </label>
+            <label
+              ><input
+                class="hidden peer/lobby"
+                type="radio"
+                name="photos"
+                value="lobby"
+              /><span class="peer-checked/lobby:font-bold">Lobby</span></label
+            >
+            <label
+              ><input
+                class="hidden peer/outside"
+                type="radio"
+                name="photos"
+                value="outside"
+              /><span class="peer-checked/outside:font-bold"
+                >Outside</span
+              ></label
+            >
+            <label
+              ><input
+                class="hidden peer/seats"
+                type="radio"
+                name="photos"
+                value="seats"
+              /><span class="peer-checked/seats:font-bold">Seats</span></label
+            >
+            <label
+              ><input
+                class="hidden peer/stairs"
+                type="radio"
+                name="photos"
+                value="stairs"
+              /><span class="peer-checked/stairs:font-bold">Stairs</span></label
+            >
+          </nav>
+          <section>
+            <img
+              class="hidden peer-has-[:checked]/hall:inline"
+              src="/images/dipoli/hall.jpg"
+            />
+            <img
+              class="hidden peer-has-[:checked]/lobby:inline"
+              src="/images/dipoli/lobby.jpg"
+            />
+            <img
+              class="hidden peer-has-[:checked]/outside:inline"
+              src="/images/dipoli/outside.jpg"
+            />
+            <img
+              class="hidden peer-has-[:checked]/seats:inline"
+              src="/images/dipoli/seats.jpg"
+            />
+            <img
+              class="hidden peer-has-[:checked]/stairs:inline"
+              src="/images/dipoli/stairs.jpg"
+            />
+          </section>
+        </div>
       </div>
       <AllSpeakers &conference="(get context conference)" />
       <hr />
