@@ -1,7 +1,7 @@
 <noop &foreach="(get props children)">
   <div class="flex flex-col gap-4">
     <Heading level="2" class="text-4xl" &children="(get props title)" />
-    <div class="flex flex-row gap-4">
+    <div class="flex flex-col sm:flex-row gap-4">
       <div class="flex flex-col gap-4">
         <div
           class="text-md whitespace-nowrap"
@@ -19,11 +19,13 @@
           class="sr-only"
           &children="(concat Instructor (pluralize (get props speakers)))"
         />
-        <MiniSpeakers
-          &children="(get props speakers)"
-          captionClass="text-center"
-          imgClass="mx-auto rounded-full w-16"
-        />
+        <div class="flex flex-row sm:flex-col gap-4">
+          <MiniSpeakers
+            &children="(get props speakers)"
+            captionClass="text-center"
+            imgClass="mx-auto rounded-full w-16"
+          />
+        </div>
         <Heading level="3" class="sr-only">Location</Heading>
         <SiteLink
           &visibleIf="(get props location.social.googleMaps)"
