@@ -6,6 +6,7 @@ function renderMap(id: string) {
   const venueLatLon = [60.18500145319482, 24.83247578144074];
   const hotelLatLon = [60.18371611765855, 24.83635213466187];
   const hotel2LatLon = [60.17899837467085, 24.82998408489948];
+  const metroLatLon = [60.18405195987836, 24.82746832771227];
   const map = L.map(id).setView(venueLatLon, 12);
 
   // Debug
@@ -37,6 +38,9 @@ function renderMap(id: string) {
 
   L.marker(hotel2LatLon).addTo(map)
     .bindPopup("Heymo 1 Hotel (****)");
+
+  L.marker(metroLatLon).addTo(map)
+    .bindPopup("Metro station (right exit)");
 }
 
 renderMap("venue-map");
