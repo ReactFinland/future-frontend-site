@@ -9,6 +9,25 @@ function renderMap(id: string) {
   const metroLatLon = [60.18405195987836, 24.82746832771227];
   const map = L.map(id).setView(venueLatLon, 12);
 
+  // https://github.com/pointhi/leaflet-color-markers
+  const greenIcon = new L.Icon({
+    iconUrl: "/images/marker-icon-2x-green.png",
+    shadowUrl: "/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
+
+  const orangeIcon = new L.Icon({
+    iconUrl: "/images/marker-icon-2x-orange.png",
+    shadowUrl: "/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
+
   // Debug
   /*
   map.on("click", function (e) {
@@ -28,15 +47,15 @@ function renderMap(id: string) {
     },
   ).addTo(map);
 
-  L.marker(venueLatLon).addTo(map)
+  L.marker(venueLatLon, { icon: greenIcon }).addTo(map)
     // .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
     .bindPopup("Dipoli - the venue")
     .openPopup();
 
-  L.marker(hotelLatLon).addTo(map)
+  L.marker(hotelLatLon, { icon: orangeIcon }).addTo(map)
     .bindPopup("Radisson Blu Hotel (****)");
 
-  L.marker(hotel2LatLon).addTo(map)
+  L.marker(hotel2LatLon, { icon: orangeIcon }).addTo(map)
     .bindPopup("Heymo 1 Hotel (****)");
 
   L.marker(metroLatLon).addTo(map)
