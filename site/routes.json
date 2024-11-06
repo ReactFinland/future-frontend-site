@@ -119,6 +119,20 @@
       }
     ]
   },
+  "meetup": {
+    "layout": "informationPage",
+    "meta": {
+      "title": "Meetup",
+      "description": "Besides the conference, we also run local meetups at Helsinki"
+    },
+    "dataSources": [
+      {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/meetup.md" }],
+        "name": "document"
+      }
+    ]
+  },
   "organizers": {
     "layout": "organizers",
     "meta": {
