@@ -1,17 +1,15 @@
-## Hotel - Scandic Paasi
+## Hotel - To be confirmed
 
-We'll book four nights (plus extra night per workshop) at the Scandic Paasi based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
-
-The hotel is located at Paasivuorenkatu 5 B, 00530 Helsinki. It is located right next to the venue and there's a physical access between the spaces through the basement (useful info in case it's raining).
+We'll book four nights (plus extra night per workshop) at a nearby hotel (to be confirmed) based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
 Note that we do not cover extras, like minibar, and it is up to you to take care of charges like this as you leave the hotel.
 
 ### How to get to the hotel?
 
-There are two good ways to reach the hotel from the airport:
+Since we're located at Otaniemi, there are two good options:
 
-1. Take the bus 600 from the airport and sit until reaches Hakaniemi. The trip takes roughly 51 minutes. After you arrive to Hakaniemi, it is a short walk to the hotel. You should head West from the bus stop to reach it. The walk is roughly 200 meters. For the trip, you need the ABC ticket and it costs 4.10 € per person. I recommend installing the [HSL app](https://www.hsl.fi/en/tickets-and-fares/hsl-app) beforehand and making sure payments are set up with it. In case you plan to use the public transport often, they have discounted options available for this.
-2. Take a taxi to Scandic Paasi. The taxi trip takes around 25 minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others and it may make sense to negotiate the price beforehand. Good companies to choose from are Taksi Helsinki (**not** Taksi Heslinki), Kovanen, and Lähitaksi. Expect the taxi to cost roughly 50 €.
+1. Take a train to Helsinki main railway station and the jump to a subway headed to Kivenlahti (M1) or Tapiola (M2). You should leave at the stop Aalto-yliopisto (Aalto University). You'll need an ABC ticket ([see HSL app](https://www.hsl.fi/)) to complete this journey and it will cost roughly five euros. Expect the travel to take about one hour. There's a bus option too but most likely a combination of train and subway is more comfortable.
+2. Take a taxi. The taxi trip takes around half an hour minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others and it may make sense to negotiate the price beforehand. Good companies to choose from are Taksi Helsinki (**not** Taksi Heslinki), Kovanen, and Lähitaksi. Expect the taxi to cost roughly 50 €.
 
 In either case, keep the receipts so we can refund you after the conference.
 
@@ -40,4 +38,4 @@ The speakers' dinner location will be held at a location to be decided later.
 
 ## Afterparty - 28.5 18:00-21:00 at Poliisien kesäkoti
 
-The afterparty will be held after the conference at Poliisien kesäkoti (Länsiulapanpolku 27, 00200 Helsinki). There will be sauna, good company, drinks and food.
+The afterparty will be held after the conference at Poliisien kesäkoti (Länsiulapanpolku 27, 00200 Helsinki). There will be sauna, good company, drinks and food. No need to bring your own towel.
