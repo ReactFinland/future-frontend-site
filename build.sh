@@ -4,6 +4,6 @@
 set -e
 
 export FONTCONFIG_PATH=${PWD}/assets/fonts
-curl -fsSL https://deno.land/x/install/install.sh | sh -s v1.38.2
+curl -fsSL https://deno.land/x/install/install.sh | sh -s v2.1.4
 /opt/buildhome/.deno/bin/deno task build
 /opt/buildhome/.deno/bin/deno task optimize:build
