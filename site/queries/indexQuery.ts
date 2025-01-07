@@ -7,6 +7,8 @@ fragment SpeakerFragment on Contact {
     homepage
     github
     twitter
+    bluesky
+    mastodon
     linkedin
   }
   image {

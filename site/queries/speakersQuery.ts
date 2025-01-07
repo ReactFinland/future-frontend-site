@@ -34,6 +34,8 @@ query PageQuery($conferenceId: ID!) {
         homepage
         github
         twitter
+        bluesky
+        mastodon
         linkedin
         twitch
       }
