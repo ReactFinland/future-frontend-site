@@ -43,7 +43,7 @@
         <Heading
           level="3"
           class="text-2xl"
-          &children="(concat Talk (pluralize (get props talks)))"
+          &children="(concat Talk (pluralize (get props talks) TALK))"
         />
         <div class="flex flex-col gap-4">
           <div class="flex flex-col gap-4" &foreach="(get props talks)">
@@ -88,7 +88,7 @@
         <Heading
           level="3"
           class="text-2xl"
-          &children="(concat Workshop (pluralize (get props workshops)))"
+          &children="(concat Workshop (pluralize (get props workshops) WORKSHOP))"
         />
         <div class="flex flex-col gap-4" &foreach="(get props workshops)">
           <div class="flex flex-col gap-2">

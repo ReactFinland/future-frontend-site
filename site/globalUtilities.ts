@@ -52,7 +52,14 @@ function init({ routes }: { routes: Routes }) {
     throw new Error(`Failed to find matching url for "${url}"`);
   }
 
-  function pluralize(items: unknown[]) {
+  function pluralize(items: unknown[], type?: string) {
+    if (type) {
+      items = items.filter((i) =>
+        // @ts-expect-error This is fine
+        i.type === type
+      );
+    }
+
     return items.length > 1 ? "s" : "";
   }
 
