@@ -43,7 +43,7 @@ For the second edition, we have decided on the following packages and pricing:
 &nbsp; | BRONZE | SILVER | GOLD
 -|-|-|-
 Cost (VAT 0) | 1.000€ | 2.000€ | 5.000€
-Available | 6 | 2 | 1
+Available | 6 | 4 | 2
 Conference tickets | 2 x &#9786; | 4 x &#9786; | 6 x &#9786;
 Visibility on social media and website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
 Logo size on website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
