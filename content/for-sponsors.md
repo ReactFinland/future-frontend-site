@@ -14,6 +14,8 @@ Based on the first edition, it is safe to say that Future Frontend attracts seni
 
 This is not to say juniors are not welcome but it seems that due to our speaker selection and positioning the conference is well suited for seniors wanting to understand what is the next thing. In our schedule, we try to include both advanced and inspirational content to keep it varied. Occasionally we also bring speakers outside of technology to keep things interesting for our attendees.
 
+For earlier events, our attendees have been from consulting and product companies (roughly half each) including several visitors from the public sector.
+
 ## National and international visibility
 
 By supporting our conference, you will be visible both on a national and international level. Most importantly you help us push the conference to the next level as extras, such as the afterparty, are funded through our sponsorships.
