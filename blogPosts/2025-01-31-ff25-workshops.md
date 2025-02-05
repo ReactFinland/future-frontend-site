@@ -25,7 +25,7 @@ You might remember Zak from our conference last year as he was discussed [Finnis
 
 ## Design Systems for Legacies
 
-Design systems are a recurring topic in our conferences and they return again this year. To keep up with the theme, Thaís Santos and m4dz will run a [design system workshop](/workshops/#design-systems-for-legacies) that has a specific focus on developing a design system on top of existing codebase as the situation is more complex then. This is the workshop for you if you want to improve your understanding of design systems regardless of your background. It is even better if you have a use case of your own in mind as that can be discussed in the workshop to help you proceed with your work.
+Design systems are a recurring topic in our conferences and they return again this year. To keep up with the theme, m4dz and Julien Sulpis will run a [design system workshop](/workshops/#design-systems-for-legacies) that has a specific focus on developing a design system on top of existing codebase as the situation is more complex then. This is the workshop for you if you want to improve your understanding of design systems regardless of your background. It is even better if you have a use case of your own in mind as that can be discussed in the workshop to help you proceed with your work.
 
 Thaís and m4dz will also cover design systems in the conference as they will discuss the challenges of introducing a design system to an aging system and consider the future of product design and design tools.
 
