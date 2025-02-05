@@ -1,3 +1,7 @@
+## Booking flights
+
+We'll use Travelperk for booking flights as the service will invoice our organization automatically and you don't have to spend your money on flights. If you want us to refund taxi/bus/train, please take receipts and deliver them to us after the conference so you'll get your money back.
+
 ## Hotel - To be confirmed
 
 We'll book four nights (plus extra night per workshop) at a nearby hotel (to be confirmed) based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
