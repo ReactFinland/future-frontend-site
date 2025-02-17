@@ -1,6 +1,11 @@
 <noop &foreach="(get props children)">
   <div class="flex flex-col gap-4">
-    <Heading level="2" class="text-4xl" &children="(get props title)" />
+    <Heading
+      level="2"
+      class="text-4xl"
+      &children="(get props title)"
+      showAnchor
+    />
     <div class="flex flex-col sm:flex-row gap-4">
       <div class="flex flex-col gap-4">
         <div
