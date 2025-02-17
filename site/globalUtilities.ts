@@ -1,6 +1,6 @@
 import { urlJoin } from "https://bundle.deno.dev/https://deno.land/x/url_join@1.0.0/mod.ts";
 import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
-import type { Routes } from "https://deno.land/x/gustwind@v0.57.0/types.ts";
+import type { Routes } from "https://deno.land/x/gustwind@v0.81.4/types.ts";
 
 function init({ routes }: { routes: Routes }) {
   function invert(b: boolean) {
@@ -27,29 +27,6 @@ function init({ routes }: { routes: Routes }) {
     const date = new Date(d);
 
     return `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
-  }
-
-  function validateUrl(url: string) {
-    if (!url) {
-      return;
-    }
-
-    const [urlRoot, anchor] = url.split("#");
-
-    if (Object.keys(routes).includes(urlRoot)) {
-      return urlRoot === "/"
-        ? url
-        : `/${urlRoot}${anchor ? "#" + anchor : "/"}`;
-    }
-
-    // TODO: This would be a good spot to check the url doesn't 404
-    // To keep this fast, some kind of local, time-based cache would
-    // be good to have to avoid hitting the urls all the time.
-    if (url.startsWith("http")) {
-      return url;
-    }
-
-    throw new Error(`Failed to find matching url for "${url}"`);
   }
 
   function pluralize(items: unknown[], type?: string) {
@@ -200,7 +177,6 @@ function timezoneOffset() {
     pluralize,
     urlJoin,
     rewriteImageSource,
-    validateUrl,
   };
 }
 
