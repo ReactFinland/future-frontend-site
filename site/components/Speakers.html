@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div &visibleIf="(get props workshopsDisabled)">
+      <div>
         <Heading
           level="3"
           class="text-2xl"
@@ -93,7 +93,12 @@
         <div class="flex flex-col gap-4" &foreach="(get props workshops)">
           <div class="flex flex-col gap-2">
             <div class="flex justify-between gap-2">
-              <h4 class="text-xl" &children="(get props title)"></h4>
+              <h4 class="text-xl">
+                <SiteLink
+                  &href="(concat workshops # (getUniqueAnchorId (get props title) ) )"
+                  &children="(get props title)"
+                />
+              </h4>
               <div class="font-monospace flex flex-col gap-2">
                 <span
                   class="whitespace-nowrap"
@@ -109,17 +114,45 @@
                 ></span>
               </div>
             </div>
-            <Markdown
-              &visibleIf="(get props description)"
-              class="prose lg:prose-xl"
-              as="div"
-              &children="(get props description)"
-            />
             <Keywords &keywords="(get props keywords)" />
           </div>
         </div>
       </div>
     </div>
+    <div &visibleIf="(get props workshopsDisabled)">
+      <Heading
+        level="3"
+        class="text-2xl"
+        &children="(concat Workshop (pluralize (get props workshops) WORKSHOP))"
+      />
+      <div class="flex flex-col gap-4" &foreach="(get props workshops)">
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between gap-2">
+            <h4 class="text-xl" &children="(get props title)"></h4>
+            <div class="font-monospace flex flex-col gap-2">
+              <span
+                class="whitespace-nowrap"
+                &children="(get props day)"
+              ></span>
+              <span
+                class="whitespace-nowrap"
+                &children="(concat
+                    (offsetByTimezone (get props begin))
+                    '-'
+                    (offsetByTimezone (get props end))
+                  )"
+              ></span>
+            </div>
+          </div>
+          <Markdown
+            &visibleIf="(get props description)"
+            class="prose lg:prose-xl"
+            as="div"
+            &children="(get props description)"
+          />
+          <Keywords &keywords="(get props keywords)" />
+        </div>
+      </div>
+    </div>
   </div>
-  <hr />
 </div>

@@ -1,372 +1,399 @@
 {
   "/": {
     "layout": "siteIndex",
-    "meta": {
-      "title": "Future Frontend",
-      "description": "Future Frontend is a conference series bringing together developers in Helsinki, Finland to reimagine the future of frontend development."
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2025", "index"],
-        "name": "conference"
+    "context": {
+      "meta": {
+        "title": "Future Frontend",
+        "description": "Future Frontend is a conference series bringing together developers in Helsinki, Finland to reimagine the future of frontend development."
       }
-    ],
+    },
+    "dataSources": {
+      "conference": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "index"]
+      }
+    },
     "scripts": [{ "name": "venue", "loadedLater": true }]
   },
   "blog": {
     "layout": "blogIndex",
-    "meta": {
-      "title": "Blog",
-      "description": "Future Frontend blog"
-    },
-    "dataSources": [
-      {
-        "operation": "indexMarkdown",
-        "parameters": ["./blogPosts"],
-        "name": "blogPosts"
+    "context": {
+      "meta": {
+        "title": "Blog",
+        "description": "Future Frontend blog"
       }
-    ],
+    },
+    "dataSources": {
+      "blogPosts": {
+        "operation": "indexMarkdown",
+        "parameters": ["./blogPosts"]
+      }
+    },
     "expand": {
       "matchBy": {
+        "name": "blogPosts",
         "indexer": {
           "operation": "indexMarkdown",
           "parameters": ["./blogPosts"]
         },
-        "dataSources": [{
-          "operation": "processMarkdown",
-          "parameters": [
-            { "parseHeadmatter": true }
-          ],
-          "name": "document"
-        }],
         "slug": "data.slug"
       },
       "layout": "blogPage",
-      "meta": {
-        "title": {
-          "utility": "get",
-          "parameters": ["context", "document.data.title"]
-        },
-        "description": {
-          "utility": "get",
-          "parameters": ["context", "document.data.description"]
+      "dataSources": {
+        "document": {
+          "operation": "processMarkdown",
+          "parameters": [
+            { "parseHeadmatter": true }
+          ]
+        }
+      },
+      "context": {
+        "meta": {
+          "title": {
+            "utility": "get",
+            "parameters": ["context", "document.data.title"]
+          },
+          "description": {
+            "utility": "get",
+            "parameters": ["context", "document.data.description"]
+          }
         }
       }
     }
   },
   "buy-tickets": {
     "layout": "buyTickets",
-    "meta": {
-      "title": "Buy tickets",
-      "description": "Buy tickets for Future Frontend 2025"
+    "context": {
+      "meta": {
+        "title": "Buy tickets",
+        "description": "Buy tickets for Future Frontend 2025"
+      }
     }
   },
   "contact": {
     "layout": "informationPage",
-    "meta": {
-      "title": "Contact",
-      "description": "Contact information of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/contact.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "Contact",
+        "description": "Contact information of Future Frontend"
       }
-    ]
+    },
+    "dataSources": {
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/contact.md" }]
+      }
+    }
   },
   "for-attendees": {
     "layout": "informationPage",
-    "meta": {
-      "title": "For attendees",
-      "description": "Want to attend Future Frontend? Read this."
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/for-attendees.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "For attendees",
+        "description": "Want to attend Future Frontend? Read this."
       }
-    ]
+    },
+    "dataSources": {
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/for-attendees.md" }]
+      }
+    }
   },
   "for-speakers": {
     "layout": "forSpeakersPage",
-    "meta": {
-      "title": "For speakers",
-      "description": "Are you speaking at Future Frontend? Read this."
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/for-speakers.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "For speakers",
+        "description": "Are you speaking at Future Frontend? Read this."
       }
-    ],
+    },
+    "dataSources": {
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/for-speakers.md" }]
+      }
+    },
     "scripts": [{ "name": "speaker-map" }]
   },
   "for-sponsors": {
     "layout": "informationPage",
-    "meta": {
-      "title": "For sponsors",
-      "description": "Want to sponsor Future Frontend? Read this."
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/for-sponsors.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "For sponsors",
+        "description": "Want to sponsor Future Frontend? Read this."
       }
-    ]
+    },
+    "dataSources": {
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/for-sponsors.md" }]
+      }
+    }
   },
   "meetup": {
     "layout": "informationPage",
-    "meta": {
-      "title": "Meetup",
-      "description": "Besides the conference, we also run local meetups at Helsinki"
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/meetup.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "Meetup",
+        "description": "Besides the conference, we also run local meetups at Helsinki"
       }
-    ]
+    },
+    "dataSources": {
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/meetup.md" }]
+      }
+    }
   },
   "organizers": {
     "layout": "organizers",
-    "meta": {
-      "title": "Organizers",
-      "description": "Organizers of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2024", "organizers"],
-        "name": "organizers"
+    "context": {
+      "meta": {
+        "title": "Organizers",
+        "description": "Organizers of Future Frontend"
       }
-    ]
+    },
+    "dataSources": {
+      "organizers": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2024", "organizers"]
+      }
+    }
   },
   "privacy-policy": {
     "layout": "informationPage",
-    "meta": {
-      "title": "Privacy policy",
-      "description": "Privacy policy of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/privacy-policy.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "Privacy policy",
+        "description": "Privacy policy of Future Frontend"
       }
-    ]
+    },
+    "dataSources": {
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/privacy-policy.md" }]
+      }
+    }
   },
   "subscribe": {
     "layout": "subscribePage",
-    "meta": {
-      "title": "Subscribe to the mailing list",
-      "description": "Subscribe to Future Frontend mailing list"
+    "context": {
+      "meta": {
+        "title": "Subscribe to the mailing list",
+        "description": "Subscribe to Future Frontend mailing list"
+      }
     }
   },
   "schedule": {
     "layout": "schedule",
-    "meta": {
-      "title": "Schedule",
-      "description": "Schedule of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2025", "schedule"],
-        "name": "schedule"
+    "context": {
+      "meta": {
+        "title": "Schedule",
+        "description": "Schedule of Future Frontend"
       }
-    ]
+    },
+    "dataSources": {
+      "schedule": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "schedule"]
+      }
+    }
   },
   "workshops": {
     "layout": "workshops",
-    "meta": {
-      "title": "Workshops",
-      "description": "Workshops of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2025", "workshops"],
-        "name": "workshops"
+    "context": {
+      "meta": {
+        "title": "Workshops",
+        "description": "Workshops of Future Frontend"
       }
-    ]
+    },
+    "dataSources": {
+      "workshops": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "workshops"]
+      }
+    }
   },
   "speakers": {
     "layout": "speakers",
-    "meta": {
-      "title": "Speakers",
-      "description": "Speakers of Future Frontend"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2025", "speakers"],
-        "name": "speakers"
+    "context": {
+      "meta": {
+        "title": "Speakers",
+        "description": "Speakers of Future Frontend"
       }
-    ]
+    },
+    "dataSources": {
+      "speakers": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "speakers"]
+      }
+    }
   },
   "2023": {
     "layout": "archivePage",
-    "meta": {
-      "title": "Future Frontend 2023",
-      "description": "Future Frontend 2023 was held 6-9.6.2023"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2023", "index"],
-        "name": "conference"
-      },
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/ff23.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "Future Frontend 2023",
+        "description": "Future Frontend 2023 was held 6-9.6.2023"
       }
-    ],
+    },
+    "dataSources": {
+      "conference": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2023", "index"]
+      },
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/ff23.md" }]
+      }
+    },
     "routes": {
       "schedule": {
         "layout": "schedule",
-        "meta": {
-          "title": "Schedule",
-          "description": "Schedule of Future Frontend",
-          "parent": "/2023"
-        },
-        "dataSources": [
-          {
-            "operation": "queryData",
-            "parameters": ["future-frontend-2023", "schedule"],
-            "name": "schedule"
+        "context": {
+          "meta": {
+            "title": "Schedule",
+            "description": "Schedule of Future Frontend",
+            "parent": "/2023"
           }
-        ]
+        },
+        "dataSources": {
+          "schedule": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2023", "schedule"]
+          }
+        }
       },
       "speakers": {
         "layout": "speakers",
-        "meta": {
-          "title": "Speakers",
-          "description": "Speakers of Future Frontend"
-        },
-        "dataSources": [
-          {
-            "operation": "queryData",
-            "parameters": ["future-frontend-2023", "speakers"],
-            "name": "speakers"
+        "context": {
+          "meta": {
+            "title": "Speakers",
+            "description": "Speakers of Future Frontend"
           }
-        ]
+        },
+        "dataSources": {
+          "speakers": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2023", "speakers"]
+          }
+        }
       },
       "workshops": {
         "layout": "workshops",
-        "meta": {
-          "title": "Workshops",
-          "description": "Workshops of Future Frontend"
-        },
-        "dataSources": [
-          {
-            "operation": "queryData",
-            "parameters": ["future-frontend-2023", "workshops"],
-            "name": "workshops"
+        "context": {
+          "meta": {
+            "title": "Workshops",
+            "description": "Workshops of Future Frontend"
           }
-        ]
+        },
+        "dataSources": {
+          "workshops": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2023", "workshops"]
+          }
+        }
       }
     }
   },
   "2024": {
     "layout": "archivePage",
-    "meta": {
-      "title": "Future Frontend 2024",
-      "description": "Future Frontend 2024 was held 11-14.6.2024"
-    },
-    "dataSources": [
-      {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2024", "index"],
-        "name": "conference"
-      },
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/ff24.md" }],
-        "name": "document"
+    "context": {
+      "meta": {
+        "title": "Future Frontend 2024",
+        "description": "Future Frontend 2024 was held 11-14.6.2024"
       }
-    ],
+    },
+    "dataSources": {
+      "conference": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2024", "index"]
+      },
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/ff24.md" }]
+      }
+    },
     "routes": {
       "schedule": {
         "layout": "schedule",
-        "meta": {
-          "title": "Schedule",
-          "description": "Schedule of Future Frontend",
-          "parent": "/2024"
-        },
-        "dataSources": [
-          {
-            "operation": "queryData",
-            "parameters": ["future-frontend-2024", "schedule"],
-            "name": "schedule"
+        "context": {
+          "meta": {
+            "title": "Schedule",
+            "description": "Schedule of Future Frontend",
+            "parent": "/2024"
           }
-        ]
+        },
+        "dataSources": {
+          "schedule": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2024", "schedule"]
+          }
+        }
       },
       "speakers": {
         "layout": "speakers",
-        "meta": {
-          "title": "Speakers",
-          "description": "Speakers of Future Frontend"
-        },
-        "dataSources": [
-          {
-            "operation": "queryData",
-            "parameters": ["future-frontend-2024", "speakers"],
-            "name": "speakers"
+        "context": {
+          "meta": {
+            "title": "Speakers",
+            "description": "Speakers of Future Frontend"
           }
-        ]
+        },
+        "dataSources": {
+          "speakers": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2024", "speakers"]
+          }
+        }
       },
       "workshops": {
         "layout": "workshops",
-        "meta": {
-          "title": "Workshops",
-          "description": "Workshops of Future Frontend"
-        },
-        "dataSources": [
-          {
-            "operation": "queryData",
-            "parameters": ["future-frontend-2024", "workshops"],
-            "name": "workshops"
+        "context": {
+          "meta": {
+            "title": "Workshops",
+            "description": "Workshops of Future Frontend"
           }
-        ]
+        },
+        "dataSources": {
+          "workshops": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2024", "workshops"]
+          }
+        }
       }
     }
   },
   "jobs": {
     "layout": "jobsPage",
-    "meta": {
-      "title": "Jobs",
-      "description": "Are you looking for a job in industry? Read on."
-    },
-    "dataSources": [
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/digia.md" }],
-        "name": "digia"
-      },
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/evitec.md" }],
-        "name": "evitec"
-      },
-      {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/upcloud.md" }],
-        "name": "upcloud"
+    "context": {
+      "meta": {
+        "title": "Jobs",
+        "description": "Are you looking for a job in industry? Read on."
       }
-    ]
+    },
+    "dataSources": {
+      "digia": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/digia.md" }]
+      },
+      "evitec": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/evitec.md" }]
+      },
+      "upcloud": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/upcloud.md" }]
+      }
+    }
   },
   "404.html": {
     "layout": "404",
-    "meta": {
-      "title": "Page not found",
-      "description": "This page does not exist"
+    "context": {
+      "meta": {
+        "title": "Page not found",
+        "description": "This page does not exist"
+      }
     }
   }
 }

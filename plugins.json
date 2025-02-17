@@ -1,6 +1,6 @@
 {
   "env": {
-    "GUSTWIND_VERSION": "https://deno.land/x/gustwind@v0.62.0"
+    "GUSTWIND_VERSION": "https://deno.land/x/gustwind@v0.81.5"
   },
   "plugins": [
     {
@@ -8,18 +8,18 @@
       "options": { "inputPath": "./site/meta.json" }
     },
     {
-      "path": "${GUSTWIND_VERSION}/plugins/config-router/mod.ts",
+      "path": "${GUSTWIND_VERSION}/routers/config-router/mod.ts",
       "options": {
         "dataSourcesPath": "./site/dataSources.ts",
         "routesPath": "./site/routes.json"
       }
     },
     {
-      "path": "${GUSTWIND_VERSION}/plugins/breezewind-renderer/mod.ts",
+      "path": "${GUSTWIND_VERSION}/renderers/htmlisp-renderer/mod.ts",
       "options": {
-        "componentLoaders": [
-          { "loader": "html", "path": "./site/components" },
-          { "loader": "html", "path": "./site/layouts" }
+        "components": [
+          { "path": "./site/components" },
+          { "path": "./site/layouts" }
         ],
         "globalUtilitiesPath": "./site/globalUtilities.ts"
       }
@@ -36,7 +36,7 @@
       "options": {
         "scripts": [
           {
-            "type": "",
+            "type": "text/javascript",
             "src": "https://cdn.jsdelivr.net/npm/sidewind@7.6.0/dist/sidewind.umd.production.min.js"
           }
         ],
