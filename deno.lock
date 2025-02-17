@@ -1860,6 +1860,13 @@
   },
   "remote": {
     "https://bundle.deno.dev/https://deno.land/x/url_join@1.0.0/mod.ts": "a1eb7b5984fccc94bab744ede34b9cad4e9c70ff96e5c681e519c507c7d8dd2d",
+    "https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.3.1/es/core.min.js": "3d0e47d13c5d9890826e6ff75648ad01f778708c3d88d0b51d7cec3cbd450d79",
+    "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/bash.js": "be7fbc864def78c082183f74c706caba43c2e2f522e8827681324b2a69fc20fd",
+    "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/javascript.js": "f943819f4eaf55d511a3a3dd6bb64a58b9efc15603a9f22504caac39f7a35900",
+    "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/json.js": "3827393954434336fc2e81ea578ee602f68bdbcfdc8b28aa7aae625abe6ebd93",
+    "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/typescript.js": "8a563883ecee219f7342c3e6be9aa6ae37f10637a1f04a506221053176274eed",
+    "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/yaml.js": "1afc421087265b6d557ab129bb12c8828e5fcdbe4a3dc0534b48dc8d517d80fb",
+    "https://cdn.jsdelivr.net/npm/marked@9.1.5/lib/marked.esm.js": "f78241ff04d201946b7a9d23db5d2faa4c454454a632026f225e32d3f75abc22",
     "https://deno.land/std@0.167.0/_util/asserts.ts": "d0844e9b62510f89ce1f9878b046f6a57bf88f208a10304aab50efcb48365272",
     "https://deno.land/std@0.167.0/_util/os.ts": "8a33345f74990e627b9dfe2de9b040004b08ea5146c7c9e8fe9a29070d193934",
     "https://deno.land/std@0.167.0/path/_constants.ts": "df1db3ffa6dd6d1252cc9617e5d72165cd2483df90e93833e13580687b6083c3",
@@ -1872,6 +1879,23 @@
     "https://deno.land/std@0.167.0/path/separator.ts": "fe1816cb765a8068afb3e8f13ad272351c85cbc739af56dacfc7d93d710fe0f9",
     "https://deno.land/std@0.167.0/path/win32.ts": "7cebd2bda6657371adc00061a1d23fdd87bcdf64b4843bb148b0b24c11b40f69",
     "https://deno.land/x/gustwind@v0.57.0/breezewind/types.ts": "6ca5be813375d1e21e443ed526a1f736d37c2db1d16da6f826d19fa493665d98",
-    "https://deno.land/x/gustwind@v0.57.0/types.ts": "2a44bed93c59c1e5b990dc25ae66d390e3427ca685e12bf3444fb33e1709d3bd"
+    "https://deno.land/x/gustwind@v0.57.0/types.ts": "2a44bed93c59c1e5b990dc25ae66d390e3427ca685e12bf3444fb33e1709d3bd",
+    "https://deno.land/x/gustwind@v0.66.3/htmlisp/types.ts": "dabd0e5f7957ba388b81a3f246e2a50101c15c87aa7afaaa06af907aeb276f0b",
+    "https://deno.land/x/gustwind@v0.66.3/types.ts": "2a927ca54583e1c654ea6bd0fef5ccb59cd3bdd9a69a26466aab44e7088329aa",
+    "https://esm.sh/@twind/core@1.1.1": "43a5495548807b8eab7de24aec43d56773e70cbbc6c6dbe5b100b34e3878dfc8",
+    "https://esm.sh/@twind/preset-autoprefix@1.0.5": "1bd9105f089e342a2874bfde723ecf27f155dc230b0d48dddfc551f30c26a99c",
+    "https://esm.sh/@twind/preset-tailwind@1.1.1": "61de167ec8ffaeec9ef4c99f522d5aaf6694dc38182df77c18c18a5383447f3c",
+    "https://esm.sh/@twind/preset-typography@1.0.5": "8c6d42ac07f9d88a2f116910c5afb8d140317d8351e91c2f3ca8422f1507e659",
+    "https://esm.sh/v135/@twind/core@1.1.1/denonext/core.mjs": "3e0ac242efe7599279ae2cc8d936b2d235af93ab95d790e186e34cb36bb0acf9",
+    "https://esm.sh/v135/@twind/core@1.1.3/denonext/core.mjs": "c2618087a5d5cc406c7dc1079015f4d7cc874bee167f74e9945694896d907b6d",
+    "https://esm.sh/v135/@twind/preset-autoprefix@1.0.5/denonext/preset-autoprefix.mjs": "8b1b028d70ff543d0fdb4db400afc899dbdc3972affbf27f8c7517f5fa0f4011",
+    "https://esm.sh/v135/@twind/preset-tailwind@1.1.1/denonext/base.js": "36e903d4ae0ccd48e1016c8e65695430666e818cea30f3856308eb59d27e7af0",
+    "https://esm.sh/v135/@twind/preset-tailwind@1.1.1/denonext/baseTheme.js": "bb611e01ae1b05a8de9aa7343f4f2a350816c092b9295f75f8f631034a1f3019",
+    "https://esm.sh/v135/@twind/preset-tailwind@1.1.1/denonext/preflight.js": "0f47658f3de4ad93fb7e4430c6b1c9960b42cd9aca7645c3f92e8f1f6132928b",
+    "https://esm.sh/v135/@twind/preset-tailwind@1.1.1/denonext/preset-tailwind.mjs": "f233c69f35f152ca89767ac6064b2b75d1386d1c1f9e4c6b3a8cf74f461694d6",
+    "https://esm.sh/v135/@twind/preset-tailwind@1.1.1/denonext/rules.js": "0e7b2a1b923947105e06a8e1319d90f67c6704be15c3af8e16f9ac469832b759",
+    "https://esm.sh/v135/@twind/preset-tailwind@1.1.1/denonext/variants.js": "a6347e8eb7d73b87f3568e631599ac5b72c736889dfe0fb44196926cce5733b5",
+    "https://esm.sh/v135/@twind/preset-typography@1.0.5/denonext/preset-typography.mjs": "b126f7b0b16014561ca0af6c6a2af3ff5bd824c4d1e09b1a8339caf7bab72d5d",
+    "https://esm.sh/v135/style-vendorizer@2.2.3/denonext/style-vendorizer.mjs": "121455e7b04b631ef6463ce63cdcd29febd74d88c37713c774ceca8a1561c83d"
   }
 }

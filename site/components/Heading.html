@@ -2,7 +2,11 @@
   &visibleIf="(get props children)"
   &type="(concat h (get props level))"
   &id="(getUniqueAnchorId (get props children))"
-  &class="(get props class)"
+  &class="(concat
+    (get props class)
+    ' '
+    'scroll-mt-16'
+  )"
 >
   <div class="inline" &children="(get props children)" />
   <a
