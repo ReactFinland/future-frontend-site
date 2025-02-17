@@ -38,7 +38,11 @@ function init({ load }: { load: LoadApi }) {
         { variables },
       );
 
-      return (await fetch(request).then((res) => res.json())).data;
+      try {
+        return (await fetch(request).then((res) => res.json())).data;
+      } catch (_error) {
+        console.error("Failed to process", apiUrl, query, variables);
+      }
     };
   }
 
