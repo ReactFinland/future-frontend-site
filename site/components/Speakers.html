@@ -47,7 +47,6 @@
       <div &visibleIf="(get props talks)">
         <Heading
           level="3"
-          showAnchor
           class="text-2xl"
           &children="(concat Talk (pluralize (get props talks) TALK))"
         />
@@ -55,7 +54,12 @@
           <div class="flex flex-col gap-4" &foreach="(get props talks)">
             <div class="flex flex-col gap-2">
               <div class="flex justify-between gap-2">
-                <h4 class="text-xl" &children="(get props title)"></h4>
+                <Heading
+                  level="4"
+                  showAnchor
+                  class="text-xl"
+                  &children="(get props title)"
+                />
                 <div class="font-monospace flex flex-col gap-2">
                   <span
                     class="whitespace-nowrap"
@@ -93,19 +97,18 @@
       <div>
         <Heading
           level="3"
-          showAnchor
           class="text-2xl"
           &children="(concat Workshop (pluralize (get props workshops) WORKSHOP))"
         />
         <div class="flex flex-col gap-4" &foreach="(get props workshops)">
           <div class="flex flex-col gap-2">
             <div class="flex justify-between gap-2">
-              <h4 class="text-xl">
+              <Heading level="4" showAnchor class="text-xl">
                 <SiteLink
                   &href="(concat workshops # (getUniqueAnchorId (get props title) ) )"
                   &children="(get props title)"
                 />
-              </h4>
+              </Heading>
               <div class="font-monospace flex flex-col gap-2">
                 <span
                   class="whitespace-nowrap"
