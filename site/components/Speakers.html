@@ -3,7 +3,12 @@
     <div class="flex flex-row justify-between">
       <div class="flex flex-col justify-center">
         <div>
-          <Heading level="2" class="text-4xl" &children="(get props name)" />
+          <Heading
+            level="2"
+            showAnchor
+            class="text-4xl"
+            &children="(get props name)"
+          />
           <p
             &visibleIf="(get props tagline)"
             class="text-2xl text-gray-500 font-light"
@@ -42,6 +47,7 @@
       <div &visibleIf="(get props talks)">
         <Heading
           level="3"
+          showAnchor
           class="text-2xl"
           &children="(concat Talk (pluralize (get props talks) TALK))"
         />
@@ -87,6 +93,7 @@
       <div>
         <Heading
           level="3"
+          showAnchor
           class="text-2xl"
           &children="(concat Workshop (pluralize (get props workshops) WORKSHOP))"
         />
