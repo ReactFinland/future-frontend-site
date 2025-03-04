@@ -45,11 +45,11 @@ function init({ routes }: { routes: Routes }) {
     // @ts-expect-error This is fine.
     const { pathname } = this.context;
 
-    if (!anchor || Array.isArray(anchor) || isObject(anchor)) {
+    let id = getAnchorId(anchor);
+
+    if (!id) {
       return;
     }
-
-    let id = slugify(anchor);
 
     // Make sure ids are unique per page
     const cacheId = `${pathname}-${id}`;
@@ -64,6 +64,14 @@ function init({ routes }: { routes: Routes }) {
     }
 
     return id;
+  }
+
+  function getAnchorId(anchor: string) {
+    if (!anchor || Array.isArray(anchor) || isObject(anchor)) {
+      return;
+    }
+
+    return slugify(anchor);
   }
 
   // deno-lint-ignore no-explicit-any
@@ -170,6 +178,7 @@ function timezoneOffset() {
     getDatetime,
     getFullDate,
     getUniqueAnchorId,
+    getAnchorId,
     getYear,
     invert,
     offsetByTimezone,
