@@ -36,7 +36,7 @@
               >
                 <SiteLink
                   &visibleIf="(get context hide)"
-                  &href="(concat workshops # (getUniqueAnchorId (get props title) ) )"
+                  &href="(concat workshops # (getAnchorId (get props title) ) )"
                   &children="(get props title)"
                 />
               </div>
