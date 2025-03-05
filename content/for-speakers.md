@@ -2,9 +2,9 @@
 
 We'll use Travelperk for booking flights as the service will invoice our organization automatically and you don't have to spend your money on flights. If you want us to refund taxi/bus/train, please take receipts and deliver them to us after the conference so you'll get your money back.
 
-## Hotel - To be confirmed
+## Hotel - Heymo 1
 
-We'll book four nights (plus extra night per workshop) at a nearby hotel (to be confirmed) based on your travel dates. This includes breakfast. The hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
+We'll book four nights (plus extra night per workshop) at a Heymo 1, a nearby hotel, based on your travel dates. The hotel includes breakfast and the hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
 Note that we do not cover extras, like minibar, and it is up to you to take care of charges like this as you leave the hotel.
 
@@ -12,7 +12,7 @@ Note that we do not cover extras, like minibar, and it is up to you to take care
 
 Since we're located at Otaniemi, there are two good options:
 
-1. Take a train to Helsinki main railway station and the jump to a subway headed to Kivenlahti (M1) or Tapiola (M2). You should leave at the stop Aalto-yliopisto (Aalto University). You'll need an ABC ticket ([see HSL app](https://www.hsl.fi/)) to complete this journey and it will cost roughly five euros. Expect the travel to take about one hour. There's a bus option too but most likely a combination of train and subway is more comfortable.
+1. Take a train to Helsinki main railway station and the jump to a subway headed to Kivenlahti (M1) or Tapiola (M2). You should leave at the stop Keilaniemi. You'll need an ABC ticket ([see HSL app](https://www.hsl.fi/)) to complete this journey and it will cost roughly five euros. Expect the travel to take about one hour. There's a bus option too but most likely a combination of train and subway is more comfortable.
 2. Take a taxi. The taxi trip takes around half an hour minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others and it may make sense to negotiate the price beforehand. Good companies to choose from are Taksi Helsinki (**not** Taksi Heslinki), Kovanen, and Lähitaksi. Expect the taxi to cost roughly 50 €.
 
 In either case, keep the receipts so we can refund you after the conference.
