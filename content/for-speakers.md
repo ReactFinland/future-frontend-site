@@ -40,6 +40,6 @@ We can also do physical setup for you in case you need chairs etc. on the stage.
 
 The speakers' dinner location will be held at a location to be decided later.
 
-## Afterparty - 28.5 18:00-21:00 at Poliisien kesäkoti
+## Afterparty - 27.5 18:00-21:00 at AYY rantasauna
 
-The afterparty will be held after the conference at Poliisien kesäkoti (Länsiulapanpolku 27, 00200 Helsinki). There will be sauna, good company, drinks and food. No need to bring your own towel.
+The afterparty will be held after the conference at AYY rantasauna (Jämeräntaival 5) nearby. There will be sauna, good company, drinks and food. No need to bring your own towel.
