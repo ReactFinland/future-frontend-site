@@ -36,9 +36,11 @@ Note that we'll capture audience questions for you using [Slido](https://www.sli
 
 We can also do physical setup for you in case you need chairs etc. on the stage. For any physical setup, let us know beforehand.
 
-## Speakers' dinner - 26.5 18:30-21:00 at mystery location
+## Speakers' dinner - 26.5 18:30-21:00 at Wunderdog (Kaisaniemenkatu 1 C)
 
-The speakers' dinner location will be held at a location to be decided later.
+The speakers' dinner will be held at Wunderdog premises. Please note that the address Kaisaniemenkatu 1 C is located left from Molly Malone's street terrace/entrance. There are also other entrances to Wunderdog office, but during evenings only Kaisaniemenkatu 1 C is in use. See [Google Maps](https://maps.app.goo.gl/eWtjyi22QxN3KKUU7) for further details.
+
+Note that there is an opportunity to use the office sauna!
 
 ## Afterparty - 27.5 18:00-21:00 at AYY rantasauna
 
