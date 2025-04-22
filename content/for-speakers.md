@@ -27,7 +27,7 @@ If you want to send specific information to workshop attendees, let me (Juho) kn
 
 We've prepared a simple yet effective process for the talks. It works as follows:
 
-1. Show up at the speakers' room about half an hour before the session of your talk. The speakers' room is close to the main hall and it's impossible to miss. It also doubles as our technical room.
+1. Show up at the speakers' room about half an hour before the session of your talk. The speakers' room can be found at the ground floor and our registration staff can point you there. Unfortunately the fireplace is out of order.
 2. We'll guide you shortly before the session from the speakers' room to the main hall and do a quick tech check. If you want, you can also do this on some break before your talk and it's a good idea especially if you have audio or video elements in your presentation.
 3. During the session, you'll give your performance. I expect you to pair with your session partner to ensure the talks flow well to each other.
 4. After the session, there will be an option for you to get a photo done. We offer this as a service to our speakers as often people have poor social media photos and it's nice to have one that's not bad. We will also produce video interviews (3-5 minutes) to give you additional coverage.
