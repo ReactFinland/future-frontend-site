@@ -44,4 +44,4 @@ Note that there is an opportunity to use the office sauna!
 
 ## Afterparty - 27.5 18:00-21:00 at AYY rantasauna
 
-The afterparty will be held after the conference at AYY rantasauna (Jämeräntaival 5) nearby. There will be sauna, good company, drinks and food. No need to bring your own towel.
+The afterparty will be held after the conference at AYY rantasauna (Jämeräntaival 5) nearby. There will be sauna, good company, drinks and food. No need to bring your own towel. If you want to use the hot tub, bring a swimming suit.
