@@ -4,7 +4,7 @@ We'll use Travelperk for booking flights as the service will invoice our organiz
 
 ## Hotel - Heymo 1
 
-We'll book four nights (plus extra night per workshop) at a Heymo 1, a nearby hotel, based on your travel dates. The hotel includes breakfast and the hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
+We'll book four nights (plus extra night per workshop) at a [Heymo 1 (Miestentie 5, 02150 Espoo)](https://maps.app.goo.gl/qBN3UvZqdPGnx74m6), a nearby hotel, based on your travel dates. The hotel includes breakfast and the hotel will charge you for any extra nights. We'll query the dates separately and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
 Note that we do not cover extras, like minibar, and it is up to you to take care of charges like this as you leave the hotel.
 
