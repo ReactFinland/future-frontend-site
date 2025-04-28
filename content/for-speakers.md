@@ -38,7 +38,7 @@ We can also do physical setup for you in case you need chairs etc. on the stage.
 
 ## Speakers' dinner - 26.5 18:30-21:00 at Wunderdog (Kaisaniemenkatu 1 C)
 
-The speakers' dinner will be held at Wunderdog premises. Please note that the address Kaisaniemenkatu 1 C is located left from Molly Malone's street terrace/entrance. There are also other entrances to Wunderdog office, but during evenings only Kaisaniemenkatu 1 C is in use. See [Google Maps](https://maps.app.goo.gl/eWtjyi22QxN3KKUU7) for further details.
+The speakers' dinner will be held at Wunderdog premises. Please note that the address [Kaisaniemenkatu 1 C](https://maps.app.goo.gl/eWtjyi22QxN3KKUU7) is located left from Molly Malone's street terrace/entrance. There are also other entrances to Wunderdog office, but during evenings only Kaisaniemenkatu 1 C is in use. In case you want to go to the speakers' dinner in a group, we'll leave at 18:00 from the lobby of the hotel together and someone from the conference organization will be at the lobby waiting for you.
 
 Note that there is an opportunity to use the office sauna!
 
