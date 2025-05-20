@@ -2,7 +2,7 @@
   <Heading showAnchor level="2" class="sr-only" id="all-sponsors"
     >All sponsors</Heading
   >
-  <div class="flex flex-col gap-4">
+  <div &visibleIf="(get props showGold)" class="flex flex-col gap-4">
     <Heading showAnchor level="3" class="text-6xl">Gold sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="flex flex-col gap-2">
-    <Heading showAnchor level="3" class="text-2xl">Bronze sponsors</Heading>
+    <Heading showAnchor level="3" class="text-2xl">Bronze sponsor</Heading>
     <div class="flex flex-col gap-4">
       <div
         class="grid grid-cols-2 md:grid-cols-4 gap-8"
@@ -50,7 +50,9 @@
           &children="(get props conference.bronzeSponsors)"
         />
       </div>
-      <SiteLink href="for-sponsors">Become a sponsor</SiteLink>
+      <SiteLink &visibleIf="(get props showBronze)" href="for-sponsors"
+        >Become a sponsor</SiteLink
+      >
     </div>
   </div>
   <div &visibleIf="(get props conference.partners)" class="flex flex-col gap-1">
