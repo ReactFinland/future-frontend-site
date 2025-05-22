@@ -373,17 +373,9 @@
       }
     },
     "dataSources": {
-      "digia": {
+      "backscreen": {
         "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/digia.md" }]
-      },
-      "evitec": {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/evitec.md" }]
-      },
-      "upcloud": {
-        "operation": "processMarkdown",
-        "parameters": [{ "path": "./content/upcloud.md" }]
+        "parameters": [{ "path": "./content/backscreen.md" }]
       }
     }
   },
