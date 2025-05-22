@@ -376,6 +376,10 @@
       "backscreen": {
         "operation": "processMarkdown",
         "parameters": [{ "path": "./content/backscreen.md" }]
+      },
+      "wunderdog": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/wunderdog.md" }]
       }
     }
   },
