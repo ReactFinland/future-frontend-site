@@ -364,6 +364,73 @@
       }
     }
   },
+  "2025": {
+    "layout": "archivePage",
+    "context": {
+      "meta": {
+        "title": "Future Frontend 2025",
+        "description": "Future Frontend 2025 was held 26-28.5.2025"
+      }
+    },
+    "dataSources": {
+      "conference": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2025", "index"]
+      },
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/ff25.md" }]
+      }
+    },
+    "routes": {
+      "schedule": {
+        "layout": "schedule",
+        "context": {
+          "meta": {
+            "title": "Schedule",
+            "description": "Schedule of Future Frontend",
+            "parent": "/2025"
+          }
+        },
+        "dataSources": {
+          "schedule": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2025", "schedule"]
+          }
+        }
+      },
+      "speakers": {
+        "layout": "speakers",
+        "context": {
+          "meta": {
+            "title": "Speakers",
+            "description": "Speakers of Future Frontend"
+          }
+        },
+        "dataSources": {
+          "speakers": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2025", "speakers"]
+          }
+        }
+      },
+      "workshops": {
+        "layout": "workshops",
+        "context": {
+          "meta": {
+            "title": "Workshops",
+            "description": "Workshops of Future Frontend"
+          }
+        },
+        "dataSources": {
+          "workshops": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2025", "workshops"]
+          }
+        }
+      }
+    }
+  },
   "jobs": {
     "layout": "jobsPage",
     "context": {

@@ -10,7 +10,7 @@
       level="2"
       hideAnchor="true"
       class="text-xl md:text-2xl font-extralight"
-      >27-28.5.2025 (Dipoli, Espoo, Finland)</Heading
+      >8-9.6.2026 (Dipoli, Espoo, Finland)</Heading
     >
   </slot>
   <slot name="content">
@@ -26,16 +26,13 @@
       <div class="prose lg:prose-xl">
         <Markdown as="p"
           >Future Frontend is a single track conference series focused on
-          examining the current trends in the space of frontend web development.
-          To get a better idea of our events, see the archives for
-          [2023](/2023/) and [2024](/2024/).</Markdown
+          examining the current trends in the space of frontend development. It
+          brings together bright minds curious about what is to come.</Markdown
         >
         <Markdown as="p"
-          >To quote William Gibson, the future is already here – it's just not
-          evenly distributed. The purpose of Future Frontend conference is to
-          give you a glimpse of future. The third edition takes place 27-28 May,
-          2025 (Dipoli, Espoo, Finland) while the workshops are held 26th of
-          May, 2025 around Helsinki.
+          >The fourth edition takes place 8-9 of June, 2026 (Dipoli, Espoo,
+          Finland) while the workshops are held 10-12 of May, 2026 around
+          Helsinki.
         </Markdown>
 
         <Heading showAnchor level="2">Quality over quantity</Heading>
@@ -44,7 +41,7 @@
           Finland) and we tend favor quality over quantity in both terms of
           content and attendees. Our single track format, ample breaks, and
           additional program allow you to gain understanding of what is going in
-          the field while gaining new acquaintances.
+          the field while gaining new acquaintances, or even friends.
         </Markdown>
 
         <Heading showAnchor level="2">Who is coming to the conference</Heading>
@@ -59,7 +56,7 @@
           >If you are coming from abroad, it is not uncommon to combine the trip
           with a bit of sightseeing or a trip to a cottage as it is likely the
           best time to visit Finland as it is reasonably warm and you will miss
-          all the mosquitoes.
+          some of the mosquitoes.
         </Markdown>
 
         <div class="mb-8">
@@ -115,19 +112,9 @@
           during breaks as for some people the hallway track is the best part of
           the conference as you get to meet other developers. On top of this, we
           take care to organize more unofficial program after conference days
-          with our partners and sauna after the first conference day is
-          guaranteed.
+          with our partners. In 2025, we went to sauna for example.
         </Markdown>
 
-        <Heading showAnchor level="2">Themes for 2025</Heading>
-        <Markdown
-          >For 2025, our main themes are within the intersection of artificial
-          intelligence (AI), web design, and web development. To give you
-          examples of specific themes, we'll discuss performance, design
-          systems, accessibility, and a softer theme of work-life balance.
-          Although we focus primarily on technical topics, we try to include
-          content that serves you beyond knowledge.
-        </Markdown>
         <Markdown
           >A quote from 2023 attendee puts it well what the conference is all
           about:</Markdown
@@ -137,22 +124,27 @@
           realized that I live in bubble doing always the same apps and that
           there are also other use-cases and approaches. - Marek
         </Markdown>
+
+        <Heading showAnchor level="2">Themes for 2026</Heading>
+        <Markdown
+          >The themes for 2026 are yet to be decided although you can expect a
+          mixture of technical and softer topics.
+        </Markdown>
         <Markdown &visibleIf="(get context hide)">
           [Read more about the themes from the conference
           blog.](/blog/main-themes-of-ff24/)
         </Markdown>
 
         <div &visibleIf="(get context hide)">
-          <Heading showAnchor level="2">Workshops for 2025</Heading>
+          <Heading showAnchor level="2">Workshops for 2026</Heading>
           <Markdown
-            >As often you learn the best by doing, we have made sure to include
-            [workshops](/2024/workshops) before the conference days. The topics
-            include AI and TypeScript.
+            >As we have three workshop days in store, we will make sure there
+            will be interesting workshops available at different skill levels.
           </Markdown>
         </div>
 
-        <div>
-          <Heading showAnchor level="2">Livestreams for 2025</Heading>
+        <div &visibleIf="(get props showLiveStreams)">
+          <Heading showAnchor level="2">Livestreams for 2026</Heading>
           <Markdown
             >Thanks to the support of our sponsors we will produce a livestream
             for this year and you can find the links below:</Markdown
@@ -195,9 +187,26 @@
         <div class="z-0 w-full h-96 bg-center" id="venue-map"></div>
         <script x-attr @src="state.src" async type="module"></script>
       </div>
-      <AllSpeakers &conference="(get context conference)" />
+
+      <div class="prose lg:prose-xl">
+        <Heading showAnchor level="2">Earlier conferences</Heading>
+        <Markdown as="p"
+          >To get a better idea of our events, see the archives for
+          [2023](/2023/), [2024](/2024/), and [2025](/2025/).</Markdown
+        >
+      </div>
+
+      <AllSpeakers
+        &visibleIf="(get props showSpeakers)"
+        &conference="(get context conference)"
+      />
       <hr />
       <div class="flex flex-row justify-around">
+        <a
+          class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
+          href="https://ti.to/future-frontend/2026/with/pre-registration-for-the-conference"
+          >Preregister to the conference</a
+        >
         <a
           class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
           href="/buy-tickets/"
@@ -216,7 +225,10 @@
           >Become a sponsor</a
         >
       </div>
-      <AllSponsors &conference="(get context conference)" />
+      <AllSponsors
+        &visibleIf="(get props showSponsors)"
+        &conference="(get context conference)"
+      />
     </div>
   </slot>
 </BaseLayout>
