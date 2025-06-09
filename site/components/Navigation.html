@@ -1,7 +1,13 @@
 <SiteLink href="/">About</SiteLink>
-<SiteLink href="speakers">Speakers</SiteLink>
-<SiteLink href="schedule">Schedule</SiteLink>
-<SiteLink href="workshops">Workshops</SiteLink>
+<SiteLink href="speakers" &visibleIf="(get props showSpeakers)"
+  >Speakers</SiteLink
+>
+<SiteLink href="schedule" &visibleIf="(get props showSchedule)"
+  >Schedule</SiteLink
+>
+<SiteLink href="workshops" &visibleIf="(get props showWorkshops)"
+  >Workshops</SiteLink
+>
 <SiteLink href="jobs">Jobs</SiteLink>
 <SiteLink href="meetup">Meetup</SiteLink>
 <SiteLink href="blog">Blog</SiteLink>
