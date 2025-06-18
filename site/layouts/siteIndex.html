@@ -63,9 +63,24 @@
           <Heading showAnchor level="2">Atmosphere of Future Frontend</Heading>
           <Markdown
             >To get some idea of the atmosphere of our conference, consider the
-            videos below, the 2024 one from Paasitorni and the 2023 one from
-            Pörssitalo.</Markdown
+            videos below. 2025 edition took place at Dipoli, 2024 was held at
+            Paasitorni, and the 2023 edition took place at Pörssitalo.</Markdown
           >
+          <iframe
+            width="100%"
+            height="315"
+            title="Future Frontend 2024"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            x-state="{ src: '' }"
+            x-intersect="{
+            options: { once: true },
+            state: { src: 'https://www.youtube.com/embed/xadj32ExtWo?si=ZEvuOd5-tfH85SLA' }
+          }"
+            x-attr
+            @src="state.src"
+          ></iframe>
           <iframe
             width="100%"
             height="315"
