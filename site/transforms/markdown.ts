@@ -120,9 +120,26 @@ function getTransformMarkdown(load: LoadApi) {
             return this.code(load.textFileSync(href), href.split(".")[1]);
           }
 
+          if (text.split("|")[0] === "<yt>") {
+            return `<iframe
+            width="100%"
+            height="315"
+            title="${text.split("|")[1]}"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            x-state="{ src: '' }"
+            x-intersect="{
+            options: { once: true },
+            state: { src: 'https://www.youtube.com/embed/${href}' }
+          }"
+            x-attr
+            @src="state.src"
+          ></iframe>`;
+          }
+
           const parts = text.split("|");
 
-          // @ts-expect-error This is fine
           let out = '<a class="' + tw(["underline"].concat(parts[1])) +
             '" href="' + href + '"';
           if (title) {

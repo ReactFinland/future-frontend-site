@@ -1,11 +1,18 @@
 <BaseLayout>
   <slot name="header">
-    <div class="flex flex-row justify-between">
-      <FormattedTime
-        class="font-extralight"
-        &date="(get context document.data.date)"
-      />
-      <span &children="(get context document.data.author)"></span>
+    <div class="flex flex-row justify-between font-extralight">
+      <FormattedTime &date="(get context document.data.date)" />
+      <div>
+        <div>
+          Author:
+          <span &children="(get context document.data.author)"></span>
+          <div></div>
+        </div>
+        <div &visibleIf="(get context document.data.editor)">
+          Editor:
+          <span &children="(get context document.data.editor)"></span>
+        </div>
+      </div>
     </div>
   </slot>
   <slot name="content">
