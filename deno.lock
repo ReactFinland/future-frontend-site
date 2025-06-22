@@ -2195,6 +2195,8 @@
     "https://deno.land/x/gustwind@v0.57.0/types.ts": "2a44bed93c59c1e5b990dc25ae66d390e3427ca685e12bf3444fb33e1709d3bd",
     "https://deno.land/x/gustwind@v0.66.3/htmlisp/types.ts": "dabd0e5f7957ba388b81a3f246e2a50101c15c87aa7afaaa06af907aeb276f0b",
     "https://deno.land/x/gustwind@v0.66.3/types.ts": "2a927ca54583e1c654ea6bd0fef5ccb59cd3bdd9a69a26466aab44e7088329aa",
+    "https://deno.land/x/gustwind@v0.81.4/htmlisp/types.ts": "e8065d4c382944a1cb4049d364cf7d2666b98882f6969e08ec3c8d4ebdb4c3ff",
+    "https://deno.land/x/gustwind@v0.81.4/types.ts": "79c4ecf909bd31c7b7ab637e63c0d0429b73af247804201dcde86ab894202686",
     "https://esm.sh/@twind/core@1.1.1": "43a5495548807b8eab7de24aec43d56773e70cbbc6c6dbe5b100b34e3878dfc8",
     "https://esm.sh/@twind/preset-autoprefix@1.0.5": "1bd9105f089e342a2874bfde723ecf27f155dc230b0d48dddfc551f30c26a99c",
     "https://esm.sh/@twind/preset-tailwind@1.1.1": "61de167ec8ffaeec9ef4c99f522d5aaf6694dc38182df77c18c18a5383447f3c",
