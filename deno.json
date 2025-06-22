@@ -6,6 +6,6 @@
     "start:linked": "gustwind -d -p 3000",
     "serve": "deno run -A --unstable --no-check https://deno.land/x/gustwind@v0.81.5/gustwind-cli/mod.ts -s -p 3000 -i ./build",
     "serve:linked": "gustwind -s -p 3000 -i ./build",
-    "optimize:build": "deno run -A --unstable npm:@divriots/jampack@0.32.0 ./build"
+    "optimize:build": "deno run -A --unstable npm:@divriots/jampack@0.33.1 ./build"
   }
 }
