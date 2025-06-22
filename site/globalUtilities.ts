@@ -152,7 +152,7 @@ function timezoneOffset() {
   // the assets directory so that they can be served directly through
   // Cloudflare
   function rewriteImageSource(source: string) {
-    return source;
+    return "https://" + source;
 
     // XXX: Disabled for now
     /*
