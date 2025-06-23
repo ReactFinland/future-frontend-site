@@ -151,11 +151,8 @@ function timezoneOffset() {
   // The idea of this helper is to copy images from a remote api to
   // the assets directory so that they can be served directly through
   // Cloudflare
-  function rewriteImageSource(source: string) {
-    return "https://" + source;
-
-    // XXX: Disabled for now
-    /*
+  async function rewriteImageSource(source: string) {
+    // TODO: Do not rewrite image sources in development mode
     const assetPath = "assets/img";
     const imageName = path.basename(source);
     const outputPath = path.join(Deno.cwd(), assetPath, imageName);
@@ -164,13 +161,12 @@ function timezoneOffset() {
       await Deno.stat(outputPath);
     } catch (_error) {
       // https://stackoverflow.com/a/62019831/228885
-      const res = await fetch(source);
+      const res = await fetch("https://" + source);
       const imageBytes = new Uint8Array(await res.arrayBuffer());
       await Deno.writeFile(outputPath, imageBytes);
     }
 
     return `/img/${imageName}`;
-    */
   }
 
   return {
