@@ -4,6 +4,8 @@ This is the website of Future Frontend conference.
 
 ## Development
 
+Before running the commands, copy `.env.template` as `.env` and fill the fields.
+
 * Development server - `deno task start`
 * Build process - `deno task build`
 

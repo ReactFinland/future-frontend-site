@@ -23,11 +23,22 @@ type MarkdownWithFrontmatter = {
   content: string;
 };
 
+const API_URL = Deno.env.get("API_URL") || "";
+const API_TOKEN = Deno.env.get("API_TOKEN") || "";
+
+if (!API_URL) {
+  throw new Error("Missing api url");
+}
+
+if (!API_TOKEN) {
+  throw new Error("Missing api token");
+}
+
 function init({ load }: { load: LoadApi }) {
   const markdown = getTransformMarkdown(load);
-  const fetchData = createDataFetcher("https://api.react-finland.fi/graphql");
+  const fetchData = createDataFetcher(API_URL, API_TOKEN);
 
-  function createDataFetcher(apiUrl: string) {
+  function createDataFetcher(apiUrl: string, apiToken: string) {
     return async function fetchData(
       query: string,
       variables: Record<string, unknown>,
@@ -35,7 +46,7 @@ function init({ load }: { load: LoadApi }) {
       const request = new GraphQLRequest(
         apiUrl,
         query,
-        { variables },
+        { headers: { TOKEN: apiToken }, variables },
       );
 
       try {
