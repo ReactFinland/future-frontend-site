@@ -40,7 +40,7 @@ Future Frontend is the only frontend focused conference in Finland and one of th
 
 ## Packages
 
-For the second edition, we have decided on the following packages and pricing:
+You can find our sponsor packages and pricing below:
 
 &nbsp; | BRAND | TECH | EPIC | UNICORN
 -|-|-|-|-
