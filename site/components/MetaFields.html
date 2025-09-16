@@ -20,6 +20,7 @@
 <meta property="og:site_name" &content="(get context meta.siteName)" />
 <meta name="title" property="og:title" &content="(get context meta.title)" />
 <meta
+  &visibleIf="(get context showOg)"
   name="image"
   property="og:image"
   &content="(urlJoin (get context meta.url) (trim (get context url) /) og.png)"
