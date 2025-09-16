@@ -1,4 +1,5 @@
 {
+  "nodeModulesDir": "auto",
   "tasks": {
     "build": "deno run -A --env-file --unstable --no-check https://deno.land/x/gustwind@v0.81.5/gustwind-cli/mod.ts -b -t cpuMax -o ./build",
     "build:linked": "gustwind -b -t cpuMax -o ./build",
