@@ -42,24 +42,21 @@ Future Frontend is the only frontend focused conference in Finland and one of th
 
 For the second edition, we have decided on the following packages and pricing:
 
-&nbsp; | BRONZE | SILVER | GOLD
--|-|-|-
-Cost (VAT 0) | 1.500€ | 3.000€ | 6.000€
-Available | 6 | 4 | 2
-Conference tickets | 3 x &#9786; | 6 x &#9786; | 10 x &#9786;
-Visibility on social media and website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Logo size on website | &#9786; | &#9786; &#9786; | &#9786; &#9786; &#9786;
-Roll up in conference space | &#10003; | &#10003; | &#10003;
-Roll up or a similar element on conference stage | | | &#10003;
-Logo on slides between the talks | &#10003; | &#10003; | &#10003;
-Panelist at the end of one session | | &#10003; | &#10003;
-Job announcements | | &#10003; | &#10003;
-Area in sponsor lounge for booths / promotion | Optional standing desk + your flier | More space and furniture (to be rented separately) | Even more space for your plans
-Item in the goodie bag* | | | &#10003;
-Attendance for the speaker events (e.g., the speakers' dinner) | | | &#9786;
-Special requests | | | &#10003;
-
-Note that on top of all this, we provide a 20% ticket discount on any ticket type. If you are planning to buy a lot of tickets anyway, it may be cheaper to become a sponsor and use the discount.
+&nbsp; | BRAND | TECH | EPIC | INSANE
+-|-|-|-|-
+Cost (VAT 0) | 1.000€ | 3.000€ | 5.000€ | Call us
+Available | 10 | 4 | 2 | 1
+Ticket discount (inc. workshops) | 15% | 30% | 50% | 100%
+Your own workshop | | &#10003; | &#10003; | &#10003;
+Logo size on website | Small | Medium | Large | Insane
+Roll up in conference space | &#10003; | &#10003; | &#10003; | &#10003;
+Stand size (inc. sofa + chairs) | | Small | Medium | Insane
+Roll up or a similar element on conference stage | | | &#10003; | &#10003;
+Logo on slides between the talks | &#10003; | &#10003; | &#10003; | &#10003;
+Panelist at the end of one session | | &#10003; | &#10003; | &#10003;
+Item in the goodie bag* | | | &#10003; | &#10003;
+Spot at the speakers' dinner | | | &#9786; | &#9786; &#9786;
+Special requests | | | &#10003; | &#10003;
 
 The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious.
 
