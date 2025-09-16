@@ -42,15 +42,15 @@ Future Frontend is the only frontend focused conference in Finland and one of th
 
 For the second edition, we have decided on the following packages and pricing:
 
-&nbsp; | BRAND | TECH | EPIC | INSANE
+&nbsp; | BRAND | TECH | EPIC | UNICORN
 -|-|-|-|-
 Cost (VAT 0) | 1.000€ | 3.000€ | 5.000€ | Call us
 Available | 10 | 4 | 2 | 1
 Ticket discount (inc. workshops) | 15% | 30% | 50% | 100%
 Your own workshop | | &#10003; | &#10003; | &#10003;
-Logo size on website | Small | Medium | Large | Insane
+Logo size on website | Small | Medium | Large | 🦄
 Roll up in conference space | &#10003; | &#10003; | &#10003; | &#10003;
-Stand size (inc. sofa + chairs) | | Small | Medium | Insane
+Stand size (inc. sofa + chairs) | | Small | Medium | 🦄
 Roll up or a similar element on conference stage | | | &#10003; | &#10003;
 Logo on slides between the talks | &#10003; | &#10003; | &#10003; | &#10003;
 Panelist at the end of one session | | &#10003; | &#10003; | &#10003;
