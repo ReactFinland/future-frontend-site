@@ -55,7 +55,7 @@ Roll up or a similar element on conference stage | | | &#10003; | &#10003;
 Logo on slides between the talks | &#10003; | &#10003; | &#10003; | &#10003;
 Panelist at the end of one session | | &#10003; | &#10003; | &#10003;
 Item in the goodie bag* | | | &#10003; | &#10003;
-Spot at the speakers' dinner | | | &#9786; | &#9786; &#9786;
+Spot at the speakers' dinner | | | &#9786; | 🦄 🦄
 Special requests | | | &#10003; | &#10003;
 
 The \* means we'll let people decide whether they want swag and what kind of swag they want as we're environmentally conscious.
