@@ -1,4 +1,4 @@
-We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first two events were moderate successes and as a sponsor you can help us deliver the event beyond the exceptations of our attendees while supporting your business targets (brand visibility, recruitment, making sure we have a world-class event in Finland, etc.). The fourth edition (2026) will take place 8-9.6.26 at Dipoli, Espoo, Finland. After the conference, we have 2-3 days of workshops distributed to our partner companies. It is also a good chance to do a company retreat if you are coming from abroad and we can recommend local options (cottages etc.).
+We held the first edition of Future Frontend conference in 2023 as a successor to [React Finland](https://react-finland.fi/). While we followed the lessons learned from our earlier conferences, we also iterated further on it and most importantly expanded the scope to be future oriented. The first two events were moderate successes and as a sponsor you can help us deliver the event beyond the exceptations of our attendees while supporting your business targets (brand visibility, recruitment, making sure we have a world-class event in Finland, etc.). The latest edition (2026) will take place 8-9.6.26 at Dipoli, Espoo, Finland. After the conference, we have 2-3 days of workshops distributed to our partner companies. It is also a good chance to do a company retreat if you are coming from abroad and we can recommend local options (cottages etc.).
 
 ## International speakers with local flavor included
 
@@ -10,7 +10,7 @@ We do not offer speaker slots to our sponsors. Occasionally there may have been 
 
 ## Focused audience
 
-Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the third edition majority of the participants might come from abroad. Our target is to reach 200 attendees although it is difficult to promise given attendance depends on multiple factors beyond our control.
+Based on the first edition, it is safe to say that Future Frontend attracts senior-level developers. The first edition was surprisingly international and we expect that even for the latest majority of the participants might come from abroad. Our target is to reach 200 attendees although it is difficult to promise given attendance depends on multiple factors beyond our control.
 
 This is not to say juniors are not welcome but it seems that due to our speaker selection and positioning the conference is well suited for seniors wanting to understand what is the next thing. In our schedule, we try to include both advanced and inspirational content to keep it varied. Occasionally we also bring speakers outside of technology to keep things interesting for our attendees.
 
@@ -22,7 +22,7 @@ By supporting our conference, you will be visible both on a national and interna
 
 ## Dipoli, our amazing venue
 
-For the third edition, we will use [Dipoli](https://www.aalto.fi/en/locations/dipoli) as our venue. Dipoli is the main building of Aalto University and it is reknown for its architecture. What makes the building interesting from a sponsor point of view is the amount of lounge space allowing us to offer an ample amount of space for you to set up your booth.
+For the latest, we will use [Dipoli](https://www.aalto.fi/en/locations/dipoli) as our venue. Dipoli is the main building of Aalto University and it is reknown for its architecture. What makes the building interesting from a sponsor point of view is the amount of lounge space allowing us to offer an ample amount of space for you to set up your booth.
 
 Besides loung space, Dipoli hall is great for our purposes as it can be split in half to allow easy catering during the breaks. The hall itself is spacious and can fit more people than we can imagine to attract.
 
