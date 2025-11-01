@@ -87,7 +87,7 @@ function getTransformMarkdown(load: LoadApi) {
             level +
             ' id="' +
             slug +
-            '" class="scroll-mt-16">' +
+            '" class="font-primary scroll-mt-16">' +
             text +
             '<a class="' +
             tw(

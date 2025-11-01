@@ -52,13 +52,14 @@ export default {
     extend: {
       // colors: meta.colors,
       colors: {
-        "primary": "#3a2fa6",
-        "secondary": "#84ebec",
-        "tertiary": "#ED3193",
-        "navigation": "#000077",
+        "primary": "#000",
+        "secondary": "#888",
+        // "tertiary": "#ED3193",
+        "tertiary": "#000",
+        "navigation": "#FFF",
       },
       fontFamily: {
-        "primary": 'system-ui, "Eau"',
+        "primary": '"Finlandica Headline", system-ui',
         "monospace": "monospace",
       },
       backgroundImage: {
@@ -70,10 +71,8 @@ export default {
   preflight: {
     "@font-face": [
       {
-        fontFamily: "Eau",
-        fontDisplay: "swap",
-        fontWeight: "400",
-        src: 'url(/fonts/eau_sans_book.woff2) format("woff2")',
+        fontFamily: '"Finlandica Headline"',
+        src: 'url(/fonts/Finlandica-subset.ttf) format("ttf")',
       },
     ],
   },
