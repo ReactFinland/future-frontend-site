@@ -8,7 +8,10 @@
     'font-primary scroll-mt-16'
   )"
 >
-  <div class="inline" &children="(get props children)" />
+  <div
+    &class="(or (get props textClass) 'inline')"
+    &children="(get props children)"
+  />
   <a
     &visibleIf="(get props showAnchor)"
     class="ml-2 no-underline text-md md:text-sm align-middle mask-text-gray hover:mask-text-black"

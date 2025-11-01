@@ -138,6 +138,18 @@ function init({ routes }: { routes: Routes }) {
     return a < b;
   }
 
+  function not(a: unknown) {
+    return !a;
+  }
+
+  function and(a: unknown, b: unknown) {
+    return a && b;
+  }
+
+  function or(a: unknown, b: unknown) {
+    return a || b;
+  }
+
   // Use this to calculate time zone offset in a user friendly way
   /*
 function timezoneOffset() {
@@ -174,6 +186,9 @@ function timezoneOffset() {
     equals,
     greaterThan,
     lessThan,
+    not,
+    and,
+    or,
     getProperty,
     getDate,
     getDatetime,

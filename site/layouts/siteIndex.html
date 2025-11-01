@@ -1,17 +1,46 @@
 <BaseLayout>
   <slot name="header">
-    <Heading
-      level="2"
-      hideAnchor="true"
-      class="text-xl md:text-4xl font-light"
-      &children="(get context conference.slogan)"
-    />
-    <Heading
-      level="2"
-      hideAnchor="true"
-      class="text-xl md:text-2xl font-extralight"
-      >8-9.6.2026 (Dipoli, Espoo, Finland)</Heading
-    >
+    <section class="flex flex-col md:flex-row gap-8">
+      <div class="flex flex-col gap-2">
+        <Heading
+          level="1"
+          hideAnchor="true"
+          class="text-2xl md:text-6xl"
+          textClass="flex flex-col"
+        >
+          <span>Future</span>
+          <span>Frontend</span>
+        </Heading>
+        <Markdown as="p"
+          >A single track conference series examining current trends in frontend
+          development that is bringing together bright minds curious about what
+          is to come.
+        </Markdown>
+      </div>
+      <div
+        class="bg-black text-white text-sm p-4 flex flex-col justify-between md:w-40 uppercase"
+      >
+        <ul class="flex flex-col gap-2">
+          <li class="flex flex-col">
+            <span class="text-secondary font-primary">Conference</span
+            ><span>8-9.26</span>
+          </li>
+          <li class="flex flex-col">
+            <span class="text-secondary font-primary">Workshops</span
+            ><span>10-12.26</span>
+          </li>
+          <li class="flex flex-col">
+            <span class="text-secondary font-primary">Location</span
+            ><span>Dipoli, Espoo, Finland</span>
+          </li>
+        </ul>
+        <a
+          class="p-4 bg-white text-black text-xs text-center no-underline font-primary"
+          href="https://ti.to/future-frontend/2026/with/pre-registration-for-the-conference"
+          >Pre-register</a
+        >
+      </div>
+    </section>
   </slot>
   <slot name="content">
     <div class="flex flex-col gap-8">
@@ -24,17 +53,6 @@
         SQLite on edge 31.01 (17:30-20:30) at Helsinki!</Markdown
       >
       <div class="prose lg:prose-xl">
-        <Markdown as="p"
-          >Future Frontend is a single track conference series focused on
-          examining the current trends in the space of frontend development. It
-          brings together bright minds curious about what is to come.</Markdown
-        >
-        <Markdown as="p"
-          >The fourth edition takes place 8-9 of June, 2026 (Dipoli, Espoo,
-          Finland) while the workshops are held 10-12 of June, 2026 around
-          Helsinki.
-        </Markdown>
-
         <Heading showAnchor level="2">Quality over quantity</Heading>
         <Markdown as="p"
           >Historically our events have been small (up to 300 people for React
@@ -218,23 +236,21 @@
       <hr />
       <div class="flex flex-row justify-around">
         <a
-          class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
+          class="p-4 bg-primary text-white no-underline"
           href="https://ti.to/future-frontend/2026/with/pre-registration-for-the-conference"
           >Preregister to the conference</a
         >
         <a
-          class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
+          class="p-4 bg-primary text-white no-underline"
           href="/buy-tickets/"
           &visibleIf="(get props showBuyTickets)"
           >Buy tickets</a
         >
-        <a
-          class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
-          href="/subscribe/"
+        <a class="p-4 bg-primary text-white no-underline" href="/subscribe/"
           >Subscribe to the mailing list</a
         >
         <a
-          class="rounded-lg p-4 border-2 bg-primary text-white no-underline"
+          class="p-4 bg-primary text-white no-underline"
           href="/for-sponsors/"
           &visibleIf="(get props showBecomeASponsor)"
           >Become a sponsor</a

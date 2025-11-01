@@ -19,6 +19,7 @@ export default {
       textShadow:
         "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
     }],
+    ["w-40", { width: "40rem" }],
     ["bg-header", {
       // TODO: Calculate this instead. Likely a pure DOM (even Shadow DOM) solution would be far better.
       backgroundImage: `linear-gradient(to right,
@@ -53,7 +54,7 @@ export default {
       // colors: meta.colors,
       colors: {
         "primary": "#000",
-        "secondary": "#888",
+        "secondary": "#AAA",
         // "tertiary": "#ED3193",
         "tertiary": "#000",
         "navigation": "#FFF",
