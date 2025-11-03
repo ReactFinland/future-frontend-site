@@ -80,9 +80,8 @@
         <div class="mb-8">
           <Heading showAnchor level="2">Atmosphere of Future Frontend</Heading>
           <Markdown
-            >To get some idea of the atmosphere of our conference, consider the
-            videos below. 2025 edition took place at Dipoli, 2024 was held at
-            Paasitorni, and the 2023 edition took place at Pörssitalo.</Markdown
+            >To get some idea of the atmosphere of our conference, watch the
+            mood video below.</Markdown
           >
           <iframe
             width="100%"
@@ -99,37 +98,11 @@
             x-attr
             @src="state.src"
           ></iframe>
-          <iframe
-            width="100%"
-            height="315"
-            title="Future Frontend 2024"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            x-state="{ src: '' }"
-            x-intersect="{
-            options: { once: true },
-            state: { src: 'https://www.youtube.com/embed/UNWLX6QI3ow?si=nXPucvL4MWEj9i4A' }
-          }"
-            x-attr
-            @src="state.src"
-          ></iframe>
-          <iframe
-            width="100%"
-            height="315"
-            title="Future Frontend 2023"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            x-state="{ src: '' }"
-            x-intersect="{
-              options: { once: true },
-              state: { src: 'https://www.youtube.com/embed/evVmkKNlr0U?si=YmHXOHNEPaWT-VRJ' }
-            }"
-            x-attr
-            @src="state.src"
-          ></iframe>
         </div>
+        <Markdown
+          >See also years [2024](https://www.youtube.com/watch?v=UNWLX6QI3ow)
+          and [2023](https://www.youtube.com/watch?v=evVmkKNlr0U).
+        </Markdown>
 
         <Heading showAnchor level="2">Conference format</Heading>
         <Markdown
