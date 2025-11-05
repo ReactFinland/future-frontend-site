@@ -19,6 +19,7 @@ export default {
       textShadow:
         "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
     }],
+    ["tracking-1", { letterSpacing: "0.01em" }],
     ["w-40", { width: "40rem" }],
     ["bg-header", {
       // TODO: Calculate this instead. Likely a pure DOM (even Shadow DOM) solution would be far better.
