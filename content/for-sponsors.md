@@ -46,7 +46,7 @@ You can find our sponsor packages and pricing below:
 -|-|-|-|-
 Cost (VAT 0) | 1.000€ | 3.000€ | 5.000€ | Call us
 Available | 10 | 4 | 2 | 1
-Tickets included | 0 | 1 | 2 | 🦄
+Tickets included | 1 | 2 | 4 | 🦄
 Ticket discount (inc. workshops) | 15% | 30% | 50% | 100%
 Your own workshop | | &#10003; | &#10003; | &#10003;
 Logo size on website | Small | Medium | Large | 🦄
