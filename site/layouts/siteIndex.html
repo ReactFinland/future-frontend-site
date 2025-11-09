@@ -1,7 +1,7 @@
 <BaseLayout>
   <slot name="header">
     <section class="flex flex-col md:flex-row gap-8">
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col gap-4">
         <Heading
           level="1"
           hideAnchor="true"
@@ -11,14 +11,15 @@
           <span class="tracking-1">Future&nbsp;</span>
           <span>Frontend</span>
         </Heading>
-        <Markdown as="p"
+        <hr class="hr-variant-3" />
+        <Markdown
           >A single track conference series examining current trends in frontend
           development that is bringing together bright minds curious about what
           is to come.
         </Markdown>
       </div>
       <div
-        class="bg-black text-white text-sm p-4 flex flex-col gap-4 md:w-40 uppercase"
+        class="bg-black text-white text-sm p-4 flex flex-col gap-4 justify-between md:mw-20 uppercase"
       >
         <ul class="flex flex-col gap-2">
           <li class="flex flex-col">
@@ -43,6 +44,8 @@
     </section>
   </slot>
   <slot name="content">
+    <hr class="hr-variant-2" />
+
     <div class="flex flex-col gap-8">
       <Markdown
         &visibleIf="(get context showMeetup)"
@@ -52,101 +55,154 @@
         meetup](https://meetabit.com/events/future-frontend-january-2024/) about
         SQLite on edge 31.01 (17:30-20:30) at Helsinki!</Markdown
       >
-      <div class="prose lg:prose-xl">
-        <Heading showAnchor level="2">Quality over quantity</Heading>
-        <Markdown as="p"
-          >Historically our events have been small (up to 300 people for React
-          Finland) and we tend favor quality over quantity in both terms of
-          content and attendees. Our single track format, ample breaks, and
-          additional program allow you to gain understanding of what is going in
-          the field while gaining new acquaintances, or even friends.
-        </Markdown>
-
-        <Heading showAnchor level="2">Who is coming to the conference</Heading>
-        <Markdown
-          >Future Frontend attracts senior level developers and designers.
-          Roughly half of our attendees are local while the rest join us from
-          abroad making Future Frontend and international conference with a
-          Finnish twist. Although some of the topics might be heavy, our
-          approach is light and atmosphere relaxed.
-        </Markdown>
-        <Markdown
-          >If you are coming from abroad, it is not uncommon to combine the trip
-          with a bit of sightseeing or a trip to a cottage as it is likely the
-          best time to visit Finland as it is reasonably warm and you will miss
-          some of the mosquitoes.
-        </Markdown>
-
-        <div class="mb-8">
-          <Heading showAnchor level="2">Atmosphere of Future Frontend</Heading>
-          <Markdown
-            >To get some idea of the atmosphere of our conference, watch the
-            mood video below.</Markdown
+      <div class="flex flex-col gap-8">
+        <div class="flex flex-col md:flex-row md:gap-8">
+          <Heading showAnchor level="2" class="md:mw-10 text-2xl"
+            >Quality over quantity</Heading
           >
-          <iframe
-            width="100%"
-            height="315"
-            title="Future Frontend 2025"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            x-state="{ src: '' }"
-            x-intersect="{
+          <div>
+            <Markdown
+              >Historically our events have been small (up to 300 people for
+              React Finland) and we tend favor quality over quantity in both
+              terms of content and attendees. Our single track format, ample
+              breaks, and additional program allow you to gain understanding of
+              what is going in the field while gaining new acquaintances, or
+              even friends.
+            </Markdown>
+          </div>
+        </div>
+
+        <hr class="hr-variant-1" />
+
+        <div class="flex flex-col md:flex-row md:gap-8">
+          <Heading showAnchor level="2" class="md:mw-10 text-2xl"
+            >Who is coming to the conference</Heading
+          >
+          <div class="prose">
+            <Markdown
+              >Future Frontend attracts senior level developers and designers.
+              Roughly half of our attendees are local while the rest join us
+              from abroad making Future Frontend and international conference
+              with a Finnish twist. Although some of the topics might be heavy,
+              our approach is light and atmosphere relaxed.
+            </Markdown>
+            <Markdown
+              >If you are coming from abroad, it is not uncommon to combine the
+              trip with a bit of sightseeing or a trip to a cottage as it is
+              likely the best time to visit Finland as it is reasonably warm and
+              you will miss some of the mosquitoes.
+            </Markdown>
+          </div>
+        </div>
+
+        <hr class="hr-variant-2" />
+
+        <div class="flex flex-col gap-4">
+          <Heading showAnchor level="2" class="text-2xl"
+            >Atmosphere of Future Frontend</Heading
+          >
+          <div class="flex flex-col gap-4">
+            <Markdown
+              >To get some idea of the atmosphere of our conference, watch the
+              mood video below.</Markdown
+            >
+            <div>
+              <iframe
+                width="100%"
+                height="315"
+                title="Future Frontend 2025"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                x-state="{ src: '' }"
+                x-intersect="{
             options: { once: true },
             state: { src: 'https://www.youtube.com/embed/xadj32ExtWo?si=ZEvuOd5-tfH85SLA' }
           }"
-            x-attr
-            @src="state.src"
-          ></iframe>
+                x-attr
+                @src="state.src"
+              ></iframe>
+            </div>
+            <Markdown
+              >See also years
+              [2024](https://www.youtube.com/watch?v=UNWLX6QI3ow) and
+              [2023](https://www.youtube.com/watch?v=evVmkKNlr0U).
+            </Markdown>
+          </div>
         </div>
-        <Markdown
-          >See also years [2024](https://www.youtube.com/watch?v=UNWLX6QI3ow)
-          and [2023](https://www.youtube.com/watch?v=evVmkKNlr0U).
-        </Markdown>
 
-        <Heading showAnchor level="2">Conference format</Heading>
-        <Markdown
-          >One of the aspects that makes Future Frontend unique in its category
-          is the format we use for the event. Over the two days of the event, we
-          run eight themed sessions with two speakers although occasional
-          exceptions are allowed. Each session gets a 1.5 hour slot and usually
-          this means two talks and a panel on the topic. This means there's
-          enough time to get into detail and to address your questions.
-        </Markdown>
-        <Markdown
-          >Beyond this, we have made sure you have enough time to recharge
-          during breaks as for some people the hallway track is the best part of
-          the conference as you get to meet other developers. On top of this, we
-          take care to organize more unofficial program after conference days
-          with our partners. In 2025, we went to sauna for example.
-        </Markdown>
+        <hr class="hr-variant-1" />
 
-        <Markdown
-          >A quote from 2023 attendee puts it well what the conference is all
-          about:</Markdown
-        >
-        <Markdown
-          >> It was great, I enjoyed it so much. Helsinki was awesome. I
-          realized that I live in bubble doing always the same apps and that
-          there are also other use-cases and approaches. - Marek
-        </Markdown>
+        <div class="flex flex-col md:flex-row md:gap-8">
+          <Heading showAnchor level="2" class="md:mw-10 text-2xl"
+            >Conference format</Heading
+          >
+          <div class="prose">
+            <Markdown
+              >One of the aspects that makes Future Frontend unique in its
+              category is the format we use for the event. Over the two days of
+              the event, we run eight themed sessions with two speakers although
+              occasional exceptions are allowed. Each session gets a 1.5 hour
+              slot and usually this means two talks and a panel on the topic.
+              This means there's enough time to get into detail and to address
+              your questions.
+            </Markdown>
+            <Markdown
+              >Beyond this, we have made sure you have enough time to recharge
+              during breaks as for some people the hallway track is the best
+              part of the conference as you get to meet other developers. On top
+              of this, we take care to organize more unofficial program after
+              conference days with our partners. In 2025, we went to sauna for
+              example.
+            </Markdown>
+          </div>
+        </div>
 
-        <Heading showAnchor level="2">Themes for 2026</Heading>
-        <Markdown
-          >The themes for 2026 are yet to be decided although you can expect a
-          mixture of technical and softer topics.
-        </Markdown>
-        <Markdown &visibleIf="(get context hide)">
-          [Read more about the themes from the conference
-          blog.](/blog/main-themes-of-ff24/)
-        </Markdown>
+        <hr class="hr-variant-2" />
 
-        <div &visibleIf="(get context hide)">
-          <Heading showAnchor level="2">Workshops for 2026</Heading>
+        <div class="prose">
           <Markdown
-            >As we have three workshop days in store, we will make sure there
-            will be interesting workshops available at different skill levels.
+            >A quote from 2023 attendee puts it well what the conference is all
+            about:</Markdown
+          >
+          <Markdown
+            >> It was great, I enjoyed it so much. Helsinki was awesome. I
+            realized that I live in bubble doing always the same apps and that
+            there are also other use-cases and approaches. - Marek
           </Markdown>
+        </div>
+
+        <hr class="hr-variant-1" />
+
+        <div class="flex flex-col md:flex-row md:gap-8">
+          <Heading showAnchor level="2" class="md:mw-10 text-2xl"
+            >Themes for 2026</Heading
+          >
+          <div class="prose">
+            <Markdown
+              >The themes for 2026 are yet to be decided although you can expect
+              a mixture of technical and softer topics.
+            </Markdown>
+            <Markdown &visibleIf="(get context hide)">
+              [Read more about the themes from the conference
+              blog.](/blog/main-themes-of-ff24/)
+            </Markdown>
+          </div>
+        </div>
+
+        <hr class="hr-variant-2" />
+
+        <div class="flex flex-col md:flex-row md:gap-8">
+          <div &visibleIf="(get context hide)">
+            <Heading showAnchor level="2">Workshops for 2026</Heading>
+            <div class="prose">
+              <Markdown
+                >As we have three workshop days in store, we will make sure
+                there will be interesting workshops available at different skill
+                levels.
+              </Markdown>
+            </div>
+          </div>
         </div>
 
         <div &visibleIf="(get props showLiveStreams)">
@@ -175,39 +231,48 @@
         </div>
       </div>
       <div
-        class="prose lg:prose-xl"
         x-state="{ src: '' }"
         x-intersect="{
           options: { once: true },
           state: { src: '/venue.js' }
         }"
       >
-        <Heading showAnchor level="2">Venue</Heading>
-        <Markdown
-          >The conference is held at Dipoli, the main building of Aalto
-          University. It is convenient to reach the venue from Helsinki using
-          public transport and there are good accommodation options
-          nearby.</Markdown
-        >
-        <p>Address: Dipoli - Otakaari 24, 02150 Espoo, Finland</p>
+        <Heading showAnchor level="2" class="text-2xl">Venue</Heading>
+        <div class="prose">
+          <Markdown
+            >The conference is held at Dipoli, the main building of Aalto
+            University. It is convenient to reach the venue from Helsinki using
+            public transport and there are good accommodation options
+            nearby.</Markdown
+          >
+          <p>Address: Dipoli - Otakaari 24, 02150 Espoo, Finland</p>
+        </div>
         <div class="z-0 w-full h-96 bg-center" id="venue-map"></div>
         <script x-attr @src="state.src" async type="module"></script>
       </div>
 
-      <div class="prose lg:prose-xl">
-        <Heading showAnchor level="2">Earlier conferences</Heading>
-        <Markdown as="p"
-          >To get a better idea of our events, see the archives for
-          [2023](/2023/), [2024](/2024/), and [2025](/2025/).</Markdown
+      <hr class="hr-variant-1" />
+
+      <div class="flex flex-col md:flex-row md:gap-8">
+        <Heading showAnchor level="2" class="md:mw-10 text-2xl"
+          >Earlier conferences</Heading
         >
+        <div class="prose">
+          <Markdown
+            >To get a better idea of our events, see the archives for
+            [2023](/2023/), [2024](/2024/), and [2025](/2025/).</Markdown
+          >
+        </div>
       </div>
 
       <AllSpeakers
         &visibleIf="(get props showSpeakers)"
         &conference="(get context conference)"
       />
-      <hr />
-      <div class="flex flex-row justify-around">
+
+      <hr class="hr-variant-2" />
+
+      <div class="flex flex-row justify-around gap-2">
         <a
           class="p-4 bg-primary text-white no-underline"
           href="https://ti.to/future-frontend/2026/with/pre-registration-for-the-conference"

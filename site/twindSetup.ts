@@ -20,7 +20,8 @@ export default {
         "-2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black",
     }],
     ["tracking-1", { letterSpacing: "0.01em" }],
-    ["w-40", { width: "40rem" }],
+    ["mw-10", { minWidth: "10rem" }],
+    ["mw-20", { minWidth: "20rem" }],
     ["bg-header", {
       // TODO: Calculate this instead. Likely a pure DOM (even Shadow DOM) solution would be far better.
       backgroundImage: `linear-gradient(to right,
@@ -48,6 +49,31 @@ export default {
     ["bg-white-gradient", {
       backgroundImage:
         "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 35%, rgba(0,0,0,0.2) 65%, rgba(255,255,255,1) 100%)",
+    }],
+    ["hr-variant-1", {
+      "-webkit-transform": "rotate(-1deg)",
+      transform: "rotate(-1deg)",
+      color: "black",
+      border: 2,
+      borderStyle: "solid",
+      borderColor: "black",
+      borderWidth: "2px 0 0 0",
+    }],
+    ["hr-variant-2", {
+      "-webkit-transform": "rotate(1deg)",
+      transform: "rotate(1deg)",
+      color: "black",
+      border: 2,
+      borderStyle: "solid",
+      borderColor: "black",
+      borderWidth: "2px 0 0 0",
+    }],
+    ["hr-variant-3", {
+      color: "black",
+      border: 4,
+      borderStyle: "solid",
+      borderColor: "black",
+      borderWidth: "4px 0 0 0",
     }],
   ],
   theme: {
