@@ -46,7 +46,7 @@
   <slot name="content">
     <hr class="hr-variant-2" />
 
-    <div class="flex flex-col gap-8">
+    <div class="flex flex-col gap-16">
       <Markdown
         &visibleIf="(get context showMeetup)"
         as="div"
@@ -265,10 +265,7 @@
         </div>
       </div>
 
-      <AllSpeakers
-        &visibleIf="(get props showSpeakers)"
-        &conference="(get context conference)"
-      />
+      <AllSpeakers &conference="(get context conference)" />
 
       <hr class="hr-variant-2" />
 
@@ -276,28 +273,20 @@
         <a
           class="p-4 bg-primary text-white no-underline"
           href="https://ti.to/future-frontend/2026/with/pre-registration-for-the-conference"
+          &visibleIf="(get props showPreregistration)"
           >Preregister to the conference</a
         >
-        <a
-          class="p-4 bg-primary text-white no-underline"
-          href="/buy-tickets/"
-          &visibleIf="(get props showBuyTickets)"
+        <a class="p-4 bg-primary text-white no-underline" href="/buy-tickets/"
           >Buy tickets</a
         >
         <a class="p-4 bg-primary text-white no-underline" href="/subscribe/"
           >Subscribe to the mailing list</a
         >
-        <a
-          class="p-4 bg-primary text-white no-underline"
-          href="/for-sponsors/"
-          &visibleIf="(get props showBecomeASponsor)"
+        <a class="p-4 bg-primary text-white no-underline" href="/for-sponsors/"
           >Become a sponsor</a
         >
       </div>
-      <AllSponsors
-        &visibleIf="(get props showSponsors)"
-        &conference="(get context conference)"
-      />
+      <AllSponsors &conference="(get context conference)" />
     </div>
   </slot>
 </BaseLayout>

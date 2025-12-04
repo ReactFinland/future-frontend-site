@@ -11,7 +11,7 @@
     "dataSources": {
       "conference": {
         "operation": "queryData",
-        "parameters": ["future-frontend-2025", "index"]
+        "parameters": ["future-frontend-2026", "index"]
       }
     },
     "scripts": [{ "name": "venue", "loadedLater": true }]
@@ -67,7 +67,7 @@
     "context": {
       "meta": {
         "title": "Buy tickets",
-        "description": "Buy tickets for Future Frontend 2025"
+        "description": "Buy tickets for Future Frontend 2026"
       }
     }
   },
@@ -197,7 +197,7 @@
     "dataSources": {
       "schedule": {
         "operation": "queryData",
-        "parameters": ["future-frontend-2025", "schedule"]
+        "parameters": ["future-frontend-2026", "schedule"]
       }
     }
   },
@@ -212,7 +212,7 @@
     "dataSources": {
       "workshops": {
         "operation": "queryData",
-        "parameters": ["future-frontend-2025", "workshops"]
+        "parameters": ["future-frontend-2026", "workshops"]
       }
     }
   },
@@ -227,7 +227,7 @@
     "dataSources": {
       "speakers": {
         "operation": "queryData",
-        "parameters": ["future-frontend-2025", "speakers"]
+        "parameters": ["future-frontend-2026", "speakers"]
       }
     }
   },
