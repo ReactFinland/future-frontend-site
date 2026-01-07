@@ -25,7 +25,7 @@ If you want to send specific information to workshop attendees, let me (Juho) kn
 
 ## Setting up an installation
 
-If you have plans to have a physical installation at the conference space, please visit [Dipoli (Otakaari 24, Espoo)](https://maps.app.goo.gl/DVdoeyuVh3qjB7U58), the venue, 26.5 between 12:00 and 18:00 as there will be someone to help you with the setup. Another option is to do the setup 27.5 morning between 08:00 and 09:00.
+If you have plans to have a physical installation at the conference space, please visit [Dipoli (Otakaari 24, Espoo)](https://maps.app.goo.gl/DVdoeyuVh3qjB7U58) at a time specified later (TODO).
 
 ## Giving the talk
 
@@ -40,12 +40,10 @@ Note that we'll capture audience questions for you using [Slido](https://www.sli
 
 We can also do physical setup for you in case you need chairs etc. on the stage. For any physical setup, let us know beforehand.
 
-## Speakers' dinner - 26.5 18:30-21:00 at Wunderdog (Kaisaniemenkatu 1 C)
+## Speakers' dinner - xx.x xx:xx-xx:xx at a mystery location (Address goes here)
 
-The speakers' dinner will be held at Wunderdog premises. Please note that the address [Kaisaniemenkatu 1 C](https://maps.app.goo.gl/eWtjyi22QxN3KKUU7) is located left from Molly Malone's street terrace/entrance. There are also other entrances to Wunderdog office, but during evenings only Kaisaniemenkatu 1 C is in use. In case you want to go to the speakers' dinner in a group, we'll leave at 18:00 from the lobby of the hotel together and someone from the conference organization will be at the lobby waiting for you.
+Description will go here once details are clear.
 
-Note that there is an opportunity to use the office sauna!
+## Afterparty - xx.x xx:xx-xx:xx at a mystery location (Address goes here)
 
-## Afterparty - 27.5 18:00-21:00 at AYY rantasauna
-
-The afterparty will be held after the conference at AYY rantasauna (Jämeräntaival 5) nearby. There will be sauna, good company, drinks and food. No need to bring your own towel. If you want to use the hot tub, bring a swimming suit.
+Description will go here once details are clear.
