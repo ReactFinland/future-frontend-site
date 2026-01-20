@@ -112,7 +112,15 @@
                 height="315"
                 title="Future Frontend 2025"
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
                 allowfullscreen
                 x-state="{ src: '' }"
                 x-intersect="{
@@ -197,17 +205,20 @@
         <hr class="hr-variant-2" />
 
         <div class="flex flex-col md:flex-row md:gap-8">
-          <div &visibleIf="(get context hide)">
-            <Heading showAnchor level="2">Workshops for 2026</Heading>
-            <div class="prose">
-              <Markdown
-                >As we have three workshop days in store, we will make sure
-                there will be interesting workshops available at different skill
-                levels.
-              </Markdown>
-            </div>
+          <Heading showAnchor level="2" class="md:mw-10 text-2xl"
+            >Workshops for 2026</Heading
+          >
+          <div class="prose">
+            <Markdown
+              >[Our workshops](/workshops/) are held in a full-day format and
+              allow you to deepen your skills with AI-driven development. You
+              can for example learn to build React applications the agentic way
+              or learn the secrets of Claude Code.
+            </Markdown>
           </div>
         </div>
+
+        <hr class="hr-variant-1" />
 
         <div &visibleIf="(get props showLiveStreams)">
           <Heading showAnchor level="2">Livestreams for 2026</Heading>
@@ -255,7 +266,7 @@
         <script x-attr @src="state.src" async type="module"></script>
       </div>
 
-      <hr class="hr-variant-1" />
+      <hr class="hr-variant-2" />
 
       <div class="flex flex-col md:flex-row md:gap-8">
         <Heading showAnchor level="2" class="md:mw-10 text-2xl"
@@ -271,7 +282,7 @@
 
       <AllSpeakers &conference="(get context conference)" />
 
-      <hr class="hr-variant-2" />
+      <hr class="hr-variant-1" />
 
       <div class="flex flex-row justify-around gap-2">
         <a
