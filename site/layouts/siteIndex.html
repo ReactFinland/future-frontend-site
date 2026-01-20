@@ -1,6 +1,11 @@
 <BaseLayout>
   <slot name="header">
-    <section class="flex flex-col md:flex-row gap-8">
+    <section
+      class="flex flex-col md:flex-row gap-8"
+      vocab="https://schema.org/"
+      typeof="Event"
+      resource="#future-frontend-2026"
+    >
       <div class="flex flex-col gap-4">
         <Heading
           level="1"
@@ -8,6 +13,7 @@
           class="text-2xl md:text-6xl uppercase"
           textClass="flex flex-row md:flex-col"
         >
+          <meta property="name" content="Future Frontend 2026" />
           <span class="tracking-1">Future&nbsp;</span>
           <span>Frontend</span>
         </Heading>
@@ -25,6 +31,8 @@
           <li class="flex flex-col">
             <span class="text-secondary font-primary">Conference</span
             ><span>8-9.6.26</span>
+            <meta property="startDate" content="2026-06-08" />
+            <meta property="endDate" datetime="2026-06-09" />
           </li>
           <li class="flex flex-col">
             <span class="text-secondary font-primary">Workshops</span
@@ -32,14 +40,24 @@
           </li>
           <li class="flex flex-col">
             <span class="text-secondary font-primary">Location</span
-            ><span>Dipoli, Espoo, Finland</span>
+            ><span property="address">Dipoli, Espoo, Finland</span>
           </li>
         </ul>
-        <a
-          class="p-4 bg-white text-black text-xs text-center no-underline font-primary"
-          href="/buy-tickets/"
-          >Buy tickets</a
+        <div
+          property="offers"
+          typeof="Offer"
+          class="bg-white text-black text-xs no-underline font-primary"
         >
+          <link property="availability" href="https://schema.org/InStock" />
+          <meta property="priceCurrency" content="EUR" />
+          <meta property="price" content="299" />
+          <a
+            property="url"
+            href="/buy-tickets/"
+            class="p-4 flex grow justify-center"
+            >Buy tickets</a
+          >
+        </div>
       </div>
     </section>
   </slot>
