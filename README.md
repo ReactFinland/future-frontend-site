@@ -11,7 +11,7 @@ Before running the commands, copy `.env.template` as `.env` and fill the fields.
 
 ## Template
 
-Main features:
+**Main features:**
 
 * Markdown processing - the project README you see here is processed through the system
 * Support for [Twind](https://twind.dev/) - Twind is a Tailwind-compatible styling approach
