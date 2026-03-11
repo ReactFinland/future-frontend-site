@@ -61,7 +61,7 @@ To get to airport from the center, you can use train, Finnair buses or taxi. It 
 
 We'll provide coffee and snacks during the longer breaks. The lunch will be served buffet style meaning you can choose what is suitable to you. We will take your food restrictions into account based on what you indicated during registration. All the food is included to the price of the conference ticket. The same is true for all of our workshops.
 
-## What to take with you?
+## What to take with you to workshops?
 
 If you want to participate to the workshops, bring your laptop.
 

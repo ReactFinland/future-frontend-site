@@ -1,6 +1,12 @@
 <BaseLayout>
   <slot name="content">
     <div class="flex flex-col gap-8">
+      <Markdown
+        >Note that you are expected to bring your own laptop when participating
+        in the workshops!</Markdown
+      >
+    </div>
+    <div class="flex flex-col gap-8">
       <Workshops &children="(get context workshops)" />
     </div>
   </slot>
