@@ -40,10 +40,6 @@ Note that we'll capture audience questions for you using [Slido](https://www.sli
 
 We can also do physical setup for you in case you need chairs etc. on the stage. For any physical setup, let us know beforehand.
 
-## Speakers' dinner - xx.x xx:xx-xx:xx at a mystery location (Address goes here)
-
-Description will go here once details are clear.
-
-## Afterparty - xx.x xx:xx-xx:xx at a mystery location (Address goes here)
+## Speakers' dinner - 7.6 18:00-21:00 at a mystery location (Address goes here)
 
 Description will go here once details are clear.
