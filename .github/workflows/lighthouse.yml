@@ -30,9 +30,8 @@ jobs:
         run: deno task optimize:build
 
       - name: Run Lighthouse CI
-        uses: google/lighthouse-ci-action@v0
+        uses: treosh/lighthouse-ci-action@v12
         with:
-          lighthouseVersion: "latest"
           configPath: ./lighthouserc.json
           temporaryPublicStorage: true
           uploadArtifacts: true
