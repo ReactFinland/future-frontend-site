@@ -43,7 +43,7 @@ html[data-theme="dark"] {
   --color-card-contrast: #f3e7cb;
   --color-card-contrast-text: #1a1208;
   --color-callout: #4c3911;
-  --color-cta-bg: #a85a18;
+  --color-cta-bg: #ed3193;
   --color-ticket-bg: #6d28d9;
   --color-ticket-hover: #5b21b6;
   --color-badge-muted: #454c55;
@@ -60,7 +60,9 @@ body {
   min-height: 100vh;
   background: var(--color-bg);
   color: var(--color-text);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 ::selection {
@@ -96,8 +98,7 @@ footer.bg-navigation {
   border-top: 1px solid var(--color-border);
 }
 
-.bg-primary,
-.bg-tertiary {
+.bg-primary {
   background-color: var(--color-cta-bg) !important;
 }
 
@@ -105,7 +106,8 @@ footer.bg-navigation {
   background-color: var(--color-badge-muted) !important;
 }
 
-.bg-ticket {
+.bg-ticket,
+.bg-tertiary {
   background-color: var(--color-ticket-bg) !important;
 }
 
@@ -205,22 +207,8 @@ footer.bg-navigation {
   --tw-prose-td-borders: var(--color-border);
 }
 
-.prose.prose :where(
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  li,
-  strong,
-  em,
-  code,
-  figcaption,
-  td,
-  th
-) {
+.prose.prose
+  :where(h1, h2, h3, h4, h5, h6, p, li, strong, em, code, figcaption, td, th) {
   color: inherit;
 }
 
