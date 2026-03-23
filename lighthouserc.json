@@ -19,9 +19,8 @@
       "target": "temporary-public-storage"
     },
     "assert": {
-      "preset": "lighthouse:recommended",
       "assertions": {
-        "cumulativeLazyoutShift": ["error", { "maxNumericValue": 0.1 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
         "first-contentful-paint": ["warn", { "maxNumericValue": 3000 }],
         "largest-contentful-paint": ["warn", { "maxNumericValue": 4000 }],
         "speed-index": ["warn", { "maxNumericValue": 5000 }]
