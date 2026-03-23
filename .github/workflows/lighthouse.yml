@@ -1,0 +1,119 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v2.x
+
+      - name: Build site
+        run: deno task build
+
+      - name: Optimize build
+        run: deno task optimize:build
+
+      - name: Run Lighthouse CI
+        uses: google/lighthouse-ci-action@v0
+        with:
+          lighthouseVersion: "latest"
+          configPath: ./lighthouserc.json
+          temporaryPublicStorage: true
+          uploadArtifacts: true
+          runs: 1
+
+      - name: Comment PR with Lighthouse results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            
+            // Read the Lighthouse results
+            const resultsPath = path.join(process.env.GITHUB_WORKSPACE, '.lighthouseci/results');
+            
+            if (!fs.existsSync(resultsPath)) {
+              console.log('No Lighthouse results found');
+              return;
+            }
+            
+            const files = fs.readdirSync(resultsPath).filter(f => f.endsWith('.json'));
+            
+            if (files.length === 0) {
+              console.log('No JSON results found');
+              return;
+            }
+            
+            let comment = '## 🚀 Lighthouse CI Results\n\n';
+            comment += '| URL | Performance | Accessibility | Best Practices | SEO |\n';
+            comment += '|-----|-------------|----------------|----------------|-----|\n';
+            
+            let hasResults = false;
+            
+            for (const file of files) {
+              const result = JSON.parse(fs.readFileSync(path.join(resultsPath, file), 'utf8'));
+              
+              if (result.lhr) {
+                hasResults = true;
+                const url = result.lhr.requestedUrl || 'Unknown';
+                const perf = Math.round(result.lhr.categories.performance.score * 100);
+                const access = Math.round(result.lhr.categories.accessibility.score * 100);
+                const best = Math.round(result.lhr.categories['best-practices'].score * 100);
+                const seo = Math.round(result.lhr.categories.seo.score * 100);
+                
+                const getPerfIcon = (score) => {
+                  if (score >= 90) return '🟢';
+                  if (score >= 50) return '🟡';
+                  return '🔴';
+                };
+                
+                comment += `| ${url} | ${getPerfIcon(perf)} ${perf} | ${getPerfIcon(access)} ${access} | ${getPerfIcon(best)} ${best} | ${getPerfIcon(seo)} ${seo} |\n`;
+              }
+            }
+            
+            if (hasResults) {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            }
+
+      - name: Upload Lighthouse results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-results
+          path: .lighthouseci
+          retention-days: 30
+
+      - name: Check Lighthouse thresholds
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.pulls.createReview({
+              pull_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '⚠️ Lighthouse CI checks failed. Please review the results and improve the scores.',
+              event: 'COMMENT'
+            });

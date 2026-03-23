@@ -1,0 +1,43 @@
+name: Lighthouse Monitor (Scheduled)
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v2.x
+
+      - name: Build site
+        run: deno task build
+
+      - name: Optimize build
+        run: deno task optimize:build
+
+      - name: Run Lighthouse CI
+        uses: google/lighthouse-ci-action@v0
+        with:
+          lighthouseVersion: "latest"
+          configPath: ./lighthouserc.json
+          temporaryPublicStorage: true
+          uploadArtifacts: true
+          runs: 3
+
+      - name: Upload monitoring results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-monitoring-${{ github.run_number }}
+          path: .lighthouseci
+          retention-days: 90
