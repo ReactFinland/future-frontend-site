@@ -9,11 +9,8 @@ on:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    environment: Actions
     
-    env:
-      API_URL: ${{ secrets.API_URL }}
-      API_TOKEN: ${{ secrets.API_TOKEN }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -24,6 +21,9 @@ jobs:
           deno-version: v2.x
 
       - name: Build site
+        env:
+          API_URL: ${{ secrets.API_URL }}
+          API_TOKEN: ${{ secrets.API_TOKEN }}
         run: deno task build
 
       - name: Optimize build
