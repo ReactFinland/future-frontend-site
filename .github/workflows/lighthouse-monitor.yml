@@ -20,6 +20,9 @@ jobs:
           deno-version: v2.x
 
       - name: Build site
+        env:
+          API_URL: ${{ secrets.API_URL }}
+          API_TOKEN: ${{ secrets.API_TOKEN }}
         run: deno task build
 
       - name: Optimize build
