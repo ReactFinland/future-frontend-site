@@ -173,7 +173,7 @@ function timezoneOffset() {
       await Deno.stat(outputPath);
     } catch (_error) {
       // https://stackoverflow.com/a/62019831/228885
-      const res = await fetch("https://" + source);
+      const res = await fetch(source);
       const imageBytes = new Uint8Array(await res.arrayBuffer());
       await Deno.writeFile(outputPath, imageBytes);
     }
