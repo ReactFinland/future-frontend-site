@@ -1,38 +1,44 @@
-<meta
-  charset="UTF-8"
-  name="viewport"
-  content="width=device-width, initial-scale=1.0"
-/>
-<meta
-  name="description"
-  property="og:description"
-  &content="(get context meta.description)"
-/>
-<meta property="built" &content="(get context meta.built)" />
-<meta property="url" &content="(get context url)" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" &content="(get context meta.description)" />
+<meta name="built" &content="(get context meta.built)" />
+<meta name="page:url" &content="(get context url)" />
 
 <meta
-  name="url"
   property="og:url"
   &content="(urlJoin (get context meta.url) (trim (get context url) /))"
 />
-<meta name="type" property="og:type" content="website" />
+<meta property="og:type" content="website" />
 <meta property="og:site_name" &content="(get context meta.siteName)" />
-<meta name="title" property="og:title" &content="(get context meta.title)" />
-<meta name="image" property="og:image" content="/images/og.png" />
+<meta property="og:title" &content="(get context meta.title)" />
+<meta property="og:description" &content="(get context meta.description)" />
+<meta
+  &visibleIf="(invert (get context showOg))"
+  property="og:image"
+  &content="(urlJoin (get context meta.url) images/og.png)"
+/>
 <meta
   &visibleIf="(get context showOg)"
-  name="image"
   property="og:image"
   &content="(urlJoin (get context meta.url) (trim (get context url) /) og.png)"
 />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:site" &content="(get context meta.siteName)" />
-<meta property="twitter:title" &content="(get context meta.title)" />
+<meta name="twitter:site" &content="(get context meta.siteName)" />
+<meta name="twitter:title" &content="(get context meta.title)" />
 <meta
-  property="twitter:description"
+  name="twitter:description"
   &content="(get context meta.description)"
+/>
+<meta
+  &visibleIf="(invert (get context showOg))"
+  name="twitter:image"
+  &content="(urlJoin (get context meta.url) images/og.png)"
+/>
+<meta
+  &visibleIf="(get context showOg)"
+  name="twitter:image"
+  &content="(urlJoin (get context meta.url) (trim (get context url) /) og.png)"
 />
 
 <title &children="(get context meta.title)"></title>
