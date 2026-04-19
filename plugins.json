@@ -41,6 +41,12 @@
       }
     },
     {
+      "path": "./site/plugins/twind.ts",
+      "options": {
+        "setupPath": "./site/twindSetup.ts"
+      }
+    },
+    {
       "path": "./node_modules/gustwind/plugins/sitemap/mod.js"
     },
     {
