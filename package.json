@@ -19,7 +19,7 @@
     "@twind/preset-typography": "1.0.5",
     "esbuild": "0.25.10",
     "gray-matter": "4.0.3",
-    "gustwind": "0.91.0",
+    "gustwind": "0.93.0",
     "highlight.js": "11.3.1",
     "leaflet": "1.9.4",
     "marked": "9.1.5",

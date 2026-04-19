@@ -12,7 +12,7 @@
       }
     },
     {
-      "path": "./site/plugins/htmlispRenderer.ts",
+      "path": "./node_modules/gustwind/plugins/htmlisp-renderer/mod.js",
       "options": {
         "components": [
           { "path": "./site/components" },
