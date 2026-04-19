@@ -35,17 +35,18 @@ The audit configuration is in [`lighthouserc.json`](./lighthouserc.json):
 # Install Node.js if not already installed
 # macOS with Homebrew
 brew install node
+npm install
 ```
 
 ### Run Lighthouse Locally
 
 ```bash
 # Build the site
-deno task build
-deno task optimize:build
+npm run build
+npm run optimize:build
 
 # Serve the built site in the background
-deno task serve &
+npm run serve &
 SERVER_PID=$!
 
 # Install Lighthouse CI globally
@@ -67,11 +68,11 @@ Create `scripts/run-lighthouse.sh`:
 set -e
 
 echo "Building site..."
-deno task build
-deno task optimize:build
+npm run build
+npm run optimize:build
 
 echo "Starting server..."
-deno task serve &
+npm run serve &
 SERVER_PID=$!
 
 # Wait for server to start
@@ -127,13 +128,14 @@ Common improvements:
 
 The GitHub Actions workflow:
 1. Checks out the code
-2. Sets up Deno v2
-3. Builds the site with `deno task build`
-4. Optimizes with Jampack (`deno task optimize:build`)
-5. Runs Lighthouse audits
-6. Comments on PRs with results (if applicable)
-7. Uploads artifacts for 30 days
-8. Fails the build if thresholds not met
+2. Sets up Node.js 24
+3. Installs dependencies with `npm ci`
+4. Builds the site with `npm run build`
+5. Optimizes with Jampack (`npm run optimize:build`)
+6. Runs Lighthouse audits
+7. Comments on PRs with results (if applicable)
+8. Uploads artifacts for 30 days
+9. Fails the build if thresholds not met
 
 ## Troubleshooting
 
@@ -142,11 +144,11 @@ The GitHub Actions workflow:
 - Verify `.lighthouseci/results/` directory is created
 
 **Workflow fails to build?**
-- Ensure `deno.json` tasks are correct
+- Ensure `package.json` scripts are correct
 - Check that the build succeeds locally first
 
 **Port 3000 already in use?**
-- Change the port in `lighthouserc.json` URLs and `deno.json` serve task
+- Change the port in `lighthouserc.json` URLs and the `serve` script in `package.json`
 
 ## References
 

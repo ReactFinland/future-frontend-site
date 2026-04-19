@@ -6,8 +6,9 @@ This is the website of Future Frontend conference.
 
 Before running the commands, copy `.env.template` as `.env` and fill the fields.
 
-* Development server - `deno task start`
-* Build process - `deno task build`
+* Install dependencies - `npm install`
+* Development server - `npm run start`
+* Build process - `npm run build`
 
 ## Template
 

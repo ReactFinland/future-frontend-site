@@ -1,6 +1,7 @@
-import { urlJoin } from "https://bundle.deno.dev/https://deno.land/x/url_join@1.0.0/mod.ts";
-import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
-import type { Routes } from "https://deno.land/x/gustwind@v0.81.4/types.ts";
+import path from "node:path";
+import { mkdir, stat, writeFile } from "node:fs/promises";
+import urlJoin from "url-join";
+import type { Routes } from "gustwind";
 
 function init({ routes }: { routes: Routes }) {
   function invert(b: boolean) {
@@ -164,21 +165,54 @@ function timezoneOffset() {
   // the assets directory so that they can be served directly through
   // Cloudflare
   async function rewriteImageSource(source: string) {
-    // TODO: Do not rewrite image sources in development mode
-    const assetPath = "assets/img";
-    const imageName = path.basename(source);
-    const outputPath = path.join(Deno.cwd(), assetPath, imageName);
-
-    try {
-      await Deno.stat(outputPath);
-    } catch (_error) {
-      // https://stackoverflow.com/a/62019831/228885
-      const res = await fetch(source);
-      const imageBytes = new Uint8Array(await res.arrayBuffer());
-      await Deno.writeFile(outputPath, imageBytes);
+    if (!source) {
+      return source;
     }
 
-    return `/img/${imageName}`;
+    // TODO: Do not rewrite image sources in development mode
+    const assetPath = path.join(process.cwd(), "assets", "img");
+    const imageName = getRemoteImageName(source);
+    const outputPath = path.join(assetPath, imageName);
+    const cachedImagePath =
+      await getExistingImagePath(outputPath) ??
+      await getExistingImageVariant(assetPath, path.parse(imageName).name);
+
+    if (cachedImagePath) {
+      return `/img/${path.basename(cachedImagePath)}`;
+    }
+
+    try {
+      // https://stackoverflow.com/a/62019831/228885
+      const res = await fetch(source);
+
+      if (!res.ok) {
+        throw new Error(`Request failed with ${res.status}`);
+      }
+
+      const imageBytes = new Uint8Array(await res.arrayBuffer());
+
+      if (!imageBytes.length) {
+        throw new Error("Fetched image was empty");
+      }
+
+      await mkdir(path.dirname(outputPath), { recursive: true });
+      await writeFile(outputPath, imageBytes);
+
+      return `/img/${imageName}`;
+    } catch (error) {
+      const fallbackImagePath = await getExistingImageVariant(
+        assetPath,
+        path.parse(imageName).name,
+      );
+
+      if (fallbackImagePath) {
+        return `/img/${path.basename(fallbackImagePath)}`;
+      }
+
+      console.warn("Failed to cache image locally", source, error);
+
+      return source;
+    }
   }
 
   return {
@@ -203,6 +237,39 @@ function timezoneOffset() {
     urlJoin,
     rewriteImageSource,
   };
+}
+
+const imageExtensions = [".jpg", ".jpeg", ".png", ".gif", ".svg", ".webp"];
+
+function getRemoteImageName(source: string) {
+  try {
+    return path.basename(new URL(source).pathname);
+  } catch {
+    return path.basename(source);
+  }
+}
+
+async function getExistingImagePath(imagePath: string) {
+  try {
+    const imageStats = await stat(imagePath);
+
+    return imageStats.size > 0 ? imagePath : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+async function getExistingImageVariant(assetPath: string, imageStem: string) {
+  for (const extension of imageExtensions) {
+    const imagePath = path.join(assetPath, `${imageStem}${extension}`);
+    const existingImagePath = await getExistingImagePath(imagePath);
+
+    if (existingImagePath) {
+      return existingImagePath;
+    }
+  }
+
+  return undefined;
 }
 
 export { init };
