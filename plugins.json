@@ -41,9 +41,10 @@
       }
     },
     {
-      "path": "./site/plugins/twind.ts",
+      "path": "./node_modules/gustwind/plugins/tailwind/mod.js",
       "options": {
-        "setupPath": "./site/twindSetup.ts"
+        "cssPath": "./site/tailwind.css",
+        "setupPath": "./site/tailwindSetup.ts"
       }
     },
     {
