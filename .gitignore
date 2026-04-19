@@ -1,7 +1,6 @@
 .env
 build/
 node_modules/
-node_modules.deno/
 .jampack
 .lighthouseci/
 .gustwind/
