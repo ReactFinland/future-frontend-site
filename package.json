@@ -6,10 +6,10 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "node --env-file=.env ./node_modules/gustwind/cli.js --build --output ./build",
+    "build": "node --env-file-if-exists=.env ./node_modules/gustwind/cli.js --build --output ./build",
     "build:clean": "node ./scripts/build.mjs",
-    "start": "node --env-file=.env ./node_modules/gustwind/cli.js --develop --port 3000",
-    "serve": "node --env-file=.env ./node_modules/gustwind/cli.js --serve --input ./build --port 3000",
+    "start": "node --env-file-if-exists=.env ./node_modules/gustwind/cli.js --develop --port 3000",
+    "serve": "node --env-file-if-exists=.env ./node_modules/gustwind/cli.js --serve --input ./build --port 3000",
     "optimize:build": "jampack ./build"
   },
   "dependencies": {

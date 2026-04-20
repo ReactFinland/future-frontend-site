@@ -5,7 +5,7 @@ await import("./clean-build.mjs");
 const child = spawn(
   process.execPath,
   [
-    "--env-file=.env",
+    "--env-file-if-exists=.env",
     "./node_modules/gustwind/cli.js",
     "--build",
     "--output",

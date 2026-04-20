@@ -4,7 +4,7 @@ This is the website of Future Frontend conference.
 
 ## Development
 
-Before running the commands, copy `.env.template` as `.env` and fill the fields.
+If you need API-backed data locally, copy `.env.template` as `.env` and fill the fields. The file is optional, so CI and builds without API credentials still run.
 
 * Install dependencies - `npm install`
 * Development server - `npm run start`
