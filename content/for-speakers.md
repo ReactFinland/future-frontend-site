@@ -8,7 +8,7 @@ Note that we haven't finalized the hotel just yet, but it's most likely Heymo 1 
 
 We'll book four nights (plus extra night per workshop) at a [Heymo 1 (Miestentie 5, 02150 Espoo)](https://maps.app.goo.gl/qBN3UvZqdPGnx74m6), a nearby hotel, based on your travel dates. The hotel includes breakfast and the hotel will charge you for any extra nights. We'll query the dates separately, and you won't receive a separate confirmation from the hotel as everything will be booked in bulk.
 
-Note that we do not cover extras, like minibar, and it is up to you to take care of charges like this as you leave the hotel.
+When you arrive to the hotel, please mention to the staff that you are for the conference and do **not** use the self-check-in as their system won't be able to locate you. You can also call me in case you have trouble checking in (number provided separately).
 
 ### How to get to the hotel?
 
