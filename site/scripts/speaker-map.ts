@@ -6,7 +6,8 @@ function renderMap(id: string) {
 
   // TODO: Add restaurant location
   const venueLatLon = [60.18500145319482, 24.83247578144074];
-  const hotelLatLon = [60.18371611765855, 24.83635213466187];
+  const hotelLatLon = [60.17899837467085, 24.82998408489948];
+  const dinnerLatLon = [60.168807, 24.9426531];
   const map = L.map(id).setView(venueLatLon, 12);
 
   // Debug
@@ -28,13 +29,15 @@ function renderMap(id: string) {
     },
   ).addTo(map);
 
-  L.marker(venueLatLon).addTo(map)
+  L.marker(venueLatLon)
+    .addTo(map)
     // .bindPopup("A pretty CSS3 popup.<br> Easily customizable.")
     .bindPopup("Dipoli - the venue")
     .openPopup();
 
-  L.marker(hotelLatLon).addTo(map)
-    .bindPopup("Radisson Blu Hotel (****)");
+  L.marker(hotelLatLon).addTo(map).bindPopup("Heymo 1 Hotel (****)");
+
+  L.marker(dinnerLatLon).addTo(map).bindPopup("Nitor (speakers' dinner)");
 }
 
 renderMap("speaker-map");
