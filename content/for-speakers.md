@@ -23,10 +23,6 @@ The workshops are distributed around Helsinki to office spaces, and you can find
 
 If you want to send specific information to workshop attendees, let me (Juho) know through conference email or Slack, and I'll do it through the ticket platform.
 
-## Setting up an installation
-
-If you have plans to have a physical installation at the conference space, please visit [Dipoli (Otakaari 24, Espoo)](https://maps.app.goo.gl/DVdoeyuVh3qjB7U58) at a time specified later (TODO).
-
 ## Giving the talk
 
 We've prepared a simple yet effective process for the talks. It works as follows:
