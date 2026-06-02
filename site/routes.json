@@ -158,7 +158,7 @@
     "dataSources": {
       "organizers": {
         "operation": "queryData",
-        "parameters": ["future-frontend-2024", "organizers"]
+        "parameters": ["future-frontend-2026", "organizers"]
       }
     }
   },
