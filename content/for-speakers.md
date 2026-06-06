@@ -12,7 +12,7 @@ When you arrive to the hotel, please mention to the staff that you are for the c
 
 Since we're located at Otaniemi, there are two good options:
 
-1. Take a train to Helsinki main railway station and the jump to a subway headed to Kivenlahti (M1) or Tapiola (M2). You should leave at the stop Keilaniemi. You'll need an ABC ticket ([see HSL app](https://www.hsl.fi/)) to complete this journey, and it will cost roughly five euros. Expect the travel to take about one hour. There's a bus option too but most likely a combination of train and subway is more comfortable.
+1. Take a train to Helsinki main railway station and the jump to a subway headed to Kivenlahti (M1) or Tapiola (M2). You should leave at the stop Keilaniemi. If you come from the airport by train, you'll need an ABC ticket ([see HSL app](https://www.hsl.fi/)) to complete this journey, and it will cost roughly five euros. Expect the travel to take about one hour. There's a bus option too but most likely a combination of train and subway is more comfortable.
 2. Take a taxi. The taxi trip takes around half an hour minutes. Take care when choosing a taxi, though, as some are considerably more expensive than others, and it may make sense to negotiate the price beforehand. Good companies to choose from are Taksi Helsinki (**not** Taksi Heslinki), Kovanen, and Lähitaksi. Expect the taxi to cost roughly 50 €.
 
 In either case, keep the receipts so we can refund you after the conference.
