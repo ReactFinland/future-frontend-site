@@ -59,6 +59,7 @@
             property="url"
             href="/buy-tickets/"
             class="p-4 flex grow justify-center"
+            &visibleIf="(get props showBuyTickets)"
             >Buy tickets</a
           >
         </div>
@@ -319,6 +320,7 @@
         <a
           class="p-4 bg-ticket hover:bg-ticket text-white no-underline"
           href="/buy-tickets/"
+          &visibleIf="(get props showBuyTickets)"
           >Buy tickets</a
         >
         <a
