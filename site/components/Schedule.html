@@ -52,6 +52,11 @@
               />
               <div class="flex flex-row gap-4 text-sm">
                 <SiteLink
+                  &visibleIf="(get props urls.drawing)"
+                  &href="(get props urls.drawing)"
+                  >Drawing</SiteLink
+                >
+                <SiteLink
                   &visibleIf="(get props urls.slides)"
                   &href="(get props urls.slides)"
                   >Slides</SiteLink
