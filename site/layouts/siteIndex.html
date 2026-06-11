@@ -50,6 +50,7 @@
         <div
           property="offers"
           typeof="Offer"
+          &visibleIf="(get props showBuyTickets)"
           class="bg-white text-black text-xs no-underline font-primary"
         >
           <link property="availability" href="https://schema.org/InStock" />
@@ -59,7 +60,6 @@
             property="url"
             href="/buy-tickets/"
             class="p-4 flex grow justify-center"
-            &visibleIf="(get props showBuyTickets)"
             >Buy tickets</a
           >
         </div>
