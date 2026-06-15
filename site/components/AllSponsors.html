@@ -2,7 +2,10 @@
   <Heading showAnchor level="2" class="sr-only" id="all-sponsors"
     >All sponsors</Heading
   >
-  <div class="flex flex-col gap-4">
+  <div
+    class="flex flex-col gap-4"
+    &visibleIf="(get props conference.goldSponsors)"
+  >
     <Heading showAnchor level="3" class="text-6xl">Epic sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
@@ -15,10 +18,15 @@
           &children="(get props conference.goldSponsors)"
         />
       </div>
-      <SiteLink href="for-sponsors">Become a sponsor</SiteLink>
+      <SiteLink href="for-sponsors" &visibleIf="(get props showConference)"
+        >Become a sponsor</SiteLink
+      >
     </div>
   </div>
-  <div class="flex flex-col gap-4">
+  <div
+    class="flex flex-col gap-4"
+    &visibleIf="(get props conference.silverSponsors)"
+  >
     <Heading showAnchor level="3" class="text-4xl">Tech sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
@@ -32,10 +40,15 @@
           &children="(get props conference.silverSponsors)"
         />
       </div>
-      <SiteLink href="for-sponsors">Become a sponsor</SiteLink>
+      <SiteLink href="for-sponsors" &visibleIf="(get props showConference)"
+        >Become a sponsor</SiteLink
+      >
     </div>
   </div>
-  <div class="flex flex-col gap-2">
+  <div
+    class="flex flex-col gap-2"
+    &visibleIf="(get props conference.bronzeSponsors)"
+  >
     <Heading showAnchor level="3" class="text-2xl">Brand sponsors</Heading>
     <div class="flex flex-col gap-4">
       <div
@@ -49,7 +62,9 @@
           &children="(get props conference.bronzeSponsors)"
         />
       </div>
-      <SiteLink href="for-sponsors">Become a sponsor</SiteLink>
+      <SiteLink href="for-sponsors" &visibleIf="(get props showConference)"
+        >Become a sponsor</SiteLink
+      >
     </div>
   </div>
   <div &visibleIf="(get props conference.partners)" class="flex flex-col gap-1">
