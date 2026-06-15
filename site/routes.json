@@ -147,21 +147,6 @@
       }
     }
   },
-  "organizers": {
-    "layout": "organizers",
-    "context": {
-      "meta": {
-        "title": "Organizers",
-        "description": "Organizers of Future Frontend"
-      }
-    },
-    "dataSources": {
-      "organizers": {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2026", "organizers"]
-      }
-    }
-  },
   "privacy-policy": {
     "layout": "informationPage",
     "context": {
@@ -183,51 +168,6 @@
       "meta": {
         "title": "Subscribe to the mailing list",
         "description": "Subscribe to Future Frontend mailing list"
-      }
-    }
-  },
-  "schedule": {
-    "layout": "schedule",
-    "context": {
-      "meta": {
-        "title": "Schedule",
-        "description": "Schedule of Future Frontend"
-      }
-    },
-    "dataSources": {
-      "schedule": {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2026", "schedule"]
-      }
-    }
-  },
-  "workshops": {
-    "layout": "workshops",
-    "context": {
-      "meta": {
-        "title": "Workshops",
-        "description": "Workshops of Future Frontend"
-      }
-    },
-    "dataSources": {
-      "workshops": {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2026", "workshops"]
-      }
-    }
-  },
-  "speakers": {
-    "layout": "speakers",
-    "context": {
-      "meta": {
-        "title": "Speakers",
-        "description": "Speakers of Future Frontend"
-      }
-    },
-    "dataSources": {
-      "speakers": {
-        "operation": "queryData",
-        "parameters": ["future-frontend-2026", "speakers"]
       }
     }
   },
@@ -427,6 +367,88 @@
           "workshops": {
             "operation": "queryData",
             "parameters": ["future-frontend-2025", "workshops"]
+          }
+        }
+      }
+    }
+  },
+  "2026": {
+    "layout": "archivePage",
+    "context": {
+      "meta": {
+        "title": "Future Frontend 2026",
+        "description": "Future Frontend 2026 was held 8-9.6.2026"
+      }
+    },
+    "dataSources": {
+      "conference": {
+        "operation": "queryData",
+        "parameters": ["future-frontend-2026", "index"]
+      },
+      "document": {
+        "operation": "processMarkdown",
+        "parameters": [{ "path": "./content/ff26.md" }]
+      }
+    },
+    "routes": {
+      "schedule": {
+        "layout": "schedule",
+        "context": {
+          "meta": {
+            "title": "Schedule",
+            "description": "Schedule of Future Frontend",
+            "parent": "/2026"
+          }
+        },
+        "dataSources": {
+          "schedule": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2026", "schedule"]
+          }
+        }
+      },
+      "speakers": {
+        "layout": "speakers",
+        "context": {
+          "meta": {
+            "title": "Speakers",
+            "description": "Speakers of Future Frontend"
+          }
+        },
+        "dataSources": {
+          "speakers": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2026", "speakers"]
+          }
+        }
+      },
+      "organizers": {
+        "layout": "organizers",
+        "context": {
+          "meta": {
+            "title": "Organizers",
+            "description": "Organizers of Future Frontend"
+          }
+        },
+        "dataSources": {
+          "organizers": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2026", "organizers"]
+          }
+        }
+      },
+      "workshops": {
+        "layout": "workshops",
+        "context": {
+          "meta": {
+            "title": "Workshops",
+            "description": "Workshops of Future Frontend"
+          }
+        },
+        "dataSources": {
+          "workshops": {
+            "operation": "queryData",
+            "parameters": ["future-frontend-2026", "workshops"]
           }
         }
       }

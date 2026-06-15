@@ -1,16 +1,18 @@
 <footer class="bg-navigation px-4 py-8">
   <nav
-    class="max-w-6xl sm:mx-auto sm:py-8 grid grid-cols-2 sm:grid-cols-5 gap-16"
+    class="max-w-6xl sm:mx-auto sm:py-8 grid grid-cols-2 sm:grid-cols-4 gap-16"
   >
     <div class="flex flex-col gap-4">
-      <SiteLink href="organizers">Organizers</SiteLink>
+      <SiteLink href="organizers" &visibleIf="(get props showConference)"
+        >Organizers</SiteLink
+      >
       <SiteLink href="contact">Contact</SiteLink>
       <SiteLink href="privacy-policy">Privacy policy</SiteLink>
       <SiteLink href="http://berlincodeofconduct.org/"
         >Code of conduct</SiteLink
       >
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4" &visibleIf="(get props showConference)">
       <SiteLink href="for-attendees">For attendees</SiteLink>
       <SiteLink href="for-sponsors">For sponsors</SiteLink>
       <SiteLink href="for-speakers">For speakers</SiteLink>
@@ -37,6 +39,7 @@
       <SiteLink href="2023">2023</SiteLink>
       <SiteLink href="2024">2024</SiteLink>
       <SiteLink href="2025">2025</SiteLink>
+      <SiteLink href="2026">2026</SiteLink>
     </div>
     <div class="flex flex-col gap-4 col-span-2 sm:col-span-1">
       <Markdown as="div" class="md:text-sm"
