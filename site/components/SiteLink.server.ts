@@ -26,7 +26,10 @@ const init: GlobalUtilities["init"] = function init({ matchRoute }) {
   }
   */
 
-  async function validateUrl(url: string) {
+  async function validateUrl(
+    this: { context?: { url?: string } },
+    url: string,
+  ) {
     if (!url) {
       return;
     }
@@ -40,15 +43,32 @@ const init: GlobalUtilities["init"] = function init({ matchRoute }) {
 
     const [urlRoot, anchor] = url.split("#");
 
-    if (await matchRoute(urlRoot)) {
+    if (await hasRoute(urlRoot)) {
       return urlRoot === "/"
         ? url
         : `/${urlRoot}${anchor ? "#" + anchor : "/"}`;
     }
 
+    const archiveRoot = this.context?.url?.match(/^\/?(20\d{2})(?:\/|$)/)?.[1];
+    const archiveUrl = archiveRoot && !urlRoot.includes("/")
+      ? `${archiveRoot}/${urlRoot}`
+      : undefined;
+
+    if (archiveUrl && await hasRoute(archiveUrl)) {
+      return `/${archiveUrl}${anchor ? "#" + anchor : "/"}`;
+    }
+
     throw new Error(
       `Failed to find matching url for "${url}"`,
     );
+  }
+
+  async function hasRoute(url: string) {
+    try {
+      return Boolean(await matchRoute(url));
+    } catch {
+      return false;
+    }
   }
 
   return { validateUrl };
