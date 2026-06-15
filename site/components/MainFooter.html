@@ -8,8 +8,13 @@
       >
       <SiteLink href="contact">Contact</SiteLink>
       <SiteLink href="privacy-policy">Privacy policy</SiteLink>
-      <SiteLink href="http://berlincodeofconduct.org/"
+      <SiteLink
+        href="http://berlincodeofconduct.org/"
+        &visibleIf="(get props showConference)"
         >Code of conduct</SiteLink
+      >
+      <SiteLink href="https://github.com/ReactFinland/future-frontend-site"
+        >Site source</SiteLink
       >
     </div>
     <div class="flex flex-col gap-4" &visibleIf="(get props showConference)">
@@ -30,9 +35,6 @@
       >
       <SiteLink href="https://www.flickr.com/photos/react-finland/"
         >Photo gallery</SiteLink
-      >
-      <SiteLink href="https://github.com/ReactFinland/future-frontend-site"
-        >Site source</SiteLink
       >
     </div>
     <div class="flex flex-col gap-4">
