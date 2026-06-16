@@ -2,13 +2,13 @@
 set -e
 
 echo "🔨 Building site..."
-deno task build
+npm run build
 
 echo "⚡ Optimizing build..."
-deno task optimize:build
+npm run optimize:build
 
 echo "🌐 Starting development server on http://localhost:3000..."
-deno task serve &
+npm run serve &
 SERVER_PID=$!
 
 # Wait for server to start

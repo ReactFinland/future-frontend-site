@@ -1,17 +1,11 @@
-import { GraphQLRequest } from "https://deno.land/x/gql_request@1.0.0-beta.2/mod.ts";
-import { get } from "https://deno.land/x/gustwind@v0.32.0/utilities/functional.ts";
-import {
-  extract,
-  test,
-} from "https://deno.land/std@0.207.0/front_matter/yaml.ts";
-import { parse } from "https://deno.land/std@0.207.0/yaml/parse.ts";
+import matter from "gray-matter";
 import indexQuery from "./queries/indexQuery.ts";
 import organizersQuery from "./queries/organizersQuery.ts";
 import scheduleQuery from "./queries/scheduleQuery.ts";
 import speakersQuery from "./queries/speakersQuery.ts";
 import workshopsQuery from "./queries/workshopsQuery.ts";
 import getTransformMarkdown from "./transforms/markdown.ts";
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.57.0/types.ts";
+import type { LoadApi } from "gustwind";
 
 type MarkdownWithFrontmatter = {
   data: {
@@ -23,8 +17,8 @@ type MarkdownWithFrontmatter = {
   content: string;
 };
 
-const API_URL = Deno.env.get("API_URL") || "";
-const API_TOKEN = Deno.env.get("API_TOKEN") || "";
+const API_URL = process.env.API_URL || "";
+const API_TOKEN = process.env.API_TOKEN || "";
 
 if (!API_URL) {
   throw new Error("Missing api url");
@@ -43,14 +37,18 @@ function init({ load }: { load: LoadApi }) {
       query: string,
       variables: Record<string, unknown>,
     ) {
-      const request = new GraphQLRequest(
-        apiUrl,
-        query,
-        { headers: { TOKEN: apiToken }, variables },
-      );
-
       try {
-        return (await fetch(request).then((res) => res.json())).data;
+        const response = await fetch(apiUrl, {
+          body: JSON.stringify({ query, variables }),
+          headers: {
+            "Content-Type": "application/json",
+            TOKEN: apiToken,
+          },
+          method: "POST",
+        });
+        const payload = await response.json();
+
+        return payload.data;
       } catch (_error) {
         console.error("Failed to process", apiUrl, query, variables);
       }
@@ -72,7 +70,7 @@ function init({ load }: { load: LoadApi }) {
 
     const data = await fetchData(match.query, { conferenceId });
 
-    return get(data, match.key);
+    return getValue(data, match.key);
   }
 
   async function indexMarkdown(
@@ -106,19 +104,16 @@ function init({ load }: { load: LoadApi }) {
     path: string,
   ): Promise<MarkdownWithFrontmatter> {
     const file = await load.textFile(path);
+    const { content, data } = matter(file);
 
-    if (test(file)) {
-      const { frontMatter, body: content } = extract(file);
-
-      return {
-        // @ts-expect-error Chck how to type data properly.
-        // Maybe some form of runtime check would be good.
-        data: parse(frontMatter),
-        content,
-      };
+    if (!Object.keys(data).length) {
+      throw new Error(`path ${path} did not contain a headmatter`);
     }
 
-    throw new Error(`path ${path} did not contain a headmatter`);
+    return {
+      data: data as MarkdownWithFrontmatter["data"],
+      content,
+    };
   }
 
   function parseMarkdown(lines: string, o?: { skipFirstLine: boolean }) {
@@ -131,3 +126,19 @@ function init({ load }: { load: LoadApi }) {
 }
 
 export { init };
+
+function getValue(input: unknown, key: string, defaultValue?: unknown) {
+  if (!input || typeof input !== "object") {
+    return defaultValue;
+  }
+
+  const resolved = key.split(".").reduce<unknown>((value, part) => {
+    if (value && typeof value === "object" && part in value) {
+      return (value as Record<string, unknown>)[part];
+    }
+
+    return undefined;
+  }, input);
+
+  return resolved ?? defaultValue;
+}

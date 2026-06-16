@@ -1,4 +1,4 @@
-import type { GlobalUtilities } from "https://deno.land/x/gustwind@v0.81.4/types.ts";
+import type { GlobalUtilities } from "gustwind";
 
 const init: GlobalUtilities["init"] = function init({ matchRoute }) {
   /*

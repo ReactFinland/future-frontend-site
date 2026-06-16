@@ -4,17 +4,18 @@ This is the website of Future Frontend conference.
 
 ## Development
 
-Before running the commands, copy `.env.template` as `.env` and fill the fields.
+If you need API-backed data locally, copy `.env.template` as `.env` and fill the fields. The file is optional, so CI and builds without API credentials still run.
 
-* Development server - `deno task start`
-* Build process - `deno task build`
+* Install dependencies - `npm install`
+* Development server - `npm run start`
+* Build process - `npm run build`
 
 ## Template
 
 **Main features:**
 
 * Markdown processing - the project README you see here is processed through the system
-* Support for [Twind](https://twind.dev/) - Twind is a Tailwind-compatible styling approach
+* Support for [Tailwind CSS](https://tailwindcss.com/) through Gustwind's packaged Tailwind plugin
 * State management through [Sidewind](https://sidewind.js.org/) - Sidewind has been configured as a script to the project so you can use it to add state to your components
 * Basic components - I.e., `BaseLayout`, `SiteLink`, etc.
 

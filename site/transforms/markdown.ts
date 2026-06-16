@@ -1,13 +1,11 @@
-import { install, tw } from "https://esm.sh/@twind/core@1.1.1";
-import { marked } from "https://cdn.jsdelivr.net/npm/marked@9.1.5/lib/marked.esm.js";
-import highlight from "https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.3.1/es/core.min.js";
-import highlightBash from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/bash.js";
-import highlightJS from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/javascript.js";
-import highlightJSON from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/json.js";
-import highlightTS from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/typescript.js";
-import highlightYAML from "https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/es/languages/yaml.js";
-import twindSetup from "../twindSetup.ts";
-import type { LoadApi } from "https://deno.land/x/gustwind@v0.66.3/types.ts";
+import { marked } from "marked";
+import highlight from "highlight.js/lib/core";
+import highlightBash from "highlight.js/lib/languages/bash";
+import highlightJS from "highlight.js/lib/languages/javascript";
+import highlightJSON from "highlight.js/lib/languages/json";
+import highlightTS from "highlight.js/lib/languages/typescript";
+import highlightYAML from "highlight.js/lib/languages/yaml";
+import type { LoadApi } from "gustwind";
 
 highlight.registerLanguage("bash", highlightBash);
 highlight.registerLanguage("javascript", highlightJS);
@@ -28,9 +26,6 @@ marked.setOptions({
     return language ? highlight.highlight(code, { language }).value : code;
   },
 });
-
-// @ts-expect-error This is fine
-install(twindSetup);
 
 function getTransformMarkdown(load: LoadApi) {
   return function transformMarkdown(input: string) {
@@ -63,7 +58,7 @@ function getTransformMarkdown(load: LoadApi) {
           }
 
           return '<pre class="' +
-            tw("overflow-auto -mx-4 md:mx-0 bg-gray-100") +
+            stringifyClassNames("overflow-auto -mx-4 md:mx-0 bg-gray-100") +
             '"><code class="' +
             // @ts-ignore How to type this?
             this.options.langPrefix +
@@ -90,7 +85,7 @@ function getTransformMarkdown(load: LoadApi) {
             '" class="font-primary scroll-mt-16">' +
             text +
             '<a class="' +
-            tw(
+            stringifyClassNames(
               "ml-2 no-underline text-sm align-middle text-gray-500 hover:text-black print:hidden",
             ) +
             '" href="#' +
@@ -108,7 +103,7 @@ function getTransformMarkdown(load: LoadApi) {
           const className = textParts[3] || "";
 
           return `<img src="${href}" alt="${alt}" title="${title}" class="${
-            tw(className)
+            stringifyClassNames(className)
           }" width="${width}" height="${height}" />`;
         },
         link(href: string, title: string, text: string) {
@@ -140,7 +135,7 @@ function getTransformMarkdown(load: LoadApi) {
 
           const parts = text.split("|");
 
-          let out = '<a class="' + tw(["underline"].concat(parts[1])) +
+          let out = '<a class="' + stringifyClassNames(["underline"].concat(parts[1])) +
             '" href="' + href + '"';
           if (title) {
             out += ' title="' + title + '"';
@@ -156,7 +151,7 @@ function getTransformMarkdown(load: LoadApi) {
             klass = ordered
               ? "list-decimal list-inside"
               : "list-disc list-inside";
-          return "<" + type + startatt + ' class="' + tw(klass) + '">\n' +
+          return "<" + type + startatt + ' class="' + stringifyClassNames(klass) + '">\n' +
             body +
             "</" +
             type + ">\n";
@@ -173,6 +168,10 @@ function slugify(idBase: string) {
     .toLowerCase()
     .replace(/`/g, "")
     .replace(/[^\w]+/g, "-");
+}
+
+function stringifyClassNames(input: string | string[]) {
+  return Array.isArray(input) ? input.filter(Boolean).join(" ") : input;
 }
 
 export default getTransformMarkdown;
